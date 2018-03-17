@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Projet_6.iml" filepath="$PROJECT_DIR$/.idea/Projet_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projet_6/projet_6.iml" filepath="$PROJECT_DIR$/projet_6/projet_6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projet_6/projet_6-business/projet_6-business.iml" filepath="$PROJECT_DIR$/projet_6/projet_6-business/projet_6-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projet_6/projet_6-consumer/projet_6-consumer.iml" filepath="$PROJECT_DIR$/projet_6/projet_6-consumer/projet_6-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projet_6/projet_6-model/projet_6-model.iml" filepath="$PROJECT_DIR$/projet_6/projet_6-model/projet_6-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projet_6/projet_6-technical/projet_6-technical.iml" filepath="$PROJECT_DIR$/projet_6/projet_6-technical/projet_6-technical.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" filepath="$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" />
+    </modules>
+  </component>
+</project>
