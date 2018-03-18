@@ -33,9 +33,6 @@ public class Utilisateur {
     public Integer getId() {
         return id;
     }
-    public void setId(Integer pId) {
-        id = pId;
-    }
     public Integer getTel() {
         return tel;
     }
@@ -69,7 +66,7 @@ public class Utilisateur {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("id=").append(id)
+                .append("Utilisateur id=").append(id)
                 .append(vSEP).append("nom=\"").append(nom).append('"')
                 .append(vSEP).append("prenom=\"").append(prenom).append('"')
                 .append(vSEP).append("telephone=\"").append(tel).append('"')

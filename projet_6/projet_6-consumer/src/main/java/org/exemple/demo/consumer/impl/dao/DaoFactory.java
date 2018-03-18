@@ -1,7 +1,6 @@
-package org.exemple.demo.consumer;
+package org.exemple.demo.consumer.impl.dao;
 
-import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
-import org.exemple.demo.consumer.impl.dao.UtilisateurDaoImpl;
+import org.exemple.demo.consumer.contract.dao.*;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -26,7 +25,7 @@ public class DaoFactory {
         }
 
         DaoFactory instance = new DaoFactory(
-                "jdbc:postgre://localhost:5432/javaee", "root", "");
+                "jdbc:postgres://localhost:5432/p6", "postgres", "p6");
         return instance;
     }
 

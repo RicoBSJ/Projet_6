@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
-import org.exemple.demo.consumer.DaoFactory;
 
 public class UtilisateurDaoImpl implements UtilisateurDao {
     private DaoFactory daoFactory;

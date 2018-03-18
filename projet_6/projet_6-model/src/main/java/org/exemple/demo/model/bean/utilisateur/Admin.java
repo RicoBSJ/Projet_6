@@ -28,9 +28,6 @@ public class Admin {
     public Integer getId() {
         return id;
     }
-    public void setId(Integer pId) {
-        id = pId;
-    }
 
     // ==================== Méthodes ====================
     @Override

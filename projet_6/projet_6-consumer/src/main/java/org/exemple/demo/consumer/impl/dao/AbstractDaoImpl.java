@@ -7,7 +7,7 @@ import javax.sql.DataSource;
 public abstract class AbstractDaoImpl {
 
     @Inject
-    @Named("Utilisateur")
+    @Named("dataSourceP6")
     private DataSource dataSource;
 
     protected DataSource getDataSource() {
