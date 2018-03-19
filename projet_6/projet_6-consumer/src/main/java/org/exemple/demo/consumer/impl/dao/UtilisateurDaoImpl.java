@@ -3,6 +3,7 @@ package org.exemple.demo.consumer.impl.dao;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
 

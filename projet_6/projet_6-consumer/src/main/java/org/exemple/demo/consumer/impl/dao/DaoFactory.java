@@ -1,6 +1,7 @@
 package org.exemple.demo.consumer.impl.dao;
 
-import org.exemple.demo.consumer.contract.dao.*;
+import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
+import org.exemple.demo.consumer.contract.dao.VoieDao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -36,5 +37,9 @@ public class DaoFactory {
     // Récupération du Dao
     public UtilisateurDao getUtilisateurDao() {
         return new UtilisateurDaoImpl(this);
+    }
+
+    public VoieDao getVoieDao() {
+        return new VoieDaoImpl(this);
     }
 }
