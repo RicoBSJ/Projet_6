@@ -14,7 +14,6 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
 
     @Override
     public Utilisateur getUtilisateur(Integer pId) throws NotFoundException {
-        // Je n'ai pas codé la DAO, je mets juste un code pour le cours...
         if (pId < 0) {
             throw new NotFoundException("Utilisateur non trouvé : ID=" + pId);
         }
@@ -34,7 +33,6 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
 
     @Override
     public List<Utilisateur> getListUtilisateur() {
-        // Je n'ai pas codé la DAO, je mets juste un code pour le cours...
         List<Utilisateur> vList = new ArrayList<>();
         for (int vI = 0; vI < 9; vI++) {
             Utilisateur vUtilisateur = newUtilisateur(vI);

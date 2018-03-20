@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -21,31 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/AdminDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GrimpeurDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/GrimpeurDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UtilisateurManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+            <state relative-caret-position="540">
+              <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,12 +33,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecteurDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SecteurDao.java">
+      <file leaf-file-name="ManagerFactoryImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="195">
+              <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#568#569#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,36 +52,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
               <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VoieDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/VoieDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -116,7 +70,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UtilisateurDaoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TopoDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <folding>
+                <marker date="1521562514943" expanded="true" signature="446:509" ph="SELECT id_po... utilisateur" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SecteurDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SecteurDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AdminDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -187,13 +195,13 @@
         <option value="$PROJECT_DIR$/projet_6/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Grimpeur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" />
       </list>
     </option>
   </component>
@@ -723,10 +731,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -877,7 +881,7 @@
       <workItem from="1521549960490" duration="57000" />
       <workItem from="1521550116634" duration="138000" />
       <workItem from="1521562227444" duration="405000" />
-      <workItem from="1521563371839" duration="1217000" />
+      <workItem from="1521563371839" duration="1485000" />
     </task>
     <task id="LOCAL-00001" summary="Ecriture Anotation en cours">
       <created>1521295723272</created>
@@ -928,15 +932,21 @@
       <option name="project" value="LOCAL" />
       <updated>1521562564883</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ecriture DAO en cours (encore) + Couche Business en cours&#10;Probleme initialisation DB">
+      <created>1521566089132</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1521566089132</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14053000" />
+    <option name="totallyTimeSpent" value="14321000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -957,7 +967,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1115,13 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AdminDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/GrimpeurDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1133,13 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SecteurDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1200,27 +1196,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SiteDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1275,28 +1254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#568#569#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/AdminDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1345,6 +1302,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1521565843476" expanded="true" signature="551:571" ph="SELECT COUNT... user" />
+            <marker date="1521565843476" expanded="true" signature="551:589" ph="SELECT COUNT... utilisateur" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -1352,6 +1321,50 @@
           <folding>
             <marker date="1521565869292" expanded="true" signature="531:583" ph="SELECT COUNT... p6" />
             <marker date="1521565869292" expanded="true" signature="531:594" ph="SELECT COUNT... voie" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <marker date="1521562514943" expanded="true" signature="446:509" ph="SELECT id_po... utilisateur" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SecteurDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AdminDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1366,22 +1379,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        <state relative-caret-position="540">
+          <caret line="36" column="40" lean-forward="true" selection-start-line="36" selection-start-column="40" selection-end-line="36" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="195">
+          <caret line="15" column="27" lean-forward="false" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1521565843476" expanded="true" signature="551:571" ph="SELECT COUNT... user" />
-            <marker date="1521565843476" expanded="true" signature="551:589" ph="SELECT COUNT... utilisateur" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#568#569#0" expanded="true" />
           </folding>
         </state>
       </provider>
