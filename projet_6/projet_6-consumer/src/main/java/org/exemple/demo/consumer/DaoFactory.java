@@ -1,7 +1,7 @@
-package org.exemple.demo.consumer.impl.dao;
+package org.exemple.demo.consumer;
 
 import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
-import org.exemple.demo.consumer.contract.dao.VoieDao;
+import org.exemple.demo.consumer.impl.dao.UtilisateurDaoImpl;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -20,7 +20,7 @@ public class DaoFactory {
 
     public static DaoFactory getInstance() {
         try {
-            Class.forName("com.postgres.jdbc.Driver");
+            Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
 
         }
@@ -39,7 +39,4 @@ public class DaoFactory {
         return new UtilisateurDaoImpl(this);
     }
 
-    public VoieDao getVoieDao() {
-        return new VoieDaoImpl(this);
-    }
 }
