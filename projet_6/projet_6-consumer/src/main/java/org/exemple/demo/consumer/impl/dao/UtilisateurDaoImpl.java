@@ -8,12 +8,13 @@ import javax.inject.Named;
 @Named
 public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDao {
 
-    public int getCountUser() {
+    @Override
+    public int getUserName() {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        int vNbrUser = vJdbcTemplate.queryForObject(
-                "SELECT COUNT(*) FROM utilisateur",
+        int vUserName = vJdbcTemplate.queryForObject(
+                "SELECT id, nom FROM public.utilisateur",
                 Integer.class);
 
-        return vNbrUser;
+        return vUserName;
     }
 }

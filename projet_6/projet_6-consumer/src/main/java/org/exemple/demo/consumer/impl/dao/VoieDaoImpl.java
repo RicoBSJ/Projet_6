@@ -11,10 +11,10 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
     // SQL test Spring DAO
     @Override
-    public int getNumVoie() {
+    public int getInfoVoie() {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         int vNumVoie = vJdbcTemplate.queryForObject(
-                "SELECT COUNT(*) FROM voie",
+                "SELECT id, nom, hauteur, cotation, description FROM public.voie",
                 Integer.class);
 
         return vNumVoie;
