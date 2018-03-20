@@ -14,7 +14,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
     public int getNumVoie() {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         int vNumVoie = vJdbcTemplate.queryForObject(
-                "SELECT COUNT(*) FROM p6",
+                "SELECT COUNT(*) FROM voie",
                 Integer.class);
 
         return vNumVoie;

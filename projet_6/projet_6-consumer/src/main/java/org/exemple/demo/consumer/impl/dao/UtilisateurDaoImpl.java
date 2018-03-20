@@ -11,7 +11,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
     public int getCountUser() {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         int vNbrUser = vJdbcTemplate.queryForObject(
-                "SELECT COUNT(*) FROM user",
+                "SELECT COUNT(*) FROM utilisateur",
                 Integer.class);
 
         return vNbrUser;
