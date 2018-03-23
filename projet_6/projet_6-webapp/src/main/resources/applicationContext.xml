@@ -13,8 +13,12 @@
     <context:annotation-config/>
     <context:component-scan base-package="org.exemple.demo.consumer"/>
 
-    <bean id="dataSourceP6" class="org.springframework.jndi.JndiObjectFactoryBean">
-        <property name="jndiName" value="java:comp/env/jdbc/DB_P6"/>
+    <bean id="dataSourceP6"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="org.postgresql.Driver" />
+        <property name="url" value="jdbc:postgresql://localhost:5432/p6" />
+        <property name="username" value="postgres" />
+        <property name="password" value="p6" />
     </bean>
 
 </beans>

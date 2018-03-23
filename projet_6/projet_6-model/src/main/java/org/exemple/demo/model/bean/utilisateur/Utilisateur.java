@@ -7,7 +7,9 @@ public class Utilisateur {
     private Integer tel;
     private String nom;
     private String prenom;
+    private String motDePasse;
     private String mail;
+    private Boolean admin;
 
 
     // ==================== Constructeurs ====================
@@ -57,8 +59,18 @@ public class Utilisateur {
     public void setMail(String pMail) {
         mail = pMail;
     }
-
-
+    public String getMotDePasse() {
+        return motDePasse;
+    }
+    public void setMotDePasse(String pMdp) {
+        motDePasse = pMdp;
+    }
+    public Boolean getAdmin() {
+        return admin;
+    }
+    public void setAdmin(Boolean padmin) {
+        admin = padmin;
+    }
 
     // ==================== Méthodes ====================
     @Override
@@ -71,6 +83,8 @@ public class Utilisateur {
                 .append(vSEP).append("prenom=\"").append(prenom).append('"')
                 .append(vSEP).append("telephone=\"").append(tel).append('"')
                 .append(vSEP).append("mail=\"").append(mail).append('"')
+                .append(vSEP).append("mot de passe = \"").append(motDePasse).append(('"'))
+                .append(vSEP).append("admin = \"").append(admin).append('"')
                 .append("}");
         return vStB.toString();
     }

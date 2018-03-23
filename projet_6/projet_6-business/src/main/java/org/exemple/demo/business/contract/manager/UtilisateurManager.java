@@ -1,6 +1,8 @@
 package org.exemple.demo.business.contract.manager;
 
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
+import org.exemple.demo.model.exception.NotFoundException;
+
 import java.util.List;
 
 public interface UtilisateurManager {

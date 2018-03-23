@@ -10,8 +10,6 @@ import javax.inject.Named;
 public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
 
-    // SQL test Spring DAO
-    @Override
     public int getInfoVoie(Voie pvoie) {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         int vNumVoie = vJdbcTemplate.queryForObject(

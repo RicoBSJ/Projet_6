@@ -8,11 +8,11 @@ import javax.inject.Named;
 @Named
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
-    @Override
+
     public int getInfoTopo() {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         int vInfoTopo = vJdbcTemplate.queryForObject(
-                "SELECT id_possesseur, description, etat FROM public.utilisateur",
+                "SELECT id_possesseur, description, etat FROM public.topo",
                 Integer.class);
 
         return vInfoTopo;

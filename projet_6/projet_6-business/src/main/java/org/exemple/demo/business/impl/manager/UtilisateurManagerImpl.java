@@ -2,6 +2,7 @@ package org.exemple.demo.business.impl.manager;
 
 import org.exemple.demo.business.contract.manager.UtilisateurManager;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
+import org.exemple.demo.model.exception.NotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;

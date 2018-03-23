@@ -4,4 +4,21 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
 
+    <package name="default" extends="struts-default">
+    <!-- Action par défaut -->
+    <default-action-ref name="index" />
+
+        <!-- Action "index" -->
+
+        <!-- Actions Login/Logout -->
+        <action name="login" class="LoginAction" method="doLogin">
+            <result name="input">/JSP/login.jsp</result>
+            <result name="success" type="redirectAction">index</result>
+        </action>
+        <action name="logout" class="LoginAction" method="doLogout">
+            <result type="redirectAction">index</result>
+        </action>
+
+    </package>
+
 </struts>
