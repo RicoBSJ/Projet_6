@@ -18,6 +18,7 @@
         <action name="logout" class="LoginAction" method="doLogout">
             <result type="redirectAction">index</result>
         </action>
+        <action name="index"/>
 
     </package>
 

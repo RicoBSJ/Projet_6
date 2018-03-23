@@ -7,30 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/NotFoundException.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/action/LoginAction.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war_exploded.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_unknown.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_9_4_1212.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/pom.xml" afterPath="$PROJECT_DIR$/projet_6/pom.xml" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/projet_6-business.iml" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/projet_6-business.iml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/DaoFactory.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Admin.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Grimpeur.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/projet_6-consumer.iml" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/projet_6-consumer.iml" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/applicationContext.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/index.jsp" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -45,64 +39,40 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UtilisateurManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
+      <file leaf-file-name="webappContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-93">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
           <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
             <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VoieDaoImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding>
-                <marker date="1521794773307" expanded="true" signature="490:542" ph="SELECT COUNT... p6" />
-                <marker date="1521794773307" expanded="true" signature="490:553" ph="SELECT COUNT... voie" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurDaoImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <marker date="1521795638662" expanded="true" signature="537:557" ph="SELECT COUNT... user" />
-                <marker date="1521795638662" expanded="true" signature="537:575" ph="SELECT COUNT... utilisateur" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="43" lean-forward="false" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="345">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,53 +88,71 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/action/LoginAction.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-114">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#894#895#0" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#964#965#0" expanded="true" />
-                <element signature="e#994#995#0" expanded="true" />
-                <element signature="e#1028#1029#0" expanded="true" />
-                <element signature="e#1059#1060#0" expanded="true" />
-                <element signature="e#1107#1108#0" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UtilisateurManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+            <state relative-caret-position="773">
+              <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/applicationContext.xml">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="825">
+              <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1873">
+              <caret line="126" column="49" lean-forward="false" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="context.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="71" lean-forward="false" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="struts.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+              <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -192,12 +180,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/Bootstrap/SpringConfiguration.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilDaoImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Admin.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Voie.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Secteur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Site.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java" />
@@ -220,29 +202,35 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/ManagerFactoryImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/ManagerFactory.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/AbstractManager.java" />
-        <option value="$PROJECT_DIR$/projet_6/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Grimpeur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/DaoFactory.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebAppHelper.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/NotFoundException.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/action/LoginAction.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" />
+        <option value="$PROJECT_DIR$/projet_6/pom.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
       </list>
     </option>
   </component>
@@ -319,7 +307,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -336,453 +325,7 @@
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="grimpe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -804,61 +347,6 @@
               <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -876,6 +364,7 @@
               <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -886,7 +375,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -897,6 +385,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="JSP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="_include" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -922,9 +421,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -933,9 +431,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -945,6 +444,10 @@
       <recent name="org.exemple.demo.business.contract.manager" />
       <recent name="org.exemple.demo.consumer.contract.dao" />
       <recent name="org.exemple.demo.consumer.impl.dao" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP" />
+      <recent name="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1146,7 +649,8 @@
       <workItem from="1521562227444" duration="405000" />
       <workItem from="1521563371839" duration="1510000" />
       <workItem from="1521568874162" duration="2923000" />
-      <workItem from="1521794545345" duration="2723000" />
+      <workItem from="1521794545345" duration="5005000" />
+      <workItem from="1521800712556" duration="534000" />
     </task>
     <task id="LOCAL-00001" summary="Ecriture Anotation en cours">
       <created>1521295723272</created>
@@ -1211,11 +715,18 @@
       <option name="project" value="LOCAL" />
       <updated>1521566357438</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Ecriture DAO en cours (encore) + Couche Business en cours&#10;Probleme initialisation DB">
+      <created>1521797588297</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1521797588297</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19992000" />
+    <option name="totallyTimeSpent" value="22808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1223,7 +734,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1233,19 +744,18 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.491" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1253,6 +763,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1275,54 +786,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="51" column="19" lean-forward="false" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/Bootstrap/SpringConfiguration.java" />
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/App.java" />
-    <entry file="file://$PROJECT_DIR$/projet_6/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="117" column="24" lean-forward="false" selection-start-line="117" selection-start-column="24" selection-end-line="117" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SiteDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1330,19 +794,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/AdminDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1350,7 +805,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1358,7 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1366,7 +819,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1382,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,51 +845,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/VoieDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Grimpeur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Grimpeur.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Admin.java" />
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AdminDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="26" lean-forward="false" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1446,7 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="885">
           <caret line="87" column="29" lean-forward="true" selection-start-line="87" selection-start-column="29" selection-end-line="87" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1454,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="70" column="73" lean-forward="false" selection-start-line="70" selection-start-column="73" selection-end-line="70" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1462,7 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1470,7 +886,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="59" column="31" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="59" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1478,10 +893,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <marker date="1521794790801" expanded="true" signature="433:485" ph="SELECT id_po... utilisateur" />
-            <marker date="1521794790801" expanded="true" signature="433:489" ph="SELECT id_po... topo" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1489,7 +900,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1497,7 +907,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1505,7 +914,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1513,7 +921,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="67" column="25" lean-forward="false" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1521,26 +928,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="812">
           <caret line="63" column="52" lean-forward="false" selection-start-line="63" selection-start-column="52" selection-end-line="63" selection-end-column="52" />
-          <folding>
-            <element signature="e#617#618#0" expanded="false" />
-            <element signature="e#646#647#0" expanded="false" />
-            <element signature="e#681#682#0" expanded="false" />
-            <element signature="e#711#712#0" expanded="false" />
-            <element signature="e#746#747#0" expanded="false" />
-            <element signature="e#776#777#0" expanded="false" />
-            <element signature="e#807#808#0" expanded="false" />
-            <element signature="e#834#835#0" expanded="false" />
-            <element signature="e#875#876#0" expanded="false" />
-            <element signature="e#903#904#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1548,7 +935,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1556,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1564,18 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#293#294#0" expanded="false" />
-            <element signature="e#330#331#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1583,38 +956,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-          <folding>
-            <element signature="e#594#595#0" expanded="false" />
-            <element signature="e#633#634#0" expanded="false" />
-          </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" lean-forward="false" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
@@ -1629,19 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-114">
           <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#894#895#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#964#965#0" expanded="true" />
-            <element signature="e#994#995#0" expanded="true" />
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1059#1060#0" expanded="true" />
-            <element signature="e#1107#1108#0" expanded="true" />
-            <element signature="e#1143#1144#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1649,6 +978,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-93">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
           <folding />
         </state>
       </provider>
@@ -1657,47 +1015,134 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="71" lean-forward="false" selection-start-line="18" selection-start-column="71" selection-end-line="18" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="9" column="19" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
           <folding>
-            <marker date="1521794773307" expanded="true" signature="490:542" ph="SELECT COUNT... p6" />
-            <marker date="1521794773307" expanded="true" signature="490:553" ph="SELECT COUNT... voie" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        <state relative-caret-position="150">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
             <marker date="1521795638662" expanded="true" signature="537:557" ph="SELECT COUNT... user" />
             <marker date="1521795638662" expanded="true" signature="537:575" ph="SELECT COUNT... utilisateur" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="55" column="17" lean-forward="false" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="773">
+          <caret line="56" column="17" lean-forward="false" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1873">
+          <caret line="126" column="49" lean-forward="false" selection-start-line="126" selection-start-column="49" selection-end-line="126" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="10" lean-forward="false" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1755,7 +1200,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Projet_6</last-edited>
+          <last-edited>projet_6-consumer</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

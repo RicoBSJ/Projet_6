@@ -5,6 +5,8 @@
       <configuration>
         <fileset id="fileset" name="ApplicationContext" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/bootstrapContext.xml</file>
+          <file>file://$MODULE_DIR$/../projet_6-business/src/main/resources/businessContext.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -17,10 +19,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
         </webroots>
-        <sourceRoots>
-          <root url="file://$MODULE_DIR$/src/main/java" />
-          <root url="file://$MODULE_DIR$/src/main/resources" />
-        </sourceRoots>
       </configuration>
       <facet type="Struts2" name="Struts 2">
         <configuration>
@@ -70,6 +68,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:3.8.1" level="project" />
-    <orderEntry type="library" name="Maven: org.postgresql:postgresql:unknown" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.postgresql:postgresql:9.4.1212" level="project" />
   </component>
 </module>
