@@ -23,6 +23,7 @@ public class LoginAction extends ActionSupport implements SessionAware{
 
     // ==================== Attributs ====================
     // ----- Paramètres en entrée
+
     private String login;
     private String password;
 

@@ -4,9 +4,9 @@ public class Topo {
 
     // ==================== Attributs ====================
     private Integer id;
-    private Integer id_possesseur;
-    private Integer id_commentaire;
-    private Integer id_utilisateur_com;
+    private Integer id_emprunteur;
+    private Integer id_utilisateur_possesseur;
+    private String nom_topo;
     private String description;
     private String region;
     private String roche;
@@ -39,6 +39,19 @@ public class Topo {
 
     public Integer getId(){
         return id;
+    }
+    public Integer getId_emprunteur()
+    {
+        return id_emprunteur;
+    }
+    public Integer getId_utilisateur_possesseur() {
+        return id_utilisateur_possesseur;
+    }
+    public String getNom_topo() {
+        return nom_topo;
+    }
+    public void setNom_topo(String pNom_topo) {
+        nom_topo = pNom_topo;
     }
     public String getDescription() {
         return description;
@@ -95,7 +108,7 @@ public class Topo {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Admin id=").append(id)
+                .append("Topo id=").append(id)
                 .append(vSEP).append("region =\"").append(region).append('"')
                 .append(vSEP).append("lieu =\"").append(lieu).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')

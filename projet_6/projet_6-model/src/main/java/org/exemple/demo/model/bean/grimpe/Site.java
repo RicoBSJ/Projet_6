@@ -4,8 +4,8 @@ public class Site {
 
     // ==================== Attributs ====================
     private Integer id_site;
-    private Integer id_voie;
-    private Integer id_secteur;
+    private Integer id_topo;
+    private String nom_site;
     public Float altitudePiedVoie;
     private String description;
 
@@ -30,8 +30,18 @@ public class Site {
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId(){
+
+    public Integer getId_topo() {
+        return id_topo;
+    }
+    public Integer getId_site(){
         return id_site;
+    }
+    public String getNom_site() {
+        return nom_site;
+    }
+    public void setNom_site(String pNom_site) {
+        nom_site = pNom_site;
     }
     public Float getaltitudePiedVoie() {
         return altitudePiedVoie;
@@ -53,7 +63,8 @@ public class Site {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Admin id=").append(id_site)
+                .append("Site id=").append(id_site)
+                .append(vSEP).append("Topo id = \"").append(id_topo).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')
                 .append(vSEP).append("altitude pied voie =\"").append(altitudePiedVoie).append('"')
                 .append("}");

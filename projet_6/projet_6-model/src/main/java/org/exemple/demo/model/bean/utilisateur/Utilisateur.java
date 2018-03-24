@@ -35,39 +35,51 @@ public class Utilisateur {
     public Integer getId() {
         return id;
     }
+
     public Integer getTel() {
         return tel;
     }
+
     public void setTel(Integer pTel) {
         tel = pTel;
     }
+
     public String getNom() {
         return nom;
     }
+
     public void setNom(String pNom) {
         nom = pNom;
     }
+
     public String getPrenom() {
         return prenom;
     }
+
     public void setPrenom(String pPrenom) {
         prenom = pPrenom;
     }
+
     public String getMail() {
         return mail;
     }
+
     public void setMail(String pMail) {
         mail = pMail;
     }
+
     public String getMotDePasse() {
         return motDePasse;
     }
+
     public void setMotDePasse(String pMdp) {
         motDePasse = pMdp;
     }
+
     public Boolean getAdmin() {
         return admin;
     }
+
     public void setAdmin(Boolean padmin) {
         admin = padmin;
     }
