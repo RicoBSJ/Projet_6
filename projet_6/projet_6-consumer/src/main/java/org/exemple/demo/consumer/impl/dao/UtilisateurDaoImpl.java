@@ -13,10 +13,10 @@ import javax.inject.Named;
 public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDao {
 
 
-    public int getCountUser(Utilisateur pUtilisateur) {
+    public int getCountUser(UtilisateurDaoImpl pUtilisateur) {
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         int vNbrUser = vJdbcTemplate.queryForObject(
-                "SELECT COUNT(*) FROM utilisateur",
+                "SELECT COUNT(*) FROM public.utilisateur",
                 Integer.class);
 
         return vNbrUser;
