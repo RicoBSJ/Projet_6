@@ -4,7 +4,10 @@ import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.business.contract.manager.UtilisateurManager;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
+
+@Named("managerFactory")
 public class ManagerFactoryImpl implements ManagerFactory {
 
     @Inject

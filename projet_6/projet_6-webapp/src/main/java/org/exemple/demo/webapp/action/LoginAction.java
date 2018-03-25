@@ -1,3 +1,5 @@
+package org.exemple.demo.webapp.action;
+
 import org.apache.commons.lang3.StringUtils;
 import com.opensymphony.xwork2.ActionSupport;
 import java.util.Map;
