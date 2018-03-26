@@ -16,7 +16,7 @@ public class ManagerFactoryImpl implements ManagerFactory {
     public UtilisateurManager getUtilisateurManager() {
         return this.utilisateurManager;
     }
-    public void setTicketManager(UtilisateurManager pUtilisateurManager) {
+    public void setUtilisateurManager(UtilisateurManager pUtilisateurManager) {
         utilisateurManager = pUtilisateurManager;
     }
 }

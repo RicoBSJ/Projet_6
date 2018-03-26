@@ -2,15 +2,12 @@ package org.exemple.demo.webapp.action;
 
 
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
 import org.exemple.demo.webapp.WebappHelper;
-
-import javax.rmi.CORBA.Util;
 
 
 public class GestionUtilisateurAction extends ActionSupport {

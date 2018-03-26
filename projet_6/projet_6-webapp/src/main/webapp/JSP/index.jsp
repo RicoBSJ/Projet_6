@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<h2>Projet 6</h2>
+<h2>Tentative liste utilisateur</h2>
 
 <nav>
     <s:a action="utilisateur_list">

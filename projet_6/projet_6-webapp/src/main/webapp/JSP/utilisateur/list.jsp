@@ -14,8 +14,8 @@
     <s:iterator value="listUtilisateur">
         <li>
             <s:a action="utilisateur_detail">
-                <s:param name="id" value="id" />
-                <s:property value="nom"/>
+                <s:param name="id" value="responsable.id" />
+                <s:property value="utilisateur.prenom"/> <s:property value="utilisateur.nom"/>
             </s:a>
 
         </li>
