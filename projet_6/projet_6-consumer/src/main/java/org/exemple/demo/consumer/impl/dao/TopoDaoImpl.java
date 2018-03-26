@@ -13,16 +13,6 @@ import java.util.List;
 @Named
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
-
-    public int getInfoTopo() {
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        int vInfoTopo = vJdbcTemplate.queryForObject(
-                "SELECT id_possesseur, description, etat FROM public.topo",
-                Integer.class);
-
-        return vInfoTopo;
-    }
-
     @Override
     public List<Topo> getTopo() {
         String vSQL = "SELECT * FROM public.topo";

@@ -4,8 +4,7 @@ import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
-import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+
 import javax.inject.Named;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -22,14 +21,17 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
             public Utilisateur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Utilisateur vUtilisateur = new Utilisateur(pRS.getInt("id_utilisateur"));
                 vUtilisateur.setNom(pRS.getString("nom"));
+                vUtilisateur.setPrenom(pRS.getString("prenom"));
                 vUtilisateur.setMail(pRS.getString("mail"));
                 vUtilisateur.setTel(pRS.getInt("telephone"));
+                vUtilisateur.setMotDePasse(pRS.getString("mot_de_passe"));
+                vUtilisateur.setAdmin(pRS.getBoolean("admin"));
                 return vUtilisateur;
             }
         };
-        List<Utilisateur> vListStatut = vJdbcTemplate.query(vSQL, vRowMapper);
+        List<Utilisateur> vListUtilisateur = vJdbcTemplate.query(vSQL, vRowMapper);
 
-        return vListStatut;
+        return vListUtilisateur;
     }
 }
 
