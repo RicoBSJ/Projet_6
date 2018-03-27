@@ -2,11 +2,11 @@ package org.exemple.demo.webapp;
 
 import org.exemple.demo.business.contract.ManagerFactory;
 
+import javax.inject.Inject;
 
-/**
- * Classe de helper temporaire pour la webapp...
- */
-public abstract class WebappHelper {
+
+
+public class WebappHelper {
 
     private static ManagerFactory managerFactory;
 

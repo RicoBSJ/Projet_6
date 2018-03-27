@@ -1,6 +1,7 @@
 package org.exemple.demo.business.impl.manager;
 
 import org.exemple.demo.business.contract.manager.UtilisateurManager;
+import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
 
@@ -14,7 +15,7 @@ import javax.inject.Named;
 public class UtilisateurManagerImpl extends AbstractManager implements UtilisateurManager {
 
     @Inject
-    private UtilisateurManager utilisateurManager;
+    private UtilisateurDao utilisateurDao;
 
 
     private final List<Utilisateur> listUtilisateur = new ArrayList<>();
@@ -31,8 +32,7 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
     }
 
 
-    @Override
-    public List<Utilisateur> getListUtilisateur() {
-        return this.listUtilisateur;
+    @Override public List<Utilisateur> getListUtilisateur() {
+        return utilisateurDao.getUtilisateur();
     }
 }

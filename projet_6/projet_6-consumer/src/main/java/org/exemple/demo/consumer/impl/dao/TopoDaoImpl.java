@@ -13,6 +13,7 @@ import java.util.List;
 @Named
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
+
     @Override
     public List<Topo> getTopo() {
         String vSQL = "SELECT * FROM public.topo";

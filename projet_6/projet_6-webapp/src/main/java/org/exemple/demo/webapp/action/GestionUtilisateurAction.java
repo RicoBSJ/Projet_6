@@ -5,15 +5,21 @@ import java.util.Collections;
 import java.util.List;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
 import org.exemple.demo.webapp.WebappHelper;
 
+import javax.inject.Inject;
+
 
 public class GestionUtilisateurAction extends ActionSupport {
 
+    @Inject
+    private ManagerFactory managerFactory;
 
     // ==================== Attributs ====================
+
     // ----- Paramètres en entrée
     private Integer id;
 
@@ -38,13 +44,15 @@ public class GestionUtilisateurAction extends ActionSupport {
     public List<Utilisateur> getListUtilisateur() {
         return listUtilisateur;
     }
+
     // ==================== Méthodes ====================
+
     /**
      * Action listant les {@link Utilisateur}
      * @return success
      */
     public String doList() {
-        listUtilisateur = WebappHelper.getManagerFactory().getUtilisateurManager().getListUtilisateur();
+        listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();;
         return ActionSupport.SUCCESS;
     }
 
@@ -55,12 +63,12 @@ public class GestionUtilisateurAction extends ActionSupport {
      */
     public String doDetail() {
         if (id == null) {
-            this.addActionError(getText("error.project.missing.id"));
+            this.addActionError(getText("error.utilisateur.missing.id"));
         } else {
             try {
                 utilisateur = WebappHelper.getManagerFactory().getUtilisateurManager().getUtilisateur(id);
             } catch (NotFoundException pE) {
-                this.addActionError(getText("error.project.notfound", Collections.singletonList(id)));
+                this.addActionError(getText("error.utilisateur.notfound", Collections.singletonList(id)));
             }
         }
 

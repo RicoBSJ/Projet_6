@@ -8,16 +8,11 @@
 </head>
 
 <body>
-<h2>Liste des projets</h2>
+<h2>Liste des Utilisateur</h2>
 
 <ul>
     <s:iterator value="listUtilisateur">
-        <li>
-            <s:a action="utilisateur_detail">
-                <s:param name="id" value="responsable.id" />
-                <s:property value="utilisateur.prenom"/> <s:property value="utilisateur.nom"/>
-            </s:a>
-
+        <li> Nom utilisateur : <s:property value="nom"/>
         </li>
     </s:iterator>
 </ul>
