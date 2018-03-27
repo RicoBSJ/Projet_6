@@ -7,7 +7,6 @@ import org.exemple.demo.model.exception.NotFoundException;
 
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -16,6 +15,7 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
 
     @Inject
     private UtilisateurManager utilisateurManager;
+
 
     private final List<Utilisateur> listUtilisateur = new ArrayList<>();
 
@@ -34,18 +34,5 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
     @Override
     public List<Utilisateur> getListUtilisateur() {
         return this.listUtilisateur;
-    }
-
-
-    /**
-     * Initialise et peuple la liste de {@link Utilisateur}
-     */
-    @PostConstruct
-    private void initListUtilisateur() {
-        for (int vId = 0; vId < 9; vId++) {
-            Utilisateur vUtilisateur = new Utilisateur(vId);
-            vUtilisateur.setNom("Utilisateur :" + vUtilisateur.getNom() + " " + vUtilisateur.getPrenom());
-            vUtilisateur.setMotDePasse("Mot de Passe : " + vUtilisateur.getMotDePasse());
-        }
     }
 }
