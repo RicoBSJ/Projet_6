@@ -8,7 +8,7 @@ public interface UtilisateurDao {
 
     //Utilisateur getCountUser(Utilisateur pUtilisateur); //
 
-    List<Utilisateur> getUtilisateur();
+    List<Utilisateur> getListUtilisateur();
 
 
 }

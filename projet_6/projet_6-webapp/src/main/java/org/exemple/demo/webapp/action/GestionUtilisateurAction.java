@@ -72,6 +72,6 @@ public class GestionUtilisateurAction extends ActionSupport {
             }
         }
 
-        return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
+        return ActionSupport.SUCCESS;
     }
 }

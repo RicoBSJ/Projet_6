@@ -11,9 +11,13 @@
 <h2>Détail de l'utilisateur</h2>
 
 <ul>
-    <li>ID : <s:property value="utilisateur.id" /></li>
-    <li>Nom : <s:property value="utilisateur.nom" /></li>
-    <li>Prénom : <s:property value="utilisateur.prenom" /></li>
+    <s:iterator value="listUtilisateur">
+    <li>ID : <s:property value="id" /></li>
+    <li>Nom : <s:property value="nom" /></li>
+    <li>Prénom : <s:property value="prenom" /></li>
+    <li>Mail : <s:property value="mail" /></li>
+    <li>Mot de passe : <s:property value = "mot_de_passe" /></li>
+    </s:iterator>
 </ul>
 </body>
 </html>

@@ -8,15 +8,15 @@
 </head>
 
 <body>
-<h2>Liste des Utilisateur</h2>
+<h2>Liste des Topo</h2>
 
 <ul>
-    <s:iterator value="listUtilisateur">
+    <s:iterator value="listTopo">
 
         <li>
-            <s:a action="utilisateur_detail">
-            Nom utilisateur : <s:property value="nom"/>
-            Id : <s:property value="id"/>
+            <s:a action="topo_detail">
+                Nom topo : <s:property value="nom"/>
+                Id : <s:property value="id"/>
             </s:a>
         </li>
     </s:iterator>

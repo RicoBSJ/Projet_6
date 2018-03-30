@@ -15,7 +15,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
 
     @Override
-    public List<Topo> getTopo() {
+    public List<Topo> getListTopo() {
         String vSQL = "SELECT * FROM public.topo";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Topo> vRowMapper = new RowMapper<Topo>() {

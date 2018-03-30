@@ -14,7 +14,7 @@ import java.util.List;
 public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDao {
 
     @Override
-    public List<Utilisateur> getUtilisateur() {
+    public List<Utilisateur> getListUtilisateur() {
         String vSQL = "SELECT * FROM public.utilisateur";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Utilisateur> vRowMapper = new RowMapper<Utilisateur>() {

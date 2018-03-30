@@ -17,8 +17,8 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
     @Inject
     private UtilisateurDao utilisateurDao;
 
-
     private final List<Utilisateur> listUtilisateur = new ArrayList<>();
+
 
 
     @Override
@@ -32,7 +32,8 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
     }
 
 
-    @Override public List<Utilisateur> getListUtilisateur() {
-        return utilisateurDao.getUtilisateur();
+    @Override
+    public List<Utilisateur> getListUtilisateur() {
+        return utilisateurDao.getListUtilisateur();
     }
 }
