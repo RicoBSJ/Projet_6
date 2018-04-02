@@ -51,7 +51,7 @@
             <result>/JSP/topo/detail.jsp</result>
         </action>
 
-        <!-- Actions permettant de créer un topo -->
+        <!-- Actions permettant de créer un topo
         <action name="topo_new"
                 class="org.exemple.demo.webapp.action.GestionTopoAction"
                 method="doCreate">
@@ -64,7 +64,7 @@
         <result name="success" type="redirectAction">
             <param name="actionName">topo_detail</param>
             <param name="id">${topo.id}</param>
-        </result>
+        </result> -->
     </package>
 
 </struts>

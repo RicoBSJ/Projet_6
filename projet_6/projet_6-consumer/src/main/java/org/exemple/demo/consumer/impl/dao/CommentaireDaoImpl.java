@@ -14,7 +14,7 @@ import java.util.List;
 public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDao {
 
     @Override
-    public List<Commentaire> getCommentaire() {
+    public List<Commentaire> getListCommentaire() {
         String vSQL = "SELECT * FROM public.commentaire";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Commentaire> vRowMapper = new RowMapper<Commentaire>() {

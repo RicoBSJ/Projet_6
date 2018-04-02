@@ -14,13 +14,13 @@
 <h2>Création d'un projet</h2>
 
 <s:form action="topo_new">
-    <s:textfield name="topo.nom" label="Nom" requiredLabel="true" />
-    <s:select name="topo.createur.id" label="Responsable"
+    <s:textfield name="topo.nom_topo" label="Nom" requiredLabel="true" />
+    <s:select name="topo.id_utilisateur_possesseur" label="Createur"
               list="listTopo" listKey="id" listValue="prenom"
               emptyOption="true"
               requiredLabel="true"/>
 
-    <s:checkbox name="topo.cloture" label="Cloturé"/>
+    <s:checkbox name="topo.etat" label="Disponible"/>
 
     <s:submit value="OK"/>
 </s:form>

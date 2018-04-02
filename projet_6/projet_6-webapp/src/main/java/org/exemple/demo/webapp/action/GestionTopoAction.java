@@ -3,6 +3,7 @@ package org.exemple.demo.webapp.action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.grimpe.Topo;
+import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
 import org.exemple.demo.webapp.WebappHelper;
 
@@ -81,21 +82,19 @@ public class GestionTopoAction extends ActionSupport {
         // ===== Validation de l'ajout de projet (projet != null)
         if (this.topo != null) {
             // Récupération du responsable
-            if (this.topo.getCreateur() == null
-                    || this.topo.getCreateur().getId() == null) {
+            if (this.topo.getId_utilisateur_createur() == null
+                    || this.topo.getId_utilisateur_createur() == null) {
                 this.addFieldError("projet.responsable.id", "ne doit pas être vide");
             } else {
                 try {
-                    Topo vCreateur
+                    Utilisateur vCreateur
                             = WebappHelper.getManagerFactory().getUtilisateurManager()
-                            .getUtilisateur(this.topo.getCreateur().getId());
-                    this.topo.setCreateur(vCreateur);
+                            .getUtilisateur(this.topo.getId_utilisateur_createur());
+                    this.topo.setId_utilisateur_createur(id);
                 } catch (NotFoundException pEx) {
                     this.addFieldError("projet.responsable.id", pEx.getMessage());
                 }
             }
-            // Date de création
-            this.topo.setDateCreation(new Date());
 
             // Si pas d'erreur, ajout du projet...
             if (!this.hasErrors()) {

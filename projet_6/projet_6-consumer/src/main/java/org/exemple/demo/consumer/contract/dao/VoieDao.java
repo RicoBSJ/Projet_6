@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface VoieDao {
 
-    List<Voie> getVoie();
+    List<Voie> getListVoie();
 }

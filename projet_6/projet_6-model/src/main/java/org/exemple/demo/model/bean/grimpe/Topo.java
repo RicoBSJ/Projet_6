@@ -5,7 +5,7 @@ public class Topo {
     // ==================== Attributs ====================
     private Integer id;
     private Integer id_emprunteur;
-    private Integer id_utilisateur_possesseur;
+    private Integer id_utilisateur_createur;
     private String nom_topo;
     private String description;
     private String region;
@@ -44,8 +44,14 @@ public class Topo {
     {
         return id_emprunteur;
     }
-    public Integer getId_utilisateur_possesseur() {
-        return id_utilisateur_possesseur;
+    public void setId_emprunteur(Integer pid_emprunteur) {
+        id_emprunteur = pid_emprunteur;
+    }
+    public Integer getId_utilisateur_createur() {
+        return id_utilisateur_createur;
+    }
+    public void setId_utilisateur_createur(Integer pId_createur) {
+        id_utilisateur_createur = pId_createur;
     }
     public String getNom_topo() {
         return nom_topo;
@@ -109,6 +115,8 @@ public class Topo {
         final String vSEP = ", ";
         vStB.append(" {")
                 .append("Topo id=").append(id)
+                .append("Id createur Topo =\"").append(id_utilisateur_createur).append('"')
+                .append("Id emprunteur topo =\"").append(id_emprunteur).append('"')
                 .append(vSEP).append("region =\"").append(region).append('"')
                 .append(vSEP).append("lieu =\"").append(lieu).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')

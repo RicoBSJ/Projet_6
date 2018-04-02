@@ -14,7 +14,7 @@ import java.util.List;
 public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 
     @Override
-    public List<Site> getSite() {
+    public List<Site> getListSite() {
         String vSQL = "SELECT * FROM public.site";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Site> vRowMapper = new RowMapper<Site>() {

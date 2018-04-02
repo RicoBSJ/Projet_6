@@ -7,5 +7,5 @@ import java.util.List;
 public interface CommentaireDao {
 
 
-    List<Commentaire> getCommentaire();
+    List<Commentaire> getListCommentaire();
 }

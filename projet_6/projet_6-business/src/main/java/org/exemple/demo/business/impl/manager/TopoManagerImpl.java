@@ -32,4 +32,9 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     public List<Topo> getListTopo() {
         return topoDao.getListTopo();
     }
+
+    @Override
+    public void insertTopo() {
+        topoDao.insertTopo();
+    }
 }

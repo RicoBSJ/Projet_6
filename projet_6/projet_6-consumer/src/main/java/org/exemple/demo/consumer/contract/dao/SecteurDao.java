@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface SecteurDao {
 
-    List<Secteur> getSecteur();
+    List<Secteur> getListSecteur();
 }

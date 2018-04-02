@@ -14,7 +14,7 @@ import java.util.List;
 public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
 
     @Override
-    public List<Secteur> getSecteur() {
+    public List<Secteur> getListSecteur() {
         String vSQL = "SELECT * FROM public.secteur";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Secteur> vRowMapper = new RowMapper<Secteur>() {

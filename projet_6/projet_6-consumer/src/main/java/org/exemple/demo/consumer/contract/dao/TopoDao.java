@@ -7,4 +7,6 @@ import java.util.List;
 public interface TopoDao {
 
     List<Topo> getListTopo();
+
+    void insertTopo(Topo pTopo);
 }

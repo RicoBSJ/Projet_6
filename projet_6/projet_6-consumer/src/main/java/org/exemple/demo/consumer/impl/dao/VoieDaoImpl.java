@@ -16,7 +16,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
 
     @Override
-    public List<Voie> getVoie() {
+    public List<Voie> getListVoie() {
         String vSQL = "SELECT * FROM public.voie";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Voie> vRowMapper = new RowMapper<Voie>() {
