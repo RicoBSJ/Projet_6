@@ -18,14 +18,14 @@
             <result>/JSP/index.jsp</result>
         </action>
 
-        <!-- Action listant les projets -->
+        <!-- Action listant les utilisateurs -->
         <action name="utilisateur_list"
                 class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
                 method="doList">
             <result>/JSP/utilisateur/list.jsp</result>
         </action>
 
-        <!-- Action affichant le détail d'un projet -->
+        <!-- Action affichant le détail d'un utilisateur -->
         <action name="utilisateur_detail"
                 class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
                 method="doDetail">
