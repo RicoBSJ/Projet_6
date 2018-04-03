@@ -1,6 +1,5 @@
 package org.exemple.demo.consumer.impl.dao;
 
-import com.sun.jdi.Value;
 import org.exemple.demo.consumer.contract.dao.TopoDao;
 import org.exemple.demo.model.bean.grimpe.Topo;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -27,6 +26,23 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setId_emprunteur(pRS.getInt("id_emprunteur"));
                 vTopo.setId_utilisateur_createur(pRS.getInt("id_utilisateur_createur"));
                 vTopo.setNom_topo(pRS.getString("nom_topo"));
+                return vTopo;
+            }
+        };
+        List<Topo> vListTopo = vJdbcTemplate.query(vSQL, vRowMapper);
+
+        return vListTopo;
+    }
+
+    @Override
+    public List<Topo> getTopo(Topo pTopo) {
+        String vSQL
+                = "SELECT * FROM public.utilisateur"
+                + " WHERE id_utilisateur = ?";
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        RowMapper<Topo> vRowMapper = new RowMapper<Topo>() {
+            public Topo mapRow(ResultSet pRS, int pRowNum) throws SQLException {
+                Topo vTopo = new Topo(pRS.getInt("id_topo"));
                 vTopo.setAncrage(pRS.getString("ancrage"));
                 vTopo.setDescription(pRS.getString("description"));
                 vTopo.setEtat(pRS.getBoolean("etat"));
@@ -37,38 +53,49 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setRoche((pRS.getString("roche")));
                 return vTopo;
             }
-        };
+
+            };
         List<Topo> vListTopo = vJdbcTemplate.query(vSQL, vRowMapper);
+        pTopo.getId();
 
         return vListTopo;
     }
 
     @Override
     public void insertTopo(Topo pTopo) {
-        String vSQL = "INSERT INTO public.topo " +
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        vJdbcTemplate.update("INSERT INTO public.topo " +
                 "  (id_utilisateur_createur,\n" +
                 "  nom_topo,\n" +
-                "  id_empreunteur,\n" +
+                "  id_emprunteur,\n" +
                 "  region,\n" +
                 "  lieu,\n" +
-                "  rocher,\n" +
+                "  roche,\n" +
                 "  profil,\n" +
                 "  ancrage,\n" +
                 "  relai,\n" +
                 "  etat,\n" +
-                "  description\n" +
-                ")\n" +
+                "  description)\n" +
                 "VALUES\n" +
-                "( ?, ?, ?, ?, ?, ?, ?, ?, ?, ? ? );";
+                "( '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?' )");
 
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_topo", pTopo.getId());
+        vParams.addValue("id_utilisateur_createur", pTopo.getId_utilisateur_createur());
         vParams.addValue("description", pTopo.getDescription());
         vParams.addValue("region", pTopo.getRegion());
+        vParams.addValue("nom_topo", pTopo.getNom_topo());
+        vParams.addValue("region", pTopo.getRegion());
+        vParams.addValue("lieu", pTopo.getLieu());
+        vParams.addValue("roche", pTopo.getRoche());
+        vParams.addValue("profil", pTopo.getProfil());
+        vParams.addValue("ancrage", pTopo.getAncrage());
+        vParams.addValue("relai", pTopo.getRelai());
+        vParams.addValue("etat", pTopo.getEtat());
+    }
 
-        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-
+    @Override
+    public void updateEtat(Topo pTopo) {
 
     }
 }

@@ -44,8 +44,8 @@ public class Topo {
     {
         return id_emprunteur;
     }
-    public void setId_emprunteur(Integer pid_emprunteur) {
-        id_emprunteur = pid_emprunteur;
+    public void setId_emprunteur(Integer pId_emprunteur) {
+        id_emprunteur = pId_emprunteur;
     }
     public Integer getId_utilisateur_createur() {
         return id_utilisateur_createur;

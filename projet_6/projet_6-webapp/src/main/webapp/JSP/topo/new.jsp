@@ -15,7 +15,7 @@
 
 <s:form action="topo_new">
     <s:textfield name="topo.nom_topo" label="Nom" requiredLabel="true" />
-    <s:select name="topo.id_utilisateur_possesseur" label="Createur"
+    <s:select name="topo.id_utilisateur_createur" label="Createur"
               list="listTopo" listKey="id" listValue="prenom"
               emptyOption="true"
               requiredLabel="true"/>

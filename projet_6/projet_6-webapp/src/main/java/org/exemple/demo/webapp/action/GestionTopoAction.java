@@ -4,12 +4,13 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.grimpe.Topo;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
+import org.exemple.demo.model.exception.FunctionalException;
 import org.exemple.demo.model.exception.NotFoundException;
+import org.exemple.demo.model.exception.TechnicalException;
 import org.exemple.demo.webapp.WebappHelper;
 
 import javax.inject.Inject;
 import java.util.Collections;
-import java.util.Date;
 import java.util.List;
 
 public class GestionTopoAction extends ActionSupport {
@@ -109,11 +110,11 @@ public class GestionTopoAction extends ActionSupport {
                     // et on affiche un message d'erreur
                     this.addActionError(pEx.getMessage());
 
-                } catch (TechnicalException pEx) {
+                } /*catch (TechnicalException pEx) {
                     // Sur erreur technique on part sur le result "error"
                     this.addActionError(pEx.getMessage());
                     vResult = ActionSupport.ERROR;
-                }
+                } */
             }
         }
 
