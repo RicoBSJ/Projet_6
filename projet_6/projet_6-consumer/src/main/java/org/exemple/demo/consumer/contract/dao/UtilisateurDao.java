@@ -10,7 +10,5 @@ public interface UtilisateurDao {
 
     List<Utilisateur> getListUtilisateur();
 
-    List<Utilisateur> getUtilisateur(Utilisateur pUtilisateur);
-
 
 }

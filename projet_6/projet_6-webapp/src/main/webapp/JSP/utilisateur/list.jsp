@@ -16,9 +16,10 @@
         <li>
             <s:a action="utilisateur_detail">
                 Nom utilisateur : <s:property value="nom"/>
-                Id : <s:property value="id"/>
+                Id : <s:param name="id" value="id" />
             </s:a>
         </li>
+        <br />
     </s:iterator>
 </ul>
 </body>

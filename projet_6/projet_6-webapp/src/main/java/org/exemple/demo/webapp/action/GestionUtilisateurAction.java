@@ -66,7 +66,7 @@ public class GestionUtilisateurAction extends ActionSupport {
             this.addActionError(getText("error.utilisateur.missing.id"));
         } else {
             try {
-                utilisateur = WebappHelper.getManagerFactory().getUtilisateurManager().getUtilisateur(id);
+                utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(id);
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.utilisateur.notfound", Collections.singletonList(id)));
             }

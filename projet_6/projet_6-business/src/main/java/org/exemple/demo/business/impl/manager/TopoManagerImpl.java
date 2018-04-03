@@ -10,7 +10,6 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -20,17 +19,23 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     @Inject
     private TopoDao topoDao;
 
-    private final List<Topo> listTopo = new ArrayList<>();
-
     @Override
     public Topo getTopo(Integer pId) throws NotFoundException {
+        List<Topo> listTopo = this.getListTopo();
         Topo vTopo
-                = this.listTopo.stream()
+                = listTopo.stream()
                 .filter(p -> p.getId().equals(pId))
                 .findFirst()
-                .orElseThrow(() -> new NotFoundException("Topo non trouvé : ID=" + pId));
+                .orElseThrow(() -> new NotFoundException("Utilisateur non trouvé : ID=" + pId));
         return vTopo;
     }
+
+
+    /*@Override public Topo getTopo(Integer pId) throws NotFoundException {
+        Topo toFind= new Topo(1);
+        return topoDao.getTopo(toFind).get(0);
+    }*/
+
 
     @Override
     public List<Topo> getListTopo() {

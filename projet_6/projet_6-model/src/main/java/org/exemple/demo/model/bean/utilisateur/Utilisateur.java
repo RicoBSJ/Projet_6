@@ -32,6 +32,10 @@ public class Utilisateur {
 
     // ==================== Getters/Setters ====================
 
+    public void setId(Integer pId) {
+        id = pId;
+    }
+
     public Integer getId() {
         return id;
     }

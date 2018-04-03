@@ -26,23 +26,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setId_emprunteur(pRS.getInt("id_emprunteur"));
                 vTopo.setId_utilisateur_createur(pRS.getInt("id_utilisateur_createur"));
                 vTopo.setNom_topo(pRS.getString("nom_topo"));
-                return vTopo;
-            }
-        };
-        List<Topo> vListTopo = vJdbcTemplate.query(vSQL, vRowMapper);
-
-        return vListTopo;
-    }
-
-    @Override
-    public List<Topo> getTopo(Topo pTopo) {
-        String vSQL
-                = "SELECT * FROM public.utilisateur"
-                + " WHERE id_utilisateur = ?";
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        RowMapper<Topo> vRowMapper = new RowMapper<Topo>() {
-            public Topo mapRow(ResultSet pRS, int pRowNum) throws SQLException {
-                Topo vTopo = new Topo(pRS.getInt("id_topo"));
                 vTopo.setAncrage(pRS.getString("ancrage"));
                 vTopo.setDescription(pRS.getString("description"));
                 vTopo.setEtat(pRS.getBoolean("etat"));
@@ -53,10 +36,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setRoche((pRS.getString("roche")));
                 return vTopo;
             }
-
-            };
+        };
         List<Topo> vListTopo = vJdbcTemplate.query(vSQL, vRowMapper);
-        pTopo.getId();
 
         return vListTopo;
     }

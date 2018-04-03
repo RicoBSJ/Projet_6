@@ -16,11 +16,11 @@
         <li>
             <s:a action="topo_detail">
                 Nom topo : <s:property value="nom_topo"/>
-            </s:a>
         </li>
         <li>
-            Id : <s:property value="id"/>
+            Id : <s:param name="id" value="id" />
         </li>
+    </s:a>
         <br />
     </s:iterator>
 </ul>

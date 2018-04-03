@@ -8,7 +8,20 @@
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -66,26 +79,63 @@
       <file leaf-file-name="GestionTopoAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1485">
-              <caret line="116" column="20" lean-forward="false" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
+            <state relative-caret-position="-94">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#973#974#0" expanded="true" />
-                <element signature="e#1000#1001#0" expanded="true" />
-                <element signature="e#1040#1041#0" expanded="true" />
-                <element signature="e#1068#1069#0" expanded="true" />
-                <element signature="e#1106#1107#0" expanded="true" />
-                <element signature="e#1137#1138#0" expanded="true" />
+                <element signature="e#974#975#0" expanded="true" />
+                <element signature="e#999#1000#0" expanded="true" />
+                <element signature="e#1036#1037#0" expanded="true" />
+                <element signature="e#1060#1061#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GestionUtilisateurAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -94,79 +144,53 @@
       <file leaf-file-name="TopoManagerImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+            <state relative-caret-position="345">
+              <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1272#1273#0" expanded="true" />
+                <element signature="e#1316#1317#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TopoDaoImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TopoDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+            <state relative-caret-position="152">
+              <caret line="24" column="61" lean-forward="false" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <marker date="1522774410130" expanded="true" signature="657:682" ph="SELECT * FRO... topo" />
-                <marker date="1522774410130" expanded="true" signature="1437:1515" ph="SELECT * FRO... utilisateur" />
-                <marker date="1522774410130" expanded="true" signature="2526:2915" ph="INSERT INTO public.topo... " />
-                <marker date="1522774410130" expanded="true" signature="2526:2932" ph="INSERT INTO public.topo... " />
-                <marker date="1522774410130" expanded="true" signature="2526:3036" ph="INSERT INTO public.topo... " />
-                <marker date="1522774410130" expanded="true" signature="2950:3036" ph="VALUES\n( ?,... " />
+                <marker date="1522789212421" expanded="true" signature="657:682" ph="SELECT * FRO... topo" />
+                <marker date="1522789212421" expanded="true" signature="1885:2274" ph="INSERT INTO public.topo... " />
+                <marker date="1522789212421" expanded="true" signature="1885:2291" ph="INSERT INTO public.topo... " />
+                <marker date="1522789212421" expanded="true" signature="1885:2395" ph="INSERT INTO public.topo... " />
+                <marker date="1522789212421" expanded="true" signature="2309:2395" ph="VALUES\n( ?,... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Voie.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Voie.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="93" column="65" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Topo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopoDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new.jsp">
+      <file leaf-file-name="UtilisateurDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
-              <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-              <folding />
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <folding>
+                <marker date="1522789146822" expanded="true" signature="556:588" ph="SELECT * FRO... utilisateur" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -204,7 +228,6 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Site.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Secteur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Voie.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/test/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImplTest.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/test.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/action/GestionUtilisateurAction.java" />
@@ -215,11 +238,9 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/VoieDao.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SiteDao.java" />
@@ -228,23 +249,26 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SiteDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SecteurDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/CommentaireDaoImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/FunctionnalException.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/TechnicalException.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/TopoManager.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" />
       </list>
     </option>
   </component>
@@ -263,8 +287,8 @@
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
-    <option name="FILTER_INFO" value="true" />
-    <option name="FILTER_DEBUG" value="true" />
+    <option name="FILTER_INFO" value="false" />
+    <option name="FILTER_DEBUG" value="false" />
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="MavenImportPreferences">
@@ -321,10 +345,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -907,10 +929,43 @@
               <item name="JSP" type="462c0819:PsiDirectoryNode" />
               <item name="topo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="JSP" type="462c0819:PsiDirectoryNode" />
+              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1081,7 +1136,6 @@
       <listeners />
     </configuration>
     <configuration name="TomcatP6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.6" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -1240,7 +1294,8 @@
       <workItem from="1522662179486" duration="140000" />
       <workItem from="1522676888739" duration="2261000" />
       <workItem from="1522761902936" duration="1941000" />
-      <workItem from="1522773519029" duration="392000" />
+      <workItem from="1522773519029" duration="3971000" />
+      <workItem from="1522786994089" duration="2619000" />
     </task>
     <task id="LOCAL-00001" summary="Ecriture Anotation en cours">
       <created>1521295723272</created>
@@ -1396,7 +1451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1522763892306</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Debut insertion topo + affichage topo">
+      <created>1522774433460</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1522774433460</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1405,7 +1467,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59504000" />
+    <option name="totallyTimeSpent" value="65702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1423,12 +1485,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.163" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.281" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.281" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1440,7 +1503,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.224" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1468,7 +1530,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="22" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1510,40 +1575,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1559,22 +1594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
           <folding />
         </state>
       </provider>
@@ -1614,13 +1633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SiteDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/CommentaireDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1642,59 +1654,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="69" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="61" column="30" lean-forward="false" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/TechnicalException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="e#306#307#0" expanded="false" />
+            <element signature="e#337#338#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1702,13 +1669,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/TopoManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1716,6 +1677,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1723,6 +1685,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1730,6 +1693,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1740,45 +1704,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="36" lean-forward="false" selection-start-line="62" selection-start-column="36" selection-end-line="62" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1485">
-          <caret line="116" column="20" lean-forward="false" selection-start-line="116" selection-start-column="20" selection-end-line="116" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#973#974#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1040#1041#0" expanded="true" />
-            <element signature="e#1068#1069#0" expanded="true" />
-            <element signature="e#1106#1107#0" expanded="true" />
-            <element signature="e#1137#1138#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="74" column="9" lean-forward="false" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Voie.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1005">
           <caret line="93" column="65" lean-forward="false" selection-start-line="93" selection-start-column="65" selection-end-line="93" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/TopoManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="59" lean-forward="false" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SiteDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <marker date="1522426724187" expanded="true" signature="509:534" ph="SELECT * FRO... site" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="43" column="72" lean-forward="false" selection-start-line="43" selection-start-column="72" selection-end-line="43" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -1791,67 +1821,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="52" column="34" lean-forward="false" selection-start-line="52" selection-start-column="34" selection-end-line="52" selection-end-column="34" />
+        <state relative-caret-position="120">
+          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#904#905#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding>
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#710#711#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="24" column="61" lean-forward="false" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
+          <folding>
+            <marker date="1522789212421" expanded="true" signature="657:682" ph="SELECT * FRO... topo" />
+            <marker date="1522789212421" expanded="true" signature="1885:2274" ph="INSERT INTO public.topo... " />
+            <marker date="1522789212421" expanded="true" signature="1885:2291" ph="INSERT INTO public.topo... " />
+            <marker date="1522789212421" expanded="true" signature="1885:2395" ph="INSERT INTO public.topo... " />
+            <marker date="1522789212421" expanded="true" signature="2309:2395" ph="VALUES\n( ?,... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <marker date="1522789146822" expanded="true" signature="556:588" ph="SELECT * FRO... utilisateur" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="31" column="5" lean-forward="false" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="21" column="30" lean-forward="true" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="45" column="23" lean-forward="false" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+        <state relative-caret-position="345">
+          <caret line="23" column="49" lean-forward="true" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/pom.xml">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="26" lean-forward="false" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+        <state relative-caret-position="-94">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#999#1000#0" expanded="true" />
+            <element signature="e#1036#1037#0" expanded="true" />
+            <element signature="e#1060#1061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="32" lean-forward="false" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="315">
+          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1522774410130" expanded="true" signature="657:682" ph="SELECT * FRO... topo" />
-            <marker date="1522774410130" expanded="true" signature="1437:1515" ph="SELECT * FRO... utilisateur" />
-            <marker date="1522774410130" expanded="true" signature="2526:2915" ph="INSERT INTO public.topo... " />
-            <marker date="1522774410130" expanded="true" signature="2526:2932" ph="INSERT INTO public.topo... " />
-            <marker date="1522774410130" expanded="true" signature="2526:3036" ph="INSERT INTO public.topo... " />
-            <marker date="1522774410130" expanded="true" signature="2950:3036" ph="VALUES\n( ?,... " />
-          </folding>
         </state>
       </provider>
     </entry>

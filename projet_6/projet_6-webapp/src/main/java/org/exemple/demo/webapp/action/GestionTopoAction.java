@@ -29,10 +29,16 @@ public class GestionTopoAction extends ActionSupport {
 
 
     // ==================== Getters/Setters ====================
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer pId) {
+        id = pId;
+    }
     public Topo getTopo() {
         return topo;
     }
-    public void setProjet(Topo pTopo) {
+    public void setTopo(Topo pTopo) {
         topo = pTopo;
     }
     public List<Topo> getListTopo() {
@@ -60,7 +66,7 @@ public class GestionTopoAction extends ActionSupport {
             this.addActionError(getText("error.topo.missing.id"));
         } else {
             try {
-                topo = WebappHelper.getManagerFactory().getTopoManager().getTopo(id);
+                topo = managerFactory.getTopoManager().getTopo(id);
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(id)));
             }

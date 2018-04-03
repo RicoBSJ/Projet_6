@@ -40,6 +40,9 @@ public class Topo {
     public Integer getId(){
         return id;
     }
+    public void setId(Integer pId) {
+        id = pId;
+    }
     public Integer getId_emprunteur()
     {
         return id_emprunteur;

@@ -11,14 +11,12 @@
 <h2>Détail du topo</h2>
 
 <ul>
-    <s:iterator value="listTopo">
         <li>ID : <s:property value="id" /></li>
-        <li>Nom : <s:property value="nom" /></li>
+        <li>Nom : <s:property value="nom_topo" /></li>
         <li>Roche : <s:property value="roche" /></li>
         <li>Region : <s:property value="region" /></li>
         <li>Lieu : <s:property value="lieu" /></li>
         <li>Description : <s:property value = "description" /></li>
-    </s:iterator>
 </ul>
 </body>
 </html>

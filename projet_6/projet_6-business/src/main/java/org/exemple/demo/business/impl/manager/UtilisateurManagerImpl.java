@@ -6,7 +6,6 @@ import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
 
 
-import java.util.ArrayList;
 import java.util.List;
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -17,14 +16,11 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
     @Inject
     private UtilisateurDao utilisateurDao;
 
-    private final List<Utilisateur> listUtilisateur = new ArrayList<>();
-
-
-
     @Override
     public Utilisateur getUtilisateur(Integer pId) throws NotFoundException {
+        List<Utilisateur> listUtilisateur = this.getListUtilisateur();
         Utilisateur vUtilisateur
-                = this.listUtilisateur.stream()
+                = listUtilisateur.stream()
                 .filter(p -> p.getId().equals(pId))
                 .findFirst()
                 .orElseThrow(() -> new NotFoundException("Utilisateur non trouvé : ID=" + pId));
