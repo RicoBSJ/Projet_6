@@ -63,8 +63,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
     @Override
     public void insertTopo(Topo pTopo) {
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        vJdbcTemplate.update("INSERT INTO public.topo " +
+        String vSQL = "INSERT INTO public.topo " +
                 "  (id_utilisateur_createur,\n" +
                 "  nom_topo,\n" +
                 "  id_emprunteur,\n" +
@@ -77,8 +76,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  etat,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?' )");
-
+                "( '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?' )";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("id_utilisateur_createur", pTopo.getId_utilisateur_createur());
@@ -92,6 +90,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         vParams.addValue("ancrage", pTopo.getAncrage());
         vParams.addValue("relai", pTopo.getRelai());
         vParams.addValue("etat", pTopo.getEtat());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
     @Override
