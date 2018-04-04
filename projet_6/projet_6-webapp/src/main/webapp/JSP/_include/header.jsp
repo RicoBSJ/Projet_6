@@ -2,7 +2,7 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 
 <header>
-    <h1> Bienvenue sur le futur site internet d'escalade </h1>
+    <h1> Site d'escalade </h1>
 </header>
 
 

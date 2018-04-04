@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<h2>CoucouLou</h2>
+<h2>Voici venir ici les listes de test</h2>
 
 <nav>
     <s:a action="utilisateur_list">
