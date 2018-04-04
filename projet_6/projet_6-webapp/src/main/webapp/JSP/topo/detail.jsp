@@ -12,11 +12,11 @@
 
 <ul>
         <li>ID : <s:property value="id" /></li>
-        <li>Nom : <s:property value="nom_topo" /></li>
-        <li>Roche : <s:property value="roche" /></li>
-        <li>Region : <s:property value="region" /></li>
-        <li>Lieu : <s:property value="lieu" /></li>
-        <li>Description : <s:property value = "description" /></li>
+        <li>Nom : <s:property value="topo.nom_topo" /></li>
+        <li>Roche : <s:property value="topo.roche" /></li>
+        <li>Region : <s:property value="topo.region" /></li>
+        <li>Lieu : <s:property value="topo.lieu" /></li>
+        <li>Description : <s:property value = "topo.description" /></li>
 </ul>
 </body>
 </html>

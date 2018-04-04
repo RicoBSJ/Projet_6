@@ -15,8 +15,9 @@
 
         <li>
             <s:a action="utilisateur_detail">
-                Nom utilisateur : <s:property value="nom"/>
-                Id : <s:param name="id" value="id" />
+                Nom  : <s:property value="nom"/>
+                Prenom : <s:property value = "prenom"/>
+                <s:param name="id" value="id" />
             </s:a>
         </li>
         <br />

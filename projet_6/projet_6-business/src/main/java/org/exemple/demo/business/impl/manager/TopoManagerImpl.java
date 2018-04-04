@@ -30,13 +30,6 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
         return vTopo;
     }
 
-
-    /*@Override public Topo getTopo(Integer pId) throws NotFoundException {
-        Topo toFind= new Topo(1);
-        return topoDao.getTopo(toFind).get(0);
-    }*/
-
-
     @Override
     public List<Topo> getListTopo() {
         return topoDao.getListTopo();
