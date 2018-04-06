@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Context>
-    <Resource name="jdbc/DB_P6"
+    <Resource name="jdbc/p6"
               auth="Container"
               type="javax.sql.DataSource"
 
               url="jdbc:postgresql://localhost:5432/p6"
               driverClassName="org.postgresql.Driver"
-              username="postgres"
+              username="v.w"
               password="p6"
               defaultAutoCommit="false"
               defaultTransactionIsolation="READ_COMMITTED"

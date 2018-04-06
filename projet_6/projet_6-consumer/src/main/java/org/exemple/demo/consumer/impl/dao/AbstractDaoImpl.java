@@ -10,6 +10,7 @@ public abstract class AbstractDaoImpl {
     @Named("dataSourceP6")
     private DataSource dataSource;
 
+
     protected DataSource getDataSource() {
         return dataSource;
     }

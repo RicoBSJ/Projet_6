@@ -5,6 +5,7 @@ import org.exemple.demo.consumer.contract.dao.TopoDao;
 import org.exemple.demo.model.bean.grimpe.Topo;
 import org.exemple.demo.model.exception.FunctionalException;
 import org.exemple.demo.model.exception.NotFoundException;
+import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -18,6 +19,7 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
     @Inject
     private TopoDao topoDao;
+
 
     @Override
     public Topo getTopo(Integer pId) throws NotFoundException {

@@ -4,9 +4,9 @@
     <facet type="Spring" name="Spring">
       <configuration>
         <fileset id="fileset" name="ApplicationContext" removed="false">
-          <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/bootstrapContext.xml</file>
           <file>file://$MODULE_DIR$/../projet_6-business/src/main/resources/businessContext.xml</file>
+          <file>file://$MODULE_DIR$/../projet_6-consumer/src/main/resources/consumerContext.xml</file>
         </fileset>
       </configuration>
     </facet>

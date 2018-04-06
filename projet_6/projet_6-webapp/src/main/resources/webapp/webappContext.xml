@@ -5,6 +5,7 @@
         http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
     <bean id="dataSourceP6"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="org.postgresql.Driver" />
@@ -13,5 +14,12 @@
         <property name="password" value="p6" />
     </bean>
 
+
+    <!--
+    <bean id="dataSourceP6" class="org.springframework.jndi.JndiObjectFactoryBean">
+        <property name="jndiName" value="jdbc/p6"/>
+    </bean>
+
+    -->
 
 </beans>

@@ -32,6 +32,15 @@
             <result>/JSP/utilisateur/detail.jsp</result>
         </action>
 
+        <!-- Actions Login/Logout -->
+        <action name="login" class="org.exemple.demo.webapp.action.LoginAction" method="doLogin">
+            <result name="input">/JSP/login.jsp</result>
+            <result name="success" type="redirectAction">index</result>
+        </action>
+        <action name="logout" class="org.exemple.demo.webapp.action.LoginAction" method="doLogout">
+            <result type="redirectAction">index</result>
+        </action>
+
         <!-- Action listant les topo -->
         <action name="topo_list"
                 class="org.exemple.demo.webapp.action.GestionTopoAction"
