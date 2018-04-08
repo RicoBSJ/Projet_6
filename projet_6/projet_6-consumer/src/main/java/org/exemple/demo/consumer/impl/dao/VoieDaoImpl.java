@@ -38,7 +38,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
     }
 
     @Override
-    public int getCountTicket(Secteur pSecteur) {
+    public int getCountVoieSec(Secteur pSecteur) {
         String vSQL
                 = "SELECT COUNT(*) FROM public.voie"
                 + " WHERE id_secteur = :id_secteur";

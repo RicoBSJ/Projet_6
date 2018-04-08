@@ -9,5 +9,5 @@ public interface VoieDao {
 
     List<Voie> getListVoie();
 
-    int getCountTicket(Secteur pSecteur);
+    int getCountVoieSec(Secteur pSecteur);
 }
