@@ -6,7 +6,7 @@
 
               url="jdbc:postgresql://localhost:5432/p6"
               driverClassName="org.postgresql.Driver"
-              username="v.w"
+              username="postgres"
               password="p6"
               defaultAutoCommit="false"
               defaultTransactionIsolation="READ_COMMITTED"

@@ -6,10 +6,10 @@ import javax.sql.DataSource;
 
 public abstract class AbstractDaoImpl {
 
+
     @Inject
     @Named("dataSourceP6")
     private DataSource dataSource;
-
 
     protected DataSource getDataSource() {
         return dataSource;

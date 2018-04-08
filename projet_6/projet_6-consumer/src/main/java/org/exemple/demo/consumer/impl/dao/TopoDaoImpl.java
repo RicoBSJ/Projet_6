@@ -1,11 +1,14 @@
 package org.exemple.demo.consumer.impl.dao;
 
 import org.exemple.demo.consumer.contract.dao.TopoDao;
+import org.exemple.demo.model.bean.grimpe.Secteur;
 import org.exemple.demo.model.bean.grimpe.Topo;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import javax.inject.Named;
 import java.sql.ResultSet;
@@ -77,6 +80,9 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
     @Override
     public void updateEtat(Topo pTopo) {
-
+        String vSQL = "UPDATE public.topo SET etat = :etat WHERE id = :id";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 }

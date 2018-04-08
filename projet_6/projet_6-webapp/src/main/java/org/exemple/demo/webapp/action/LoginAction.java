@@ -3,16 +3,21 @@ package org.exemple.demo.webapp.action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.interceptor.SessionAware;
+import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
 import org.exemple.demo.webapp.WebappHelper;
 
+import javax.inject.Inject;
+import java.util.List;
 import java.util.Map;
 
 public class LoginAction extends ActionSupport implements SessionAware {
 
     private Map<String, Object> session;
 
+    @Inject
+    private ManagerFactory managerFactory;
 
     @Override
     public void setSession(Map<String, Object> pSession) {
@@ -24,6 +29,8 @@ public class LoginAction extends ActionSupport implements SessionAware {
     // ----- Paramètres en entrée
     private String login;
     private String password;
+    private List<Utilisateur> listUtilisateur;
+    private Utilisateur utilisateur;
 
 
     // ==================== Getters/Setters ====================
@@ -39,7 +46,9 @@ public class LoginAction extends ActionSupport implements SessionAware {
     public void setPassword(String pPassword) {
         password = pPassword;
     }
-
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
+    }
 
     // ==================== Méthodes ====================
     /**
@@ -50,12 +59,10 @@ public class LoginAction extends ActionSupport implements SessionAware {
         String vResult = ActionSupport.INPUT;
         if (!StringUtils.isAllEmpty(login, password)) {
             try {
-                Utilisateur vUtilisateur
-                        = WebappHelper.getManagerFactory().getUtilisateurManager()
-                        .getUtilisateur(login, password);
+                utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(login, password);
 
                 // Ajout de l'utilisateur en session
-                this.session.put("user", vUtilisateur);
+                this.session.put("user", utilisateur);
 
                 vResult = ActionSupport.SUCCESS;
             } catch (NotFoundException pEx) {

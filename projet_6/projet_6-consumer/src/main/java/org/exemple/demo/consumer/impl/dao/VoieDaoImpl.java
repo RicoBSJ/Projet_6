@@ -2,9 +2,12 @@ package org.exemple.demo.consumer.impl.dao;
 
 
 import org.exemple.demo.consumer.contract.dao.VoieDao;
+import org.exemple.demo.model.bean.grimpe.Secteur;
 import org.exemple.demo.model.bean.grimpe.Voie;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
 import javax.inject.Named;
 import java.sql.ResultSet;
@@ -32,5 +35,21 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         List<Voie> vListVoie = vJdbcTemplate.query(vSQL, vRowMapper);
 
         return vListVoie;
+    }
+
+    @Override
+    public int getCountTicket(Secteur pSecteur) {
+        String vSQL
+                = "SELECT COUNT(*) FROM public.voie"
+                + " WHERE id_secteur = :id_secteur";
+
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+
+        MapSqlParameterSource vParams = new MapSqlParameterSource();
+        vParams.addValue("id_secteur", pSecteur.getNbrVoie());
+
+        int vNbrVoie = vJdbcTemplate.queryForObject(vSQL, vParams, Integer.class);
+
+        return vNbrVoie;
     }
 }
