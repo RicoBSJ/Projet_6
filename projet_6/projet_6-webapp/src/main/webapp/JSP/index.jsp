@@ -8,15 +8,16 @@
 </head>
 
 <body>
-<h2>Voici venir ici les listes de test</h2>
+<h2>Liste Topo et Utilisateur</h2>
+<br />
 
 <nav>
     <s:a action="utilisateur_list">
-        <h1>Liste des utilisateurs</h1>
+        <h3>Liste des utilisateurs</h3>
     </s:a>
 
     <s:a action="topo_list">
-        <h1>Liste des topo</h1>
+        <h3>Liste des topo</h3>
     </s:a>
 
 </nav>

@@ -1,4 +1,4 @@
-package org.exemple.demo.webapp.action;
+/*package org.exemple.demo.webapp.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.lang3.StringUtils;
@@ -54,7 +54,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
     /**
      * Action permettant la connexion d'un utilisateur
      * @return input / success
-     */
+
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
         if (!StringUtils.isAllEmpty(login, password)) {
@@ -76,7 +76,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
     /**
      * Action de déconnexion d'un utilisateur
      * @return success
-     */
+
     public String doLogout() {
         // Suppression de l'utilisateur en session
         this.session.remove("user");
@@ -84,3 +84,4 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 }
+*/

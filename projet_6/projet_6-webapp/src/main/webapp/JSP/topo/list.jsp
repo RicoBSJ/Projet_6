@@ -9,6 +9,7 @@
 
 <body>
 <h2>Liste des Topo</h2>
+<br />
 
 <ul>
     <s:iterator value="listTopo">
@@ -22,5 +23,6 @@
         <br />
     </s:iterator>
 </ul>
+
 </body>
 </html>

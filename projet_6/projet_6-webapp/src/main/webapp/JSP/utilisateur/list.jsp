@@ -9,6 +9,7 @@
 
 <body>
 <h2>Liste des Utilisateur</h2>
+<br />
 
 <ul>
     <s:iterator value="listUtilisateur">

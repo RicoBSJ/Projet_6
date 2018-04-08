@@ -8,15 +8,42 @@
 </head>
 
 <body>
-<h2>Détail du topo</h2>
+<br />
 
-<ul>
-        <li>ID : <s:property value="id" /></li>
-        <li>Nom : <s:property value="topo.nom_topo" /></li>
-        <li>Roche : <s:property value="topo.roche" /></li>
-        <li>Region : <s:property value="topo.region" /></li>
-        <li>Lieu : <s:property value="topo.lieu" /></li>
-        <li>Description : <s:property value = "topo.description" /></li>
-</ul>
+<section class="col-sm-8 table-responsive">
+        <table class="table table-bordered table-striped table-condensed">
+                <caption>
+                        <h4>Detail du topo</h4>
+                </caption>
+                <thead>
+                <tr>
+                        <th>Nom</th>
+                        <th>Roche</th>
+                        <th>Region</th>
+                        <th>Lieu</th>
+                        <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                        <td><s:property value="topo.nom_topo" /></td>
+                        <td><s:property value="topo.roche" /></td>
+                        <td><s:property value="topo.region" /></td>
+                        <td><s:property value="topo.lieu" /></td>
+                        <td><s:property value = "topo.description" /></td>
+                </tr>
+                </tbody>
+        </table>
+</section>
+<form class="well">
+        <legend>Laisser un commentaire</legend>
+        <h4>Que penser vous du topo</h4>
+        <fieldset>
+                <label for="textarea">Votre message :</label>
+                <textarea id="textarea" class="form-control" rows="4"></textarea>
+                <p class="help-block">Vous pouvez agrandir la fenêtre</p>
+                <button class="btn btn-primary" type="submit">Envoyer</button>
+        </fieldset>
+</form>
 </body>
 </html>

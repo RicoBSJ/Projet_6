@@ -11,6 +11,8 @@
     <h1> Site d'escalade </h1>
 </header>
 
+<br />
+
 
 <s:actionerror/>
 <s:actionmessage/>
