@@ -4,6 +4,8 @@ import org.exemple.demo.consumer.contract.dao.CommentaireDao;
 import org.exemple.demo.model.bean.utilisateur.Commentaire;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
 import javax.inject.Named;
 import java.sql.ResultSet;
@@ -27,5 +29,23 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper);
 
         return vListCommentaire;
+    }
+
+    @Override
+    public String getCommentaire (Commentaire pCommentaire) {
+        String vSQL
+                = "SELECT texte_com FROM public.commentaire"
+                + " WHERE id_topo = :topo_id"
+                + "   AND id_commentaire = :id_com";
+
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+
+        MapSqlParameterSource vParams = new MapSqlParameterSource();
+        vParams.addValue("id_com", pCommentaire.getId_com());
+        vParams.addValue("topo_id", pCommentaire.getId_topo());
+
+        String comTopo = vJdbcTemplate.queryForObject(vSQL, vParams, String.class);
+
+        return comTopo;
     }
 }

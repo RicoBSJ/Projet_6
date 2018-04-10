@@ -8,4 +8,6 @@ public interface CommentaireDao {
 
 
     List<Commentaire> getListCommentaire();
+
+    String getCommentaire (Commentaire pCommentaire);
 }

@@ -20,6 +20,9 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     @Inject
     private TopoDao topoDao;
 
+    @Inject
+    @Named("txManagerTopo")
+    private PlatformTransactionManager platformTransactionManager;
 
     @Override
     public Topo getTopo(Integer pId) throws NotFoundException {

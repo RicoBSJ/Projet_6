@@ -8,7 +8,7 @@ public class Commentaire {
     private Integer id_com;
     private Integer id_util;
     private Integer id_topo;
-    private String text;
+    private String text_com;
 
 
     // ==================== Constructeurs ====================
@@ -45,11 +45,11 @@ public class Commentaire {
     }
 
     public String getText() {
-        return text;
+        return text_com;
     }
 
     public void setText(String ptext) {
-        text = ptext;
+        text_com = ptext;
     }
 
 
@@ -63,7 +63,7 @@ public class Commentaire {
                 .append("id commentaire =\"").append(id_com)
                 .append(vSEP).append("id utilisateur =\"").append(id_util).append('"')
                 .append(vSEP).append("id du topo =\"").append(id_topo).append('"')
-                .append(vSEP).append("commentaire = \"").append(text).append('"')
+                .append(vSEP).append("commentaire = \"").append(text_com).append('"')
                 .append("}");
         return vStB.toString();
     }

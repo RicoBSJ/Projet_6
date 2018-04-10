@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns="http://www.springframework.org/schema/beans"
-       xsi:schemaLocation="
-        http://www.springframework.org/schema/beans
-        http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns="http://www.springframework.org/schema/beans" xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
 
 
 
+    <!--
 
     <bean id="dataSourceP6"
           class="org.springframework.jdbc.datasource.DriverManagerDataSource">
@@ -18,10 +18,13 @@
 
 
 
-    <!--
     <bean id="dataSourceP6" class="org.springframework.jndi.JndiObjectFactoryBean">
         <property name="jndiName" value="java:comp/env/jdbc/p6"/>
     </bean>
+
     -->
+
+    <jee:jndi-lookup id="dataSourceP6" jndi-name="jdbc/p6"
+                     expected-type="javax.sql.DataSource" />
 
 </beans>

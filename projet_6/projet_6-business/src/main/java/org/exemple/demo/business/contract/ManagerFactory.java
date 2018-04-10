@@ -1,7 +1,6 @@
 package org.exemple.demo.business.contract;
 
-import org.exemple.demo.business.contract.manager.TopoManager;
-import org.exemple.demo.business.contract.manager.UtilisateurManager;
+import org.exemple.demo.business.contract.manager.*;
 
 
 public interface ManagerFactory {
@@ -9,5 +8,13 @@ public interface ManagerFactory {
     UtilisateurManager getUtilisateurManager();
 
     TopoManager getTopoManager();
+
+    CommentaireManager getCommentaireManager();
+
+    VoieManager getVoieManager();
+
+    SiteManager getSiteManager();
+
+    SecteurManager getSecteurManager();
 
 }
