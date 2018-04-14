@@ -7,4 +7,6 @@ import java.util.List;
 public interface SiteDao {
 
     List<Site> getListSite();
+
+    void insertSite(Site pSite);
 }

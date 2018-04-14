@@ -52,4 +52,31 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
         return vNbrVoie;
     }
+
+    @Override
+    public void insertVoie(Voie pVoie) {
+        String vSQL = "INSERT INTO public.voie " +
+                "  (id_voie,\n" +
+                "  id_topo,\n" +
+                "  id_secteur,\n" +
+                "  id_site,\n" +
+                "  hauteur,\n" +
+                "  cotation,\n" +
+                "  nom_voie,\n" +
+                "  description)\n" +
+                "VALUES\n" +
+                "( '?', '?', '?', '?', '?', '?', '?', '?')";
+
+        MapSqlParameterSource vParams = new MapSqlParameterSource();
+        vParams.addValue("id_voie", pVoie.getId());
+        vParams.addValue("id_topo", pVoie.getId_topo());
+        vParams.addValue("id_secteur", pVoie.getId_secteur());
+        vParams.addValue("id_site", pVoie.getId_site());
+        vParams.addValue("hauteur", pVoie.getHauteur());
+        vParams.addValue("cotation", pVoie.getCotation());
+        vParams.addValue("nom_voie", pVoie.getNom());
+        vParams.addValue("description", pVoie.getDescription());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
 }

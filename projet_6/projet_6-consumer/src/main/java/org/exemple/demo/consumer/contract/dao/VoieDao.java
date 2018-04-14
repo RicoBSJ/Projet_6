@@ -10,4 +10,6 @@ public interface VoieDao {
     List<Voie> getListVoie();
 
     int getCountVoieSec(Secteur pSecteur);
+
+    void insertVoie(Voie pVoie);
 }

@@ -48,4 +48,23 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 
         return comTopo;
     }
+
+    @Override
+    public void insertCommentaire(Commentaire pCommentaire) {
+        String vSQL = "INSERT INTO public.commentaire " +
+                "  (id_commentaire,\n" +
+                "  id_topo,\n" +
+                "  id_utilisateur_com,\n" +
+                "  texte_com)\n" +
+                "VALUES\n" +
+                "( '?', '?', '?', '?')";
+
+        MapSqlParameterSource vParams = new MapSqlParameterSource();
+        vParams.addValue("id_commentaire", pCommentaire.getId_com());
+        vParams.addValue("id_topo", pCommentaire.getId_topo());
+        vParams.addValue("id_utilisateur", pCommentaire.getId_com());
+        vParams.addValue("texte_com", pCommentaire.getText());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
 }

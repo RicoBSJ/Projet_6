@@ -50,7 +50,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         String vSQL = "INSERT INTO public.topo " +
                 "  (id_utilisateur_createur,\n" +
                 "  nom_topo,\n" +
-                "  id_emprunteur,\n" +
                 "  region,\n" +
                 "  lieu,\n" +
                 "  roche,\n" +
@@ -65,7 +64,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("id_utilisateur_createur", pTopo.getId_utilisateur_createur());
         vParams.addValue("description", pTopo.getDescription());
-        vParams.addValue("region", pTopo.getRegion());
         vParams.addValue("nom_topo", pTopo.getNom_topo());
         vParams.addValue("region", pTopo.getRegion());
         vParams.addValue("lieu", pTopo.getLieu());

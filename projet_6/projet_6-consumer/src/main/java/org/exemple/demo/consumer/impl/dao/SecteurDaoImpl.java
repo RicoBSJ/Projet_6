@@ -4,6 +4,8 @@ import org.exemple.demo.consumer.contract.dao.SecteurDao;
 import org.exemple.demo.model.bean.grimpe.Secteur;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 
 import javax.inject.Named;
 import java.sql.ResultSet;
@@ -33,5 +35,31 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         return vListSecteur;
     }
 
+    @Override
+    public void insertSecteur(Secteur pSecteur) {
+        String vSQL = "INSERT INTO public.secteur " +
+                "  (id_secteur,\n" +
+                "  id_topo,\n" +
+                "  id_site,\n" +
+                "  nom_secteur,\n" +
+                "  nrbvoie,\n" +
+                "  difficulte,\n" +
+                "  orientation,\n" +
+                "  description)\n" +
+                "VALUES\n" +
+                "( '?', '?', '?', '?', '?', '?', '?', '?')";
+
+        MapSqlParameterSource vParams = new MapSqlParameterSource();
+        vParams.addValue("id_secteur", pSecteur.getId());
+        vParams.addValue("id_site", pSecteur.getId_site());
+        vParams.addValue("id_topo", pSecteur.getId_topo());
+        vParams.addValue("nom_secteur", pSecteur.getNom());
+        vParams.addValue("nbrvoie", pSecteur.getNbrVoie());
+        vParams.addValue("description", pSecteur.getDescription());
+        vParams.addValue("orientation", pSecteur.getOrientation());
+        vParams.addValue("difficulte", pSecteur.getDifficulte());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
 
 }

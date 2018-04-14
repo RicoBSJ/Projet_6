@@ -11,6 +11,7 @@ import org.exemple.demo.webapp.WebappHelper;
 
 import javax.inject.Inject;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 public class GestionTopoAction extends ActionSupport {
@@ -26,6 +27,7 @@ public class GestionTopoAction extends ActionSupport {
     // ----- Eléments en sortie
     private List<Topo> listTopo;
     private Topo topo;
+    private List<Utilisateur> listUtilisateur;
 
 
     // ==================== Getters/Setters ====================
@@ -43,6 +45,9 @@ public class GestionTopoAction extends ActionSupport {
     }
     public List<Topo> getListTopo() {
         return listTopo;
+    }
+    public List<Utilisateur> getListUtilisateur() {
+        return listUtilisateur;
     }
 
     // ==================== Méthodes ====================
@@ -89,24 +94,22 @@ public class GestionTopoAction extends ActionSupport {
         // ===== Validation de l'ajout de projet (projet != null)
         if (this.topo != null) {
             // Récupération du responsable
-            if (this.topo.getId_utilisateur_createur() == null
-                    || this.topo.getId_utilisateur_createur() == null) {
-                this.addFieldError("projet.responsable.id", "ne doit pas être vide");
+            if (this.topo.getId_utilisateur_createur() == null) {
+                this.addFieldError("topo.createur.id", "ne doit pas être vide");
             } else {
                 try {
                     Utilisateur vCreateur
-                            = WebappHelper.getManagerFactory().getUtilisateurManager()
+                            = managerFactory.getUtilisateurManager()
                             .getUtilisateur(this.topo.getId_utilisateur_createur());
-                    this.topo.setId_utilisateur_createur(id);
+                    this.topo.setCreateur(vCreateur);
                 } catch (NotFoundException pEx) {
-                    this.addFieldError("projet.responsable.id", pEx.getMessage());
+                    this.addFieldError("topo.createur.id", pEx.getMessage());
                 }
             }
-
             // Si pas d'erreur, ajout du projet...
             if (!this.hasErrors()) {
                 try {
-                    WebappHelper.getManagerFactory().getTopoManager().insertTopo(this.topo);
+                    managerFactory.getTopoManager().insertTopo(this.topo);
                     // Si ajout avec succès -> Result "success"
                     vResult = ActionSupport.SUCCESS;
                     this.addActionMessage("Projet ajouté avec succès");
@@ -116,17 +119,13 @@ public class GestionTopoAction extends ActionSupport {
                     // et on affiche un message d'erreur
                     this.addActionError(pEx.getMessage());
 
-                } /*catch (TechnicalException pEx) {
-                    // Sur erreur technique on part sur le result "error"
-                    this.addActionError(pEx.getMessage());
-                    vResult = ActionSupport.ERROR;
-                } */
+                }
             }
         }
 
         // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
         if (vResult.equals(ActionSupport.INPUT)) {
-            this.listTopo = WebappHelper.getManagerFactory().getTopoManager().getListTopo();
+            this.listUtilisateur = WebappHelper.getManagerFactory().getUtilisateurManager().getListUtilisateur();
         }
 
         return vResult;

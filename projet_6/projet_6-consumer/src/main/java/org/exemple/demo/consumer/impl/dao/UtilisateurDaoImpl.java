@@ -4,6 +4,10 @@ import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
+import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import javax.inject.Named;
 import java.sql.ResultSet;
@@ -32,6 +36,39 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         List<Utilisateur> vListUtilisateur = vJdbcTemplate.query(vSQL, vRowMapper);
 
         return vListUtilisateur;
+    }
+
+    @Override
+    public void insertUtilisateur(Utilisateur pUtilisateur) {
+        String vSQL = "INSERT INTO public.utilisateur " +
+                "  (id_utilisateur,\n" +
+                "  nom,\n" +
+                "  prenom,\n" +
+                "  mail,\n" +
+                "  telephone,\n" +
+                "  mot_de_passe,\n" +
+                "  admin)\n" +
+                "VALUES\n" +
+                "( '?', '?', '?', '?', '?', '?', '?')";
+
+        MapSqlParameterSource vParams = new MapSqlParameterSource();
+        vParams.addValue("id_utilisateur", pUtilisateur.getId());
+        vParams.addValue("nom", pUtilisateur.getNom());
+        vParams.addValue("prenom", pUtilisateur.getPrenom());
+        vParams.addValue("mail", pUtilisateur.getMail());
+        vParams.addValue("telephone", pUtilisateur.getTel());
+        vParams.addValue("mot_de_passe", pUtilisateur.getMotDePasse());
+        vParams.addValue("nom_voie", pUtilisateur.getAdmin());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public void updateEtat(Utilisateur pUtilisateur) {
+        String vSQL = "UPDATE public.utilisateur SET admin = :admin WHERE id = :id";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pUtilisateur);
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
 }

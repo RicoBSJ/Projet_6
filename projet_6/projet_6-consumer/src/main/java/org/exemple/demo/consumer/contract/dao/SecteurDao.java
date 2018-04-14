@@ -7,4 +7,6 @@ import java.util.List;
 public interface SecteurDao {
 
     List<Secteur> getListSecteur();
+
+    void insertSecteur(Secteur pSecteur);
 }

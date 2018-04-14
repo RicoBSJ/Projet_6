@@ -11,6 +11,13 @@
 <h2>Liste des Topo</h2>
 <br />
 
+<s:a action="topo_new">Creation d'un nouveau topo </s:a>
+
+
+<s:actionmessage />
+<br />
+<br />
+
 <ul>
     <s:iterator value="listTopo">
 

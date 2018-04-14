@@ -10,4 +10,6 @@ public interface CommentaireDao {
     List<Commentaire> getListCommentaire();
 
     String getCommentaire (Commentaire pCommentaire);
+
+    void insertCommentaire(Commentaire pCommentaire);
 }

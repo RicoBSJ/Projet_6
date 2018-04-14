@@ -6,9 +6,11 @@ import java.util.List;
 
 public interface UtilisateurDao {
 
-    //Utilisateur getCountUser(Utilisateur pUtilisateur); //
-
     List<Utilisateur> getListUtilisateur();
+
+    void insertUtilisateur(Utilisateur pUtilisateur);
+
+    void updateEtat(Utilisateur pUtilisateur);
 
 
 }

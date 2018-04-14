@@ -10,6 +10,12 @@
 <body>
 <br />
 
+<s:actionerror/>
+
+<s:actionmessage/>
+
+
+
 <section class="col-sm-8 table-responsive">
         <table class="table table-bordered table-striped table-condensed">
                 <caption>
