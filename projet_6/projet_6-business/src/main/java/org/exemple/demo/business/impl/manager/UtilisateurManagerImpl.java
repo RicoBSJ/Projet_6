@@ -4,6 +4,7 @@ import org.exemple.demo.business.contract.manager.UtilisateurManager;
 import org.exemple.demo.consumer.contract.dao.UtilisateurDao;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
+import org.springframework.transaction.PlatformTransactionManager;
 
 
 import java.util.List;
@@ -15,6 +16,10 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
 
     @Inject
     private UtilisateurDao utilisateurDao;
+
+    @Inject
+    @Named("txManagerUtilisateur")
+    private PlatformTransactionManager platformTransactionManager;
 
     @Override
     public Utilisateur getUtilisateur(Integer pId) throws NotFoundException {

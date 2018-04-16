@@ -1,4 +1,4 @@
-/*package org.exemple.demo.webapp.action;
+package org.exemple.demo.webapp.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.lang3.StringUtils;
@@ -6,7 +6,6 @@ import org.apache.struts2.interceptor.SessionAware;
 import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.NotFoundException;
-import org.exemple.demo.webapp.WebappHelper;
 
 import javax.inject.Inject;
 import java.util.List;
@@ -54,6 +53,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
     /**
      * Action permettant la connexion d'un utilisateur
      * @return input / success
+     **/
 
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
@@ -76,6 +76,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
     /**
      * Action de déconnexion d'un utilisateur
      * @return success
+     **/
 
     public String doLogout() {
         // Suppression de l'utilisateur en session
@@ -84,4 +85,3 @@ public class LoginAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 }
-*/

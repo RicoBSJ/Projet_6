@@ -12,4 +12,27 @@
         <property name="dataSource" ref="dataSourceP6"/>
     </bean>
 
+    <bean id="txManagerUtilisateur" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSourceP6"/>
+    </bean>
+
+    <bean id="txManagerVoie" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSourceP6"/>
+    </bean>
+
+    <bean id="txManagerSite" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSourceP6"/>
+    </bean>
+
+    <bean id="txManagerSecteur" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSourceP6"/>
+    </bean>
+
+    <bean id="txManagerCommentaire" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSourceP6"/>
+    </bean>
+
+
+
+
 </beans>
