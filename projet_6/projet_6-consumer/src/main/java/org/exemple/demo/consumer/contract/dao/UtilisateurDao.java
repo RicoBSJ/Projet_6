@@ -8,9 +8,13 @@ public interface UtilisateurDao {
 
     List<Utilisateur> getListUtilisateur();
 
+    List<Utilisateur> getUtilisateur(Utilisateur pUtilisateur);
+
     void insertUtilisateur(Utilisateur pUtilisateur);
 
     void updateEtat(Utilisateur pUtilisateur);
+
+
 
 
 }

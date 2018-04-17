@@ -9,6 +9,7 @@ public class Utilisateur {
     private String prenom;
     private String motDePasse;
     private String mail;
+    private String pseudonyme;
     private Boolean admin;
 
 
@@ -80,6 +81,14 @@ public class Utilisateur {
         motDePasse = pMdp;
     }
 
+    public String getPseudonyme() {
+        return pseudonyme;
+    }
+
+    public void setPseudonyme(String pPseudonyme) {
+        pseudonyme = pPseudonyme;
+    }
+
     public Boolean getAdmin() {
         return admin;
     }
@@ -87,6 +96,7 @@ public class Utilisateur {
     public void setAdmin(Boolean padmin) {
         admin = padmin;
     }
+
 
     // ==================== Méthodes ====================
     @Override

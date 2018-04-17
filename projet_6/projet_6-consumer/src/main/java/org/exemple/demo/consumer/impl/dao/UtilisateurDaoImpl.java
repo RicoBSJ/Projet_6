@@ -26,6 +26,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
                 Utilisateur vUtilisateur = new Utilisateur(pRS.getInt("id_utilisateur"));
                 vUtilisateur.setNom(pRS.getString("nom"));
                 vUtilisateur.setPrenom(pRS.getString("prenom"));
+                vUtilisateur.setPseudonyme(pRS.getString("pseudonyme"));
                 vUtilisateur.setMail(pRS.getString("mail"));
                 vUtilisateur.setTel(pRS.getInt("telephone"));
                 vUtilisateur.setMotDePasse(pRS.getString("mot_de_passe"));
@@ -37,6 +38,32 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
 
         return vListUtilisateur;
     }
+
+    @Override
+    public List<Utilisateur> getUtilisateur(Utilisateur pUtilisateur) {
+        String vSQL
+                = "SELECT * FROM public.utilisateur "
+                + "WHERE id_utilisateur = :id_utilisateur";
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        RowMapper<Utilisateur> vRowMapper = new RowMapper<Utilisateur>() {
+            public Utilisateur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
+                Utilisateur vUtilisateur = new Utilisateur(pRS.getInt("id_utilisateur"));
+                vUtilisateur.setNom(pRS.getString("nom"));
+                vUtilisateur.setPrenom(pRS.getString("prenom"));
+                vUtilisateur.setPseudonyme(pRS.getString("pseudonyme"));
+                vUtilisateur.setMail(pRS.getString("mail"));
+                vUtilisateur.setTel(pRS.getInt("telephone"));
+                vUtilisateur.setMotDePasse(pRS.getString("mot_de_passe"));
+                vUtilisateur.setAdmin(pRS.getBoolean("admin"));
+                return vUtilisateur;
+            }
+        };
+        List<Utilisateur> vListUtilisateur = vJdbcTemplate.query(vSQL, vRowMapper);
+
+        return vListUtilisateur;
+    }
+
+
 
     @Override
     public void insertUtilisateur(Utilisateur pUtilisateur) {
