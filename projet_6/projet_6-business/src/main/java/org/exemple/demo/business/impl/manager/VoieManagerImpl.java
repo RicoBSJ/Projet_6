@@ -14,6 +14,7 @@ public class VoieManagerImpl extends AbstractManager implements VoieManager {
     private VoieDao voieDao;
 
     @Inject
-    @Named("txManagerVoie")
+    @Named("txManagerP6")
+
     private PlatformTransactionManager platformTransactionManager;
 }

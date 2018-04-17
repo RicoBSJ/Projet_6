@@ -14,6 +14,6 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
     private CommentaireDao commentaireDao;
 
     @Inject
-    @Named("txManagerCommentaire")
+    @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 }

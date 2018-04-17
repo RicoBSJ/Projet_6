@@ -1,11 +1,14 @@
 package org.exemple.demo.business.impl.manager;
 
+import org.apache.commons.lang3.mutable.MutableObject;
 import org.exemple.demo.business.contract.manager.TopoManager;
 import org.exemple.demo.consumer.contract.dao.TopoDao;
 import org.exemple.demo.model.bean.grimpe.Topo;
+import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.FunctionalException;
 import org.exemple.demo.model.exception.NotFoundException;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.TransactionStatus;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -20,8 +23,10 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     @Inject
     private TopoDao topoDao;
 
+    @Inject TransactionHelper transactionHelper;
+
     @Inject
-    @Named("txManagerTopo")
+    @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 
     @Override
@@ -55,5 +60,21 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
         topoDao.insertTopo(pTopo);
 
+    }
+
+    @Override
+    public void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur) throws FunctionalException {
+        MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
+        try {
+            pTopo.setEtat(pTopo);
+
+            topoDao.updateEtat(pTopo);
+            throw new FunctionalException("...");
+
+            transactionHelper.commit(vStatus);
+        } finally {
+            transactionHelper.rollback(vStatus);
+        }
+    }
     }
 }
