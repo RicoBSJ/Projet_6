@@ -18,6 +18,9 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
     private UtilisateurDao utilisateurDao;
 
     @Inject
+    private TransactionHelper transactionHelper;
+
+    @Inject
     @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 

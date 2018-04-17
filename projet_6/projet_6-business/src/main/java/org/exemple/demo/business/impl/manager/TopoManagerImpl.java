@@ -23,7 +23,8 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     @Inject
     private TopoDao topoDao;
 
-    @Inject TransactionHelper transactionHelper;
+    @Inject
+    private TransactionHelper transactionHelper;
 
     @Inject
     @Named("txManagerP6")
@@ -57,16 +58,14 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
                     new ConstraintViolationException(vViolations));
 
         }
-
         topoDao.insertTopo(pTopo);
-
     }
 
     @Override
     public void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur) throws FunctionalException {
         MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
         try {
-            pTopo.setEtat(pTopo);
+            pTopo.setEtat();
 
             topoDao.updateEtat(pTopo);
             throw new FunctionalException("...");
@@ -75,6 +74,5 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
         } finally {
             transactionHelper.rollback(vStatus);
         }
-    }
     }
 }
