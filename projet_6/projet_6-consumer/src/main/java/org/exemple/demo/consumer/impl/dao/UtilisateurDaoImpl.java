@@ -39,11 +39,13 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         return vListUtilisateur;
     }
 
-    @Override
+    /*@Override
     public List<Utilisateur> getUtilisateur(Utilisateur pUtilisateur) {
         String vSQL
                 = "SELECT * FROM public.utilisateur "
-                + "WHERE id_utilisateur = :id_utilisateur";
+                + "WHERE id_utilisateur = ?";
+
+
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Utilisateur> vRowMapper = new RowMapper<Utilisateur>() {
             public Utilisateur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
@@ -58,7 +60,23 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
                 return vUtilisateur;
             }
         };
-        List<Utilisateur> vListUtilisateur = vJdbcTemplate.query(vSQL, vRowMapper);
+
+        List<Utilisateur> vListUtilisateur = vJdbcTemplate.queryForObject(vSQL, vRowMapper, pUtilisateur.getId());
+
+        return vListUtilisateur;
+    }
+    */
+
+    @Override
+    public List<Utilisateur> getUtilisateur(Utilisateur pUtilisateur) {
+        String vSQL
+                = "SELECT * FROM public.utilisateur "
+                + "WHERE id_utilisateur = ?";
+
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Utilisateur> vListUtilisateur = vJdbcTemplate.queryForObject(
+                vSQL, List.class,
+                pUtilisateur.getId());
 
         return vListUtilisateur;
     }

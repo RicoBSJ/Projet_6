@@ -8,9 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -107,17 +105,19 @@
       <file leaf-file-name="UtilisateurDaoImpl.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="54" column="61" lean-forward="true" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+            <state relative-caret-position="960">
+              <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
               <folding>
-                <marker date="1523971364844" expanded="true" signature="851:883" ph="SELECT * FRO... utilisateur" />
-                <marker date="1523971364844" expanded="true" signature="1982:2014" ph="SELECT * FRO... utilisateur" />
-                <marker date="1523971364844" expanded="true" signature="1982:2036" ph="SELECT * FRO... utilisateurWHERE" />
-                <marker date="1523971364844" expanded="true" signature="1982:2044" ph="SELECT * FRO... utilisateurWHERE" />
-                <marker date="1523971364844" expanded="true" signature="1982:2058" ph="SELECT * FRO... utilisateurWHERE" />
-                <marker date="1523971364844" expanded="true" signature="1982:2074" ph="SELECT * FRO... utilisateur" />
-                <marker date="1523971364844" expanded="true" signature="3149:3502" ph="INSERT INTO public.utilisateur... " />
-                <marker date="1523971364844" expanded="true" signature="4277:4336" ph="UPDATE public.utilisateur... " />
+                <marker date="1523971806930" expanded="true" signature="851:883" ph="SELECT * FRO... utilisateur" />
+                <marker date="1523971806930" expanded="true" signature="1984:2016" ph="SELECT * FRO... utilisateur" />
+                <marker date="1523971806930" expanded="true" signature="1984:2038" ph="SELECT * FRO... utilisateurWHERE" />
+                <marker date="1523971806930" expanded="true" signature="1984:2046" ph="SELECT * FRO... utilisateurWHERE" />
+                <marker date="1523971806930" expanded="true" signature="1984:2060" ph="SELECT * FRO... utilisateurWHERE" />
+                <marker date="1523971806930" expanded="true" signature="1984:2061" ph="SELECT * FRO... utilisateur" />
+                <marker date="1523971806930" expanded="true" signature="1984:2062" ph="SELECT * FRO... utilisateur" />
+                <marker date="1523971806930" expanded="true" signature="3202:3280" ph="SELECT * FRO... utilisateur" />
+                <marker date="1523971806930" expanded="true" signature="3646:3999" ph="INSERT INTO public.utilisateur... " />
+                <marker date="1523971806930" expanded="true" signature="4774:4833" ph="UPDATE public.utilisateur... " />
               </folding>
             </state>
           </provider>
@@ -1331,7 +1331,7 @@
       <workItem from="1523711737237" duration="2171000" />
       <workItem from="1523723936497" duration="309000" />
       <workItem from="1523894808690" duration="1200000" />
-      <workItem from="1523971209454" duration="184000" />
+      <workItem from="1523971209454" duration="631000" />
     </task>
     <task id="LOCAL-00001" summary="Ecriture Anotation en cours">
       <created>1521295723272</created>
@@ -1564,7 +1564,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523895288813</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="DB OK&#10;Debut login/logout&#10;Debut insert - Creation topo, util . . . etc">
+      <created>1523971402863</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1523971402864</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1573,7 +1580,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90607000" />
+    <option name="totallyTimeSpent" value="91054000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -1693,6 +1700,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1700,6 +1708,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1714,6 +1723,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1721,6 +1731,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1728,6 +1739,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1735,6 +1747,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,6 +1755,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1749,6 +1763,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1756,6 +1771,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1819,6 +1835,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="60" lean-forward="false" selection-start-line="27" selection-start-column="60" selection-end-line="27" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1840,6 +1857,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1889,6 +1907,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="31" column="28" lean-forward="false" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1903,6 +1922,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="67" lean-forward="false" selection-start-line="7" selection-start-column="67" selection-end-line="7" selection-end-column="67" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1910,6 +1930,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="923">
           <caret line="121" column="17" lean-forward="false" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1917,6 +1938,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1924,6 +1946,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="496">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
@@ -1935,19 +1958,19 @@
         <state relative-caret-position="150">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#1050#1051#0" expanded="true" />
-            <element signature="e#1078#1079#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1150#1151#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1215#1216#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1299#1300#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1375#1376#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#718#719#0" expanded="false" />
+            <element signature="e#1050#1051#0" expanded="false" />
+            <element signature="e#1078#1079#0" expanded="false" />
+            <element signature="e#1120#1121#0" expanded="false" />
+            <element signature="e#1150#1151#0" expanded="false" />
+            <element signature="e#1184#1185#0" expanded="false" />
+            <element signature="e#1215#1216#0" expanded="false" />
+            <element signature="e#1263#1264#0" expanded="false" />
+            <element signature="e#1299#1300#0" expanded="false" />
+            <element signature="e#1341#1342#0" expanded="false" />
+            <element signature="e#1375#1376#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2045,17 +2068,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="54" column="61" lean-forward="true" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
+        <state relative-caret-position="960">
+          <caret line="78" column="38" lean-forward="true" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
           <folding>
-            <marker date="1523971364844" expanded="true" signature="851:883" ph="SELECT * FRO... utilisateur" />
-            <marker date="1523971364844" expanded="true" signature="1982:2014" ph="SELECT * FRO... utilisateur" />
-            <marker date="1523971364844" expanded="true" signature="1982:2036" ph="SELECT * FRO... utilisateurWHERE" />
-            <marker date="1523971364844" expanded="true" signature="1982:2044" ph="SELECT * FRO... utilisateurWHERE" />
-            <marker date="1523971364844" expanded="true" signature="1982:2058" ph="SELECT * FRO... utilisateurWHERE" />
-            <marker date="1523971364844" expanded="true" signature="1982:2074" ph="SELECT * FRO... utilisateur" />
-            <marker date="1523971364844" expanded="true" signature="3149:3502" ph="INSERT INTO public.utilisateur... " />
-            <marker date="1523971364844" expanded="true" signature="4277:4336" ph="UPDATE public.utilisateur... " />
+            <marker date="1523971806930" expanded="true" signature="851:883" ph="SELECT * FRO... utilisateur" />
+            <marker date="1523971806930" expanded="true" signature="1984:2016" ph="SELECT * FRO... utilisateur" />
+            <marker date="1523971806930" expanded="true" signature="1984:2038" ph="SELECT * FRO... utilisateurWHERE" />
+            <marker date="1523971806930" expanded="true" signature="1984:2046" ph="SELECT * FRO... utilisateurWHERE" />
+            <marker date="1523971806930" expanded="true" signature="1984:2060" ph="SELECT * FRO... utilisateurWHERE" />
+            <marker date="1523971806930" expanded="true" signature="1984:2061" ph="SELECT * FRO... utilisateur" />
+            <marker date="1523971806930" expanded="true" signature="1984:2062" ph="SELECT * FRO... utilisateur" />
+            <marker date="1523971806930" expanded="true" signature="3202:3280" ph="SELECT * FRO... utilisateur" />
+            <marker date="1523971806930" expanded="true" signature="3646:3999" ph="INSERT INTO public.utilisateur... " />
+            <marker date="1523971806930" expanded="true" signature="4774:4833" ph="UPDATE public.utilisateur... " />
           </folding>
         </state>
       </provider>
