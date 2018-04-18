@@ -5,20 +5,25 @@
 <struts>
 
     <package name="default" extends="struts-default">
+
         <!-- Action par défaut -->
+
         <default-action-ref name="index" />
 
         <!-- Page Erreur -->
+
         <global-results>
             <result name="error">/JSP/error.jsp</result>
         </global-results>
 
         <!-- Action "index" -->
+
         <action name="index">
             <result>/JSP/index.jsp</result>
         </action>
 
         <!-- Action listant les utilisateurs -->
+
         <action name="utilisateur_list"
                 class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
                 method="doList">
@@ -26,10 +31,28 @@
         </action>
 
         <!-- Action affichant le détail d'un utilisateur -->
+
         <action name="utilisateur_detail"
                 class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
                 method="doDetail">
             <result>/JSP/utilisateur/detail.jsp</result>
+        </action>
+
+        <!-- Actions permettant de créer un utilisateur -->
+
+        <action name="utilisateur_new"
+                class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/utilisateur/new.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">utilisateur_detail</param>
+                <param name="id">${utilisateur.id}</param>
+            </result>
         </action>
 
         <!-- Actions Login/Logout -->
@@ -42,9 +65,8 @@
             <result type="redirectAction">index</result>
         </action>
 
-
-
         <!-- Action listant les topo -->
+
         <action name="topo_list"
                 class="org.exemple.demo.webapp.action.GestionTopoAction"
                 method="doList">
@@ -52,6 +74,7 @@
         </action>
 
         <!-- Action affichant le détail d'un topo    -->
+
         <action name="topo_detail"
                 class="org.exemple.demo.webapp.action.GestionTopoAction"
                 method="doDetail">
@@ -64,6 +87,7 @@
         </action>
 
         <!-- Actions permettant de créer un topo -->
+
         <action name="topo_new"
                 class="org.exemple.demo.webapp.action.GestionTopoAction"
                 method="doCreate">

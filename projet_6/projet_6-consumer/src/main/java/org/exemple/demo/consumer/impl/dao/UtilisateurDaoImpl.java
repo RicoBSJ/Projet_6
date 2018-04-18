@@ -39,7 +39,8 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         return vListUtilisateur;
     }
 
-    /*@Override
+    /*
+    @Override
     public List<Utilisateur> getUtilisateur(Utilisateur pUtilisateur) {
         String vSQL
                 = "SELECT * FROM public.utilisateur "
@@ -68,17 +69,12 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
     */
 
     @Override
-    public List<Utilisateur> getUtilisateur(Utilisateur pUtilisateur) {
-        String vSQL
-                = "SELECT * FROM public.utilisateur "
-                + "WHERE id_utilisateur = ?";
-
+    public Utilisateur getUtilisateur(Integer id) {
+        String vSQL = "SELECT * FROM public.utilisateur " +
+                      "WHERE id_utilisateur = ?";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        List<Utilisateur> vListUtilisateur = vJdbcTemplate.queryForObject(
-                vSQL, List.class,
-                pUtilisateur.getId());
-
-        return vListUtilisateur;
+        Utilisateur utilisateur = vJdbcTemplate.queryForObject( vSQL, Utilisateur.class, id);
+        return utilisateur;
     }
 
 
@@ -88,22 +84,24 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         String vSQL = "INSERT INTO public.utilisateur " +
                 "  (id_utilisateur,\n" +
                 "  nom,\n" +
+                "  pseudonyme,\n" +
                 "  prenom,\n" +
                 "  mail,\n" +
                 "  telephone,\n" +
                 "  mot_de_passe,\n" +
                 "  admin)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?', '?', '?', '?')";
+                "( '?', '?', '?', '?', '?', '?', '?', '?')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("id_utilisateur", pUtilisateur.getId());
         vParams.addValue("nom", pUtilisateur.getNom());
+        vParams.addValue("pseudonyme", pUtilisateur.getPseudonyme());
         vParams.addValue("prenom", pUtilisateur.getPrenom());
         vParams.addValue("mail", pUtilisateur.getMail());
         vParams.addValue("telephone", pUtilisateur.getTel());
         vParams.addValue("mot_de_passe", pUtilisateur.getMotDePasse());
-        vParams.addValue("nom_voie", pUtilisateur.getAdmin());
+        vParams.addValue("admin", pUtilisateur.getAdmin());
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }

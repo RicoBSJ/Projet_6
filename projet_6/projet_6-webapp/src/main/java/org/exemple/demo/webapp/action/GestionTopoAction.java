@@ -125,7 +125,7 @@ public class GestionTopoAction extends ActionSupport {
 
         // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
         if (vResult.equals(ActionSupport.INPUT)) {
-            this.listUtilisateur = WebappHelper.getManagerFactory().getUtilisateurManager().getListUtilisateur();
+            this.listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();
         }
 
         return vResult;

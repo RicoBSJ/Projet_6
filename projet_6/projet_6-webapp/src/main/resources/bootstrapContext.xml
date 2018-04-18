@@ -15,8 +15,4 @@
     <import resource="classpath:/consumerContext.xml" />
     <import resource="classpath:/businessContext.xml" />
 
-    <bean id="txManagerP6" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-        <property name="dataSource" ref="dataSourceP6"/>
-    </bean>
-
 </beans>

@@ -66,7 +66,6 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
         MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
         try {
             pTopo.setEtat();
-
             topoDao.updateEtat(pTopo);
             throw new FunctionalException("...");
 
@@ -75,4 +74,5 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
             transactionHelper.rollback(vStatus);
         }
     }
+
 }

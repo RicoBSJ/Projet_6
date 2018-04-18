@@ -7,7 +7,9 @@ import java.util.List;
 import com.opensymphony.xwork2.ActionSupport;
 import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
+import org.exemple.demo.model.exception.FunctionalException;
 import org.exemple.demo.model.exception.NotFoundException;
+import org.exemple.demo.model.exception.TechnicalException;
 import org.exemple.demo.webapp.WebappHelper;
 
 import javax.inject.Inject;
@@ -73,5 +75,39 @@ public class GestionUtilisateurAction extends ActionSupport {
         }
 
         return ActionSupport.SUCCESS;
+    }
+
+    public String doCreate() {
+        // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
+        // Sinon, c'est que l'on vient de valider le formulaire d'ajout
+
+        // Par défaut, le result est "input"
+        String vResult = ActionSupport.INPUT;
+
+        // ===== Validation de l'ajout de projet (projet != null)
+        if (this.utilisateur != null) {
+            // Si pas d'erreur, ajout du projet...
+            if (!this.hasErrors()) {
+                try {
+                    managerFactory.getUtilisateurManager().insertUtilisateur(this.utilisateur);
+                    // Si ajout avec succès -> Result "success"
+                    vResult = ActionSupport.SUCCESS;
+                    this.addActionMessage("Utilisateur ajouté avec succès");
+
+                } catch (FunctionalException pEx) {
+                    // Sur erreur fonctionnelle on reste sur la page de saisie
+                    // et on affiche un message d'erreur
+                    this.addActionError(pEx.getMessage());
+
+                }
+            }
+        }
+
+        // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
+        if (vResult.equals(ActionSupport.INPUT)) {
+            this.listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();
+        }
+
+        return vResult;
     }
 }
