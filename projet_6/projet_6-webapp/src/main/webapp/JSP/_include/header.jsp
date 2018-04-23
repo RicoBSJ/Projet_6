@@ -9,6 +9,11 @@
 
 <header>
     <h1> Site d'escalade </h1>
+
+    <s:a action="login">
+        Page de connection
+    </s:a>
+
 </header>
 
 <br />

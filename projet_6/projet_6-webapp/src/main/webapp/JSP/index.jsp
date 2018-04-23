@@ -20,10 +20,6 @@
         <h3>Liste des utilisateurs</h3>
     </s:a>
 
-    <s:a action="login">
-        Page de connection
-    </s:a>
-
     <s:a action="topo_list">
         <h3>Liste des topo</h3>
     </s:a>
@@ -32,7 +28,7 @@
 
 <s:if test="#session.check == 'true'">
     <h3>
-        <span>Vous etes bien connecté <s:property value="utilisateur.pseudonyme"/> </span>
+        <span>Vous etes bien connecté <s:property value="session.utilisateur.login"/> </span>
     </h3>
 </s:if>
 <s:if test="#session.check == 'false'">

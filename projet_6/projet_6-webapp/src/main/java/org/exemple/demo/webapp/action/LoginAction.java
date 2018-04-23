@@ -49,6 +49,9 @@ public class LoginAction extends ActionSupport implements SessionAware {
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
+    public Map<String, Object> getSession(){
+        return session;
+    }
 
     // ==================== Méthodes ====================
     /**
