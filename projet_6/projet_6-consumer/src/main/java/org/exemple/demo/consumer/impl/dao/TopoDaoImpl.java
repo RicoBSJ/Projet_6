@@ -59,7 +59,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  etat,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?' )";
+                "( '?', '?', '?', '?', '?', '?', '?', '?', '?', '?')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("id_utilisateur_createur", pTopo.getId_utilisateur_createur());

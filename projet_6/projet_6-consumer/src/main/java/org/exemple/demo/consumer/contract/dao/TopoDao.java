@@ -10,7 +10,5 @@ public interface TopoDao {
 
     void insertTopo(Topo pTopo);
 
-    /*List<Topo> getTopo(Topo pTopo);*/
-
     void updateEtat(Topo pTopo);
 }

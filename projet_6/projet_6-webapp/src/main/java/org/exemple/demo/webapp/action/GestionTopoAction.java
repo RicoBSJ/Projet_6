@@ -1,6 +1,8 @@
 package org.exemple.demo.webapp.action;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.SessionAware;
 import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.grimpe.Topo;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
@@ -13,16 +15,25 @@ import javax.inject.Inject;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
-public class GestionTopoAction extends ActionSupport {
+public class GestionTopoAction extends ActionSupport implements SessionAware {
+
+    private Map<String, Object> session;
 
     @Inject
     private ManagerFactory managerFactory;
+
+    @Override
+    public void setSession(Map<String, Object> pSession) {
+        this.session = pSession;
+    }
 
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
     private Integer id;
+    private Utilisateur utilisateur;
 
     // ----- Eléments en sortie
     private List<Topo> listTopo;
@@ -48,6 +59,9 @@ public class GestionTopoAction extends ActionSupport {
     }
     public List<Utilisateur> getListUtilisateur() {
         return listUtilisateur;
+    }
+    public Utilisateur getUtilisateur() {
+        return utilisateur;
     }
 
     // ==================== Méthodes ====================
@@ -84,7 +98,9 @@ public class GestionTopoAction extends ActionSupport {
      * Action permettant de créer un nouveau {@link Topo}
      * @return input / success / error
      */
-    public String doCreate() {
+    /*public String doCreate() {
+
+
         // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
         // Sinon, c'est que l'on vient de valider le formulaire d'ajout
 
@@ -130,5 +146,6 @@ public class GestionTopoAction extends ActionSupport {
 
         return vResult;
     }
+    */
 
 }

@@ -64,12 +64,12 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
     @Override
     public void insertUtilisateur(Utilisateur pUtilisateur) throws FunctionalException {
         if (pUtilisateur == null) {
-            throw new FunctionalException("L'objet Topo ne doit pas être null !");
+            throw new FunctionalException("L'objet Utilisateur ne doit pas être null !");
         }
 
         Set<ConstraintViolation<Utilisateur>> vViolations = getConstraintValidator().validate(pUtilisateur);
         if (!vViolations.isEmpty()) {
-            throw new FunctionalException("L'objet Topo est invalide",
+            throw new FunctionalException("L'objet Utilisateur est invalide",
                     new ConstraintViolationException(vViolations));
 
         }

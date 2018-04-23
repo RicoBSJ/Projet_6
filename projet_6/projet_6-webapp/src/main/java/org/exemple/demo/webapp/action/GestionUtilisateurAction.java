@@ -3,8 +3,10 @@ package org.exemple.demo.webapp.action;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.SessionAware;
 import org.exemple.demo.business.contract.ManagerFactory;
 import org.exemple.demo.model.bean.utilisateur.Utilisateur;
 import org.exemple.demo.model.exception.FunctionalException;

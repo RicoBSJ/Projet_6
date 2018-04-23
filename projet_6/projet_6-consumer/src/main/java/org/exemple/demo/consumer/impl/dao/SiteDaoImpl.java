@@ -36,8 +36,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
     @Override
     public void insertSite(Site pSite) {
         String vSQL = "INSERT INTO public.site " +
-                "  (id_site,\n" +
-                "  id_topo,\n" +
+                "  (id_topo,\n" +
                 "  nom_site,\n" +
                 "  altitudepiedvoie,\n" +
                 "  description)\n" +

@@ -4,10 +4,10 @@ public class Utilisateur {
 
     // ==================== Attributs ====================
     private Integer id;
-    private Integer tel;
+    private String tel;
     private String nom;
     private String prenom;
-    private String motDePasse;
+    private String mot_de_passe;
     private String mail;
     private String pseudonyme;
     private Boolean admin;
@@ -41,11 +41,11 @@ public class Utilisateur {
         return id;
     }
 
-    public Integer getTel() {
+    public String getTel() {
         return tel;
     }
 
-    public void setTel(Integer pTel) {
+    public void setTel(String pTel) {
         tel = pTel;
     }
 
@@ -74,11 +74,11 @@ public class Utilisateur {
     }
 
     public String getMotDePasse() {
-        return motDePasse;
+        return mot_de_passe;
     }
 
     public void setMotDePasse(String pMdp) {
-        motDePasse = pMdp;
+        mot_de_passe = pMdp;
     }
 
     public String getPseudonyme() {
@@ -109,7 +109,7 @@ public class Utilisateur {
                 .append(vSEP).append("prenom=\"").append(prenom).append('"')
                 .append(vSEP).append("telephone=\"").append(tel).append('"')
                 .append(vSEP).append("mail=\"").append(mail).append('"')
-                .append(vSEP).append("mot de passe = \"").append(motDePasse).append(('"'))
+                .append(vSEP).append("mot de passe = \"").append(mot_de_passe).append(('"'))
                 .append(vSEP).append("admin = \"").append(admin).append('"')
                 .append("}");
         return vStB.toString();

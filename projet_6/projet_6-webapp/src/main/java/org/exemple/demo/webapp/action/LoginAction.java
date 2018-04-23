@@ -1,5 +1,6 @@
 package org.exemple.demo.webapp.action;
 
+import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.interceptor.SessionAware;
@@ -63,6 +64,8 @@ public class LoginAction extends ActionSupport implements SessionAware {
 
                 // Ajout de l'utilisateur en session
                 this.session.put("user", utilisateur);
+                this.session.put("check", "true");
+                this.addActionMessage("Vous etes bien connecté");
 
                 vResult = ActionSupport.SUCCESS;
             } catch (NotFoundException pEx) {

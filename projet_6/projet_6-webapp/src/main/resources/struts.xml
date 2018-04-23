@@ -86,7 +86,7 @@
             <result>/JSP/topo/detail.jsp</result>
         </action>
 
-        <!-- Actions permettant de créer un topo -->
+        <!-- Actions permettant de créer un topo
 
         <action name="topo_new"
                 class="org.exemple.demo.webapp.action.GestionTopoAction"
@@ -102,6 +102,8 @@
             <param name="id">${topo.id}</param>
         </result>
         </action>
+
+        -->
     </package>
 
 </struts>

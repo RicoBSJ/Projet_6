@@ -32,7 +32,7 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
     }
 
     @Override
-    public String getCommentaire (Commentaire pCommentaire) {
+    public String getCommentaire(Commentaire pCommentaire) {
         String vSQL
                 = "SELECT texte_com FROM public.commentaire"
                 + " WHERE id_topo = :topo_id"

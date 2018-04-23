@@ -16,7 +16,9 @@
     <li>Nom : <s:property value="utilisateur.nom" /></li>
     <li>Prénom : <s:property value="utilisateur.prenom" /></li>
     <li>Mail : <s:property value="utilisateur.mail" /></li>
-    <li>Mot de passe : <s:property value = "utilisateur.mot_de_passe" /></li>
+    <li>Mot de passe : <s:property value = "utilisateur.MotDePasse" /></li>
+    <li>Pseudonyme : <s:property value = "utilisateur.pseudonyme" /></li>
+    <li>Telephone : <s:property value = "utilisateur.tel" /></li>
 
 </ul>
 </body>
