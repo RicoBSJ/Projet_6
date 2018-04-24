@@ -7,61 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA/schema/public.abK9xQ.meta" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SiteManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/TopoManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/VoieManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/CommentaireManagerImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TransactionHelper.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/VoieManagerImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/CommentaireManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SecteurManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SiteManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/TopoManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/VoieManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/AbstractManager.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/CommentaireManagerImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/SecteurManagerImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/SiteManagerImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TransactionHelper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/VoieManagerImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/test/java/org/exemple/demo/business/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/test/java/org/val/win/business/AppTest.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/CommentaireDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/CommentaireDao.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SecteurDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SecteurDao.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SiteDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SiteDao.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/TopoDao.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/VoieDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/VoieDao.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/CommentaireDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/CommentaireDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SecteurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SiteDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/TopoDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/VoieDaoImpl.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/test/java/org/exemple/demo/consumer/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/test/java/org/val/win/consumer/AppTest.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Secteur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Site.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Topo.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Voie.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/FunctionalException.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/FunctionalException.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/NotFoundException.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/NotFoundException.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/TechnicalException.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/TechnicalException.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/test/java/org/exemple/demo/model/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/test/java/org/val/win/model/AppTest.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/src/test/java/org/exemple/demo/technical/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-technical/src/test/java/org/val/win/technical/AppTest.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/WebappHelper.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/LoginAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -167,11 +136,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestionCommentaireAction.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GestionCommentaireAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ManagerFactoryImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentaireManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -207,34 +206,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="916">
-              <caret line="105" column="11" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="GestionUtilisateurAction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
               <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentaireManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -249,16 +225,6 @@
                 <element signature="e#1400#1401#0" expanded="true" />
                 <element signature="e#1430#1431#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TopoManagerImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -908,6 +874,64 @@
               <item name="val" type="462c0819:PsiDirectoryNode" />
               <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+              <item name="manager" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -1674,7 +1698,7 @@
       <workItem from="1524492615737" duration="1094000" />
       <workItem from="1524499210826" duration="321000" />
       <workItem from="1524505186591" duration="312000" />
-      <workItem from="1524573623664" duration="398000" />
+      <workItem from="1524573623664" duration="670000" />
     </task>
     <task id="LOCAL-00001" summary="Ecriture Anotation en cours">
       <created>1521295723272</created>
@@ -1956,7 +1980,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524499505748</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Login fonctionne&#10;Creation Utilisateur + Topo en cours &#10;Insertion transaction">
+      <created>1524574038837</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1524574038838</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1965,7 +1996,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105403000" />
+    <option name="totallyTimeSpent" value="105675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -2042,13 +2073,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://src:table:/d28c9f52/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/p6.public.utilisateur">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -2103,13 +2127,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -2345,14 +2362,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -2424,8 +2433,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
           <folding />
         </state>
       </provider>
