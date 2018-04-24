@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Ticket</title>
+    <title>Projet 6</title>
 </head>
 
 <body>

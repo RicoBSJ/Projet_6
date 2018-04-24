@@ -7,30 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA/schema/public.abK9xQ.meta" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SiteManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/TopoManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/VoieManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/CommentaireManagerImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TransactionHelper.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/VoieManagerImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -124,14 +103,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GestionTopoAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java">
+      <file leaf-file-name="TopoManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1905">
-              <caret line="143" column="6" lean-forward="false" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="735">
+              <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -156,6 +143,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ManagerFactoryImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -166,11 +163,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CommentaireManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CommentaireManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -192,39 +199,6 @@
             <state relative-caret-position="60">
               <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionVoieAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionUtilisateurAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
-              <folding>
-                <element signature="e#1400#1401#0" expanded="true" />
-                <element signature="e#1430#1431#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -252,8 +226,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/CommentaireManager.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.properties" />
@@ -303,6 +275,8 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionCommentaireAction.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/demo/webapp/action/GestionCommentaireAction.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" />
       </list>
     </option>
   </component>
@@ -1698,7 +1672,7 @@
       <workItem from="1524492615737" duration="1094000" />
       <workItem from="1524499210826" duration="321000" />
       <workItem from="1524505186591" duration="312000" />
-      <workItem from="1524573623664" duration="670000" />
+      <workItem from="1524573623664" duration="836000" />
     </task>
     <task id="LOCAL-00001" summary="Ecriture Anotation en cours">
       <created>1521295723272</created>
@@ -1987,7 +1961,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524574038838</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Login fonctionne&#10;Creation Utilisateur + Topo en cours &#10;Insertion transaction">
+      <created>1524574679453</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1524574679453</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1996,10 +1977,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105675000" />
+    <option name="totallyTimeSpent" value="105841000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -2022,7 +2004,7 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2165,13 +2147,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="71" column="62" lean-forward="false" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/CommentaireDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -2295,14 +2270,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -2323,14 +2290,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -2360,14 +2319,6 @@
       </provider>
       <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionVoieTopo.java">
@@ -2457,8 +2408,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="71" column="0" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="66" column="27" lean-forward="false" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="19" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding />
         </state>
       </provider>

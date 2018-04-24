@@ -66,9 +66,9 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     @Override
     public void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur) {
         MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        Boolean Bool = pTopo.getEtat();
+        Boolean bool = pTopo.getEtat();
         try {
-            pTopo.setEtat(!Bool);
+            pTopo.setEtat(!bool);
             topoDao.updateEtat(pTopo);
             transactionHelper.commit(vStatus);
         } finally {
