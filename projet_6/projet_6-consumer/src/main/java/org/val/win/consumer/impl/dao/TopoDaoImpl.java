@@ -82,4 +82,21 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
+
+    @Override
+    public void updateInfoTopo(Topo pTopo) {
+        String vSQL = "UPDATE public.topo " +
+                "SET description = :description,\n" +
+                "nom_topo = :nom_topo,\n" +
+                "region = :region,\n" +
+                "lieu = :lieu,\n" +
+                "roche = :roche,\n" +
+                "profil = :profil,\n" +
+                "ancrage = :ancrage,\n " +
+                "relai = :relai " +
+                "WHERE id = :id";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
 }

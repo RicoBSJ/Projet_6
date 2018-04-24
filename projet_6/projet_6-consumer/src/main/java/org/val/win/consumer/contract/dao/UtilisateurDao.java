@@ -14,7 +14,6 @@ public interface UtilisateurDao {
 
     void updateEtat(Utilisateur pUtilisateur);
 
-
-
+    void updateInfoUtil(Utilisateur pUtilisateur);
 
 }

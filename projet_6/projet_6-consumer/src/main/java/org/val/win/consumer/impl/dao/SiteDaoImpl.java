@@ -1,5 +1,7 @@
 package org.val.win.consumer.impl.dao;
 
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.val.win.consumer.contract.dao.SiteDao;
 import org.val.win.model.bean.grimpe.Site;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -49,6 +51,19 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
         vParams.addValue("nom_site", pSite.getNom_site());
         vParams.addValue("altitudepiedvoie", pSite.getaltitudePiedVoie());
         vParams.addValue("description", pSite.getDescription());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public void updateInfoVoie(Site pSite) {
+        String vSQL = "UPDATE public.site " +
+                "SET description = :description,\n" +
+                "nom_site = :nom_site,\n" +
+                "id_topo = :id_topo,\n" +
+                "altitudepiedvoie = :altitudepiedvoie " +
+                "WHERE id = :id";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pSite);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }

@@ -1,5 +1,7 @@
 package org.val.win.consumer.impl.dao;
 
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.val.win.consumer.contract.dao.SecteurDao;
 import org.val.win.model.bean.grimpe.Secteur;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -38,8 +40,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
     @Override
     public void insertSecteur(Secteur pSecteur) {
         String vSQL = "INSERT INTO public.secteur " +
-                "  (id_secteur,\n" +
-                "  id_topo,\n" +
+                "  (id_topo,\n" +
                 "  id_site,\n" +
                 "  nom_secteur,\n" +
                 "  nrbvoie,\n" +
@@ -47,7 +48,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
                 "  orientation,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?', '?', '?', '?', '?')";
+                "('?', '?', '?', '?', '?', '?', '?')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("id_secteur", pSecteur.getId());
@@ -58,6 +59,22 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         vParams.addValue("description", pSecteur.getDescription());
         vParams.addValue("orientation", pSecteur.getOrientation());
         vParams.addValue("difficulte", pSecteur.getDifficulte());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public void updateInfoSecteur(Secteur pSecteur) {
+        String vSQL = "UPDATE public.secteur " +
+                "SET description = :description,\n" +
+                "orientation = :orientation,\n" +
+                "id_topo = :id_topo,\n" +
+                "id_site = :id_site,\n" +
+                "nom_secteur = :nom_secteur,\n" +
+                "nrbvoie = :nrbvoie,\n" +
+                "difficulte = :diffculte " +
+                "WHERE id = :id";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pSecteur);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }

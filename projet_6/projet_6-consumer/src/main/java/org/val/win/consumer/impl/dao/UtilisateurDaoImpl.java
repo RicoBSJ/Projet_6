@@ -114,5 +114,21 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    @Override
+    public void updateInfoUtil(Utilisateur pUtilisateur) {
+        String vSQL = "UPDATE public.utilisateur " +
+                "SET admin = :admin,\n" +
+                "nom = :nom,\n" +
+                "prenom = :prenom,\n" +
+                "pseudonyme = :pseudonyme,\n" +
+                "mail = :mail,\n" +
+                "telephone = :telephone,\n" +
+                "mot_de_passe = :mot_de_passe " +
+                "WHERE id = :id";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pUtilisateur);
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
+
 }
 

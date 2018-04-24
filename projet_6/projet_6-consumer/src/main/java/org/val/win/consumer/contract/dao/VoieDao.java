@@ -12,4 +12,6 @@ public interface VoieDao {
     int getCountVoieSec(Secteur pSecteur);
 
     void insertVoie(Voie pVoie);
+
+    void updateInfoVoie(Voie pVoie);
 }

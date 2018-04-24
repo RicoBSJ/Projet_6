@@ -9,4 +9,6 @@ public interface SecteurDao {
     List<Secteur> getListSecteur();
 
     void insertSecteur(Secteur pSecteur);
+
+    void updateInfoSecteur(Secteur pSecteur);
 }

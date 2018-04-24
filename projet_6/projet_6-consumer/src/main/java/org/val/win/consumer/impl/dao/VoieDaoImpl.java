@@ -1,6 +1,8 @@
 package org.val.win.consumer.impl.dao;
 
 
+import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
+import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 import org.val.win.consumer.contract.dao.VoieDao;
 import org.val.win.model.bean.grimpe.Secteur;
 import org.val.win.model.bean.grimpe.Voie;
@@ -58,8 +60,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
     @Override
     public void insertVoie(Voie pVoie) {
         String vSQL = "INSERT INTO public.voie " +
-                "  (id_voie,\n" +
-                "  id_topo,\n" +
+                "  (id_topo,\n" +
                 "  id_secteur,\n" +
                 "  id_site,\n" +
                 "  hauteur,\n" +
@@ -67,10 +68,9 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
                 "  nom_voie,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?', '?', '?', '?', '?')";
+                "('?', '?', '?', '?', '?', '?', '?')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_voie", pVoie.getId());
         vParams.addValue("id_topo", pVoie.getId_topo());
         vParams.addValue("id_secteur", pVoie.getId_secteur());
         vParams.addValue("id_site", pVoie.getId_site());
@@ -78,6 +78,22 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         vParams.addValue("cotation", pVoie.getCotation());
         vParams.addValue("nom_voie", pVoie.getNom());
         vParams.addValue("description", pVoie.getDescription());
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public void updateInfoVoie(Voie pVoie) {
+        String vSQL = "UPDATE public.voie " +
+                "SET description = :description,\n" +
+                "nom_voie = :nom_voie,\n" +
+                "cotation = :cotation,\n" +
+                "hauteur = :hauteur,\n" +
+                "id_secteur = :id_secteur,\n" +
+                "id_topo = :id_topo,\n" +
+                "id_site = :id_site " +
+                "WHERE id = :id";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pVoie);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
