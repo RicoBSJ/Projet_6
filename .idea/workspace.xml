@@ -7,11 +7,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/LoginAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/LoginAction.java" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/CommentaireManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SecteurManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SiteManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/TopoManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/VoieManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/AbstractManager.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/CommentaireManagerImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/SecteurManagerImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/SiteManagerImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TransactionHelper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/VoieManagerImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/test/java/org/exemple/demo/business/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/test/java/org/val/win/business/AppTest.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/CommentaireDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/CommentaireDao.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SecteurDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SecteurDao.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SiteDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SiteDao.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/TopoDao.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/VoieDao.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/VoieDao.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/CommentaireDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/CommentaireDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SecteurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SiteDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/TopoDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/VoieDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/test/java/org/exemple/demo/consumer/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/test/java/org/val/win/consumer/AppTest.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Secteur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Site.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Topo.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Topo.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/grimpe/Voie.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/FunctionalException.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/FunctionalException.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/NotFoundException.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/NotFoundException.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/exception/TechnicalException.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/TechnicalException.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/test/java/org/exemple/demo/model/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/test/java/org/val/win/model/AppTest.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/src/test/java/org/exemple/demo/technical/AppTest.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-technical/src/test/java/org/val/win/technical/AppTest.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/WebappHelper.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/WebappHelper.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/LoginAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -105,104 +155,109 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GestionTopoAction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java">
+      <file leaf-file-name="GestionTopoAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="818">
-              <caret line="148" column="6" lean-forward="false" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
+            <state relative-caret-position="1905">
+              <caret line="143" column="6" lean-forward="false" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GestionCommentaireAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp">
+      <file leaf-file-name="GestionSiteAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+            <state relative-caret-position="60">
+              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp">
+      <file leaf-file-name="GestionSecteurAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="66" lean-forward="false" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
+            <state relative-caret-position="60">
+              <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="error.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp">
+      <file leaf-file-name="GestionVoieAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="60">
+              <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/list.jsp">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="916">
+              <caret line="105" column="11" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-              <folding />
-            </state>
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GestionUtilisateurAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+            <state relative-caret-position="135">
+              <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommentaireManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/LoginAction.java">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+            <state relative-caret-position="435">
+              <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
               <folding>
-                <element signature="e#1466#1467#0" expanded="true" />
-                <element signature="e#1496#1497#0" expanded="true" />
+                <element signature="e#1400#1401#0" expanded="true" />
+                <element signature="e#1430#1431#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp">
+      <file leaf-file-name="TopoManagerImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="465">
+              <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -215,8 +270,8 @@
       <list>
         <option value="JUnit3 Test Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -231,12 +286,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/AbstractManager.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SecteurManager.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SiteManager.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/VoieManager.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/CommentaireManager.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/ManagerFactoryImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java" />
@@ -264,7 +313,6 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/new.jwp.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/new.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/TopoManager.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
@@ -282,6 +330,13 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/LoginAction.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionVoieAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionSiteAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionSecteurAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionCommentaireAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/demo/webapp/action/GestionCommentaireAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" />
       </list>
     </option>
   </component>
@@ -763,8 +818,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -826,7 +882,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -837,8 +893,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -849,72 +905,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="business" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="manager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -960,7 +958,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -971,8 +969,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -983,8 +981,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -996,8 +994,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="contract" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -1010,8 +1008,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="contract" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
@@ -1025,8 +1023,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -1039,8 +1037,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="consumer" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
@@ -1094,7 +1092,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -1105,8 +1103,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -1117,8 +1115,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1130,8 +1128,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -1144,8 +1142,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="bean" type="462c0819:PsiDirectoryNode" />
               <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
@@ -1199,7 +1197,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -1210,8 +1208,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6" type="b2602c69:ProjectViewProjectNode" />
@@ -1222,8 +1220,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1235,8 +1233,8 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="exemple" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="val" type="462c0819:PsiDirectoryNode" />
+              <item name="win" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="action" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -1305,8 +1303,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1382,7 +1379,7 @@
     <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.exemple.demo.consumer.impl.dao.*" />
+          <option name="PATTERN" value="org.val.win.consumer.impl.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1401,7 +1398,7 @@
     <configuration name="UtilisateurDaoImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="org.exemple.demo.consumer.impl.dao.*" />
+          <option name="PATTERN" value="org.val.win.consumer.impl.dao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -1675,7 +1672,9 @@
       <workItem from="1524491299868" duration="383000" />
       <workItem from="1524491861365" duration="664000" />
       <workItem from="1524492615737" duration="1094000" />
-      <workItem from="1524499210826" duration="250000" />
+      <workItem from="1524499210826" duration="321000" />
+      <workItem from="1524505186591" duration="312000" />
+      <workItem from="1524573623664" duration="398000" />
     </task>
     <task id="LOCAL-00001" summary="Ecriture Anotation en cours">
       <created>1521295723272</created>
@@ -1950,7 +1949,14 @@
       <option name="project" value="LOCAL" />
       <updated>1524493479380</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="Login fonctionne&#10;Creation Utilisateur + Topo en cours &#10;Insertion transaction">
+      <created>1524499505748</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1524499505748</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1959,11 +1965,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104622000" />
+    <option name="totallyTimeSpent" value="105403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1986,9 +1991,10 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2000,7 +2006,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.224" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2037,50 +2042,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/new.jwp.jsp" />
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TransactionHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -2091,7 +2056,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Utilisateur.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="31" />
@@ -2106,196 +2071,175 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/exemple/demo/model/bean/utilisateur/Commentaire.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/CommentaireManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SecteurManager.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/SiteManager.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SiteManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/TopoManager.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/TopoManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/VoieManager.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/VoieManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/ManagerFactory.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/SiteManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/TopoManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="68" column="33" lean-forward="false" selection-start-line="68" selection-start-column="33" selection-end-line="68" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/contract/manager/UtilisateurManager.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="14" column="64" lean-forward="false" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/AbstractManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/CommentaireManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/CommentaireManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/SecteurManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="16" column="48" lean-forward="false" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/VoieManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/VoieManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/exemple/demo/business/impl/manager/UtilisateurManagerImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="71" column="62" lean-forward="false" selection-start-line="71" selection-start-column="62" selection-end-line="71" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/CommentaireDao.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/CommentaireDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SecteurDao.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SecteurDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/SiteDao.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SiteDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/TopoDao.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/TopoDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="32" lean-forward="false" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/UtilisateurDao.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/contract/dao/VoieDao.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/VoieDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/AbstractDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/CommentaireDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/CommentaireDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SecteurDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/UtilisateurDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/VoieDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/VoieDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/SiteDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/exemple/demo/consumer/impl/dao/TopoDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/TopoDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="76" column="5" lean-forward="false" selection-start-line="76" selection-start-column="5" selection-end-line="76" selection-end-column="5" />
@@ -2308,17 +2252,6 @@
           <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="18" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1162">
-          <caret line="105" column="11" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp">
@@ -2385,29 +2318,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionUtilisateurAction.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="22" column="42" lean-forward="false" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
+        <state relative-caret-position="75">
+          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/LoginAction.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TransactionHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="52" column="23" lean-forward="false" selection-start-line="52" selection-start-column="23" selection-end-line="52" selection-end-column="23" />
+        <state relative-caret-position="495">
+          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="916">
+          <caret line="105" column="11" lean-forward="false" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionVoieTopo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="51" column="23" lean-forward="false" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding>
-            <element signature="e#1466#1467#0" expanded="true" />
-            <element signature="e#1496#1497#0" expanded="true" />
+            <element signature="e#1400#1401#0" expanded="true" />
+            <element signature="e#1430#1431#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/exemple/demo/webapp/action/GestionTopoAction.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="818">
-          <caret line="148" column="6" lean-forward="false" selection-start-line="148" selection-start-column="6" selection-end-line="148" selection-end-column="6" />
+        <state relative-caret-position="135">
+          <caret line="18" column="42" lean-forward="false" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1905">
+          <caret line="143" column="6" lean-forward="false" selection-start-line="143" selection-start-column="6" selection-end-line="143" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="52" lean-forward="false" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="55" lean-forward="false" selection-start-line="4" selection-start-column="55" selection-end-line="4" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="59" lean-forward="false" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="59" />
           <folding />
         </state>
       </provider>

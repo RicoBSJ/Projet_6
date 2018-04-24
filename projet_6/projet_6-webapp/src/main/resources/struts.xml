@@ -25,7 +25,7 @@
         <!-- Action listant les utilisateurs -->
 
         <action name="utilisateur_list"
-                class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
+                class="org.val.win.webapp.action.GestionUtilisateurAction"
                 method="doList">
             <result>/JSP/utilisateur/list.jsp</result>
         </action>
@@ -33,7 +33,7 @@
         <!-- Action affichant le détail d'un utilisateur -->
 
         <action name="utilisateur_detail"
-                class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
+                class="org.val.win.webapp.action.GestionUtilisateurAction"
                 method="doDetail">
             <result>/JSP/utilisateur/detail.jsp</result>
         </action>
@@ -41,7 +41,7 @@
         <!-- Actions permettant de créer un utilisateur -->
 
         <action name="utilisateur_new"
-                class="org.exemple.demo.webapp.action.GestionUtilisateurAction"
+                class="org.val.win.webapp.action.GestionUtilisateurAction"
                 method="doCreate">
             <interceptor-ref name="store">
                 <param name="operationMode">STORE</param>
@@ -57,18 +57,18 @@
 
         <!-- Actions Login/Logout -->
 
-        <action name="login" class="org.exemple.demo.webapp.action.LoginAction" method="doLogin">
+        <action name="login" class="org.val.win.webapp.action.LoginAction" method="doLogin">
             <result name="input">/JSP/login.jsp</result>
             <result name="success" type="redirectAction">index</result>
         </action>
-        <action name="logout" class="org.exemple.demo.webapp.action.LoginAction" method="doLogout">
+        <action name="logout" class="org.val.win.webapp.action.LoginAction" method="doLogout">
             <result type="redirectAction">index</result>
         </action>
 
         <!-- Action listant les topo -->
 
         <action name="topo_list"
-                class="org.exemple.demo.webapp.action.GestionTopoAction"
+                class="org.val.win.webapp.action.GestionTopoAction"
                 method="doList">
             <result>/JSP/topo/list.jsp</result>
         </action>
@@ -76,7 +76,7 @@
         <!-- Action affichant le détail d'un topo    -->
 
         <action name="topo_detail"
-                class="org.exemple.demo.webapp.action.GestionTopoAction"
+                class="org.val.win.webapp.action.GestionTopoAction"
                 method="doDetail">
 
             <interceptor-ref name="store">
@@ -89,7 +89,7 @@
         <!-- Actions permettant de créer un topo
 
         <action name="topo_new"
-                class="org.exemple.demo.webapp.action.GestionTopoAction"
+                class="org.val.webapp.action.GestionTopoAction"
                 method="doCreate">
         <interceptor-ref name="store">
             <param name="operationMode">STORE</param>
