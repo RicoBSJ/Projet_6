@@ -9,8 +9,6 @@
 
 <body>
 <h2>Liste Topo et Utilisateur <br />
-    <s:actionerror/>
-    <s:actionmessage/>
 </h2>
 <br />
 
@@ -24,19 +22,13 @@
         <h3>Liste des topo</h3>
     </s:a>
 
+    <s:a action="login">
+        <h4>
+            Page de connection
+        </h4>
+    </s:a>
+
 </nav>
-
-<s:if test="#session.check == 'true'">
-    <h3>
-        <span>Vous etes bien connecté <s:property value="session.utilisateur.login"/> </span>
-    </h3>
-</s:if>
-<s:if test="#session.check == 'false'">
-    <h3>
-        <span>Vous n'etes pas connecté </span>
-    </h3>
-</s:if>
-
 
 </body>
 </html>

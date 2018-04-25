@@ -8,14 +8,11 @@
 </head>
 
 <body>
-<%@ include file="./_include/header.jsp" %>
 
 <h2>Connexion <br />
     <s:actionerror/>
     <s:actionmessage/>
 </h2>
-
-
 
 <s:form action="login">
     <s:textfield name="login" label="Identifiant" requiredLabel="true" />
@@ -23,5 +20,6 @@
 
     <s:submit value="Connexion"/>
 </s:form>
+
 </body>
 </html>

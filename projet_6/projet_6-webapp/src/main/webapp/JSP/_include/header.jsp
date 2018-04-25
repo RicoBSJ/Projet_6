@@ -10,14 +10,22 @@
 <header>
     <h1> Site d'escalade </h1>
 
-    <s:a action="login">
-        Page de connection
-    </s:a>
+    <s:actionerror/>
+    <s:actionmessage/>
+
+    <s:if test="#session.check == 'true'">
+        <h4>
+            <span>Vous etes connecté <s:property value="#session.user.prenom"/> </span>
+        </h4>
+    </s:if>
+    <s:if test="#session.check == 'false'">
+        <s:a action="login">
+            <h4>
+                Page de connection
+            </h4>
+        </s:a>
+    </s:if>
 
 </header>
 
 <br />
-
-
-<s:actionerror/>
-<s:actionmessage/>

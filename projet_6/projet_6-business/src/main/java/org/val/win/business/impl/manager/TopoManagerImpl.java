@@ -49,18 +49,23 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
     @Override
     public void insertTopo(Topo pTopo) throws FunctionalException {
+        MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
+        try {
+            if (pTopo == null) {
+                throw new FunctionalException("L'objet Topo ne doit pas être null !");
+            }
 
-        if (pTopo == null) {
-            throw new FunctionalException("L'objet Topo ne doit pas être null !");
+            Set<ConstraintViolation<Topo>> vViolations = getConstraintValidator().validate(pTopo);
+            if (!vViolations.isEmpty()) {
+                throw new FunctionalException("L'objet Topo est invalide",
+                        new ConstraintViolationException(vViolations));
+
+            }
+            topoDao.insertTopo(pTopo);
+            transactionHelper.commit(vStatus);
+        } finally {
+            transactionHelper.rollback(vStatus);
         }
-
-        Set<ConstraintViolation<Topo>> vViolations = getConstraintValidator().validate(pTopo);
-        if (!vViolations.isEmpty()) {
-            throw new FunctionalException("L'objet Topo est invalide",
-                    new ConstraintViolationException(vViolations));
-
-        }
-        topoDao.insertTopo(pTopo);
     }
 
     @Override

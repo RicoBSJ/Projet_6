@@ -73,6 +73,15 @@
             <result>/JSP/topo/list.jsp</result>
         </action>
 
+        <!--
+        <action name="topo_list"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doList">
+            <result>/JSP/topo/list.jsp</result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+        -->
+
         <!-- Action affichant le détail d'un topo    -->
 
         <action name="topo_detail"
@@ -86,10 +95,10 @@
             <result>/JSP/topo/detail.jsp</result>
         </action>
 
-        <!-- Actions permettant de créer un topo
+        <!-- Actions permettant de créer un topo -->
 
         <action name="topo_new"
-                class="org.val.webapp.action.GestionTopoAction"
+                class="org.val.win.webapp.action.GestionTopoAction"
                 method="doCreate">
         <interceptor-ref name="store">
             <param name="operationMode">STORE</param>
@@ -103,7 +112,7 @@
         </result>
         </action>
 
-        -->
+
     </package>
 
 </struts>

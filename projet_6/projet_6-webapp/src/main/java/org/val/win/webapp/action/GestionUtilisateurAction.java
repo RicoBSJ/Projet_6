@@ -75,6 +75,10 @@ public class GestionUtilisateurAction extends ActionSupport {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Action permettant la création d'un nouvel utilisateur {@link Utilisateur}
+     * @return success / error
+     */
     public String doCreate() {
         // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
         // Sinon, c'est que l'on vient de valider le formulaire d'ajout
