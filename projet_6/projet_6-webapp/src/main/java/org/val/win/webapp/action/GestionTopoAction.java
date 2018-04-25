@@ -115,6 +115,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         if (this.topo != null) {
             // Récupération du responsable
             if (this.topo.getId_utilisateur_createur() == null) {
+                this.addFieldError("topo.id_utilisateur_createur", "ne doit pas être vide");
+            } else {
                 this.topo.setId_utilisateur_createur(pUtilisateur.getId());
             }
             // Si pas d'erreur, ajout du projet...
@@ -130,10 +132,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                     this.addActionError(pEx.getMessage());
                 }
             }
-        }
-        // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
-        if (vResult.equals(ActionSupport.INPUT)) {
-            this.listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();
         }
 
         return vResult;
