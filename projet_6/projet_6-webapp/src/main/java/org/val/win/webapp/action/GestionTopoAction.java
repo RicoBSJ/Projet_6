@@ -133,7 +133,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                 }
             }
         }
-
         return vResult;
     }
 }

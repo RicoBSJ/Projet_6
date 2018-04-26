@@ -15,14 +15,24 @@
 
     <s:if test="#session.check == 'true'">
         <h4>
+            <s:a action="utilisateur_detail">
             <span>Vous etes connecté <s:property value="#session.user.prenom"/> </span>
+                <s:param name="id" value="#session.user.id" />
+                <br />
+            </s:a>
+            <s:a action="logout">
+                <span> Deconnection </span>
+            </s:a>
         </h4>
     </s:if>
     <s:if test="#session.check == 'false'">
         <s:a action="login">
             <h4>
-                Page de connection
+                <span>Page de connection</span>
             </h4>
+        </s:a>
+        <s:a action="utilisateur_new">
+            <span> Creer un compte</span>
         </s:a>
     </s:if>
 

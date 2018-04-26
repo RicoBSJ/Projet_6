@@ -17,6 +17,10 @@ import java.util.List;
 @Named
 public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDao {
 
+    /**
+     * Récupérer tous les utilisateurs
+     * @return
+     */
     @Override
     public List<Utilisateur> getListUtilisateur() {
         String vSQL = "SELECT * FROM public.utilisateur";
@@ -68,6 +72,11 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
     }
     */
 
+    /**
+     * Récupérer un utilisateur précis
+     * @param id
+     * @return
+     */
     @Override
     public Utilisateur getUtilisateur(Integer id) {
         String vSQL = "SELECT * FROM public.utilisateur " +
@@ -77,8 +86,10 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         return utilisateur;
     }
 
-
-
+    /**
+     * Creer un utilisateur
+     * @param pUtilisateur
+     */
     @Override
     public void insertUtilisateur(Utilisateur pUtilisateur) {
         String vSQL = "INSERT INTO public.utilisateur " +
@@ -106,6 +117,10 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    /**
+     * Mettre a jour l'etat (ADMIN) de l'utilisateur
+     * @param pUtilisateur
+     */
     @Override
     public void updateEtat(Utilisateur pUtilisateur) {
         String vSQL = "UPDATE public.utilisateur SET admin = :admin WHERE id = :id";
@@ -114,6 +129,10 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    /**
+     * Mettre a jour les informations de l'utilisateur
+     * @param pUtilisateur
+     */
     @Override
     public void updateInfoUtil(Utilisateur pUtilisateur) {
         String vSQL = "UPDATE public.utilisateur " +

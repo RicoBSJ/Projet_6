@@ -15,6 +15,10 @@ import java.util.List;
 @Named
 public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDao {
 
+    /**
+     * Récuperer tous les commentaires
+     * @return
+     */
     @Override
     public List<Commentaire> getListCommentaire() {
         String vSQL = "SELECT * FROM public.commentaire";
@@ -31,6 +35,11 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         return vListCommentaire;
     }
 
+    /**
+     * Récupérer un commentaire précis d'un topo
+     * @param pCommentaire
+     * @return
+     */
     @Override
     public String getCommentaire(Commentaire pCommentaire) {
         String vSQL
@@ -49,6 +58,24 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         return comTopo;
     }
 
+    /**
+     * Récupérér les commentaires d'un topo
+     * @param id
+     * @return
+     */
+    @Override
+    public Commentaire getCommentaireTopo(Integer id) {
+        String vSQL = "SELECT * FROM public.commentaire " +
+                "WHERE id_topo = ?";
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        Commentaire commentaire = vJdbcTemplate.queryForObject(vSQL, Commentaire.class, id);
+        return commentaire;
+    }
+
+    /**
+     * Creer un nouveau commentaire
+     * @param pCommentaire
+     */
     @Override
     public void insertCommentaire(Commentaire pCommentaire) {
         String vSQL = "INSERT INTO public.commentaire " +

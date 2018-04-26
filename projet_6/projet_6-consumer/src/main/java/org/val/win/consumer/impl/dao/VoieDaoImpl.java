@@ -19,7 +19,10 @@ import java.util.List;
 @Named
 public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
-
+    /**
+     * Récuperer toutes les voies
+     * @return
+     */
     @Override
     public List<Voie> getListVoie() {
         String vSQL = "SELECT * FROM public.voie";
@@ -40,7 +43,11 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
     }
 
 
-
+    /**
+     * Récupérer le nombre de voie d'un secteur
+     * @param pSecteur
+     * @return
+     */
     @Override
     public int getCountVoieSec(Secteur pSecteur) {
         String vSQL
@@ -57,6 +64,10 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         return vNbrVoie;
     }
 
+    /**
+     * Creer une voie
+     * @param pVoie
+     */
     @Override
     public void insertVoie(Voie pVoie) {
         String vSQL = "INSERT INTO public.voie " +
@@ -82,6 +93,10 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    /**
+     * Mettre a jour une voie
+     * @param pVoie
+     */
     @Override
     public void updateInfoVoie(Voie pVoie) {
         String vSQL = "UPDATE public.voie " +

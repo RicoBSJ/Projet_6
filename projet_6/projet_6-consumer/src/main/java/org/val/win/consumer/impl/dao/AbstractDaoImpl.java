@@ -7,10 +7,17 @@ import javax.sql.DataSource;
 public abstract class AbstractDaoImpl {
 
 
+    /**
+     * Bean datasource
+     */
     @Inject
     @Named("dataSourceP6")
     private DataSource dataSource;
 
+    /**
+     * Récupérer la datasource
+     * @return
+     */
     protected DataSource getDataSource() {
         return dataSource;
     }

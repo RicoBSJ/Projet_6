@@ -14,10 +14,6 @@
 
 <nav>
 
-    <s:a action="utilisateur_list">
-        <h3>Liste des utilisateurs</h3>
-    </s:a>
-
     <s:a action="topo_list">
         <h3>Liste des topo</h3>
     </s:a>

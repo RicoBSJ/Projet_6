@@ -51,5 +51,7 @@
                 <button class="btn btn-primary" type="submit">Envoyer</button>
         </fieldset>
 </form>
+
+<h1> <s:property value="commentaire" /> </h1>
 </body>
 </html>

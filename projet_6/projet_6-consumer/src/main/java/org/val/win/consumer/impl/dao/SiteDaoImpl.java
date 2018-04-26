@@ -17,6 +17,10 @@ import java.util.List;
 @Named
 public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 
+    /**
+     * Récupérer tous les sites
+     * @return
+     */
     @Override
     public List<Site> getListSite() {
         String vSQL = "SELECT * FROM public.site";
@@ -35,6 +39,10 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
         return vListSite;
     }
 
+    /**
+     * Creer un nouveau site
+     * @param pSite
+     */
     @Override
     public void insertSite(Site pSite) {
         String vSQL = "INSERT INTO public.site " +
@@ -55,6 +63,10 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    /**
+     * Mettre a jour les informations du site
+     * @param pSite
+     */
     @Override
     public void updateInfoVoie(Site pSite) {
         String vSQL = "UPDATE public.site " +

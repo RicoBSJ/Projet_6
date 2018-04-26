@@ -18,6 +18,10 @@ import java.util.List;
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
 
+    /**
+     * Récupérer tous les topos
+     * @return
+     */
     @Override
     public List<Topo> getListTopo() {
         String vSQL = "SELECT * FROM public.topo";
@@ -44,6 +48,10 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         return vListTopo;
     }
 
+    /**
+     * Creer un nouveau topo
+     * @param pTopo
+     */
     @Override
     public void insertTopo(Topo pTopo) {
         String vSQL = "INSERT INTO public.topo " +
@@ -75,6 +83,10 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    /**
+     * Changer l'etat (DISPO) d'un topo
+     * @param pTopo
+     */
     @Override
     public void updateEtat(Topo pTopo) {
         String vSQL = "UPDATE public.topo SET etat = :etat WHERE id = :id";
@@ -83,6 +95,10 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    /**
+     * Mettre a jour information topo
+     * @param pTopo
+     */
     @Override
     public void updateInfoTopo(Topo pTopo) {
         String vSQL = "UPDATE public.topo " +

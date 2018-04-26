@@ -17,6 +17,10 @@ import java.util.List;
 @Named
 public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
 
+    /**
+     * Récuperer une liste des secteurs
+     * @return
+     */
     @Override
     public List<Secteur> getListSecteur() {
         String vSQL = "SELECT * FROM public.secteur";
@@ -37,6 +41,10 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         return vListSecteur;
     }
 
+    /**
+     * Creer secteur
+     * @param pSecteur
+     */
     @Override
     public void insertSecteur(Secteur pSecteur) {
         String vSQL = "INSERT INTO public.secteur " +
@@ -63,6 +71,10 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }
 
+    /**
+     * Mettre a jour les informations d'un secteur
+     * @param pSecteur
+     */
     @Override
     public void updateInfoSecteur(Secteur pSecteur) {
         String vSQL = "UPDATE public.secteur " +

@@ -48,16 +48,6 @@ public class GestionUtilisateurAction extends ActionSupport {
     // ==================== Méthodes ====================
 
     /**
-     * Action listant les {@link Utilisateur}
-     * @return success
-     */
-    public String doList() {
-        listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();;
-        return ActionSupport.SUCCESS;
-    }
-
-
-    /**
      * Action affichant les détails d'un {@link Utilisateur}
      * @return success / error
      */
