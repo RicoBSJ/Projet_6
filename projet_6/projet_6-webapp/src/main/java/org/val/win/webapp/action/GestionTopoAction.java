@@ -13,13 +13,26 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Gestion des actions topo
+ */
 public class GestionTopoAction extends ActionSupport implements SessionAware {
 
+    /**
+     * Récuperer session
+     */
     private Map<String, Object> session;
 
+    /**
+     * Récupérer manager factory
+     */
     @Inject
     private ManagerFactory managerFactory;
 
+    /**
+     * Setteur pour la session
+     * @param pSession
+     */
     @Override
     public void setSession(Map<String, Object> pSession) {
         this.session = pSession;
@@ -121,6 +134,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             }
             // Si pas d'erreur, ajout du projet...
             if (!this.hasErrors()) {
+                System.out.println(this.topo);
                 try {
                     managerFactory.getTopoManager().insertTopo(this.topo);
                     // Si ajout avec succès -> Result "success"

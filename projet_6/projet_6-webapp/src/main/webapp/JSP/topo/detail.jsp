@@ -18,9 +18,6 @@
 
 <section class="col-sm-8 table-responsive">
         <table class="table table-bordered table-striped table-condensed">
-                <caption>
-                        <h4>Detail du topo</h4>
-                </caption>
                 <thead>
                 <tr>
                         <th>Nom</th>
@@ -41,9 +38,9 @@
                 </tbody>
         </table>
 </section>
-<form class="well">
+<form class="col-sm-8 table-responsive">
         <legend>Laisser un commentaire</legend>
-        <h4>Que penser vous du topo</h4>
+        <h6>Que penser vous du topo</h6>
         <fieldset>
                 <label for="textarea">Votre message :</label>
                 <textarea id="textarea" class="form-control" rows="4"></textarea>
@@ -51,7 +48,21 @@
                 <button class="btn btn-primary" type="submit">Envoyer</button>
         </fieldset>
 </form>
+<br />
+<section class="col-sm-8 table-responsive">
+        <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                <tr>
+                        <th>Commentaire</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                        <td><s:property value="commentaire.text_com" /></td>
+                </tr>
+                </tbody>
+        </table>
+</section>
 
-<h1> <s:property value="commentaire" /> </h1>
 </body>
 </html>
