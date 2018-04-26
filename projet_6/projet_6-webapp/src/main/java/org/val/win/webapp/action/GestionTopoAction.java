@@ -53,6 +53,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
 
     // ==================== Getters/Setters ====================
+
     public Integer getId() {
         return id;
     }
@@ -120,7 +121,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * @return input / success / error
      */
     public String doCreate() {
-        Utilisateur pUtilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null){
             return ActionSupport.LOGIN; }
             else {
@@ -129,17 +129,10 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             // Par défaut, le result est "input"
             String vResult = ActionSupport.INPUT;
             // Récupération de l'utilisateur
-            // ===== Validation de l'ajout de projet (projet != null)
+            // ===== Validation de l'ajout de projet (topo != null)
             if (this.topo != null) {
-                // Récupération du responsable
-                if (this.topo.getId_utilisateur_createur() == null) {
-                    this.addFieldError("topo.id_utilisateur_createur", "ne doit pas être vide");
-                } else {
-                    this.topo.setId_utilisateur_createur(pUtilisateur.getId());
-                }
-                // Si pas d'erreur, ajout du projet...
+                // Si pas d'erreur, ajout du topo...
                 if (!this.hasErrors()) {
-                    System.out.println(this.topo);
                     try {
                         managerFactory.getTopoManager().insertTopo(this.topo);
                         // Si ajout avec succès -> Result "success"

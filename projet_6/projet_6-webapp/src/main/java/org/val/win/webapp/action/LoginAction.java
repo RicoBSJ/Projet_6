@@ -86,7 +86,7 @@ public class LoginAction extends ActionSupport implements SessionAware {
     public String doLogout() {
         // Suppression de l'utilisateur en session
         this.session.remove("user");
-
+        this.session.remove("check");
         return ActionSupport.SUCCESS;
     }
 }

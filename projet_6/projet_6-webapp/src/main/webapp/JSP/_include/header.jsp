@@ -25,16 +25,14 @@
             </s:a>
         </h4>
     </s:if>
-    <s:if test="#session.check == 'false'">
+    <s:else>
         <s:a action="login">
-            <h4>
-                <span>Page de connection</span>
-            </h4>
+            <span>Page de connection</span>
         </s:a>
         <s:a action="utilisateur_new">
             <span> Creer un compte</span>
         </s:a>
-    </s:if>
+    </s:else>
 
 </header>
 

@@ -38,16 +38,15 @@
                 </tbody>
         </table>
 </section>
-<form class="col-sm-8 table-responsive">
         <legend>Laisser un commentaire</legend>
         <h6>Que penser vous du topo</h6>
-        <fieldset>
-                <label for="textarea">Votre message :</label>
-                <textarea id="textarea" class="form-control" rows="4"></textarea>
-                <p class="help-block">Vous pouvez agrandir la fenêtre</p>
-                <button class="btn btn-primary" type="submit">Envoyer</button>
-        </fieldset>
-</form>
+
+    <s:form action="com_new">
+        <s:param name="commentaire.idUtil" value="#session.user.id" > </s:param>
+        <s:textarea name="commentaire.text" label="commentaire"/>
+        <s:submit value="OK"/>
+    </s:form>
+
 <br />
 <section class="col-sm-8 table-responsive">
         <table class="table table-bordered table-striped table-condensed">

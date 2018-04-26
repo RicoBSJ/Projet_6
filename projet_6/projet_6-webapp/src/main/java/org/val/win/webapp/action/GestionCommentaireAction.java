@@ -42,21 +42,38 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     private List<Commentaire> listCom;
     private Commentaire commentaire;
 
+    // ==================== Getters/Setters ====================
+
+    public Integer getId() {
+        return id;
+    }
+    public void setId(Integer pId) {
+        id = pId;
+    }
+
+    public Commentaire getCommentaire() {
+        return commentaire;
+    }
+
+    public void setCommentaire(Commentaire pCommentaire) {
+        commentaire = pCommentaire;
+    }
+
     public String doList() {
         commentaire = managerFactory.getCommentaireManager().getComTopo(this.topo.getId());
         return ActionSupport.SUCCESS;
     }
 
     public String doCreate() {
-        Utilisateur utilisateur = (Utilisateur) session.get("user");
+        Utilisateur pUtilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null){
             return ActionSupport.LOGIN; }
-            else {
-            // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
+        else {
+            // Si (this.commentaire == null) c'est que l'on entre dans l'ajout de projet
             // Sinon, c'est que l'on vient de valider le formulaire d'ajout
             // Par défaut, le result est "input"
             String vResult = ActionSupport.INPUT;
-            // ===== Validation de l'ajout de projet (projet != null)
+            // ===== Validation de l'ajout de projet (commentaire != null)
             if (this.commentaire != null) {
                 // Si pas d'erreur, ajout du projet...
                 if (!this.hasErrors()) {
@@ -72,7 +89,6 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
                     }
                 }
             }
-
             return vResult;
         }
     }

@@ -50,8 +50,8 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_com", pCommentaire.getId_com());
-        vParams.addValue("topo_id", pCommentaire.getId_topo());
+        vParams.addValue("id_com", pCommentaire.getIdCom());
+        vParams.addValue("topo_id", pCommentaire.getIdTopo());
 
         String comTopo = vJdbcTemplate.queryForObject(vSQL, vParams, String.class);
 
@@ -87,9 +87,9 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
                 "( '?', '?', '?', '?')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_commentaire", pCommentaire.getId_com());
-        vParams.addValue("id_topo", pCommentaire.getId_topo());
-        vParams.addValue("id_utilisateur", pCommentaire.getId_com());
+        vParams.addValue("id_commentaire", pCommentaire.getIdCom());
+        vParams.addValue("id_topo", pCommentaire.getIdTopo());
+        vParams.addValue("id_utilisateur", pCommentaire.getIdUtil());
         vParams.addValue("texte_com", pCommentaire.getText());
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);

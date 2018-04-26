@@ -32,24 +32,32 @@ public class Commentaire {
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId_com() {
+    public Integer getIdCom() {
         return id_com;
     }
 
-    public Integer getId_topo() {
+    public Integer getIdTopo() {
         return id_topo;
     }
 
-    public Integer getId_util() {
+    public void setIdTopo(Integer pIdTopo){
+        id_topo = pIdTopo;
+    }
+
+    public Integer getIdUtil() {
         return id_util;
+    }
+
+    public void setIdUtil(Integer pIdUtil) {
+        id_util = pIdUtil;
     }
 
     public String getText() {
         return text_com;
     }
 
-    public void setText(String ptext) {
-        text_com = ptext;
+    public void setText(String pText) {
+        text_com = pText;
     }
 
 
