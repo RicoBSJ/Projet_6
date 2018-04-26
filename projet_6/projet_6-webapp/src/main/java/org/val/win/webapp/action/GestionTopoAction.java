@@ -13,8 +13,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
+
 /**
- * Gestion des actions topo
+ *
+ * Gestion des actions liées aux topos.
  */
 public class GestionTopoAction extends ActionSupport implements SessionAware {
 
@@ -118,35 +120,39 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * @return input / success / error
      */
     public String doCreate() {
-        // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
-        // Sinon, c'est que l'on vient de valider le formulaire d'ajout
-        // Par défaut, le result est "input"
-        String vResult = ActionSupport.INPUT;
-        // Récupération de l'utilisateur
         Utilisateur pUtilisateur = (Utilisateur) session.get("user");
-        // ===== Validation de l'ajout de projet (projet != null)
-        if (this.topo != null) {
-            // Récupération du responsable
-            if (this.topo.getId_utilisateur_createur() == null) {
-                this.addFieldError("topo.id_utilisateur_createur", "ne doit pas être vide");
-            } else {
-                this.topo.setId_utilisateur_createur(pUtilisateur.getId());
-            }
-            // Si pas d'erreur, ajout du projet...
-            if (!this.hasErrors()) {
-                System.out.println(this.topo);
-                try {
-                    managerFactory.getTopoManager().insertTopo(this.topo);
-                    // Si ajout avec succès -> Result "success"
-                    vResult = ActionSupport.SUCCESS;
-                    this.addActionMessage("Topo ajouté avec succès");
-                } catch (FunctionalException pEx) {
-                    // Sur erreur fonctionnelle on reste sur la page de saisie
-                    // et on affiche un message d'erreur
-                    this.addActionError(pEx.getMessage());
+        if (session.get("user") == null){
+            return ActionSupport.LOGIN; }
+            else {
+            // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
+            // Sinon, c'est que l'on vient de valider le formulaire d'ajout
+            // Par défaut, le result est "input"
+            String vResult = ActionSupport.INPUT;
+            // Récupération de l'utilisateur
+            // ===== Validation de l'ajout de projet (projet != null)
+            if (this.topo != null) {
+                // Récupération du responsable
+                if (this.topo.getId_utilisateur_createur() == null) {
+                    this.addFieldError("topo.id_utilisateur_createur", "ne doit pas être vide");
+                } else {
+                    this.topo.setId_utilisateur_createur(pUtilisateur.getId());
+                }
+                // Si pas d'erreur, ajout du projet...
+                if (!this.hasErrors()) {
+                    System.out.println(this.topo);
+                    try {
+                        managerFactory.getTopoManager().insertTopo(this.topo);
+                        // Si ajout avec succès -> Result "success"
+                        vResult = ActionSupport.SUCCESS;
+                        this.addActionMessage("Topo ajouté avec succès");
+                    } catch (FunctionalException pEx) {
+                        // Sur erreur fonctionnelle on reste sur la page de saisie
+                        // et on affiche un message d'erreur
+                        this.addActionError(pEx.getMessage());
+                    }
                 }
             }
+            return vResult;
         }
-        return vResult;
     }
 }
