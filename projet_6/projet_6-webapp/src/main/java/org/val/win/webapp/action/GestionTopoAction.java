@@ -123,10 +123,10 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      */
     public String doCreate() {
         Utilisateur pUtil = (Utilisateur) session.get("user");
-        if (session.get("user") == null){
-            this.topo.setId_utilisateur_createur(pUtil.getId());
+        if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
             else {
+            this.topo.setId_utilisateur_createur(pUtil.getId());
             // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
             // Sinon, c'est que l'on vient de valider le formulaire d'ajout
             // Par défaut, le result est "input"
