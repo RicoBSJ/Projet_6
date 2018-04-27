@@ -57,7 +57,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                        <td><s:property value="commentaire.text_com" /></td>
+                        <td><s:property value="commentaire.text.com" /></td>
                 </tr>
                 </tbody>
         </table>

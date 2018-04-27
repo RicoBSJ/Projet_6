@@ -37,6 +37,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
 
     // ----- Paramètres en entrée
     private Integer id;
+    private Utilisateur utilisateur;
 
     // ----- Eléments en sortie
     private List<Commentaire> listCom;
@@ -65,7 +66,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     }
 
     public String doCreate() {
-        Utilisateur pUtilisateur = (Utilisateur) session.get("user");
+        utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null){
             return ActionSupport.LOGIN; }
         else {
@@ -75,6 +76,8 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
             String vResult = ActionSupport.INPUT;
             // ===== Validation de l'ajout de projet (commentaire != null)
             if (this.commentaire != null) {
+                this.commentaire.setIdUtil(utilisateur.getId());
+
                 // Si pas d'erreur, ajout du projet...
                 if (!this.hasErrors()) {
                     try {
