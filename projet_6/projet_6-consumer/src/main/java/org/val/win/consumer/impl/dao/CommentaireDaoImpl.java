@@ -79,15 +79,13 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
     @Override
     public void insertCommentaire(Commentaire pCommentaire) {
         String vSQL = "INSERT INTO public.commentaire " +
-                "  (id_commentaire,\n" +
-                "  id_topo,\n" +
+                "  (id_topo,\n" +
                 "  id_utilisateur_com,\n" +
                 "  texte_com)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?')";
+                "('0', '0', '?')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_commentaire", pCommentaire.getIdCom());
         vParams.addValue("id_topo", pCommentaire.getIdTopo());
         vParams.addValue("id_utilisateur", pCommentaire.getIdUtil());
         vParams.addValue("texte_com", pCommentaire.getText());

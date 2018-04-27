@@ -66,11 +66,10 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  etat,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?', '?', '?', '?', '?', '?', '?')";
+                "('0', '?', '?', '?', '?', '?', '?', '?', 'true', '?')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("id_utilisateur_createur", pTopo.getId_utilisateur_createur());
-        vParams.addValue("description", pTopo.getDescription());
         vParams.addValue("nom_topo", pTopo.getNom_topo());
         vParams.addValue("region", pTopo.getRegion());
         vParams.addValue("lieu", pTopo.getLieu());
@@ -79,6 +78,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         vParams.addValue("ancrage", pTopo.getAncrage());
         vParams.addValue("relai", pTopo.getRelai());
         vParams.addValue("etat", pTopo.getEtat());
+        vParams.addValue("description", pTopo.getDescription());
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
     }

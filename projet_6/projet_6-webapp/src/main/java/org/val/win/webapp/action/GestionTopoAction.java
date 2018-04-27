@@ -9,6 +9,7 @@ import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
+import javax.rmi.CORBA.Util;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -121,7 +122,9 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * @return input / success / error
      */
     public String doCreate() {
+        Utilisateur pUtil = (Utilisateur) session.get("user");
         if (session.get("user") == null){
+            this.topo.setId_utilisateur_createur(pUtil.getId());
             return ActionSupport.LOGIN; }
             else {
             // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet

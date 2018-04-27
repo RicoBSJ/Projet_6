@@ -12,7 +12,6 @@
 <h2>Création d'un topo</h2>
 
 <s:form action="topo_new">
-    <s:param name="topo.id_utilisateur_createur" value="#session.user.id" > </s:param>
     <s:textfield name="topo.nom_topo" label="Nom" requiredLabel="true" />
     <s:textfield name="topo.region" label="Region" requiredLabel="true" />
     <s:textfield name="topo.lieu" label="Lieu" requiredLabel="true" />
