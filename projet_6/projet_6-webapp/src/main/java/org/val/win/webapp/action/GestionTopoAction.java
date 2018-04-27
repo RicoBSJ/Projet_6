@@ -9,7 +9,6 @@ import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
-import javax.rmi.CORBA.Util;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +18,7 @@ import java.util.Map;
  *
  * Gestion des actions liées aux topos.
  */
+
 public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     /**
@@ -70,9 +70,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public List<Topo> getListTopo() {
         return listTopo;
     }
-    public List<Utilisateur> getListUtilisateur() {
-        return listUtilisateur;
-    }
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
@@ -85,20 +82,9 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      */
 
     public String doList() {
-        System.out.println(session);
         listTopo = managerFactory.getTopoManager().getListTopo();
         return ActionSupport.SUCCESS;
     }
-
-    /*public String doList() {
-        Utilisateur utilisateur = (Utilisateur) session.get("user");
-        if(session.get("user") == null){
-            return ActionSupport.LOGIN; }
-            else { listTopo = managerFactory.getTopoManager().getListTopo();
-            return ActionSupport.SUCCESS; } }
-            */
-
-
 
     /**
      * Action affichant les détails d'un {@link Topo}
@@ -122,11 +108,10 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * @return input / success / error
      */
     public String doCreate() {
-        Utilisateur pUtil = (Utilisateur) session.get("user");
+        utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
             else {
-            this.topo.setId_utilisateur_createur(pUtil.getId());
             // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
             // Sinon, c'est que l'on vient de valider le formulaire d'ajout
             // Par défaut, le result est "input"
@@ -134,6 +119,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             // Récupération de l'utilisateur
             // ===== Validation de l'ajout de projet (topo != null)
             if (this.topo != null) {
+                this.topo.setId_utilisateur_createur(utilisateur.getId());
                 // Si pas d'erreur, ajout du topo...
                 if (!this.hasErrors()) {
                     try {
