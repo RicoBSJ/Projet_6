@@ -119,7 +119,10 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             // Récupération de l'utilisateur
             // ===== Validation de l'ajout de projet (topo != null)
             if (this.topo != null) {
-                this.topo.setId_utilisateur_createur(utilisateur.getId());
+                if (topo.getId_utilisateur_createur() == null) {
+                    this.topo.setId_utilisateur_createur(utilisateur.getId());
+                }
+                System.out.println(this.topo);
                 // Si pas d'erreur, ajout du topo...
                 if (!this.hasErrors()) {
                     try {
