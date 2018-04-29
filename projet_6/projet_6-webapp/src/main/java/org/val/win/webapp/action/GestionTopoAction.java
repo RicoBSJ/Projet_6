@@ -96,6 +96,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         } else {
             try {
                 topo = managerFactory.getTopoManager().getTopo(id);
+                utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getId_utilisateur_createur());
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(id)));
             }

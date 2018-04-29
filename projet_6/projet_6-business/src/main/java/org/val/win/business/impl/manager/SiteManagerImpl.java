@@ -3,6 +3,9 @@ package org.val.win.business.impl.manager;
 import org.val.win.business.contract.manager.SiteManager;
 import org.val.win.consumer.contract.dao.SiteDao;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.val.win.model.bean.grimpe.Site;
+import org.val.win.model.bean.grimpe.Voie;
+import org.val.win.model.exception.FunctionalException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -20,6 +23,16 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
     @Inject
     @Named("txManagerP6")
 
-
     private PlatformTransactionManager platformTransactionManager;
+
+    @Override
+    public void insertSite(Site pSite) throws FunctionalException {
+        //MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
+        //try {
+        siteDao.insertSite(pSite);
+        //  transactionHelper.commit(vStatus);
+        //} finally {
+        //     transactionHelper.rollback(vStatus);
+    }
+    //}
 }

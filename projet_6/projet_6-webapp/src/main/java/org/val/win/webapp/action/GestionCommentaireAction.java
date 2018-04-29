@@ -60,11 +60,18 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
         commentaire = pCommentaire;
     }
 
+
+    // ==================== Methodes ====================
+
     public String doList() {
         commentaire = managerFactory.getCommentaireManager().getComTopo(this.topo.getId());
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Creation de commentaire.
+     * @return
+     */
     public String doCreate() {
         utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null){
@@ -76,7 +83,10 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
             String vResult = ActionSupport.INPUT;
             // ===== Validation de l'ajout de projet (commentaire != null)
             if (this.commentaire != null) {
-                this.commentaire.setIdUtil(utilisateur.getId());
+                if (this.commentaire.getIdUtil() == null || this.commentaire.getIdTopo() == null) {
+                    this.commentaire.setIdUtil(utilisateur.getId());
+                }
+                System.out.println(this.commentaire);
 
                 // Si pas d'erreur, ajout du projet...
                 if (!this.hasErrors()) {

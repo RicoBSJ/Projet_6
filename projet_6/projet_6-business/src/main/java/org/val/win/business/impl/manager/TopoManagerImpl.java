@@ -49,14 +49,14 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
     @Override
     public void insertTopo(Topo pTopo) throws FunctionalException {
-        MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        try {
+        //MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
+        //try {
             topoDao.insertTopo(pTopo);
-            transactionHelper.commit(vStatus);
-        } finally {
-            transactionHelper.rollback(vStatus);
+          //  transactionHelper.commit(vStatus);
+        //} finally {
+       //     transactionHelper.rollback(vStatus);
         }
-    }
+    //}
 
     @Override
     public void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur) {

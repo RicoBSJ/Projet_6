@@ -25,15 +25,17 @@
                         <th>Region</th>
                         <th>Lieu</th>
                         <th>Description</th>
+                        <th>Crée par : </th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                        <td><s:property value="topo.nom_topo" /></td>
-                        <td><s:property value="topo.roche" /></td>
-                        <td><s:property value="topo.region" /></td>
-                        <td><s:property value="topo.lieu" /></td>
-                        <td><s:property value = "topo.description" /></td>
+                        <td><s:property value ="topo.nom_topo" /></td>
+                        <td><s:property value ="topo.roche" /></td>
+                        <td><s:property value ="topo.region" /></td>
+                        <td><s:property value ="topo.lieu" /></td>
+                        <td><s:property value ="topo.description" /></td>
+                        <td><s:property value ="utilisateur.pseudonyme"/> </td>
                 </tr>
                 </tbody>
         </table>
@@ -42,7 +44,6 @@
         <h6>Que penser vous du topo</h6>
 
     <s:form action="com_new">
-        <s:param name="commentaire.idUtil" value="#session.user.id" > </s:param>
         <s:textarea name="commentaire.text" label="commentaire"/>
         <s:submit value="OK"/>
     </s:form>

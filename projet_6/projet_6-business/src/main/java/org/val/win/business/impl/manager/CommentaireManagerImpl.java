@@ -37,12 +37,12 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
 
     @Override
     public void insertCom(Commentaire pCom) throws FunctionalException {
-        MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        try {
+        //MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
+        //try {
             commentaireDao.insertCommentaire(pCom);
-            transactionHelper.commit(vStatus);
-        } finally {
-            transactionHelper.rollback(vStatus);
-        }
+         //   transactionHelper.commit(vStatus);
+      //  } finally {
+     //       transactionHelper.rollback(vStatus);
+     //   }
     }
 }
