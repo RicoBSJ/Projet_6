@@ -10,6 +10,7 @@ import org.val.win.model.exception.FunctionalException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 @Named
 public class CommentaireManagerImpl extends AbstractManager implements CommentaireManager {
@@ -30,8 +31,8 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
      * @return
      */
     @Override
-    public Commentaire getComTopo(Integer pId){
-        Commentaire pCom = commentaireDao.getCommentaireTopo(pId);
+    public List<Commentaire> getComTopo(Integer pId){
+        List<Commentaire> pCom = commentaireDao.getCommentaireTopo(pId);
         return pCom;
     }
 

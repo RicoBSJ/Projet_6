@@ -13,5 +13,5 @@ public interface CommentaireDao {
 
     void insertCommentaire(Commentaire pCommentaire);
 
-    Commentaire getCommentaireTopo(Integer id);
+    List<Commentaire> getCommentaireTopo(Integer id);
 }

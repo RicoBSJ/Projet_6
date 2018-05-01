@@ -26,9 +26,12 @@
         </h4>
     </s:if>
     <s:else>
-        <s:a action="login">
-            <span>Page de connection</span>
-        </s:a>
+        <s:form action="login">
+            <s:textfield name="login" label="Identifiant" requiredLabel="true" />
+            <s:password name="password" label="Mot de passe" requiredLabel="true" />
+
+            <s:submit value="Connexion"/>
+        </s:form>
         <s:a action="utilisateur_new">
             <span> Creer un compte</span>
         </s:a>

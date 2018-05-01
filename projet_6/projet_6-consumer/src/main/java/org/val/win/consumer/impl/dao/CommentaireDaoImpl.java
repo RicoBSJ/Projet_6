@@ -26,7 +26,9 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         RowMapper<Commentaire> vRowMapper = new RowMapper<Commentaire>() {
             public Commentaire mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Commentaire vCommentaire = new Commentaire(pRS.getInt("id_commentaire"));
-                vCommentaire.setText(pRS.getString("text"));
+                vCommentaire.setText(pRS.getString("texte_com"));
+                vCommentaire.setIdTopo(pRS.getInt("id_topo"));
+                vCommentaire.setIdUtil(pRS.getInt("id_utilisateur"));
                 return vCommentaire;
             }
         };
@@ -64,12 +66,22 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
      * @return
      */
     @Override
-    public Commentaire getCommentaireTopo(Integer id) {
-        String vSQL = "SELECT * FROM public.commentaire " +
-                "WHERE id_topo = ?";
+    public List<Commentaire> getCommentaireTopo(Integer id) {
+        String vSQL = "SELECT * FROM public.commentaire" +
+                        " WHERE id_topo = ?";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        Commentaire commentaire = vJdbcTemplate.queryForObject(vSQL, Commentaire.class, id);
-        return commentaire;
+        RowMapper<Commentaire> vRowMapper = new RowMapper<Commentaire>() {
+            public Commentaire mapRow(ResultSet pRS, int pRowNum) throws SQLException {
+                Commentaire vCommentaire = new Commentaire(pRS.getInt("id_commentaire"));
+                vCommentaire.setText(pRS.getString("texte_com"));
+                vCommentaire.setIdTopo(pRS.getInt("id_topo"));
+                vCommentaire.setIdUtil(pRS.getInt("id_utilisateur_com"));
+                return vCommentaire;
+            }
+        };
+        List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper, id);
+
+        return vListCommentaire;
     }
 
     /**

@@ -25,7 +25,7 @@
                         <th>Region</th>
                         <th>Lieu</th>
                         <th>Description</th>
-                        <th>Crée par : </th>
+                        <th>Créateur</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -49,20 +49,9 @@
     </s:form>
 
 <br />
-<section class="col-sm-8 table-responsive">
-        <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                <tr>
-                        <th>Commentaire</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                        <td><s:property value="commentaire.text.com" /></td>
-                </tr>
-                </tbody>
-        </table>
-</section>
-
+<s:a action="topo_com">
+    <h2>Espace discussion sur le topo</h2>
+    <s:param name="id" value="id"/>
+</s:a>
 </body>
 </html>

@@ -63,8 +63,13 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
 
     // ==================== Methodes ====================
 
+    /**
+     * Liste de commantaire avec l'id topo parametre
+     * @return
+     */
     public String doList() {
-        commentaire = managerFactory.getCommentaireManager().getComTopo(this.topo.getId());
+        listCom = managerFactory.getCommentaireManager().getComTopo(id);
+        System.out.println(listCom);
         return ActionSupport.SUCCESS;
     }
 
@@ -83,8 +88,11 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
             String vResult = ActionSupport.INPUT;
             // ===== Validation de l'ajout de projet (commentaire != null)
             if (this.commentaire != null) {
-                if (this.commentaire.getIdUtil() == null || this.commentaire.getIdTopo() == null) {
+                if (this.commentaire.getIdUtil() == null) {
                     this.commentaire.setIdUtil(utilisateur.getId());
+                }
+                else if (this.commentaire.getIdTopo() == null) {
+                    this.commentaire.setIdTopo(topo.getId());
                 }
                 System.out.println(this.commentaire);
 
