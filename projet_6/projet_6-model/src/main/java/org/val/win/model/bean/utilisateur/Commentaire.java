@@ -5,10 +5,10 @@ public class Commentaire {
 
     // ==================== Attributs ====================
 
-    private Integer id_com;
-    private Integer id_util;
-    private Integer id_topo;
-    private String text_com;
+    private Integer idCom;
+    private Integer idUtil;
+    private Integer idTopo;
+    private String com;
 
 
     // ==================== Constructeurs ====================
@@ -26,38 +26,38 @@ public class Commentaire {
      * @param pId -
      */
     public Commentaire(Integer pId) {
-        id_com = pId;
+        idCom = pId;
     }
 
 
     // ==================== Getters/Setters ====================
 
     public Integer getIdCom() {
-        return id_com;
+        return idCom;
     }
 
     public Integer getIdTopo() {
-        return id_topo;
+        return idTopo;
     }
 
     public void setIdTopo(Integer pIdTopo){
-        id_topo = pIdTopo;
+        idTopo = pIdTopo;
     }
 
     public Integer getIdUtil() {
-        return id_util;
+        return idUtil;
     }
 
     public void setIdUtil(Integer pIdUtil) {
-        id_util = pIdUtil;
+        idUtil = pIdUtil;
     }
 
     public String getText() {
-        return text_com;
+        return com;
     }
 
     public void setText(String pText) {
-        text_com = pText;
+        com = pText;
     }
 
 
@@ -68,10 +68,10 @@ public class Commentaire {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("id commentaire =\"").append(id_com)
-                .append(vSEP).append("id utilisateur =\"").append(id_util).append('"')
-                .append(vSEP).append("id du topo =\"").append(id_topo).append('"')
-                .append(vSEP).append("commentaire = \"").append(text_com).append('"')
+                .append("id commentaire =\"").append(idCom)
+                .append(vSEP).append("id utilisateur =\"").append(idUtil).append('"')
+                .append(vSEP).append("id du topo =\"").append(idTopo).append('"')
+                .append(vSEP).append("commentaire = \"").append(com).append('"')
                 .append("}");
         return vStB.toString();
     }

@@ -93,8 +93,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
     @Override
     public void insertUtilisateur(Utilisateur pUtilisateur) {
         String vSQL = "INSERT INTO public.utilisateur " +
-                "  (id_utilisateur,\n" +
-                "  nom,\n" +
+                "  (nom,\n" +
                 "  pseudonyme,\n" +
                 "  prenom,\n" +
                 "  mail,\n" +
@@ -102,10 +101,9 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
                 "  mot_de_passe,\n" +
                 "  admin)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?', '?', '?', '?', '?')";
+                "('?', '?', '?', '?', '?', '?', 'false')";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_utilisateur", pUtilisateur.getId());
         vParams.addValue("nom", pUtilisateur.getNom());
         vParams.addValue("pseudonyme", pUtilisateur.getPseudonyme());
         vParams.addValue("prenom", pUtilisateur.getPrenom());

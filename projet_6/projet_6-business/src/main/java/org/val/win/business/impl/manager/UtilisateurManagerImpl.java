@@ -64,13 +64,6 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
         if (pUtilisateur == null) {
             throw new FunctionalException("L'objet Utilisateur ne doit pas être null !");
         }
-
-        Set<ConstraintViolation<Utilisateur>> vViolations = getConstraintValidator().validate(pUtilisateur);
-        if (!vViolations.isEmpty()) {
-            throw new FunctionalException("L'objet Utilisateur est invalide",
-                    new ConstraintViolationException(vViolations));
-
-        }
         utilisateurDao.insertUtilisateur(pUtilisateur);
     }
 }

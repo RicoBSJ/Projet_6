@@ -16,7 +16,7 @@
 <ul>
     <s:iterator value="listCom">
         <li>
-           Commentaire : <s:property value="commentaire"/>
+           Commentaire : <s:property value="commentaire.com"/>
         </li>
         <br />
     </s:iterator>

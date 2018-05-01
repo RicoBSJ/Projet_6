@@ -69,7 +69,6 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
      */
     public String doList() {
         listCom = managerFactory.getCommentaireManager().getComTopo(id);
-        System.out.println(listCom);
         return ActionSupport.SUCCESS;
     }
 

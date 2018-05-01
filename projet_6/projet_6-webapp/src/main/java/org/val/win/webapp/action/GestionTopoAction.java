@@ -50,7 +50,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     // ----- Eléments en sortie
     private List<Topo> listTopo;
     private Topo topo;
-    private List<Utilisateur> listUtilisateur;
 
 
     // ==================== Getters/Setters ====================

@@ -43,7 +43,6 @@
             <result name="input">/JSP/utilisateur/new.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">utilisateur_detail</param>
-                <param name="id">${utilisateur.id}</param>
             </result>
         </action>
 
