@@ -43,23 +43,23 @@ public class Topo {
     public void setId(Integer pId) {
         id = pId;
     }
-    public Integer getId_emprunteur()
+    public Integer getIdEmprunteur()
     {
         return idEmprunteur;
     }
-    public void setId_emprunteur(Integer pId_emprunteur) {
+    public void setIdEmprunteur(Integer pId_emprunteur) {
         idEmprunteur = pId_emprunteur;
     }
-    public Integer getId_utilisateur_createur() {
+    public Integer getIdUtilisateurCreateur() {
         return idUtilisateurCreateur;
     }
-    public void setId_utilisateur_createur(Integer pId_createur) {
+    public void setIdUtilisateurCreateur(Integer pId_createur) {
         idUtilisateurCreateur = pId_createur;
     }
-    public String getNom_topo() {
+    public String getNomTopo() {
         return nomTopo;
     }
-    public void setNom_topo(String pNom_topo) {
+    public void setNomTopo(String pNom_topo) {
         nomTopo = pNom_topo;
     }
     public String getDescription() {

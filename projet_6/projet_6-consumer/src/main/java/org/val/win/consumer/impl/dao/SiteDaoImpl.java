@@ -30,7 +30,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
         RowMapper<Site> vRowMapper = new RowMapper<Site>() {
             public Site mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Site vSite = new Site(pRS.getInt("id_site"));
-                vSite.setNom_site(pRS.getString("nom"));
+                vSite.setNomSite(pRS.getString("nom"));
                 vSite.setAltitudePiedVoie(pRS.getFloat("AltitudePiedVoie"));
                 vSite.setDescription(pRS.getString("description"));
                 return vSite;
@@ -56,8 +56,8 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
                 "(:idTopo,:nomSite,:altitudePiedVoie,:description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("idTopo", pSite.getId_topo());
-        vParams.addValue("nomSite", pSite.getNom_site());
+        vParams.addValue("idTopo", pSite.getIdTopo());
+        vParams.addValue("nomSite", pSite.getNomSite());
         vParams.addValue("altitudePiedVoie", pSite.getaltitudePiedVoie());
         vParams.addValue("description", pSite.getDescription());
 

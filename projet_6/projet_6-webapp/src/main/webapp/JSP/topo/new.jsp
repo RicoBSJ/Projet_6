@@ -12,7 +12,7 @@
 <h2>Création d'un topo</h2>
 
 <s:form action="topo_new">
-    <s:textfield name="topo.nom_topo" label="Nom" requiredLabel="true" />
+    <s:textfield name="topo.nomTopo" label="Nom" requiredLabel="true" />
     <s:textfield name="topo.region" label="Region" requiredLabel="true" />
     <s:textfield name="topo.lieu" label="Lieu" requiredLabel="true" />
     <s:textfield name="topo.roche" label="Roche" requiredLabel="true" />

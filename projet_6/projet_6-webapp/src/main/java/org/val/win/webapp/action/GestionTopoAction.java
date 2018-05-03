@@ -95,7 +95,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         } else {
             try {
                 topo = managerFactory.getTopoManager().getTopo(id);
-                utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getId_utilisateur_createur());
+                utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(id)));
             }
@@ -119,8 +119,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             // Récupération de l'utilisateur
             // ===== Validation de l'ajout de projet (topo != null)
             if (this.topo != null) {
-                if (topo.getId_utilisateur_createur() == null) {
-                    this.topo.setId_utilisateur_createur(utilisateur.getId());
+                if (topo.getIdUtilisateurCreateur() == null) {
+                    this.topo.setIdUtilisateurCreateur(utilisateur.getId());
                 }
                 System.out.println(this.topo);
                 // Si pas d'erreur, ajout du topo...

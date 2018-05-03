@@ -36,16 +36,16 @@ public class Site {
     public Integer getId(){
         return idSite;
     }
-    public Integer getId_topo() {
+    public Integer getIdTopo() {
         return idTopo;
     }
     public void setIdTopo(Integer pIdTopo){
         idTopo = pIdTopo;
     }
-    public String getNom_site() {
+    public String getNomSite() {
         return nomSite;
     }
-    public void setNom_site(String pNom_site) {
+    public void setNomSite(String pNom_site) {
         nomSite = pNom_site;
     }
     public Float getaltitudePiedVoie() {

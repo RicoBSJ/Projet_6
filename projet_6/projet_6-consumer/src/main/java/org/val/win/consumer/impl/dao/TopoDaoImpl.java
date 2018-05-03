@@ -30,9 +30,9 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         RowMapper<Topo> vRowMapper = new RowMapper<Topo>() {
             public Topo mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Topo vTopo = new Topo(pRS.getInt("id_topo"));
-                vTopo.setId_emprunteur(pRS.getInt("id_emprunteur"));
-                vTopo.setId_utilisateur_createur(pRS.getInt("id_utilisateur_createur"));
-                vTopo.setNom_topo(pRS.getString("nom_topo"));
+                vTopo.setIdEmprunteur(pRS.getInt("id_emprunteur"));
+                vTopo.setIdUtilisateurCreateur(pRS.getInt("id_utilisateur_createur"));
+                vTopo.setNomTopo(pRS.getString("nom_topo"));
                 vTopo.setAncrage(pRS.getString("ancrage"));
                 vTopo.setDescription(pRS.getString("description"));
                 vTopo.setEtat(pRS.getBoolean("etat"));
@@ -70,8 +70,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :relai, :etat, :description)";
 
         SqlParameterSource vParams = new MapSqlParameterSource()
-            .addValue("idUtilisateurCreateur", pTopo.getId_utilisateur_createur())
-            .addValue("nomTopo", pTopo.getNom_topo())
+            .addValue("idUtilisateurCreateur", pTopo.getIdUtilisateurCreateur())
+            .addValue("nomTopo", pTopo.getNomTopo())
             .addValue("region", pTopo.getRegion())
             .addValue("lieu", pTopo.getLieu())
             .addValue("roche", pTopo.getRoche())
