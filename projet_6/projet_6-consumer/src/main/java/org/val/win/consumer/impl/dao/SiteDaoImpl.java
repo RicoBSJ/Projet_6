@@ -2,6 +2,8 @@ package org.val.win.consumer.impl.dao;
 
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.SiteDao;
 import org.val.win.model.bean.grimpe.Site;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -44,23 +46,27 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
      * @param pSite
      */
     @Override
-    public void insertSite(Site pSite) {
+    public Site insertSite(Site pSite) {
         String vSQL = "INSERT INTO public.site " +
                 "  (id_topo,\n" +
                 "  nom_site,\n" +
                 "  altitudepiedvoie,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "( '?', '?', '?', '?')";
+                "(:idTopo,:nomSite,:altitudePiedVoie,:description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_site", pSite.getId_site());
-        vParams.addValue("id_topo", pSite.getId_topo());
-        vParams.addValue("nom_site", pSite.getNom_site());
-        vParams.addValue("altitudepiedvoie", pSite.getaltitudePiedVoie());
+        vParams.addValue("idTopo", pSite.getId_topo());
+        vParams.addValue("nomSite", pSite.getNom_site());
+        vParams.addValue("altitudePiedVoie", pSite.getaltitudePiedVoie());
         vParams.addValue("description", pSite.getDescription());
+
+        KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_site"});
+        pSite.setId(holder.getKey().intValue());
+        return pSite;
+
     }
 
     /**

@@ -124,7 +124,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         vParams.addValue("admin", pUtilisateur.getAdmin());
 
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        vJdbcTemplate.update(vSQL, vParams, holder);
+        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_utilisateur"});
         pUtilisateur.setId(holder.getKey().intValue());
         return pUtilisateur;
     }

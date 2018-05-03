@@ -3,6 +3,8 @@ package org.val.win.consumer.impl.dao;
 
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.VoieDao;
 import org.val.win.model.bean.grimpe.Secteur;
 import org.val.win.model.bean.grimpe.Voie;
@@ -69,7 +71,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
      * @param pVoie
      */
     @Override
-    public void insertVoie(Voie pVoie) {
+    public Voie insertVoie(Voie pVoie) {
         String vSQL = "INSERT INTO public.voie " +
                 "  (id_topo,\n" +
                 "  id_secteur,\n" +
@@ -79,18 +81,22 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
                 "  nom_voie,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "('?', '?', '?', '?', '?', '?', '?')";
+                "(:idTopo,:idSecteur,:idSite,:hauteur,:cotation,:nom,:description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_topo", pVoie.getId_topo());
-        vParams.addValue("id_secteur", pVoie.getId_secteur());
-        vParams.addValue("id_site", pVoie.getId_site());
+        vParams.addValue("idTopo", pVoie.getId_topo());
+        vParams.addValue("idSecteur", pVoie.getId_secteur());
+        vParams.addValue("idSite", pVoie.getId_site());
         vParams.addValue("hauteur", pVoie.getHauteur());
         vParams.addValue("cotation", pVoie.getCotation());
-        vParams.addValue("nom_voie", pVoie.getNom());
+        vParams.addValue("nom", pVoie.getNom());
         vParams.addValue("description", pVoie.getDescription());
+
+        KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_voie"});
+        pVoie.setId(holder.getKey().intValue());
+        return pVoie;
     }
 
     /**

@@ -4,8 +4,8 @@ public class Secteur {
 
     // ==================== Attributs ====================
     private Integer id;
-    private Integer id_site;
-    private Integer id_topo;
+    private Integer idSite;
+    private Integer idTopo;
     private Integer nbrVoie;
     private String nom;
     private String difficulte;
@@ -37,12 +37,24 @@ public class Secteur {
         return id;
     }
 
+    public void setId(Integer pId){
+        id = pId;
+    }
+
     public Integer getId_topo() {
-        return id_topo;
+        return idTopo;
+    }
+
+    public void setIdTopo(Integer pIdTopo){
+        idTopo = pIdTopo;
     }
 
     public Integer getId_site() {
-        return id_site;
+        return idSite;
+    }
+
+    public void setIdSite(Integer pIdSite){
+        idSite = pIdSite;
     }
 
     public String getNom() {
@@ -93,8 +105,8 @@ public class Secteur {
         final String vSEP = ", ";
         vStB.append(" {")
                 .append("Secteur id =\"").append(id).append('"')
-                .append("Site id = \"").append(id_site).append('"')
-                .append("topo id = \"").append(id_topo).append('"')
+                .append("Site id = \"").append(idSite).append('"')
+                .append("topo id = \"").append(idTopo).append('"')
                 .append(vSEP).append("nom =\"").append(nom).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')
                 .append(vSEP).append("nombre de voie(s) =\"").append(nbrVoie).append('"')

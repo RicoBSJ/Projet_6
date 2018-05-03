@@ -8,7 +8,7 @@ public interface SiteDao {
 
     List<Site> getListSite();
 
-    void insertSite(Site pSite);
+    Site insertSite(Site pSite);
 
     void updateInfoVoie(Site pSite);
 }

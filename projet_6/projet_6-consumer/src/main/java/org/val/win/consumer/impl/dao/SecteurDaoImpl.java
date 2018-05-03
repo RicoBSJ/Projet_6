@@ -2,6 +2,8 @@ package org.val.win.consumer.impl.dao;
 
 import org.springframework.jdbc.core.namedparam.BeanPropertySqlParameterSource;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.SecteurDao;
 import org.val.win.model.bean.grimpe.Secteur;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -46,7 +48,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
      * @param pSecteur
      */
     @Override
-    public void insertSecteur(Secteur pSecteur) {
+    public Secteur insertSecteur(Secteur pSecteur) {
         String vSQL = "INSERT INTO public.secteur " +
                 "  (id_topo,\n" +
                 "  id_site,\n" +
@@ -56,19 +58,22 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
                 "  orientation,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "('?', '?', '?', '?', '?', '?', '?')";
+                "(:idTopo,:idSite,:nomSecteur,:nbrVoie,:difficulte,:orientation,:description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_secteur", pSecteur.getId());
-        vParams.addValue("id_site", pSecteur.getId_site());
-        vParams.addValue("id_topo", pSecteur.getId_topo());
-        vParams.addValue("nom_secteur", pSecteur.getNom());
-        vParams.addValue("nbrvoie", pSecteur.getNbrVoie());
-        vParams.addValue("description", pSecteur.getDescription());
-        vParams.addValue("orientation", pSecteur.getOrientation());
+        vParams.addValue("idTopo", pSecteur.getId_topo());
+        vParams.addValue("idSite", pSecteur.getId_site());
+        vParams.addValue("nomSecteur", pSecteur.getNom());
+        vParams.addValue("nbrVoie", pSecteur.getNbrVoie());
         vParams.addValue("difficulte", pSecteur.getDifficulte());
+        vParams.addValue("orientation", pSecteur.getOrientation());
+        vParams.addValue("description", pSecteur.getDescription());
+
+        KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_secteur"});
+        pSecteur.setId(holder.getKey().intValue());
+        return pSecteur;
     }
 
     /**

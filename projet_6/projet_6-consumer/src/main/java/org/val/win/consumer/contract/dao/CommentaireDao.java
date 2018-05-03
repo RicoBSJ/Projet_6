@@ -11,7 +11,7 @@ public interface CommentaireDao {
 
     String getCommentaire(Commentaire pCommentaire);
 
-    void insertCommentaire(Commentaire pCommentaire);
+    Commentaire insertCommentaire(Commentaire pCommentaire);
 
     List<Commentaire> getCommentaireTopo(Integer id);
 }

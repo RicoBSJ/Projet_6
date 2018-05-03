@@ -19,9 +19,6 @@ import java.util.List;
 @Named
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
-
-    private int pId;
-
     /**
      * Récupérer tous les topos
      * @return
@@ -58,7 +55,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
      */
     @Override
     public Topo insertTopo(final Topo pTopo) {
-        KeyHolder holder = new GeneratedKeyHolder();
         String vSQL = "INSERT INTO public.topo " +
                 "  (id_utilisateur_createur,\n" +
                 "  nom_topo,\n" +
@@ -73,21 +69,22 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "VALUES\n" +
                 "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :relai, :etat, :description)";
 
-        MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("idUtilisateurCreateur", pTopo.getId_utilisateur_createur());
-        vParams.addValue("nomTopo", pTopo.getNom_topo());
-        vParams.addValue("region", pTopo.getRegion());
-        vParams.addValue("lieu", pTopo.getLieu());
-        vParams.addValue("roche", pTopo.getRoche());
-        vParams.addValue("profil", pTopo.getProfil());
-        vParams.addValue("ancrage", pTopo.getAncrage());
-        vParams.addValue("relai", pTopo.getRelai());
-        vParams.addValue("etat", pTopo.getEtat());
-        vParams.addValue("description", pTopo.getDescription());
+        SqlParameterSource vParams = new MapSqlParameterSource()
+            .addValue("idUtilisateurCreateur", pTopo.getId_utilisateur_createur())
+            .addValue("nomTopo", pTopo.getNom_topo())
+            .addValue("region", pTopo.getRegion())
+            .addValue("lieu", pTopo.getLieu())
+            .addValue("roche", pTopo.getRoche())
+            .addValue("profil", pTopo.getProfil())
+            .addValue("ancrage", pTopo.getAncrage())
+            .addValue("relai", pTopo.getRelai())
+            .addValue("etat", pTopo.getEtat())
+            .addValue("description", pTopo.getDescription());
+
+        KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        vJdbcTemplate.update(vSQL, vParams, holder);
-        int newTopoId = holder.getKey().intValue();
-        pTopo.setId(newTopoId);
+        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_topo"});
+        pTopo.setId(holder.getKey().intValue());
         return pTopo;
     }
 
@@ -96,7 +93,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
      * @param pTopo
      */
     @Override
-    public void updateEtat(Topo pTopo) {
+    public void updateEtat(final Topo pTopo) {
         String vSQL = "UPDATE public.topo SET etat = :etat WHERE id = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
@@ -108,7 +105,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
      * @param pTopo
      */
     @Override
-    public void updateInfoTopo(Topo pTopo) {
+    public void updateInfoTopo(final Topo pTopo) {
         String vSQL = "UPDATE public.topo " +
                 "SET description = :description,\n" +
                 "nom_topo = :nom_topo,\n" +

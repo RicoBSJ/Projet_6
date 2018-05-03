@@ -1,5 +1,7 @@
 package org.val.win.consumer.impl.dao;
 
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.CommentaireDao;
 import org.val.win.model.bean.utilisateur.Commentaire;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -52,7 +54,7 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_com", pCommentaire.getIdCom());
+        vParams.addValue("id_com", pCommentaire.getId());
         vParams.addValue("topo_id", pCommentaire.getIdTopo());
 
         String comTopo = vJdbcTemplate.queryForObject(vSQL, vParams, String.class);
@@ -89,19 +91,23 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
      * @param pCommentaire
      */
     @Override
-    public void insertCommentaire(Commentaire pCommentaire) {
+    public Commentaire insertCommentaire(Commentaire pCommentaire) {
         String vSQL = "INSERT INTO public.commentaire " +
                 "  (id_topo,\n" +
                 "  id_utilisateur_com,\n" +
                 "  texte_com)\n" +
                 "VALUES\n" +
-                "('0', '0', '?')";
+                "(:idTopo,:idUtil,:com)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_topo", pCommentaire.getIdTopo());
-        vParams.addValue("id_utilisateur", pCommentaire.getIdUtil());
-        vParams.addValue("texte_com", pCommentaire.getText());
+        vParams.addValue("idTopo", pCommentaire.getIdTopo());
+        vParams.addValue("idUtil", pCommentaire.getIdUtil());
+        vParams.addValue("com", pCommentaire.getText());
+
+        KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_secteur"});
+        pCommentaire.setId(holder.getKey().intValue());
+        return pCommentaire;
     }
 }

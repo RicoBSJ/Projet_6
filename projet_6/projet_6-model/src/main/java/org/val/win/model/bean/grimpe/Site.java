@@ -3,9 +3,9 @@ package org.val.win.model.bean.grimpe;
 public class Site {
 
     // ==================== Attributs ====================
-    private Integer id_site;
-    private Integer id_topo;
-    private String nom_site;
+    private Integer idSite;
+    private Integer idTopo;
+    private String nomSite;
     public Float altitudePiedVoie;
     private String description;
 
@@ -24,24 +24,29 @@ public class Site {
      * @param pId -
      */
     public Site(Integer pId) {
-        id_site = pId;
+        idSite = pId;
     }
 
 
     // ==================== Getters/Setters ====================
 
-
-    public Integer getId_topo() {
-        return id_topo;
+    public void setId(Integer pIdSite){
+        idSite = pIdSite;
     }
-    public Integer getId_site(){
-        return id_site;
+    public Integer getId(){
+        return idSite;
+    }
+    public Integer getId_topo() {
+        return idTopo;
+    }
+    public void setIdTopo(Integer pIdTopo){
+        idTopo = pIdTopo;
     }
     public String getNom_site() {
-        return nom_site;
+        return nomSite;
     }
     public void setNom_site(String pNom_site) {
-        nom_site = pNom_site;
+        nomSite = pNom_site;
     }
     public Float getaltitudePiedVoie() {
         return altitudePiedVoie;
@@ -63,8 +68,8 @@ public class Site {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Site id=").append(id_site)
-                .append(vSEP).append("Topo id = \"").append(id_topo).append('"')
+                .append("Site id=").append(idSite)
+                .append(vSEP).append("Topo id = \"").append(idTopo).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')
                 .append(vSEP).append("altitude pied voie =\"").append(altitudePiedVoie).append('"')
                 .append("}");

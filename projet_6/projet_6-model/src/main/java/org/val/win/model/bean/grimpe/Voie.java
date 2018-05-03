@@ -4,9 +4,9 @@ public class Voie {
 
     // ==================== Attributs ====================
     private Integer id;
-    private Integer id_topo;
-    private Integer id_secteur;
-    private Integer id_site;
+    private Integer idTopo;
+    private Integer idSecteur;
+    private Integer idSite;
     private Float hauteur;
     private String cotation;
     private String nom;
@@ -33,25 +33,36 @@ public class Voie {
 
     // ==================== Getters/Setters ====================
 
-
-    public Integer getId_site() {
-        return id_site;
-    }
-
     public void setId(Integer pId) {
         id = pId;
     }
 
+    public Integer getId(){
+        return id;
+    }
+
+    public void setIdSite(Integer pIdSite){
+        idSite = pIdSite;
+    }
+
+    public Integer getId_site() {
+        return idSite;
+    }
+
+    public void setIdTopo(Integer pIdTopo) {
+        idTopo = pIdTopo;
+    }
+
     public Integer getId_topo() {
-        return id_topo;
+        return idTopo;
+    }
+
+    public void setIdSecteur(Integer pIdSecteur){
+        idSecteur = pIdSecteur;
     }
 
     public Integer getId_secteur() {
-        return id_secteur;
-    }
-
-    public Integer getId() {
-        return id;
+        return idSecteur;
     }
 
     public String getNom() {
@@ -93,9 +104,9 @@ public class Voie {
         final String vSEP = ", ";
         vStB.append(" {")
                 .append("Voie id = \"").append(id).append('"')
-                .append("Secteur id = \"").append(id_secteur).append('"')
-                .append("site id = \"").append(id_site).append('"')
-                .append("topo id = \"").append(id_topo).append('"')
+                .append("Secteur id = \"").append(idSecteur).append('"')
+                .append("site id = \"").append(idSite).append('"')
+                .append("topo id = \"").append(idTopo).append('"')
                 .append(vSEP).append("nom=\"").append(nom).append('"')
                 .append(vSEP).append("cotation=\"").append(cotation).append('"')
                 .append(vSEP).append("hauteur=\"").append(hauteur).append('"')

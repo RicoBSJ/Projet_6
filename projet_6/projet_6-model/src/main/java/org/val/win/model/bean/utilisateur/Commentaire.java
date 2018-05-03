@@ -32,11 +32,11 @@ public class Commentaire {
 
     // ==================== Getters/Setters ====================
 
-    public Integer getIdCom() {
+    public Integer getId() {
         return idCom;
     }
 
-    public void setIdCom(Integer pId) {
+    public void setId(Integer pId) {
         idCom = pId;
     }
 
