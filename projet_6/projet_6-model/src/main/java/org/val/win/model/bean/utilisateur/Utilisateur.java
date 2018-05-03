@@ -107,6 +107,7 @@ public class Utilisateur {
                 .append("Utilisateur id=").append(id)
                 .append(vSEP).append("nom=\"").append(nom).append('"')
                 .append(vSEP).append("prenom=\"").append(prenom).append('"')
+                .append(vSEP).append("pseudonyme\"").append(pseudonyme).append('"')
                 .append(vSEP).append("telephone=\"").append(tel).append('"')
                 .append(vSEP).append("mail=\"").append(mail).append('"')
                 .append(vSEP).append("mot de passe = \"").append(mdp).append(('"'))

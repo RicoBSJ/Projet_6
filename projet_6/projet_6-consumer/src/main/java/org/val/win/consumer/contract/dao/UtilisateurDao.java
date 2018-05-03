@@ -10,7 +10,7 @@ public interface UtilisateurDao {
 
     Utilisateur getUtilisateur(Integer id);
 
-    void insertUtilisateur(Utilisateur pUtilisateur);
+    Utilisateur insertUtilisateur(Utilisateur pUtilisateur);
 
     void updateEtat(Utilisateur pUtilisateur);
 

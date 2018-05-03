@@ -9,7 +9,6 @@ import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
-
 import javax.inject.Inject;
 
 
@@ -78,6 +77,8 @@ public class GestionUtilisateurAction extends ActionSupport {
 
         // ===== Validation de l'ajout de projet (projet != null)
         if (this.utilisateur != null) {
+            this.utilisateur.setAdmin(false);
+            System.out.println(utilisateur);
             // Si pas d'erreur, ajout du projet...
             if (!this.hasErrors()) {
                 try {
@@ -94,7 +95,6 @@ public class GestionUtilisateurAction extends ActionSupport {
                 }
             }
         }
-
         // Si on doit aller sur le formulaire de saisie, il faut ajouter les info nécessaires
         if (vResult.equals(ActionSupport.INPUT)) {
             this.listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();

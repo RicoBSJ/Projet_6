@@ -38,6 +38,10 @@ public class Voie {
         return id_site;
     }
 
+    public void setId(Integer pId) {
+        id = pId;
+    }
+
     public Integer getId_topo() {
         return id_topo;
     }

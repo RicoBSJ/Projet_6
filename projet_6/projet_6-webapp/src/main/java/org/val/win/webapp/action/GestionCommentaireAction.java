@@ -64,7 +64,8 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     // ==================== Methodes ====================
 
     /**
-     * Liste de commantaire avec l'id topo parametre
+     * Liste de commantaire
+     * param id
      * @return
      */
     public String doList() {

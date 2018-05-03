@@ -4,9 +4,9 @@ public class Topo {
 
     // ==================== Attributs ====================
     private Integer id;
-    private Integer id_emprunteur;
-    private Integer id_utilisateur_createur;
-    private String nom_topo;
+    private Integer idEmprunteur;
+    private Integer idUtilisateurCreateur;
+    private String nomTopo;
     private String description;
     private String region;
     private String roche;
@@ -45,22 +45,22 @@ public class Topo {
     }
     public Integer getId_emprunteur()
     {
-        return id_emprunteur;
+        return idEmprunteur;
     }
     public void setId_emprunteur(Integer pId_emprunteur) {
-        id_emprunteur = pId_emprunteur;
+        idEmprunteur = pId_emprunteur;
     }
     public Integer getId_utilisateur_createur() {
-        return id_utilisateur_createur;
+        return idUtilisateurCreateur;
     }
     public void setId_utilisateur_createur(Integer pId_createur) {
-        id_utilisateur_createur = pId_createur;
+        idUtilisateurCreateur = pId_createur;
     }
     public String getNom_topo() {
-        return nom_topo;
+        return nomTopo;
     }
     public void setNom_topo(String pNom_topo) {
-        nom_topo = pNom_topo;
+        nomTopo = pNom_topo;
     }
     public String getDescription() {
         return description;
@@ -117,8 +117,8 @@ public class Topo {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Id createur Topo =\"").append(id_utilisateur_createur).append('"')
-                .append("Id emprunteur topo =\"").append(id_emprunteur).append('"')
+                .append("Id createur Topo =\"").append(idUtilisateurCreateur).append('"')
+                .append("Id emprunteur topo =\"").append(idEmprunteur).append('"')
                 .append(vSEP).append("region =\"").append(region).append('"')
                 .append(vSEP).append("lieu =\"").append(lieu).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')

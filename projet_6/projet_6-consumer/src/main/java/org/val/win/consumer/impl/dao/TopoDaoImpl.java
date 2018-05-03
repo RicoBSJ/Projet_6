@@ -1,5 +1,7 @@
 package org.val.win.consumer.impl.dao;
 
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.TopoDao;
 import org.val.win.model.bean.grimpe.Topo;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -17,6 +19,8 @@ import java.util.List;
 @Named
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
+
+    private int pId;
 
     /**
      * Récupérer tous les topos
@@ -53,7 +57,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
      * @param pTopo
      */
     @Override
-    public void insertTopo(Topo pTopo) {
+    public Topo insertTopo(final Topo pTopo) {
+        KeyHolder holder = new GeneratedKeyHolder();
         String vSQL = "INSERT INTO public.topo " +
                 "  (id_utilisateur_createur,\n" +
                 "  nom_topo,\n" +
@@ -66,11 +71,11 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  etat,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "('0', '?', '?', '?', '?', '?', '?', '?', 'true', '?')";
+                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :relai, :etat, :description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_utilisateur_createur", pTopo.getId_utilisateur_createur());
-        vParams.addValue("nom_topo", pTopo.getNom_topo());
+        vParams.addValue("idUtilisateurCreateur", pTopo.getId_utilisateur_createur());
+        vParams.addValue("nomTopo", pTopo.getNom_topo());
         vParams.addValue("region", pTopo.getRegion());
         vParams.addValue("lieu", pTopo.getLieu());
         vParams.addValue("roche", pTopo.getRoche());
@@ -80,7 +85,10 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         vParams.addValue("etat", pTopo.getEtat());
         vParams.addValue("description", pTopo.getDescription());
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams, holder);
+        int newTopoId = holder.getKey().intValue();
+        pTopo.setId(newTopoId);
+        return pTopo;
     }
 
     /**

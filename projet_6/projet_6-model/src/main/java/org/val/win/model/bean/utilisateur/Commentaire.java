@@ -36,6 +36,10 @@ public class Commentaire {
         return idCom;
     }
 
+    public void setIdCom(Integer pId) {
+        idCom = pId;
+    }
+
     public Integer getIdTopo() {
         return idTopo;
     }

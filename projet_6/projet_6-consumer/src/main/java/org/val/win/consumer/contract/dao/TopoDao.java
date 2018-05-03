@@ -8,7 +8,7 @@ public interface TopoDao {
 
     List<Topo> getListTopo();
 
-    void insertTopo(Topo pTopo);
+    Topo insertTopo(final Topo pTopo);
 
     void updateEtat(Topo pTopo);
 

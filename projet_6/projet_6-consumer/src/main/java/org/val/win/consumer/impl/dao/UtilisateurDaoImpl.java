@@ -1,5 +1,9 @@
 package org.val.win.consumer.impl.dao;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.PreparedStatementCreator;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.UtilisateurDao;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -10,11 +14,16 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import javax.inject.Named;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.List;
 
+/**
+ * Bean Utilisateur DAO.
+ */
 @Named
+/**
+ * Implementation des DAO pour l'utilisateur.
+ */
 public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDao {
 
     /**
@@ -26,7 +35,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         String vSQL = "SELECT * FROM public.utilisateur";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Utilisateur> vRowMapper = new RowMapper<Utilisateur>() {
-            public Utilisateur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
+            public Utilisateur mapRow(final ResultSet pRS, final int pRowNum) throws SQLException {
                 Utilisateur vUtilisateur = new Utilisateur(pRS.getInt("id_utilisateur"));
                 vUtilisateur.setNom(pRS.getString("nom"));
                 vUtilisateur.setPrenom(pRS.getString("prenom"));
@@ -78,11 +87,11 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
      * @return
      */
     @Override
-    public Utilisateur getUtilisateur(Integer id) {
+    public Utilisateur getUtilisateur(final Integer id) {
         String vSQL = "SELECT * FROM public.utilisateur " +
                       "WHERE id_utilisateur = ?";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        Utilisateur utilisateur = vJdbcTemplate.queryForObject( vSQL, Utilisateur.class, id);
+        Utilisateur utilisateur = vJdbcTemplate.queryForObject(vSQL, Utilisateur.class, id);
         return utilisateur;
     }
 
@@ -90,8 +99,9 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
      * Creer un utilisateur
      * @param pUtilisateur
      */
+
     @Override
-    public void insertUtilisateur(Utilisateur pUtilisateur) {
+    public Utilisateur insertUtilisateur(final Utilisateur pUtilisateur) {
         String vSQL = "INSERT INTO public.utilisateur " +
                 "  (nom,\n" +
                 "  pseudonyme,\n" +
@@ -101,26 +111,31 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
                 "  mot_de_passe,\n" +
                 "  admin)\n" +
                 "VALUES\n" +
-                "('?', '?', '?', '?', '?', '?', 'false')";
+                "(:nom,:pseudonyme,:prenom,:mail,:tel,:mdp,:admin)";
 
+        KeyHolder holder = new GeneratedKeyHolder();
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("nom", pUtilisateur.getNom());
         vParams.addValue("pseudonyme", pUtilisateur.getPseudonyme());
         vParams.addValue("prenom", pUtilisateur.getPrenom());
         vParams.addValue("mail", pUtilisateur.getMail());
-        vParams.addValue("telephone", pUtilisateur.getTel());
-        vParams.addValue("mot_de_passe", pUtilisateur.getMotDePasse());
+        vParams.addValue("tel", pUtilisateur.getTel());
+        vParams.addValue("mdp", pUtilisateur.getMotDePasse());
         vParams.addValue("admin", pUtilisateur.getAdmin());
+
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams, holder);
+        pUtilisateur.setId(holder.getKey().intValue());
+        return pUtilisateur;
     }
+
 
     /**
      * Mettre a jour l'etat (ADMIN) de l'utilisateur
      * @param pUtilisateur
      */
     @Override
-    public void updateEtat(Utilisateur pUtilisateur) {
+    public void updateEtat(final Utilisateur pUtilisateur) {
         String vSQL = "UPDATE public.utilisateur SET admin = :admin WHERE id = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pUtilisateur);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
@@ -132,7 +147,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
      * @param pUtilisateur
      */
     @Override
-    public void updateInfoUtil(Utilisateur pUtilisateur) {
+    public void updateInfoUtil(final Utilisateur pUtilisateur) {
         String vSQL = "UPDATE public.utilisateur " +
                 "SET admin = :admin,\n" +
                 "nom = :nom,\n" +
