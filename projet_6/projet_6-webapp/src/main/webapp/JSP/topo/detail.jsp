@@ -45,7 +45,7 @@
 
 <s:a action="list_site">
     <h3>Liste des site</h3>
-    <s:param name="id_topo" value="id" />
+    <s:param name="id_topo" value="topo.idTopo" />
 </s:a>
 
 

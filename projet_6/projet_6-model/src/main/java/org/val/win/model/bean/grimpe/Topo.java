@@ -3,7 +3,7 @@ package org.val.win.model.bean.grimpe;
 public class Topo {
 
     // ==================== Attributs ====================
-    private Integer id;
+    private Integer idTopo;
     private Integer idEmprunteur;
     private Integer idUtilisateurCreateur;
     private String nomTopo;
@@ -31,17 +31,17 @@ public class Topo {
      * @param pId -
      */
     public Topo(Integer pId) {
-        id = pId;
+        idTopo = pId;
     }
 
 
     // ==================== Getters/Setters ====================
 
     public Integer getId(){
-        return id;
+        return idTopo;
     }
     public void setId(Integer pId) {
-        id = pId;
+        idTopo = pId;
     }
     public Integer getIdEmprunteur()
     {
