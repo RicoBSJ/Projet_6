@@ -4,10 +4,13 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.grimpe.Site;
+import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
+import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
+import java.util.List;
 import java.util.Map;
 
 public class GestionSiteAction extends ActionSupport implements SessionAware {
@@ -34,12 +37,33 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
 
     // ----- Paramètres en entrée
 
-    private Integer id;
+    private Integer id_utilisateur;
+    private Integer id_topo;
+    private Integer id_site;
     private Utilisateur utilisateur;
+    private Topo topo;
 
     // ----- Paramètres en sortie
 
     private Site site;
+    private List<Site> listSite;
+
+    // ==================== Getters/Setters ====================
+
+    public void setId_topo(Integer id){
+        id_topo = id;
+    }
+
+    public Integer getId_topo() {
+        return id_topo;
+    }
+    // ==================== Méthodes ====================
+
+    public String doListSite() {
+        listSite = managerFactory.getSiteManager().getListSite(this.topo);
+        System.out.println(listSite);
+        return ActionSupport.SUCCESS;
+    }
 
     public String doCreate() {
         utilisateur = (Utilisateur) session.get("user");

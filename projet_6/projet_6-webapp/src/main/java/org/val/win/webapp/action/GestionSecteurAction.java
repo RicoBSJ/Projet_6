@@ -41,6 +41,15 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     private Secteur secteur;
 
+
+    // ==================== Getters/Setters ====================
+
+    public Integer getId(){
+        return id;
+    }
+
+    // ==================== Méthodes ====================
+
     public String doCreate() {
         utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {

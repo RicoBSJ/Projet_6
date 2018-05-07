@@ -3,6 +3,7 @@ package org.val.win.consumer.impl.dao;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.CommentaireDao;
+import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Commentaire;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -34,41 +35,18 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
                 return vCommentaire;
             }
         };
+
         List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper);
 
         return vListCommentaire;
     }
 
     /**
-     * Récupérer un commentaire précis d'un topo
-     * @param pCommentaire
+     * Récupérér les commentaires d'un topo.
      * @return
      */
     @Override
-    public String getCommentaire(Commentaire pCommentaire) {
-        String vSQL
-                = "SELECT texte_com FROM public.commentaire"
-                + " WHERE id_topo = :topo_id"
-                + "   AND id_commentaire = :id_com";
-
-        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-
-        MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_com", pCommentaire.getId());
-        vParams.addValue("topo_id", pCommentaire.getIdTopo());
-
-        String comTopo = vJdbcTemplate.queryForObject(vSQL, vParams, String.class);
-
-        return comTopo;
-    }
-
-    /**
-     * Récupérér les commentaires d'un topo
-     * @param id
-     * @return
-     */
-    @Override
-    public List<Commentaire> getCommentaireTopo(Integer id) {
+    public List<Commentaire> getCommentaireTopo(Topo pTopo) {
         String vSQL = "SELECT * FROM public.commentaire" +
                         " WHERE id_topo = ?";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -81,7 +59,9 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
                 return vCommentaire;
             }
         };
-        List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper, id);
+
+
+        List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper, pTopo.getId());
 
         return vListCommentaire;
     }

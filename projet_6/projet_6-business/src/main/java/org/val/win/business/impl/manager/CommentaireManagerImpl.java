@@ -5,6 +5,7 @@ import org.springframework.transaction.TransactionStatus;
 import org.val.win.business.contract.manager.CommentaireManager;
 import org.val.win.consumer.contract.dao.CommentaireDao;
 import org.springframework.transaction.PlatformTransactionManager;
+import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Commentaire;
 import org.val.win.model.exception.FunctionalException;
 
@@ -27,12 +28,12 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
 
     /**
      * Recupérer les commentaires d'un topo
-     * @param pId
+     * @param pTopo
      * @return
      */
     @Override
-    public List<Commentaire> getComTopo(Integer pId){
-        List<Commentaire> pCom = commentaireDao.getCommentaireTopo(pId);
+    public List<Commentaire> getCommentaireTopo(Topo pTopo){
+        List<Commentaire> pCom = commentaireDao.getCommentaireTopo(pTopo);
         return pCom;
     }
 

@@ -10,6 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
+import org.val.win.model.bean.grimpe.Topo;
 
 import javax.inject.Named;
 import java.sql.ResultSet;
@@ -24,9 +25,10 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
      * @return
      */
     @Override
-    public List<Site> getListSite() {
-        String vSQL = "SELECT * FROM public.site";
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+    public List<Site> getListSite(Topo pTopo) {
+        String vSQL = "SELECT * FROM public.site" +
+                      " WHERE id_topo = ?";
+
         RowMapper<Site> vRowMapper = new RowMapper<Site>() {
             public Site mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Site vSite = new Site(pRS.getInt("id_site"));
@@ -36,7 +38,9 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
                 return vSite;
             }
         };
-        List<Site> vListSite = vJdbcTemplate.query(vSQL, vRowMapper);
+
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Site> vListSite = vJdbcTemplate.query(vSQL, vRowMapper, pTopo.getId() );
 
         return vListSite;
     }

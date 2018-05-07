@@ -31,13 +31,12 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     @Inject
     private ManagerFactory managerFactory;
 
-    private Topo topo;
-
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
     private Integer id;
     private Utilisateur utilisateur;
+    private Topo topo;
 
     // ----- Eléments en sortie
     private List<Commentaire> listCom;
@@ -55,7 +54,6 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     public Commentaire getCommentaire() {
         return commentaire;
     }
-
     public void setCommentaire(Commentaire pCommentaire) {
         commentaire = pCommentaire;
     }
@@ -69,7 +67,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
      * @return
      */
     public String doList() {
-        listCom = managerFactory.getCommentaireManager().getComTopo(id);
+        listCom = managerFactory.getCommentaireManager().getCommentaireTopo(this.topo);
         return ActionSupport.SUCCESS;
     }
 

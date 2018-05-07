@@ -56,6 +56,8 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
         return voie;
     }
 
+    // ==================== Méthodes ====================
+
 
     public String doCreate() {
         utilisateur = (Utilisateur) session.get("user");

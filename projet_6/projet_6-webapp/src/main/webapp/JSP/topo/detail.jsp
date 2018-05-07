@@ -14,7 +14,7 @@
 
 <s:actionmessage/>
 
-
+<h2> Information Topo </h2>
 
 <section class="col-sm-8 table-responsive">
         <table class="table table-bordered table-striped table-condensed">
@@ -30,7 +30,7 @@
                 </thead>
                 <tbody>
                 <tr>
-                        <td><s:property value ="topo.nom_topo" /></td>
+                        <td><s:property value ="topo.nomTopo" /></td>
                         <td><s:property value ="topo.roche" /></td>
                         <td><s:property value ="topo.region" /></td>
                         <td><s:property value ="topo.lieu" /></td>
@@ -40,6 +40,16 @@
                 </tbody>
         </table>
 </section>
+
+<h2> Information Site </h2>
+
+<s:a action="list_site">
+    <h3>Liste des site</h3>
+    <s:param name="id_topo" value="id" />
+</s:a>
+
+
+
         <legend>Laisser un commentaire</legend>
         <h6>Que penser vous du topo</h6>
 

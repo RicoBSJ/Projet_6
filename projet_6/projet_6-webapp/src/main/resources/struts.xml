@@ -64,6 +64,14 @@
             <result>/JSP/topo/list.jsp</result>
         </action>
 
+        <!-- Action listant les sites -->
+
+        <action name="list_site"
+                class="org.val.win.webapp.action.GestionSiteAction"
+                method="doListSite">
+            <result>/JSP/topo/site/site.jsp</result>
+        </action>
+
         <!-- Action listant les commantaires d'un topo -->
 
         <action name="topo_com"
@@ -109,6 +117,40 @@
             <param name="actionName">topo_detail</param>
             <param name="id">${topo.id}</param>
         </result>
+        </action>
+
+        <!-- Actions permettant de créer un secteur -->
+
+        <action name="secteur_new"
+                class="org.val.win.webapp.action.GestionSecteurAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/topo/new.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="id">${topo.id}</param>
+            </result>
+        </action>
+
+        <!-- Actions permettant de creer un site -->
+
+        <action name="site_new"
+                class="org.val.win.webapp.action.GestionSiteAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/topo/new.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="id">${topo.id}</param>
+            </result>
         </action>
 
         <!-- Actions permettant de creer un commentaire -->
