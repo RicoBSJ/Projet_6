@@ -19,34 +19,11 @@ import java.util.List;
 public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDao {
 
     /**
-     * Récuperer tous les commentaires
-     * @return
-     */
-    @Override
-    public List<Commentaire> getListCommentaire() {
-        String vSQL = "SELECT * FROM public.commentaire";
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        RowMapper<Commentaire> vRowMapper = new RowMapper<Commentaire>() {
-            public Commentaire mapRow(ResultSet pRS, int pRowNum) throws SQLException {
-                Commentaire vCommentaire = new Commentaire(pRS.getInt("id_commentaire"));
-                vCommentaire.setText(pRS.getString("texte_com"));
-                vCommentaire.setIdTopo(pRS.getInt("id_topo"));
-                vCommentaire.setIdUtil(pRS.getInt("id_utilisateur"));
-                return vCommentaire;
-            }
-        };
-
-        List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper);
-
-        return vListCommentaire;
-    }
-
-    /**
      * Récupérér les commentaires d'un topo.
      * @return
      */
     @Override
-    public List<Commentaire> getCommentaireTopo(Topo pTopo) {
+    public List<Commentaire> getCommentaireTopo(Integer id) {
         String vSQL = "SELECT * FROM public.commentaire" +
                         " WHERE id_topo = ?";
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
@@ -61,7 +38,7 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         };
 
 
-        List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper, pTopo.getId());
+        List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper, id);
 
         return vListCommentaire;
     }

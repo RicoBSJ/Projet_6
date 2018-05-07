@@ -24,7 +24,7 @@
         <li>
             <s:a action="topo_detail">
                 Nom topo : <s:property value="nomTopo"/>
-                <s:param name="id" value="id" />
+                <s:param name="idTopo" value="id" />
         </li>
     </s:a>
         <br />

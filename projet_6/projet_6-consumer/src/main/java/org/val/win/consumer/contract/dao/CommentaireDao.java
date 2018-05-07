@@ -7,10 +7,7 @@ import java.util.List;
 
 public interface CommentaireDao {
 
-
-    List<Commentaire> getListCommentaire();
-
     Commentaire insertCommentaire(Commentaire pCommentaire);
 
-    List<Commentaire> getCommentaireTopo(Topo pTopo);
+    List<Commentaire> getCommentaireTopo(Integer id);
 }

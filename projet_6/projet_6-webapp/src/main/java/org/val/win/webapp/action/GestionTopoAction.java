@@ -44,7 +44,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
-    private Integer id;
+    private Integer idTopo;
     private Utilisateur utilisateur;
 
     // ----- Eléments en sortie
@@ -54,11 +54,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId() {
-        return id;
+    public Integer getIdTopo() {
+        return idTopo;
     }
-    public void setId(Integer pId) {
-        id = pId;
+    public void setIdTopo(Integer pId) {
+        idTopo = pId;
     }
     public Topo getTopo() {
         return topo;
@@ -90,16 +90,17 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * @return success / error
      */
     public String doDetail() {
-        if (id == null) {
+        if (idTopo == null) {
             this.addActionError(getText("error.topo.missing.id"));
         } else {
             try {
-                topo = managerFactory.getTopoManager().getTopo(id);
+                topo = managerFactory.getTopoManager().getTopo(idTopo);
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
             } catch (NotFoundException pE) {
-                this.addActionError(getText("error.topo.notfound", Collections.singletonList(id)));
+                this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));
             }
         }
+        System.out.println(this.topo);
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
 

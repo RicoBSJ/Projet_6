@@ -28,12 +28,12 @@ public class CommentaireManagerImpl extends AbstractManager implements Commentai
 
     /**
      * Recupérer les commentaires d'un topo
-     * @param pTopo
+     * @param pId
      * @return
      */
     @Override
-    public List<Commentaire> getCommentaireTopo(Topo pTopo){
-        List<Commentaire> pCom = commentaireDao.getCommentaireTopo(pTopo);
+    public List<Commentaire> getCommentaireTopo(Integer pId){
+        List<Commentaire> pCom = commentaireDao.getCommentaireTopo(pId);
         return pCom;
     }
 

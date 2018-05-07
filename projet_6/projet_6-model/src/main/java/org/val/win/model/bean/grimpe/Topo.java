@@ -117,6 +117,7 @@ public class Topo {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
+                .append("id du topo =\"").append(idTopo).append('"')
                 .append("Id createur Topo =\"").append(idUtilisateurCreateur).append('"')
                 .append("Id emprunteur topo =\"").append(idEmprunteur).append('"')
                 .append(vSEP).append("region =\"").append(region).append('"')

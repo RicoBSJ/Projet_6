@@ -25,7 +25,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
      * @return
      */
     @Override
-    public List<Site> getListSite(Topo pTopo) {
+    public List<Site> getListSite(Integer id) {
         String vSQL = "SELECT * FROM public.site" +
                       " WHERE id_topo = ?";
 
@@ -40,7 +40,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
         };
 
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
-        List<Site> vListSite = vJdbcTemplate.query(vSQL, vRowMapper, pTopo.getId() );
+        List<Site> vListSite = vJdbcTemplate.query(vSQL, vRowMapper, id);
 
         return vListSite;
     }

@@ -37,9 +37,9 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
 
     // ----- Paramètres en entrée
 
-    private Integer id_utilisateur;
-    private Integer id_topo;
-    private Integer id_site;
+    private Integer idUtilisateur;
+    private Integer idTopoSite;
+    private Integer idSite;
     private Utilisateur utilisateur;
     private Topo topo;
 
@@ -50,17 +50,25 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
 
     // ==================== Getters/Setters ====================
 
-    public void setId_topo(Integer id){
-        id_topo = id;
+    public void setIdTopoSite(Integer pId){
+        idTopoSite = pId;
     }
 
-    public Integer getId_topo() {
-        return id_topo;
+    public Integer getIdTopoSite() {
+        return idTopoSite;
+    }
+
+    public Site getSite(){
+        return site;
+    }
+
+    public void setSite(Site pSite) {
+        site = pSite;
     }
     // ==================== Méthodes ====================
 
     public String doListSite() {
-        listSite = managerFactory.getSiteManager().getListSite(this.topo);
+        listSite = managerFactory.getSiteManager().getListSite(idTopoSite);
         System.out.println(listSite);
         return ActionSupport.SUCCESS;
     }
@@ -72,6 +80,9 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
         else {
             String vResult = ActionSupport.INPUT;
             if (this.site != null) {
+                if (site.getIdTopo() == null) {
+                    this.site.setIdTopo(idTopoSite);
+                }
                 System.out.println(this.site);
                 if (!this.hasErrors()) {
                     try {

@@ -44,9 +44,15 @@
 <h2> Information Site </h2>
 
 <s:a action="list_site">
+    <s:param name="idTopoSite" value="topo.id" />
     <h3>Liste des site</h3>
-    <s:param name="id_topo" value="topo.idTopo" />
 </s:a>
+
+<s:a action="site_new">
+    <s:param name="idTopoSite" value="topo.id" />
+    <h3>Creation d'un nouveau site</h3>
+</s:a>
+
 
 
 

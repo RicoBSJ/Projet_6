@@ -29,8 +29,8 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
     private PlatformTransactionManager platformTransactionManager;
 
     @Override
-    public List<Site> getListSite(Topo pTopo) {
-        return siteDao.getListSite(pTopo);
+    public List<Site> getListSite(Integer id) {
+        return siteDao.getListSite(id);
     }
 
     @Override

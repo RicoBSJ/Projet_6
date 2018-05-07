@@ -69,7 +69,7 @@
         <action name="list_site"
                 class="org.val.win.webapp.action.GestionSiteAction"
                 method="doListSite">
-            <result>/JSP/topo/site/site.jsp</result>
+            <result>/JSP/site/site.jsp</result>
         </action>
 
         <!-- Action listant les commantaires d'un topo -->
@@ -112,7 +112,7 @@
         </interceptor-ref>
         <interceptor-ref name="defaultStack" />
 
-        <result name="input">/JSP/topo/new.jsp</result>
+        <result name="input">/JSP/topo/new_topo.jsp</result>
         <result name="success" type="redirectAction">
             <param name="actionName">topo_detail</param>
             <param name="id">${topo.id}</param>
@@ -129,7 +129,7 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
 
-            <result name="input">/JSP/topo/new.jsp</result>
+            <result name="input">/JSP/secteur/new_secteur.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
                 <param name="id">${topo.id}</param>
@@ -146,7 +146,7 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
 
-            <result name="input">/JSP/topo/new.jsp</result>
+            <result name="input">/JSP/site/new_site.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
                 <param name="id">${topo.id}</param>

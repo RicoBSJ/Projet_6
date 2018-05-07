@@ -11,6 +11,6 @@ public interface SiteManager {
 
     void insertSite(Site pSite) throws FunctionalException;
 
-    List<Site> getListSite(Topo pTopo);
+    List<Site> getListSite(Integer id);
 
 }

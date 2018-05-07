@@ -8,7 +8,7 @@ import java.util.List;
 
 public interface CommentaireManager {
 
-    List<Commentaire> getCommentaireTopo(Topo pTopo);
+    List<Commentaire> getCommentaireTopo(Integer pId);
 
     void insertCom(Commentaire pCom) throws FunctionalException;
 }

@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface SiteDao {
 
-    List<Site> getListSite(Topo pTopo);
+    List<Site> getListSite(Integer id);
 
     Site insertSite(Site pSite);
 

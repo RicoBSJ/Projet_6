@@ -34,9 +34,8 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
-    private Integer id;
+    private Integer idTopo;
     private Utilisateur utilisateur;
-    private Topo topo;
 
     // ----- Eléments en sortie
     private List<Commentaire> listCom;
@@ -45,10 +44,10 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     // ==================== Getters/Setters ====================
 
     public Integer getId() {
-        return id;
+        return idTopo;
     }
     public void setId(Integer pId) {
-        id = pId;
+        idTopo = pId;
     }
 
     public Commentaire getCommentaire() {
@@ -67,7 +66,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
      * @return
      */
     public String doList() {
-        listCom = managerFactory.getCommentaireManager().getCommentaireTopo(this.topo);
+        listCom = managerFactory.getCommentaireManager().getCommentaireTopo(idTopo);
         return ActionSupport.SUCCESS;
     }
 
@@ -90,7 +89,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
                     this.commentaire.setIdUtil(utilisateur.getId());
                 }
                 else if (this.commentaire.getIdTopo() == null) {
-                    this.commentaire.setIdTopo(topo.getId());
+                    this.commentaire.setIdTopo(idTopo);
                 }
                 System.out.println(this.commentaire);
 

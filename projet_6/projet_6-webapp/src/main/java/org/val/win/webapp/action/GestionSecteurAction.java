@@ -34,7 +34,8 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     // ----- Paramètres en entrée
 
-    private Integer id;
+    private Integer idTopo;
+    private Integer idSite;
     private Utilisateur utilisateur;
 
     // ----- Paramètres en sortie
@@ -44,8 +45,25 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId(){
-        return id;
+    public Integer getIdTopo(){
+        return idTopo;
+    }
+    public void setIdTopo(Integer pId) {
+        idTopo = pId;
+    }
+    public Integer getIdSite(){
+        return idSite;
+    }
+    public void setIdSite(Integer pId){
+        idSite = pId;
+    }
+
+    public Secteur getSecteur(){
+        return secteur;
+    }
+
+    public void setSecteur(Secteur pSecteur){
+        secteur = pSecteur;
     }
 
     // ==================== Méthodes ====================
