@@ -75,8 +75,13 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
         else {
             String vResult = ActionSupport.INPUT;
             if (this.secteur != null) {
-                System.out.println(this.secteur);
                 if (!this.hasErrors()) {
+                    if (this.secteur.getId_topo() == null){
+                        this.secteur.setIdTopo(idTopo);
+                    }
+                    else if (this.secteur.getId_site() == null){
+                        this.secteur.setIdSite(idSite);
+                    }
                     try {
                         managerFactory.getSecteurManager().insertSecteur(this.secteur);
                         // Si ajout avec succès -> Result "success"

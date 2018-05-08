@@ -34,7 +34,10 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
 
     // ----- Paramètres en entrée
 
-    private Integer id;
+    private Integer idVoie;
+    private Integer idTopo;
+    private Integer idSite;
+    private Integer idSecteur;
     private Utilisateur utilisateur;
 
     // ----- Eléments en sortie
@@ -43,15 +46,42 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId() {
-        return id;
+    public Integer getIdVoie() {
+        return idVoie;
     }
-    public void setId(Integer pId) {
-        id = pId;
+
+    public void setIdVoie(Integer pId) {
+        idVoie = pId;
     }
+
+    public Integer getIdSite() {
+        return idSite;
+    }
+
+    public void setIdSite(Integer idSite) {
+        this.idSite = idSite;
+    }
+
+    public Integer getIdTopo() {
+        return idTopo;
+    }
+
+    public void setIdTopo(Integer idTopo) {
+        this.idTopo = idTopo;
+    }
+
+    public Integer getIdSecteur() {
+        return idSecteur;
+    }
+
+    public void setIdSecteur(Integer idSecteur) {
+        this.idSecteur = idSecteur;
+    }
+
     public void setVoie(Voie pVoie){
         this.voie = pVoie;
     }
+
     public Voie getVoie(){
         return voie;
     }
@@ -68,6 +98,15 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
             if (this.voie != null) {
                 System.out.println(this.voie);
                 if (!this.hasErrors()) {
+                    if (this.voie.getId_topo() == null){
+                        this.voie.setIdTopo(idTopo);
+                    }
+                    else if (this.voie.getId_site() == null){
+                        this.voie.setIdSite(idSite);
+                    }
+                    else if (this.voie.getId_secteur() == null){
+                        this.voie.setIdSecteur(idSecteur);
+                    }
                     try {
                         managerFactory.getVoieManager().insertVoie(this.voie);
                         // Si ajout avec succès -> Result "success"
