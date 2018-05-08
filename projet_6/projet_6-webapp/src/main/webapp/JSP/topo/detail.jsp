@@ -53,9 +53,6 @@
     <h3>Creation d'un nouveau site</h3>
 </s:a>
 
-
-
-
         <legend>Laisser un commentaire</legend>
         <h6>Que penser vous du topo</h6>
 
