@@ -67,6 +67,10 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
     }
     // ==================== Méthodes ====================
 
+    /**
+     * Recuperer une liste de site
+     * @return
+     */
     public String doListSite() {
         listSite = managerFactory.getSiteManager().getListSite(idTopoSite);
         System.out.println(listSite);

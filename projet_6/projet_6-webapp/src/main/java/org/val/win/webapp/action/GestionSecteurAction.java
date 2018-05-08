@@ -68,6 +68,10 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     // ==================== Méthodes ====================
 
+    /**
+     * Creation d'un secteur
+     * @return
+     */
     public String doCreate() {
         utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {

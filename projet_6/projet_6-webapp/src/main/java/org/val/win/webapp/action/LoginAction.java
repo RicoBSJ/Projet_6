@@ -53,11 +53,11 @@ public class LoginAction extends ActionSupport implements SessionAware {
     }
 
     // ==================== Méthodes ====================
+
     /**
      * Action permettant la connexion d'un utilisateur
      * @return input / success
      **/
-
     public String doLogin() {
         String vResult = ActionSupport.INPUT;
         if (!StringUtils.isAllEmpty(login, password)) {
