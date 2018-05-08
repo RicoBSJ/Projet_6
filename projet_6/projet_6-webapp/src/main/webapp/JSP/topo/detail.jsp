@@ -67,7 +67,7 @@
 <br />
 <s:a action="topo_com">
     <h2>Espace discussion sur le topo</h2>
-    <s:param name="id" value="id"/>
+    <s:param name="idTopo" value="topo.id"/>
 </s:a>
 </body>
 </html>

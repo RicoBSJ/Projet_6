@@ -43,10 +43,10 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId() {
+    public Integer getIdTopo() {
         return idTopo;
     }
-    public void setId(Integer pId) {
+    public void setIdTopo(Integer pId) {
         idTopo = pId;
     }
 
@@ -89,7 +89,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
                     this.commentaire.setIdUtil(utilisateur.getId());
                 }
                 else if (this.commentaire.getIdTopo() == null) {
-                    this.commentaire.setIdTopo(idTopo);
+                    this.commentaire.setIdTopo(getIdTopo());
                 }
                 System.out.println(this.commentaire);
 
