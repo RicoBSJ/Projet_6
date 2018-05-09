@@ -33,8 +33,8 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
             public Site mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Site vSite = new Site(pRS.getInt("id_site"));
                 vSite.setIdTopo(pRS.getInt("id_topo"));
-                vSite.setNomSite(pRS.getString("nom"));
-                vSite.setAltitudePiedVoie(pRS.getFloat("AltitudePiedVoie"));
+                vSite.setNomSite(pRS.getString("nom_site"));
+                vSite.setAltitudePiedVoie(pRS.getFloat("altitudepiedvoie"));
                 vSite.setDescription(pRS.getString("description"));
                 return vSite;
             }

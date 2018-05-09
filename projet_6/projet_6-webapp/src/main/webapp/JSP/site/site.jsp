@@ -16,9 +16,9 @@
     <s:iterator value="listSite">
 
         <li>
-            Nom site : <s:property value="nomSite"/>
-            Altitude de la voie (en pied) : <s:property value="altitudePiedVoie"/>
-            Description : <s:property value="altitudePiedVoie"/>
+            Nom site : <s:property value="site.nomSite"/>
+            Altitude de la voie (en pied) : <s:property value="site.altitudePiedVoie"/>
+            Description : <s:property value="site.altitudePiedVoie"/>
             </li>
         <br />
     </s:iterator>

@@ -73,7 +73,6 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
      */
     public String doListSite() {
         listSite = managerFactory.getSiteManager().getListSite(idTopoSite);
-        System.out.println(listSite);
         return ActionSupport.SUCCESS;
     }
 
@@ -87,7 +86,6 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
                 if (site.getIdTopo() == null) {
                     this.site.setIdTopo(idTopoSite);
                 }
-                System.out.println(this.site);
                 if (!this.hasErrors()) {
                     try {
                         managerFactory.getSiteManager().insertSite(this.site);

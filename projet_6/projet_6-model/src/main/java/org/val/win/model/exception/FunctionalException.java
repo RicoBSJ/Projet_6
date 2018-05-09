@@ -1,7 +1,7 @@
 package org.val.win.model.exception;
 
 /**
- * Classe d'exception levée quand une erreur fonctionnelle survient
+ * Classe d'exception levée quand une erreur fonctionnelle survient.
  *
  * @author lgu
  */
@@ -12,7 +12,7 @@ public class FunctionalException extends Exception {
      *
      * @param pMessage -
      */
-    public FunctionalException(String pMessage) {
+    public FunctionalException(final String pMessage) {
         super(pMessage);
     }
 
@@ -23,7 +23,7 @@ public class FunctionalException extends Exception {
      * @param pMessage -
      * @param pCause -
      */
-    public FunctionalException(String pMessage, Throwable pCause) {
+    public FunctionalException(final String pMessage, final Throwable pCause) {
         super(pMessage, pCause);
     }
 }

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: 0.1s; }
+
+h1 {
+    color: #C3FF00;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
+
+body {
+    background-color: rgba(191, 155, 0, 0.93);
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #303030; }
+
+p {
+    width: 350px; /* On a indiqué une largeur (obligatoire) */
+    margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+    text-align: justify;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.login {
+    background-color: rgba(191, 166, 0, 0.93);
+    padding: 1em 0 0;
+    color: #EFEFEF;
+    text-align: right;}
+.login input {
+    width: calc(100% - 1em);
+    border: none;
+    height: 2em;
+    margin: 0.5em 0;
+    font-size: 1em;
+    padding: 0 0.5em; }
+.login .button {
+    background-color: #8b8b18;
+    color: #C3FF00;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 100%;
+    height: 2.5em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer; }

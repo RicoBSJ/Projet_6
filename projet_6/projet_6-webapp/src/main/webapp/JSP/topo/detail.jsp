@@ -57,6 +57,7 @@
         <h6>Que penser vous du topo</h6>
 
     <s:form action="com_new">
+        <s:param name="idTopo" value="topo.id"/>
         <s:textarea name="commentaire.text" label="commentaire"/>
         <s:submit value="OK"/>
     </s:form>

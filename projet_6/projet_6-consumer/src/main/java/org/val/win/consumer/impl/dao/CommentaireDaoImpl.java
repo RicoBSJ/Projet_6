@@ -37,7 +37,6 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
             }
         };
 
-
         List<Commentaire> vListCommentaire = vJdbcTemplate.query(vSQL, vRowMapper, id);
 
         return vListCommentaire;
@@ -62,8 +61,9 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
         vParams.addValue("com", pCommentaire.getText());
 
         KeyHolder holder = new GeneratedKeyHolder();
-        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_secteur"});
+        NamedParameterJdbcTemplate vJdbcTemplate
+                = new NamedParameterJdbcTemplate(getDataSource());
+        vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_commentaire"});
         pCommentaire.setId(holder.getKey().intValue());
         return pCommentaire;
     }

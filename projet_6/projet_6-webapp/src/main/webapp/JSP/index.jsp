@@ -8,23 +8,20 @@
 </head>
 
 <body>
-<h2>Liste Topo et Utilisateur <br />
-</h2>
-<br />
+    <h2>Liste Topo</h2>
+    <br />
 
-<nav>
+    <nav>
+        <s:a action="topo_list">
+            <h3>Liste des topo</h3>
+        </s:a>
 
-    <s:a action="topo_list">
-        <h3>Liste des topo</h3>
-    </s:a>
-
-    <s:a action="login">
-        <h4>
-            Page de connection
-        </h4>
-    </s:a>
-
-</nav>
+        <s:a action="login">
+            <h4>
+                Page de connection
+            </h4>
+        </s:a>
+    </nav>
 
 </body>
 </html>

@@ -11,25 +11,28 @@
 <h2>Liste des Topo</h2>
 <br />
 
-<s:a action="topo_new">Creation d'un nouveau topo </s:a>
+<s:a action="topo_new">
+    Creation d'un nouveau topo
+</s:a>
 
 
 <s:actionmessage />
 <br />
 <br />
+<div class="col-lg-5">
+    <ul class="list-group">
+        <s:iterator value="listTopo">
 
-<ul>
-    <s:iterator value="listTopo">
-
-        <li>
-            <s:a action="topo_detail">
-                Nom topo : <s:property value="nomTopo"/>
-                <s:param name="idTopo" value="id" />
-        </li>
-    </s:a>
-        <br />
-    </s:iterator>
-</ul>
+            <li class="list-group-item">
+                <s:a action="topo_detail">
+                    Nom topo : <s:property value="nomTopo"/>
+                    <s:param name="idTopo" value="id" />
+            </li>
+        </s:a>
+            <br />
+        </s:iterator>
+    </ul>
+</div>
 
 </body>
 </html>

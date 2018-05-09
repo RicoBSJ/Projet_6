@@ -69,7 +69,7 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
     // ==================== Méthodes ====================
 
     /**
-     * Creation d'un secteur
+     * Creation de Secteur
      * @return
      */
     public String doCreate() {

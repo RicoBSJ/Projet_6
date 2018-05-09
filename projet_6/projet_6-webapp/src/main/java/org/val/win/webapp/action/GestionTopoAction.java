@@ -100,7 +100,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));
             }
         }
-        System.out.println(this.topo);
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
 

@@ -1,5 +1,8 @@
 package org.val.win.model.bean.utilisateur;
 
+/**
+ * Modele commentaire.
+ */
 public class Commentaire {
 
 
@@ -25,7 +28,7 @@ public class Commentaire {
      *
      * @param pId -
      */
-    public Commentaire(Integer pId) {
+    public Commentaire(final Integer pId) {
         idCom = pId;
     }
 
@@ -36,7 +39,7 @@ public class Commentaire {
         return idCom;
     }
 
-    public void setId(Integer pId) {
+    public void setId(final Integer pId) {
         idCom = pId;
     }
 
@@ -44,7 +47,7 @@ public class Commentaire {
         return idTopo;
     }
 
-    public void setIdTopo(Integer pIdTopo){
+    public void setIdTopo(final Integer pIdTopo){
         idTopo = pIdTopo;
     }
 
@@ -52,7 +55,7 @@ public class Commentaire {
         return idUtil;
     }
 
-    public void setIdUtil(Integer pIdUtil) {
+    public void setIdUtil(final Integer pIdUtil) {
         idUtil = pIdUtil;
     }
 
@@ -60,7 +63,7 @@ public class Commentaire {
         return com;
     }
 
-    public void setText(String pText) {
+    public void setText(final String pText) {
         com = pText;
     }
 

@@ -5,7 +5,6 @@ import org.springframework.transaction.TransactionStatus;
 import org.val.win.business.contract.manager.CommentaireManager;
 import org.val.win.consumer.contract.dao.CommentaireDao;
 import org.springframework.transaction.PlatformTransactionManager;
-import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Commentaire;
 import org.val.win.model.exception.FunctionalException;
 
