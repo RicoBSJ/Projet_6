@@ -10,25 +10,33 @@ h1 {
     letter-spacing: 0.1em; }
 
 body {
-    background-color: rgba(191, 155, 0, 0.93);
+    background-color: rgba(100, 191, 0, 0.93);
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
     color: #303030; }
 
+.form {
+    background-color: rgba(188, 184, 191, 0.93);
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18px;
+    color: #303030;
+}
+
+
 p {
-    width: 350px; /* On a indiqué une largeur (obligatoire) */
-    margin: auto; /* On peut donc demander à ce que le bloc soit centré avec auto */
+    width: 350px;
     text-align: justify;
     padding: 12px;
-    margin-bottom: 20px;
+    margin: auto auto 20px;
 }
 
 .login {
-    background-color: rgba(191, 166, 0, 0.93);
+    background-color: rgba(91, 56, 191, 0.93);
     padding: 1em 0 0;
     color: #EFEFEF;
-    text-align: right;}
+    text-align: left;}
 .login input {
     width: calc(100% - 1em);
     border: none;
@@ -36,9 +44,9 @@ p {
     margin: 0.5em 0;
     font-size: 1em;
     padding: 0 0.5em; }
-.login .button {
-    background-color: #8b8b18;
-    color: #C3FF00;
+.login .login-button {
+    background-color: #1a878b;
+    color: #f6ff0d;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;

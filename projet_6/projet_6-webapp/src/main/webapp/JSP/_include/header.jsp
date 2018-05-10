@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
+    <script src="${pageContext.request.contextPath}/JS/main.js"></script>
 </head>
 
 <header>
@@ -28,6 +29,8 @@
         </h4>
     </s:if>
     <s:else>
+        <span class='login-button'>Login</span>
+        <div class="co">
         <s:form action="login">
             <s:textfield name="login" label="Identifiant" requiredLabel="true" class="username"/>
             <s:password name="password" label="Mot de passe" requiredLabel="true" type="password" />
@@ -38,9 +41,8 @@
             <span class="button"> Creer un compte </span>
         </s:a>
     </s:else>
+        </div>
     </div>
-
-    <script src="${pageContext.request.contextPath}/JS/main.js"></script>
 
 </header>
 

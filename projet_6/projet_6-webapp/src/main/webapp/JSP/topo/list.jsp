@@ -19,7 +19,7 @@
 <s:actionmessage />
 <br />
 <br />
-<div class="col-lg-5">
+<div class="col-lg-12">
     <ul class="list-group">
         <s:iterator value="listTopo">
 
@@ -35,4 +35,5 @@
 </div>
 
 </body>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>

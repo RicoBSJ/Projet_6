@@ -63,9 +63,21 @@
     </s:form>
 
 <br />
+<ul>
+    <s:iterator value="listCom">
+        <s:param name="idTopo" value="topo.id"/>
+        <li>
+            Commentaire : <s:property value="text"/>
+        </li>
+        <br />
+    </s:iterator>
+</ul>
+<!--
 <s:a action="topo_com">
     <h2>Espace discussion sur le topo</h2>
     <s:param name="idTopo" value="topo.id"/>
 </s:a>
+-->
 </body>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>

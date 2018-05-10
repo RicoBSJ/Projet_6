@@ -8,7 +8,6 @@
 </head>
 
 <body>
-    <h2>Liste Topo</h2>
     <br />
 
     <nav>
@@ -24,4 +23,6 @@
     </nav>
 
 </body>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>
