@@ -3,6 +3,7 @@
     padding: 0;
     transition: 0.1s; }
 
+
 h1 {
     color: #C3FF00;
     font-weight: 700;
@@ -14,6 +15,8 @@ body {
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
     color: #303030; }
 
 .form {
@@ -25,11 +28,17 @@ body {
 }
 
 
+
 p {
     width: 350px;
     text-align: justify;
     padding: 12px;
     margin: auto auto 20px;
+}
+
+.inline-form input {
+    display: inline-block;
+    width: 100px;
 }
 
 .login {

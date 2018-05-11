@@ -9,18 +9,14 @@
 
 <body>
     <br />
+    <br />
+    <br />
+    <br />
 
-    <nav>
-        <s:a action="topo_list">
-            <h3>Liste des topo</h3>
-        </s:a>
-
-        <s:a action="login">
-            <h4>
-                Page de connection
-            </h4>
-        </s:a>
-    </nav>
+    <h1>
+        Bienvenue sur Bubule <br />
+        Site communautaire de reference de topo
+    </h1>
 
 </body>
 

@@ -4,66 +4,47 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
-    <script src="${pageContext.request.contextPath}/JS/main.js"></script>
 </head>
 
 <header>
     <s:actionerror/>
     <s:actionmessage/>
 
-    <title>Site d'escalade</title>
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li class="active"> <a href="index.action">Accueil</a> </li>
+                <li> <a href="#">Rechercher un topo</a> </li>
+                <li> <a href="topo_list.action">Liste de topo</a> </li>
+            </ul>
+            <s:if test="#session.check == 'true'">
+                <s:a action="utilisateur_detail">
+                    <span>Vous etes connecté <s:property value="#session.user.prenom"/> </span>
+                    <s:param name="id" value="#session.user.id" />
+                    <br />
+                </s:a>
+                <s:a action="logout">
+                    <span> Deconnection </span>
+                </s:a>
+            </s:if>
+            <s:else>
+                <s:form action="login" class="navbar-form navbar-right inline-form">
+                    <s:textfield name="login" label="Identifiant" requiredLabel="true" class="input-sm form-control"/>
+                    <s:password name="password" label="Mot de passe" requiredLabel="true" type="password" class="input-sm form-control"/>
 
-
-
-    <div class="login">
-    <s:if test="#session.check == 'true'">
-        <h4>
-            <s:a action="utilisateur_detail">
-            <span>Vous etes connecté <s:property value="#session.user.prenom"/> </span>
-                <s:param name="id" value="#session.user.id" />
-                <br />
-            </s:a>
-            <s:a action="logout">
-                <span> Deconnection </span>
-            </s:a>
-        </h4>
-    </s:if>
-    <s:else>
-        <span class='login-button'>Login</span>
-        <div class="co">
-        <s:form action="login">
-            <s:textfield name="login" label="Identifiant" requiredLabel="true" class="username"/>
-            <s:password name="password" label="Mot de passe" requiredLabel="true" type="password" />
-
-            <s:submit value="Connexion" class="button" type="submit"/>
-        </s:form>
-        <s:a action="utilisateur_new">
-            <span class="button"> Creer un compte </span>
-        </s:a>
-    </s:else>
-        </div>
+                    <s:submit value="Connexion" class="btn btn-primary btn-sm" type="submit"/>
+                </s:form>
+            </s:else>
+            </div>
+        </nav>
     </div>
-
 </header>
 
 <br />
 
-<!--
 
-<div class='login-form'>
-    <div class='container'>
-        <form>
-            <h4>Username</h4>
-            <input class='username' />
-            <h4>Password</h4>
-            <input type='password' />
-            <input class='sign-in-button' type='submit' value='Sign In' />
-        </form>
-    </div>
-</div>
-
--->
-
+<script src="${pageContext.request.contextPath}/JS/main.js"></script>
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 <script
         src="https://code.jquery.com/jquery-3.3.1.js"
