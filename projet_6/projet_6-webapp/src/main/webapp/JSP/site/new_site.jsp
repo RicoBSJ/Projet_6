@@ -19,4 +19,6 @@
     <s:submit value="OK"/>
 </s:form>
 </body>
+
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>

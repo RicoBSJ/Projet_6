@@ -12,7 +12,6 @@
 
 <ul>
 
-    <li>ID : <s:property value="id" /></li>
     <li>Nom : <s:property value="utilisateur.nom" /></li>
     <li>Prénom : <s:property value="utilisateur.prenom" /></li>
     <li>Mail : <s:property value="utilisateur.mail" /></li>
