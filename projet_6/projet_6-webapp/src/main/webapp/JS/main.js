@@ -13,7 +13,7 @@ $('.login-button').click(function(){
     $('.co').show();
 });
 
-/*
+
 
 $.ajax({
     url: "ListSite", // Nom de l'action

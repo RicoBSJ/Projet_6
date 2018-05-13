@@ -169,16 +169,12 @@
             <result>/JSP/topo/commentaire.jsp</result>
         </action>
 
-        <!-- Liste Site avec Jsons TEST
-        A implémenter correctement :(
-
         <result-types>
             <result-type name="json" class="org.apache.struts2.json.JSONResult" />
         </result-types>
-        <action name="listSite" class="org.val.win.webapp.action.GestionTopoAction" method="doListSite">
+        <action name="AJAXAction" class="com.demo.sd.prj.ui.actions.AJAXAction" method="myMethod">
             <result name="success" type="json" />
         </action>
-        -->
 
     </package>
 

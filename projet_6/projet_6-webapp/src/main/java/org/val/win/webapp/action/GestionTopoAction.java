@@ -100,17 +100,17 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
-    public String DoListSite() {
+    public String doListSite() {
         listSite = managerFactory.getSiteManager().getListSite(idTopo);
         return ActionSupport.SUCCESS;
     }
 
-    public String DoListSecteur() {
+    public String doListSecteur() {
         listSecteur = managerFactory.getSecteurManager().getListSecteur(idTopo);
         return ActionSupport.SUCCESS;
     }
 
-    public String DoListVoie() {
+    public String doListVoie() {
         listVoie = managerFactory.getVoieManager().getListVoie(idTopo);
         return ActionSupport.SUCCESS;
     }
