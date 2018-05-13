@@ -8,6 +8,7 @@ import org.val.win.model.exception.FunctionalException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 @Named
 public class SecteurManagerImpl extends AbstractManager implements SecteurManager {
@@ -21,6 +22,11 @@ public class SecteurManagerImpl extends AbstractManager implements SecteurManage
     @Inject
     @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
+
+    @Override
+    public List<Secteur> getListSecteur(Integer id) {
+        return secteurDao.getListSecteur();
+    }
 
     @Override
     public void insertSecteur(Secteur pSecteur) throws FunctionalException {

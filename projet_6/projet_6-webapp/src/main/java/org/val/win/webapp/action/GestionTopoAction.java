@@ -3,7 +3,10 @@ package org.val.win.webapp.action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 import org.val.win.business.contract.ManagerFactory;
+import org.val.win.model.bean.grimpe.Secteur;
+import org.val.win.model.bean.grimpe.Site;
 import org.val.win.model.bean.grimpe.Topo;
+import org.val.win.model.bean.grimpe.Voie;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
@@ -49,6 +52,9 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     // ----- Eléments en sortie
     private List<Topo> listTopo;
+    private List<Site> listSite;
+    private List<Secteur> listSecteur;
+    private List<Voie> listVoie;
     private Topo topo;
 
 
@@ -69,6 +75,15 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public List<Topo> getListTopo() {
         return listTopo;
     }
+    public List<Site> getListSite() {
+        return listSite;
+    }
+    public List<Secteur> getListSecteur() {
+        return listSecteur;
+    }
+    public List<Voie> getListVoie() {
+        return listVoie;
+    }
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
@@ -82,6 +97,21 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     public String doList() {
         listTopo = managerFactory.getTopoManager().getListTopo();
+        return ActionSupport.SUCCESS;
+    }
+
+    public String DoListSite() {
+        listSite = managerFactory.getSiteManager().getListSite(idTopo);
+        return ActionSupport.SUCCESS;
+    }
+
+    public String DoListSecteur() {
+        listSecteur = managerFactory.getSecteurManager().getListSecteur(idTopo);
+        return ActionSupport.SUCCESS;
+    }
+
+    public String DoListVoie() {
+        listVoie = managerFactory.getVoieManager().getListVoie(idTopo);
         return ActionSupport.SUCCESS;
     }
 
@@ -112,12 +142,12 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
             else {
-            // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
+            // Si (this.topo == null) c'est que l'on entre dans l'ajout de projet
             // Sinon, c'est que l'on vient de valider le formulaire d'ajout
             // Par défaut, le result est "input"
             String vResult = ActionSupport.INPUT;
             // Récupération de l'utilisateur
-            // ===== Validation de l'ajout de projet (topo != null)
+            // ===== Validation de l'ajout de topo (topo != null)
             if (this.topo != null) {
                 if (topo.getIdUtilisateurCreateur() == null) {
                     this.topo.setIdUtilisateurCreateur(utilisateur.getId());

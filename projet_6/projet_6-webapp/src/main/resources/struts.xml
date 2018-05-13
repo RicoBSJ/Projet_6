@@ -6,6 +6,7 @@
 
     <package name="default" extends="struts-default">
 
+
         <!-- Action par défaut -->
 
         <default-action-ref name="index" />
@@ -80,6 +81,8 @@
             <result>/JSP/topo/commentaire.jsp</result>
         </action>
 
+
+
         <!--
         <action name="topo_list"
                 class="org.val.win.webapp.action.GestionTopoAction"
@@ -117,6 +120,7 @@
             <param name="actionName">topo_detail</param>
             <param name="id">${topo.id}</param>
         </result>
+            <result name="login" type="redirectAction">login</result>
         </action>
 
         <!-- Actions permettant de créer un secteur -->
@@ -164,6 +168,17 @@
             <interceptor-ref name="defaultStack" />
             <result>/JSP/topo/commentaire.jsp</result>
         </action>
+
+        <!-- Liste Site avec Jsons TEST
+        A implémenter correctement :(
+
+        <result-types>
+            <result-type name="json" class="org.apache.struts2.json.JSONResult" />
+        </result-types>
+        <action name="listSite" class="org.val.win.webapp.action.GestionTopoAction" method="doListSite">
+            <result name="success" type="json" />
+        </action>
+        -->
 
     </package>
 

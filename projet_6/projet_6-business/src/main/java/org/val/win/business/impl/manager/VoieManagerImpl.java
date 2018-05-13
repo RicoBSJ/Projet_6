@@ -8,6 +8,7 @@ import org.val.win.model.exception.FunctionalException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.util.List;
 
 @Named
 public class VoieManagerImpl extends AbstractManager implements VoieManager {
@@ -22,6 +23,11 @@ public class VoieManagerImpl extends AbstractManager implements VoieManager {
     @Named("txManagerP6")
 
     private PlatformTransactionManager platformTransactionManager;
+
+    @Override
+    public List<Voie> getListVoie(Integer id) {
+        return voieDao.getListVoie();
+    }
 
     @Override
     public void insertVoie(Voie pVoie) throws FunctionalException {
