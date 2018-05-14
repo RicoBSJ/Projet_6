@@ -4,7 +4,18 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
 
-    <package name="default" extends="struts-default">
+    <package name="json-default" namespace="/" extends="struts-default">
+
+    <result-types>
+        <result-type name="json" class="org.apache.struts2.json.JSONResult" />
+    </result-types>
+    <action name="listComAjax" class="org.val.win.webapp.action.GestionCommentaireAction" method="doList">
+        <result name="success" type="json" />
+    </action>
+
+    </package>
+
+    <package name="default" extends="struts-default" >
 
 
         <!-- Action par défaut -->
@@ -157,6 +168,23 @@
             </result>
         </action>
 
+        <!-- Actions permettant de creer une voie -->
+
+        <action name="voie_new"
+                class="org.val.win.webapp.action.GestionVoieAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/voie/new_voie.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="id">${topo.id}</param>
+            </result>
+        </action>
+
         <!-- Actions permettant de creer un commentaire -->
 
         <action name="com_new"
@@ -167,13 +195,6 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
             <result>/JSP/topo/commentaire.jsp</result>
-        </action>
-
-        <result-types>
-            <result-type name="json" class="org.apache.struts2.json.JSONResult" />
-        </result-types>
-        <action name="AJAXAction" class="com.demo.sd.prj.ui.actions.AJAXAction" method="myMethod">
-            <result name="success" type="json" />
         </action>
 
     </package>

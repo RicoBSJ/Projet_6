@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ taglib prefix="s" uri="/struts-tags" %>
-<%@ taglib prefix="sx" uri="/struts-dojo-tags"%>
 
 <!DOCTYPE html>
 <html>
@@ -17,30 +16,32 @@
 
 <h2> Information Topo </h2>
 
-<section class="col-sm-8 table-responsive">
-        <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                <tr>
-                        <th>Nom</th>
-                        <th>Roche</th>
-                        <th>Region</th>
-                        <th>Lieu</th>
-                        <th>Description</th>
-                        <th>Créateur</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                        <td><s:property value ="topo.nomTopo" /></td>
-                        <td><s:property value ="topo.roche" /></td>
-                        <td><s:property value ="topo.region" /></td>
-                        <td><s:property value ="topo.lieu" /></td>
-                        <td><s:property value ="topo.description" /></td>
-                        <td><s:property value ="utilisateur.pseudonyme"/> </td>
-                </tr>
-                </tbody>
-        </table>
-</section>
+<div class="tab_topo">
+    <section class="col-sm-8 table-responsive">
+            <table class="table table-bordered table-striped table-condensed">
+                    <thead>
+                    <tr>
+                            <th>Nom</th>
+                            <th>Roche</th>
+                            <th>Region</th>
+                            <th>Lieu</th>
+                            <th>Description</th>
+                            <th>Créateur</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                            <td><s:property value ="topo.nomTopo" /></td>
+                            <td><s:property value ="topo.roche" /></td>
+                            <td><s:property value ="topo.region" /></td>
+                            <td><s:property value ="topo.lieu" /></td>
+                            <td><s:property value ="topo.description" /></td>
+                            <td><s:property value ="utilisateur.pseudonyme"/> </td>
+                    </tr>
+                    </tbody>
+            </table>
+    </section>
+</div>
 
 <h2> Information Site </h2>
 
@@ -73,12 +74,26 @@
         <br />
     </s:iterator>
 </ul>
-<!--
-<s:a action="topo_com">
-    <h2>Espace discussion sur le topo</h2>
-    <s:param name="idTopo" value="topo.id"/>
-</s:a>
--->
+
+
+<div class="commentaire" >
+    <div class="col-lg-12">
+        <ul class="list-group">
+            <s:a action="listComAjax">
+                <s:iterator value="listCom">
+                    <li class="list-group-item">
+                        <s:property value="text"/>
+                    </li>
+                </s:iterator>
+            </s:a>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
 </body>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>

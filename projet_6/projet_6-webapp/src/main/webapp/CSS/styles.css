@@ -27,6 +27,12 @@ body {
     color: #303030;
 }
 
+.tab_topo {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 p {
@@ -40,30 +46,3 @@ p {
     display: inline-block;
     width: 100px;
 }
-
-.login {
-    background-color: rgba(91, 56, 191, 0.93);
-    padding: 1em 0 0;
-    color: #EFEFEF;
-    text-align: left;}
-.login input {
-    width: calc(100% - 1em);
-    border: none;
-    height: 2em;
-    margin: 0.5em 0;
-    font-size: 1em;
-    padding: 0 0.5em; }
-.login .login-button {
-    background-color: #1a878b;
-    color: #f6ff0d;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    text-align: center;
-    width: 100%;
-    height: 2.5em;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: pointer; }

@@ -11,11 +11,11 @@
 
 <h2>Création d'un topo</h2>
 
-<s:form action="secteur_new">
-    <s:textfield name="secteur.nom" label="Nom du secteur" requiredLabel="true" />
-    <s:textfield name="secteur.difficulte" label="Difficulté du secteur" requiredLabel="true" />
-    <s:textfield name="secteur.orientation" label="orientation du secteur" requiredLabel="true" />
-    <s:textfield name="secteur.description" label="Description" requiredLabel="true" />
+<s:form action="voie_new">
+    <s:textfield name="voie.nom" label="Nom de la voie" requiredLabel="true" />
+    <s:textfield name="voie.cotation" label="Cotation du la voie" requiredLabel="true" />
+    <s:textfield name="voie.hauteur" label="Hauteur de la voie" requiredLabel="true" />
+    <s:textfield name="voie.description" label="Description" requiredLabel="true" />
 
     <s:submit value="OK"/>
 </s:form>
