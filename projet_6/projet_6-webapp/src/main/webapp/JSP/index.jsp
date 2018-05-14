@@ -13,12 +13,16 @@
     <br />
     <br />
 
-    <h1>
-        Bienvenue sur Bubule <br />
-        Site communautaire de reference de topo
-    </h1>
+    <div class="title">
+        <h1>
+            Bienvenue sur Bubule <br />
+            Site communautaire de reference de topo
+        </h1>
+    </div>
 
 </body>
 
+
+<script src="${pageContext.request.contextPath}/JS/main.js"></script>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>

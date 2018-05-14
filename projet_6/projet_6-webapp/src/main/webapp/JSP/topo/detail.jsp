@@ -43,7 +43,34 @@
     </section>
 </div>
 
-<h2> Information Site </h2>
+<div class="button_site">
+    <button class="btn btn-primary btn-sm"> Voir les sites </button>
+</div>
+    <s:iterator>
+        <ul>
+            <li> <s:property value="site.nom"/></li>
+        </ul>
+    </s:iterator>
+
+<script>
+    $(".button_site").click(function(){
+        $.ajax({
+            url: "ListSite", // Nom de l'action
+            type: "POST",
+            data: {listSite: $('#topoId').val()}, // Nom de la variable puis paramètre
+            dataType: "json",
+            error: function(XMLHttpRequest, textStatus, errorThrown){
+                alert('Error ' + textStatus);
+                alert(errorThrown);
+                alert(XMLHttpRequest.responseText);
+            },
+            success: function(listSite){
+                alert('SUCCESS');
+
+            }
+        });
+    })
+</script>
 
 <s:a action="list_site">
     <s:param name="idTopoSite" value="topo.id" />
@@ -54,6 +81,7 @@
     <s:param name="idTopoSite" value="topo.id" />
     <h3>Creation d'un nouveau site</h3>
 </s:a>
+
 
         <legend>Laisser un commentaire</legend>
         <h6>Que penser vous du topo</h6>
@@ -89,9 +117,6 @@
         </ul>
     </div>
 </div>
-
-
-
 
 
 </body>

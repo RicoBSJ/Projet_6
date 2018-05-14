@@ -7,14 +7,16 @@
     )
 }); */
 
-$('.co').hide();
+$(document).ready(function() {
 
-$('.login-button').click(function(){
-    $('.co').show();
-});
+    $(".title").hide();
+        $(".title").fadeIn(5000,function(){
+        });
+})
 
+/*
 
-
+$('#listSite').click(function() {
     $.ajax({
         url: "ListSite", // Nom de l'action
         type: "POST",
@@ -30,3 +32,6 @@ $('.login-button').click(function(){
 
         }
     });
+})
+
+*/
