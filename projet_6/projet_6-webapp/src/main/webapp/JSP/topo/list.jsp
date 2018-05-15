@@ -26,7 +26,7 @@
             <li class="list-group-item">
                 <s:a action="topo_detail">
                     Nom topo : <s:property value="nomTopo"/>
-                    <s:param name="idTopo" value="id" />
+                    <s:param name="idTopo" value="idTopo" />
             </li>
         </s:a>
             <br />

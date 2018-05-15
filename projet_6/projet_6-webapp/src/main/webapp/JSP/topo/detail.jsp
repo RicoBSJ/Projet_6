@@ -44,41 +44,12 @@
 </div>
 
 <div class="button_site">
-    <button class="btn btn-primary btn-sm"> Voir les sites </button>
+    <button class="btn btn-primary btn-sm" type="submit" onclick="getSite()"> Voir les sites du topo</button>
+    <div id="listSite" style="color: green; font-size: 25px;"></div>
 </div>
-    <s:iterator>
-        <ul>
-            <li> <s:property value="site.nom"/></li>
-        </ul>
-    </s:iterator>
-
-<script>
-    $(".button_site").click(function(){
-        $.ajax({
-            url: "ListSite", // Nom de l'action
-            type: "POST",
-            data: {listSite: $('#topoId').val()}, // Nom de la variable puis paramètre
-            dataType: "json",
-            error: function(XMLHttpRequest, textStatus, errorThrown){
-                alert('Error ' + textStatus);
-                alert(errorThrown);
-                alert(XMLHttpRequest.responseText);
-            },
-            success: function(listSite){
-                alert('SUCCESS');
-
-            }
-        });
-    })
-</script>
-
-<s:a action="list_site">
-    <s:param name="idTopoSite" value="topo.id" />
-    <h3>Liste des site</h3>
-</s:a>
 
 <s:a action="site_new">
-    <s:param name="idTopoSite" value="topo.id" />
+    <s:param name="idTopoSite" value="topo.idTopo" />
     <h3>Creation d'un nouveau site</h3>
 </s:a>
 
@@ -87,9 +58,9 @@
         <h6>Que penser vous du topo</h6>
 
     <s:form action="com_new">
-        <s:param name="idTopo" value="topo.id"/>
         <s:textarea name="commentaire.text" label="commentaire"/>
         <s:submit value="OK"/>
+        <s:param name="idTopo" value="topo.idTopo"/>
     </s:form>
 
 <br />

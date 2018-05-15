@@ -35,3 +35,23 @@ $('#listSite').click(function() {
 })
 
 */
+
+
+function getSite() {
+    $.ajax({
+        type : "POST",
+        url : "ListSite",
+        data: {listSite: $('topoId').val()},
+        success : function(itr) {
+            var x = "<ol>";
+            $.each(itr.listSite, function() {
+                x += "<li>" + this + "</li>";
+            });
+            x += "</ol>";
+            $("#listSite").html(x);
+        },
+        error : function(itr) {
+            alert("No values found..!!");
+        }
+    });
+}

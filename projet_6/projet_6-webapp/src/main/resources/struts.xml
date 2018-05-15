@@ -6,12 +6,17 @@
 
     <package name="json-default" namespace="/" extends="struts-default">
 
-    <result-types>
-        <result-type name="json" class="org.apache.struts2.json.JSONResult" />
-    </result-types>
-    <action name="listComAjax" class="org.val.win.webapp.action.GestionCommentaireAction" method="doList">
-        <result name="success" type="json" />
-    </action>
+        <result-types>
+            <result-type name="json" class="org.apache.struts2.json.JSONResult" />
+        </result-types>
+        <action name="listComAjax" class="org.val.win.webapp.action.GestionCommentaireAction" method="doList">
+            <result name="success" type="json" />
+        </action>
+
+        <action name="listSiteAjax" class="org.val.win.webapp.action.GestionSiteAction" method="doListSite">
+            <result name="success" type="json">/JSP/topo/detail.jsp</result>
+        </action>
+
 
     </package>
 

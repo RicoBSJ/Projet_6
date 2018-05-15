@@ -84,7 +84,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
         KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_topo"});
-        pTopo.setId(holder.getKey().intValue());
+        pTopo.setIdTopo(holder.getKey().intValue());
         return pTopo;
     }
 

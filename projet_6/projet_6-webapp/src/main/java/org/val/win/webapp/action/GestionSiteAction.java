@@ -73,6 +73,7 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
      */
     public String doListSite() {
         listSite = managerFactory.getSiteManager().getListSite(idTopoSite);
+        System.out.println(listSite);
         return ActionSupport.SUCCESS;
     }
 

@@ -37,10 +37,10 @@ public class Topo {
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId(){
+    public Integer getIdTopo(){
         return idTopo;
     }
-    public void setId(Integer pId) {
+    public void setIdTopo(Integer pId) {
         idTopo = pId;
     }
     public Integer getIdEmprunteur()
