@@ -64,7 +64,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
         RowMapper<Utilisateur> vRowMapper = new RowMapper<Utilisateur>() {
             public Utilisateur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Utilisateur vUtilisateur = new Utilisateur(pRS.getInt("id_utilisateur"));
-                vUtilisateur.setNom(pRS.getString("nom"));
+                vUtilisateur.setNomSecteur(pRS.getString("nom"));
                 vUtilisateur.setPrenom(pRS.getString("prenom"));
                 vUtilisateur.setPseudonyme(pRS.getString("pseudonyme"));
                 vUtilisateur.setMail(pRS.getString("mail"));

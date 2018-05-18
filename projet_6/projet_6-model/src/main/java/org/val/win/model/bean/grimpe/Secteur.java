@@ -7,7 +7,7 @@ public class Secteur {
     private Integer idSite;
     private Integer idTopo;
     private Integer nbrVoie;
-    private String nom;
+    private String nomSecteur;
     private String difficulte;
     private String orientation;
     private String description;
@@ -57,12 +57,12 @@ public class Secteur {
         idSite = pIdSite;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNomSecteur() {
+        return nomSecteur;
     }
 
-    public void setNom(String pNom) {
-        nom = pNom;
+    public void setNomSecteur(String pNom) {
+        nomSecteur = pNom;
     }
 
     public Integer getNbrVoie() {
@@ -107,7 +107,7 @@ public class Secteur {
                 .append("Secteur id =\"").append(id).append('"')
                 .append("Site id = \"").append(idSite).append('"')
                 .append("topo id = \"").append(idTopo).append('"')
-                .append(vSEP).append("nom =\"").append(nom).append('"')
+                .append(vSEP).append("nom =\"").append(nomSecteur).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')
                 .append(vSEP).append("nombre de voie(s) =\"").append(nbrVoie).append('"')
                 .append(vSEP).append("orientation =\"").append(orientation).append('"')

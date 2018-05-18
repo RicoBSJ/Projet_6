@@ -49,3 +49,36 @@ function getListComAjax() {
         });
 }
 
+function getListSecteur() {
+    // URL de l'action AJAX
+    var url = "getListSecteur()";
+
+    // Paramètres de la requête AJAX
+    var params = {
+        site: jQuery("#selectSite").val()
+    };
+
+    // Action AJAX en POST
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $selectSecteur = jQuery("#selectSecteur");
+            $selectSecteur.empty();
+            jQuery.each(data, function (key, val) {
+                $selectSecteur.append(
+                    jQuery("<li>")
+                        .append(val.nomSecteur)
+                        .append(val.difficulte)
+                );
+            });
+        })
+        .fail(function (data) {
+            if (typeof data.responseJSON === 'object') {
+                console.log(data.responseJSON);
+            } else {
+                console.log(data);
+            }
+            alert("Une erreur s'est produite.");
+        });
+}

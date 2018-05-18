@@ -12,7 +12,7 @@
 <h2>Création d'un topo</h2>
 
 <s:form action="secteur_new">
-    <s:textfield name="secteur.nom" label="Nom du secteur" requiredLabel="true" />
+    <s:textfield name="secteur.nomSecteur" label="Nom du secteur" requiredLabel="true" />
     <s:textfield name="secteur.difficulte" label="Difficulté du secteur" requiredLabel="true" />
     <s:textfield name="secteur.orientation" label="orientation du secteur" requiredLabel="true" />
     <s:textfield name="secteur.description" label="Description" requiredLabel="true" />
