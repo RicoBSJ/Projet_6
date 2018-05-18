@@ -90,6 +90,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     // ==================== Méthodes ====================
 
+    @Override
+    public String execute() {
+        return ActionSupport.SUCCESS;
+    }
+
     /**
      * Action listant les {@link Topo}
      * @return success

@@ -34,6 +34,17 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
     }
 
     @Override
+    public Site getSite(Integer pId, Integer pIdTopo) throws NotFoundException {
+        List<Site> listSite = this.getListSite(pIdTopo);
+        Site vSite
+                = listSite.stream()
+                .filter(p -> p.getId().equals(pId))
+                .findFirst()
+                .orElseThrow(() -> new NotFoundException("Utilisateur non trouvé : ID=" + pId));
+        return vSite;
+    }
+
+    @Override
     public void insertSite(Site pSite) throws FunctionalException {
         //MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
         //try {

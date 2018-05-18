@@ -4,24 +4,25 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
 
-    <package name="json-default" namespace="/" extends="struts-default">
+    <package name="ajax" extends="json-default">
 
-        <result-types>
-            <result-type name="json" class="org.apache.struts2.json.JSONResult" />
-        </result-types>
-        <action name="listComAjax" class="org.val.win.webapp.action.GestionCommentaireAction" method="doList">
+        <!-- Action Ajax -->
+        <!-- Action list Commentaire -->
+        <action name="listComAjax" class="org.val.win.webapp.action.GestionTopoAction" method="doList">
             <result name="success" type="json" />
         </action>
 
-        <action name="listSiteAjax" class="org.val.win.webapp.action.GestionSiteAction" method="doListSite">
-            <result name="success" type="json">/JSP/topo/detail.jsp</result>
-        </action>
+        <!-- Action list Site -->
+        <action name="listSiteAjax" class="org.val.win.webapp.action.GestionTopoAction" method="doListSite">
+            <result name="success" type="json">
+                <param name="root">listSite</param>
+            </result>
 
+        </action>
 
     </package>
 
     <package name="default" extends="struts-default" >
-
 
         <!-- Action par défaut -->
 
@@ -80,24 +81,6 @@
                 method="doList">
             <result>/JSP/topo/list.jsp</result>
         </action>
-
-        <!-- Action listant les sites -->
-
-        <action name="list_site"
-                class="org.val.win.webapp.action.GestionSiteAction"
-                method="doListSite">
-            <result>/JSP/site/site.jsp</result>
-        </action>
-
-        <!-- Action listant les commantaires d'un topo -->
-
-        <action name="topo_com"
-                class="org.val.win.webapp.action.GestionCommentaireAction"
-                method="doList">
-            <result>/JSP/topo/commentaire.jsp</result>
-        </action>
-
-
 
         <!--
         <action name="topo_list"

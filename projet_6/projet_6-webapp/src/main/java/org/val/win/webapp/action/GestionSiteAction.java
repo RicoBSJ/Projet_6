@@ -10,6 +10,8 @@ import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -65,6 +67,14 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
     public void setSite(Site pSite) {
         site = pSite;
     }
+
+    public List<Site> getListSite() {
+        return listSite;
+    }
+
+    public void setListSite(List<Site> listSite) {
+        this.listSite = listSite;
+    }
     // ==================== Méthodes ====================
 
     /**
@@ -72,9 +82,21 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
      * @return
      */
     public String doListSite() {
-        listSite = managerFactory.getSiteManager().getListSite(idTopoSite);
-        System.out.println(listSite);
+        listSite = managerFactory.getSiteManager().getListSite(1);
         return ActionSupport.SUCCESS;
+    }
+
+    public String doDetail() {
+        if (idSite == null) {
+            this.addActionError(getText("error.topo.missing.id"));
+        } else {
+            try {
+                site = managerFactory.getSiteManager().getSite(idSite, idTopoSite);
+            } catch (NotFoundException pE) {
+                this.addActionError(getText("error.topo.notfound", Collections.singletonList(idSite)));
+            }
+        }
+        return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
 
     public String doCreate() {
