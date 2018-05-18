@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface SecteurDao {
 
-    List<Secteur> getListSecteur();
+    List<Secteur> getListSecteur(Integer id);
 
     Secteur insertSecteur(Secteur pSecteur);
 

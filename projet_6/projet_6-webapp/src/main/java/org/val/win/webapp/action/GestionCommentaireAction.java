@@ -62,16 +62,6 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     // ==================== Methodes ====================
 
     /**
-     * Liste de commantaire
-     * param id
-     * @return
-     */
-    public String doList() {
-        listCom = managerFactory.getCommentaireManager().getCommentaireTopo(idTopo);
-        return ActionSupport.SUCCESS;
-    }
-
-    /**
      * Creation de commentaire.
      * @return
      */

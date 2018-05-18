@@ -14,12 +14,31 @@
             </result>
         </action>
 
-        <!-- Action list Site -->
+        <!-- Action listant Site -->
         <action name="listSiteAjax" class="org.val.win.webapp.action.GestionTopoAction" method="doListSite">
             <result name="success" type="json">
                 <param name="root">listSite</param>
             </result>
         </action>
+
+        <!-- Action listant les secteurs -->
+        <action name="listSecteurAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListSecteur">
+            <result name="success" type="json">
+                <param name="root">listSecteur</param>
+            </result>
+        </action>
+
+        <!-- Action listant les voies -->
+        <action name="listVoieAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListVoie">
+            <result name="success" type="json">
+                <param name="root">listVoie</param>
+            </result>
+        </action>
+
 
     </package>
 
@@ -154,7 +173,7 @@
             <result name="input">/JSP/site/new_site.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
-                <param name="id">${topo.id}</param>
+                <param name="idTopo">${topo.idTopo}</param>
             </result>
         </action>
 

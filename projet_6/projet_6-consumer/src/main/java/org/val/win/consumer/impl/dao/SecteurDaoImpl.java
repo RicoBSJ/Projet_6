@@ -24,8 +24,10 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
      * @return
      */
     @Override
-    public List<Secteur> getListSecteur() {
-        String vSQL = "SELECT * FROM public.secteur";
+    public List<Secteur> getListSecteur(Integer id) {
+        String vSQL = "SELECT * FROM public.secteur " +
+                      "WHERE id_site = ?";
+
         JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Secteur> vRowMapper = new RowMapper<Secteur>() {
             public Secteur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
@@ -38,7 +40,8 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
                 return vSecteur;
             }
         };
-        List<Secteur> vListSecteur = vJdbcTemplate.query(vSQL, vRowMapper);
+
+        List<Secteur> vListSecteur = vJdbcTemplate.query(vSQL, vRowMapper, id);
 
         return vListSecteur;
     }

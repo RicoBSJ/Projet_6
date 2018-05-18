@@ -25,7 +25,7 @@ public class SecteurManagerImpl extends AbstractManager implements SecteurManage
 
     @Override
     public List<Secteur> getListSecteur(Integer id) {
-        return secteurDao.getListSecteur();
+        return secteurDao.getListSecteur(id);
     }
 
     @Override

@@ -60,6 +60,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     private List<Voie> listVoie;
     private List<Commentaire> listCom;
     private Topo topo;
+    private Site site;
+    private Secteur secteur;
 
 
     // ==================== Getters/Setters ====================
@@ -75,6 +77,14 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
     public void setTopo(Topo pTopo) {
         topo = pTopo;
+    }
+    public Site getsite(){ return site;}
+    public void setSite(Site pSite){
+        site = pSite;
+    }
+    public Secteur getSecteur(){ return secteur;}
+    public void setSecteur(Secteur pSecteur){
+        secteur = pSecteur;
     }
     public List<Topo> getListTopo() {
         return listTopo;
@@ -112,19 +122,28 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    public String doListSecteur() {
+        if (site == null) {
+            addActionError("Le site doit être précisé !");
+        } else {
+            listSecteur = managerFactory.getSecteurManager().getListSecteur(site.getId());
+        }
+        return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
+
+    }
+
     public String doListSite() {
         topo = (Topo) session.get("idTopo");
         listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
         return ActionSupport.SUCCESS;
     }
 
-    public String doListSecteur() {
-        listSecteur = managerFactory.getSecteurManager().getListSecteur(idTopo);
-        return ActionSupport.SUCCESS;
-    }
-
     public String doListVoie() {
-        listVoie = managerFactory.getVoieManager().getListVoie(idTopo);
+        if (secteur == null) {
+            addActionError("Le secteur doit être précisé !");
+        } else {
+            listVoie = managerFactory.getVoieManager().getListVoie(site.getId());
+        }
         return ActionSupport.SUCCESS;
     }
 

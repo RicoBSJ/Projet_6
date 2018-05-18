@@ -77,15 +77,6 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
     }
     // ==================== Méthodes ====================
 
-    /**
-     * Recuperer une liste de site
-     * @return
-     */
-    public String doListSite() {
-        listSite = managerFactory.getSiteManager().getListSite(1);
-        return ActionSupport.SUCCESS;
-    }
-
     public String doDetail() {
         if (idSite == null) {
             this.addActionError(getText("error.topo.missing.id"));
