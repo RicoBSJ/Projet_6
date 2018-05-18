@@ -1,12 +1,14 @@
 package org.val.win.webapp.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.apache.struts2.interceptor.ParameterAware;
 import org.apache.struts2.interceptor.SessionAware;
 import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.grimpe.Secteur;
 import org.val.win.model.bean.grimpe.Site;
 import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.grimpe.Voie;
+import org.val.win.model.bean.utilisateur.Commentaire;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
@@ -23,6 +25,7 @@ import java.util.Map;
  */
 
 public class GestionTopoAction extends ActionSupport implements SessionAware {
+
 
     /**
      * Récuperer session
@@ -55,6 +58,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     private List<Site> listSite;
     private List<Secteur> listSecteur;
     private List<Voie> listVoie;
+    private List<Commentaire> listCom;
     private Topo topo;
 
 
@@ -87,6 +91,9 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
+    public List<Commentaire> getListCom(){
+        return listCom;
+    }
 
     // ==================== Méthodes ====================
 
@@ -106,7 +113,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     public String doListSite() {
-        listSite = managerFactory.getSiteManager().getListSite(idTopo);
+        topo = (Topo) session.get("idTopo");
+        listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
         return ActionSupport.SUCCESS;
     }
 
@@ -120,6 +128,12 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    public String doListcom() {
+        topo = (Topo) session.get("idTopo");
+        listCom = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
+        return ActionSupport.SUCCESS;
+    }
+
     /**
      * Action affichant les détails d'un {@link Topo}
      * @return success / error
@@ -130,6 +144,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         } else {
             try {
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
+                this.session.put("idTopo", topo);
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));

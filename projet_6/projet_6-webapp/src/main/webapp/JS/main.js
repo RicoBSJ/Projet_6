@@ -27,3 +27,25 @@ function getListSiteAjax() {
         });
 }
 
+function getListComAjax() {
+    // URL de l'action AJAX
+    var url = "listComAjax";
+    // Action AJAX en POST
+    jQuery.post(
+        url,
+        function (data) {
+            var $listCom = jQuery("#listCom");
+            $listCom.empty();
+            jQuery.each(data, function (key, val) {
+                console.log(val)
+                $listCom.append(
+                    jQuery("<li>")
+                        .append(val.text)
+                );
+            });
+        })
+        .fail(function () {
+            alert("Une erreur s'est produite.");
+        });
+}
+

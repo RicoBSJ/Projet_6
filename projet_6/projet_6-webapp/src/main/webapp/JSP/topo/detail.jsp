@@ -66,26 +66,14 @@
 </s:form>
 
 <br />
-<ul>
-    <s:iterator value="listCom">
-        <li>
-            Commentaire : <s:property value="text"/>
-        </li>
-        <br />
-    </s:iterator>
-</ul>
 
 
 <div class="commentaire" >
     <div class="col-lg-12">
-        <ul class="list-group">
-            <s:a action="listComAjax">
-                <s:iterator value="listCom">
-                    <li class="list-group-item">
-                        <s:property value="text"/>
-                    </li>
-                </s:iterator>
-            </s:a>
+        <button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>
+        <ul class="list-group" id="listCom">
+            <li class="list-group-item">
+            </li>
         </ul>
     </div>
 </div>
