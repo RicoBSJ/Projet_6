@@ -44,6 +44,8 @@
     </section>
 </div>
 
+<h1> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h1>
+
 <div class="button_site">
     <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
         <ul id="listSite">

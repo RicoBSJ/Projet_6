@@ -55,7 +55,7 @@ function getListSecteur() {
 
     // Paramètres de la requête AJAX
     var params = {
-        site: jQuery("#selectSite").val()
+        site: jQuery("#listSite").val()
     };
 
     // Action AJAX en POST
@@ -63,10 +63,10 @@ function getListSecteur() {
         url,
         params,
         function (data) {
-            var $selectSecteur = jQuery("#selectSecteur");
-            $selectSecteur.empty();
+            var $listSecteur = jQuery("#listSecteur");
+            $listSecteur.empty();
             jQuery.each(data, function (key, val) {
-                $selectSecteur.append(
+                $listSecteur.append(
                     jQuery("<li>")
                         .append(val.nomSecteur)
                         .append(val.difficulte)

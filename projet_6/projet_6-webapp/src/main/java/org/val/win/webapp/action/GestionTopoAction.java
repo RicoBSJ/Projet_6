@@ -52,6 +52,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     // ----- Paramètres en entrée
     private Integer idTopo;
     private Utilisateur utilisateur;
+    private Utilisateur emprunteur;
 
     // ----- Eléments en sortie
     private List<Topo> listTopo;
@@ -157,11 +158,14 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * Action affichant les détails d'un {@link Topo}
      * @return success / error
      */
-    public String doDetail() {
+    public String doDetail() throws NotFoundException {
         if (idTopo == null) {
             this.addActionError(getText("error.topo.missing.id"));
         } else {
             try {
+                /*if (topo.getIdEmprunteur() != null) {
+                    emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
+                }*/ // Tentative de récupérer l'empreunteur avec l'idEmprunteur de la table topo
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
                 this.session.put("idTopo", topo);
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());

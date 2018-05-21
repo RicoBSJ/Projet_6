@@ -4,12 +4,6 @@
     transition: 0.1s; }
 
 
-h1 {
-    color: #C3FF00;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em; }
-
 body {
     background-color: rgba(100, 191, 0, 0.93);
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
@@ -32,6 +26,12 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.title {
+    color: #C3FF00;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em; }
 
 
 p {

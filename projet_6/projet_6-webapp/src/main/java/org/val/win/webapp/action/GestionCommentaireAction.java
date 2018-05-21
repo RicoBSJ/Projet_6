@@ -3,6 +3,7 @@ package org.val.win.webapp.action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 import org.val.win.business.contract.ManagerFactory;
+import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Commentaire;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
@@ -35,6 +36,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     // ----- Paramètres en entrée
     private Integer idTopo;
     private Utilisateur utilisateur;
+    private Topo topo;
 
     // ----- Eléments en sortie
     private List<Commentaire> listCom;
@@ -66,6 +68,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
      * @return
      */
     public String doCreate() {
+        topo = (Topo) session.get("idTopo");
         utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null){
             return ActionSupport.LOGIN; }
@@ -80,7 +83,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
                     this.commentaire.setIdUtil(utilisateur.getId());
                 }
                 else if (this.commentaire.getIdTopo() == null) {
-                    this.commentaire.setIdTopo(idTopo);
+                    this.commentaire.setIdTopo(topo.getIdTopo());
                 }
                 // Si pas d'erreur, ajout du projet...
                 if (!this.hasErrors()) {
