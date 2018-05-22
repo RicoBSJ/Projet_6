@@ -17,39 +17,67 @@
 
 <h2> Information Topo </h2>
 
-<div class="tab_topo">
-    <section class="col-sm-8 table-responsive">
-        <table class="table table-bordered table-striped table-condensed">
-            <thead>
-            <tr>
-                <th>Nom</th>
-                <th>Roche</th>
-                <th>Region</th>
-                <th>Lieu</th>
-                <th>Description</th>
-                <th>Créateur</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td><s:property value ="topo.nomTopo" /></td>
-                <td><s:property value ="topo.roche" /></td>
-                <td><s:property value ="topo.region" /></td>
-                <td><s:property value ="topo.lieu" /></td>
-                <td><s:property value ="topo.description" /></td>
-                <td><s:property value ="utilisateur.pseudonyme"/> </td>
-            </tr>
-            </tbody>
-        </table>
-    </section>
-</div>
+<header class="row">
+    <div class="col-lg-12">
+        <div class="tab_topo">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="row">
+                        <aside class="col-lg-12">
+                            Aside
+                        </aside>
+                    </div>
+                </div>
+            </div>
+            <section class="col-lg-8 table-responsive">
+                <table class="table table-bordered table-striped table-condensed">
+                    <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Roche</th>
+                        <th>Region</th>
+                        <th>Lieu</th>
+                        <th>Description</th>
+                        <th>Créateur</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><s:property value ="topo.nomTopo" /></td>
+                        <td><s:property value ="topo.roche" /></td>
+                        <td><s:property value ="topo.region" /></td>
+                        <td><s:property value ="topo.lieu" /></td>
+                        <td><s:property value ="topo.description" /></td>
+                        <td><s:property value ="utilisateur.pseudonyme"/> </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </section>
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="row">
+                        <aside class="col-lg-12">
+                            Aside
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
 
 <h1> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h1>
 
 <div class="button_site">
     <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
         <ul id="listSite">
-            <li><em> A charger . . .</em> </li>
+            <li><em> Voir les sites du topo </em> </li>
+        </ul>
+    <button class="btn btn-primary btn-sm" type = "submit" onclick="getListSecteur()"> Voir les secteurs du site</button>
+        <ul id="listSecteur">
+            <li><em> Voir les secteurs du site </em> </li>
         </ul>
     <div style="color: green; font-size: 25px;"></div>
 </div>
@@ -74,10 +102,8 @@
 <div class="commentaire" >
     <div class="col-lg-12">
         <button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>
-        <ul class="list-group" id="listCom">
-            <em> Cliquez pour charger les commentaires.</em>
-            <li class="list-group-item">
-            </li>
+        <ul  id="listCom">
+            <li><em> Cliquez pour charger les commentaires.</em></li>
         </ul>
     </div>
 </div>
