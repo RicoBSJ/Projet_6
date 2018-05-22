@@ -5,7 +5,7 @@
 
 
 body {
-    background-color: rgba(100, 191, 0, 0.93);
+    background-color: gray;
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
@@ -14,7 +14,7 @@ body {
     color: #303030; }
 
 .form {
-    background-color: rgba(188, 184, 191, 0.93);
+    background-color: gray;
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
@@ -28,7 +28,7 @@ body {
 }
 
 .title {
-    color: #C3FF00;
+    color: deepskyblue;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em; }
