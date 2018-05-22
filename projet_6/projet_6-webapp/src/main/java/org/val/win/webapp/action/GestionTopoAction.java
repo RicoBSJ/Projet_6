@@ -134,7 +134,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     public String doListSite() {
-        topo = (Topo) session.get("idTopo");
+        topo = (Topo) session.get("topo");
         listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
         return ActionSupport.SUCCESS;
     }
@@ -149,7 +149,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     public String doListcom() {
-        topo = (Topo) session.get("idTopo");
+        topo = (Topo) session.get("topo");
         listCom = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
         return ActionSupport.SUCCESS;
     }
@@ -167,7 +167,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                     emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
                 }*/ // Tentative de récupérer l'empreunteur avec l'idEmprunteur de la table topo
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
-                this.session.put("idTopo", topo);
+                this.session.put("topo", topo);
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));

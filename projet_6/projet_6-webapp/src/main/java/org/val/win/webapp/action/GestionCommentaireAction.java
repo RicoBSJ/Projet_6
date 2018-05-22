@@ -44,6 +44,12 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
 
     // ==================== Getters/Setters ====================
 
+    public Topo getTopo() {
+        return topo;
+    }
+    public void setTopo(Topo pTopo) {
+        topo = pTopo;
+    }
     public Integer getIdTopo() {
         return idTopo;
     }
@@ -68,8 +74,10 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
      * @return
      */
     public String doCreate() {
-        topo = (Topo) session.get("idTopo");
         utilisateur = (Utilisateur) session.get("user");
+        topo = (Topo) session.get("topo");
+        System.out.println(topo);
+        System.out.println(utilisateur);
         if (session.get("user") == null){
             return ActionSupport.LOGIN; }
         else {
@@ -79,10 +87,10 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
             String vResult = ActionSupport.INPUT;
             // ===== Validation de l'ajout de projet (commentaire != null)
             if (this.commentaire != null) {
-                if (this.commentaire.getIdUtil() == null) {
+                if (commentaire.getIdUtil() == null) {
                     this.commentaire.setIdUtil(utilisateur.getId());
                 }
-                else if (this.commentaire.getIdTopo() == null) {
+                else if (commentaire.getIdTopo() == null) {
                     this.commentaire.setIdTopo(topo.getIdTopo());
                 }
                 // Si pas d'erreur, ajout du projet...

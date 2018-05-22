@@ -54,6 +54,7 @@
     <div style="color: green; font-size: 25px;"></div>
 </div>
 
+
 <s:a action="site_new">
     <h3>Creation d'un nouveau site</h3>
 </s:a>
@@ -74,6 +75,7 @@
     <div class="col-lg-12">
         <button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>
         <ul class="list-group" id="listCom">
+            <em> Cliquez pour charger les commentaires.</em>
             <li class="list-group-item">
             </li>
         </ul>
