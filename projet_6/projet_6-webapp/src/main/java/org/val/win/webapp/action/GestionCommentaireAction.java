@@ -90,7 +90,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
                 if (commentaire.getIdUtil() == null) {
                     this.commentaire.setIdUtil(utilisateur.getId());
                 }
-                else if (commentaire.getIdTopo() == null) {
+                if (commentaire.getIdTopo() == null) {
                     this.commentaire.setIdTopo(topo.getIdTopo());
                 }
                 // Si pas d'erreur, ajout du projet...

@@ -8,8 +8,6 @@
 </head>
 
 <header>
-    <s:actionerror/>
-    <s:actionmessage/>
 
 <body>
     <div class="container">

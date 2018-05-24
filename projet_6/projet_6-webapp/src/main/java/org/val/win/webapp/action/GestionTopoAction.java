@@ -163,11 +163,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             this.addActionError(getText("error.topo.missing.id"));
         } else {
             try {
-                /*if (topo.getIdEmprunteur() != null) {
-                    emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
-                }*/ // Tentative de récupérer l'empreunteur avec l'idEmprunteur de la table topo
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
                 this.session.put("topo", topo);
+                /*if (topo.getIdEmprunteur() != null) {
+                    emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
+                } */ // Tentative de récupérer l'empreunteur avec l'idEmprunteur de la table topo
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));

@@ -13,19 +13,29 @@ function getListSiteAjax() {
         url,
         function (data) {
             var $listSite = jQuery("#listSite");
+            var newButton = $('<button>Afficher plus d\'information</button>');
+            var $strbutton = "<button> class='btn btn-primary btn-sm' type='submit' onclick='getListSecteurAjax(val.idSite)'> Voir les secteur</button>"
             $listSite.empty();
             jQuery.each(data, function (key, val) {
                 $listSite.append(
                     jQuery("<li>")
                         .append(" - Nom du site : ")
                         .append(val.nomSite)
+                        .append(val.id)
                 );
+                newButton.button().click(function () {
+                    $listSite.append(
+                        jQuery("<li>")
+                            .append(site.description)
+                    )
+                })
             });
         })
         .fail(function () {
             alert("Une erreur s'est produite.");
         });
 }
+
 
 function getListComAjax() {
     // URL de l'action AJAX

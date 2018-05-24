@@ -12,7 +12,6 @@
 
 
 <s:actionerror/>
-
 <s:actionmessage/>
 
 <h2> Information Topo </h2>
