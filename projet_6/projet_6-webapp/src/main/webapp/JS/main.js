@@ -23,12 +23,12 @@ function getListSiteAjax() {
                         .append(val.nomSite)
                         .append(val.id)
                 );
-                newButton.button().click(function () {
+                /*newButton.button().click(function () {
                     $listSite.append(
                         jQuery("<li>")
                             .append(site.description)
                     )
-                })
+                })*/
             });
         })
         .fail(function () {

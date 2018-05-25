@@ -1,7 +1,6 @@
 package org.val.win.webapp.action;
 
 import com.opensymphony.xwork2.ActionSupport;
-import org.apache.struts2.interceptor.ParameterAware;
 import org.apache.struts2.interceptor.SessionAware;
 import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.grimpe.Secteur;
@@ -164,14 +163,14 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         } else {
             try {
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
-                this.session.put("topo", topo);
-                /*if (topo.getIdEmprunteur() != null) {
-                    emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
-                } */ // Tentative de récupérer l'empreunteur avec l'idEmprunteur de la table topo
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
+                this.session.put("topo", topo);
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));
             }
+            /*if (this.topo.getIdEmprunteur() == null) {
+                emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
+            }*/
         }
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
