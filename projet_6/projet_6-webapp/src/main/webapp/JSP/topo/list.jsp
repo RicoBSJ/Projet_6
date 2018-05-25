@@ -19,18 +19,31 @@
 <s:actionmessage />
 <br />
 <br />
-<div class="col-lg-12">
-    <ul class="list-group">
-        <s:iterator value="listTopo">
+<div class="row">
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-6">
+        <ul class="list-group">
+            <s:iterator value="listTopo">
 
-            <li class="list-group-item">
+                <li class="list-group-item">
                 <s:a action="topo_detail">
                     Nom topo : <s:property value="nomTopo"/>
                     <s:param name="idTopo" value="idTopo" />
-            </li>
-        </s:a>
-            <br />
-        </s:iterator>
+                    </li>
+                </s:a>
+                <br />
+            </s:iterator>
+        </ul>
+    </div>
+    <div class="col-lg-3">
+    </div>
+</div>
+
+<div class="row">
+    <ul class="pager">
+        <li><a href="#">Précédent</a></li>
+        <li><a href="#">Suivant</a></li>
     </ul>
 </div>
 

@@ -13,8 +13,11 @@
     <div class="container">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.action">Bubule</a>
+                </div>
                 <ul class="nav navbar-nav">
-                    <li class="active"> <a href="index.action">Accueil</a> </li>
+                    <li> <a href="index.action">Accueil</a> </li>
                     <li> <a href="#">Rechercher un topo</a> </li>
                     <li> <a href="topo_list.action">Liste de topo</a> </li>
                 </ul>

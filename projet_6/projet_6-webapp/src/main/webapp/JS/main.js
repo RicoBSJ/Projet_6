@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(".title").hide();
-        $(".title").fadeIn(5000,function(){
+        $(".title").fadeIn(3000,function(){
         });
 })
 

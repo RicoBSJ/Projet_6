@@ -20,6 +20,23 @@
         </h1>
     </div>
 
+    <br/>
+    <br/>
+
+    <div class="row">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-6">
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-danger" href="utilisateur_new.action">Creer un compte</a>
+                <a class="btn btn-info" href="topo_list.action">Liste de topo</a>
+                <a class="btn btn-warning" href="#">Rechercher un topo</a>
+            </div>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+
 </body>
 
 

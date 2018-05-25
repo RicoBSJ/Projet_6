@@ -8,25 +8,16 @@
 </head>
 
 <body>
-<br />
-
 
 <s:actionerror/>
 <s:actionmessage/>
 
-<h2> Information Topo </h2>
+<h1> Information Topo </h1>
 
 <header class="row">
-    <div class="col-lg-12">
-        <div class="tab_topo">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="row">
-                        <aside class="col-lg-12">
-                            Aside
-                        </aside>
-                    </div>
-                </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-2">
             </div>
             <section class="col-lg-8 table-responsive">
                 <table class="table table-bordered table-striped table-condensed">
@@ -52,38 +43,46 @@
                     </tbody>
                 </table>
             </section>
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="row">
-                        <aside class="col-lg-12">
-                            Aside
-                        </aside>
-                    </div>
-                </div>
+            <div class="col-lg-2">
             </div>
         </div>
     </div>
+    <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
 </header>
 
-
-
-<h1> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h1>
-
-<div class="button_site">
-    <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
-        <ul id="listSite">
-            <li><em> Voir les sites du topo </em> </li>
-        </ul>
-    <button class="btn btn-primary btn-sm" type = "submit" onclick="getListSecteur()"> Voir les secteurs du site</button>
-        <ul id="listSecteur">
-            <li><em> Voir les secteurs du site </em> </li>
-        </ul>
-    <div style="color: green; font-size: 25px;"></div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="col-lg-3">
+            aside
+        </div>
+        <div class="class-lg-2">
+            <div class="button_site">
+                <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
+                <ul id="listSite">
+                    <li><em> Voir les sites du topo </em> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="class-lg-2">
+            <div class="button_secteur">
+                <button class="btn btn-primary btn-sm" type = "submit" onclick="getListSecteur()"> Voir les secteurs du site</button>
+                <ul id="listSecteur">
+                    <li><em> Voir les secteurs du site </em> </li>
+                </ul>
+            </div>
+        </div>
+        <div class="class-lg-2">
+            aside
+        </div>
+        <div class="col-lg-3">
+            aside
+        </div>
+    </div>
 </div>
 
 
 <s:a action="site_new">
-    <h3>Creation d'un nouveau site</h3>
+    <h3>Ajouter un site</h3>
 </s:a>
 
 
