@@ -38,6 +38,9 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
                 .filter(p -> p.getIdTopo().equals(pId))
                 .findFirst()
                 .orElseThrow(() -> new NotFoundException("Utilisateur non trouvé : ID=" + pId));
+        if (vTopo.getIdEmprunteur() == 0) {
+            vTopo.setIdEmprunteur(null);
+        }
         return vTopo;
     }
 

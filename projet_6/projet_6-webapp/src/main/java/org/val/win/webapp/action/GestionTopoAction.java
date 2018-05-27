@@ -1,5 +1,6 @@
 package org.val.win.webapp.action;
 
+import com.opensymphony.xwork2.Action;
 import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 import org.val.win.business.contract.ManagerFactory;
@@ -104,6 +105,12 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public List<Commentaire> getListCom(){
         return listCom;
     }
+    public Utilisateur getEmprunteur(){
+        return emprunteur;
+    }
+    public void setEmprunteur(Utilisateur pEmprunteur){
+        this.emprunteur = pEmprunteur;
+    }
 
     // ==================== Méthodes ====================
 
@@ -164,13 +171,13 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             try {
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
+                if (this.topo.getIdEmprunteur() != null) {
+                    emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
+                }
                 this.session.put("topo", topo);
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));
             }
-            /*if (this.topo.getIdEmprunteur() == null) {
-                emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
-            }*/
         }
         return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
@@ -211,4 +218,9 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             return vResult;
         }
     }
+
+    /*public String EmpruntTopo(){
+        String vResult = Action.INPUT;
+
+    }*/
 }

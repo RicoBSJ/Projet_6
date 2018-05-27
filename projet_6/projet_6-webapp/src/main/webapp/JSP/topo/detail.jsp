@@ -12,7 +12,17 @@
 <s:actionerror/>
 <s:actionmessage/>
 
-<h1> Information Topo </h1>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-6">
+            <h1> Information Topo </h1>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+</div>
 
 <header class="row">
     <div class="row">
@@ -47,7 +57,9 @@
             </div>
         </div>
     </div>
-    <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
+    <s:if test="emprunteur.pseudonyme != null " >
+        <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
+    </s:if>
 </header>
 
 <div class="row">
@@ -56,20 +68,30 @@
             aside
         </div>
         <div class="class-lg-2">
+            aside
+            <!--
             <div class="button_site">
-                <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
                 <ul id="listSite">
-                    <li><em> Voir les sites du topo </em> </li>
+                    <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
+                    <li><em> Afficher les sites </em> </li>
                 </ul>
+                <button class="btn btn-primary btn-sm" type="submit" onclick="getListSecteur()"> Voir les secteurs</button>
+                <lu id="listSecteur" label="Secteur" list="{}">
+                    <li><em>Voir les Secteurs </em> </li>
+                </lu>
             </div>
+            -->
         </div>
         <div class="class-lg-2">
+            aside
+            <!--
             <div class="button_secteur">
                 <button class="btn btn-primary btn-sm" type = "submit" onclick="getListSecteur()"> Voir les secteurs du site</button>
                 <ul id="listSecteur">
                     <li><em> Voir les secteurs du site </em> </li>
                 </ul>
             </div>
+            -->
         </div>
         <div class="class-lg-2">
             aside
@@ -85,14 +107,22 @@
     <h3>Ajouter un site</h3>
 </s:a>
 
+<br />
 
-<legend>Laisser un commentaire</legend>
-<h6>Que penser vous du topo</h6>
 
-<s:form action="com_new">
-    <s:textarea name="commentaire.text" label="commentaire"/>
-    <s:submit value="OK"/>
-</s:form>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="col-lg-3">
+        </div>
+        <s:form action="com_new" class="col-lg-6">
+            <s:textarea name="commentaire.text" label="commentaire" class="form-control"/>
+            <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple"/>
+        </s:form>
+    </div>
+</div>
+
+<h6>Dite nous ce que vous pensez du topo</h6>
 
 <br />
 

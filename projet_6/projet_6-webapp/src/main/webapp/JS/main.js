@@ -62,12 +62,10 @@ function getListComAjax() {
 function getListSecteur() {
     // URL de l'action AJAX
     var url = "getListSecteur()";
-
     // Paramètres de la requête AJAX
     var params = {
         site: jQuery("#listSite").val()
     };
-
     // Action AJAX en POST
     jQuery.post(
         url,
@@ -76,6 +74,7 @@ function getListSecteur() {
             var $listSecteur = jQuery("#listSecteur");
             $listSecteur.empty();
             jQuery.each(data, function (key, val) {
+                console.log($listSecteur);
                 $listSecteur.append(
                     jQuery("<li>")
                         .append(val.nomSecteur)
