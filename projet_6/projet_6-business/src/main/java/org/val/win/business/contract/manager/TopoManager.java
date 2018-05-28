@@ -16,5 +16,5 @@ public interface TopoManager {
 
     void insertTopo(Topo pTopo) throws FunctionalException;
 
-    void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur);
+    void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur) throws FunctionalException;
 }

@@ -60,6 +60,9 @@
     <s:if test="emprunteur.pseudonyme != null " >
         <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
     </s:if>
+    <s:else>
+        <h3> Voulez vous emprunter ce topo ? </h3>
+    </s:else>
 </header>
 
 <div class="row">

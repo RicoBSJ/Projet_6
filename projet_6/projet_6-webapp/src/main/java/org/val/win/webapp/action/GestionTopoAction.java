@@ -219,8 +219,25 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         }
     }
 
-    /*public String EmpruntTopo(){
-        String vResult = Action.INPUT;
-
-    }*/
+    public String EmpruntTopo(){
+        utilisateur = (Utilisateur) session.get("user");
+        if(session.get("user") == null){
+            return ActionSupport.LOGIN; }
+            else {
+            String vResult = Action.INPUT;
+            if (this.topo.getIdEmprunteur() != null) {
+                addActionError("Vous ne pouvez pas emprunter ce topo");
+            }
+            if (!this.hasErrors()) {
+                try {
+                    managerFactory.getTopoManager().ChangeEtat(this.topo, this.utilisateur);
+                    vResult = ActionSupport.SUCCESS;
+                    this.addActionMessage("Topo reservé avec Succès");
+                } catch (FunctionalException pEx) {
+                    this.addActionMessage(pEx.getMessage());
+                }
+            }
+            return vResult;
+        }
+    }
 }
