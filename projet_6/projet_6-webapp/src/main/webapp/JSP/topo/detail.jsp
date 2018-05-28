@@ -62,6 +62,9 @@
     </s:if>
     <s:else>
         <h3> Voulez vous emprunter ce topo ? </h3>
+        <s:a action="reserver">
+            <button class="btn btn-primary btn-sm" type="submit"> Reserver </button>
+        </s:a>
     </s:else>
 </header>
 

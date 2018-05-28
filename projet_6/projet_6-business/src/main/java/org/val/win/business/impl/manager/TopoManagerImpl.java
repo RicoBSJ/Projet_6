@@ -64,9 +64,7 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     @Override
     public void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur) throws FunctionalException {
         MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        Boolean bool = pTopo.getEtat();
         try {
-            pTopo.setEtat(!bool);
             topoDao.updateEtat(pTopo);
             transactionHelper.commit(vStatus);
         } finally {

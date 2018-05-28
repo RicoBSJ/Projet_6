@@ -230,6 +230,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             }
             if (!this.hasErrors()) {
                 try {
+                    topo.setIdEmprunteur(utilisateur.getId());
+                    topo.setEtat(!topo.getEtat());
                     managerFactory.getTopoManager().ChangeEtat(this.topo, this.utilisateur);
                     vResult = ActionSupport.SUCCESS;
                     this.addActionMessage("Topo reservé avec Succès");
