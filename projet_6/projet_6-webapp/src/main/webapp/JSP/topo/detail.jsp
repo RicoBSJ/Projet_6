@@ -7,6 +7,9 @@
     <%@ include file="../_include/header.jsp"%>
 </head>
 
+<s:actionerror/>
+<s:actionmessage/>
+
 <body>
 
 <div class="row">
@@ -152,9 +155,5 @@
 
 
 </body>
-<script>
-    alert('<s:actionerror/>')
-    alert('<s:actionmessage/>')
-</script>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>
