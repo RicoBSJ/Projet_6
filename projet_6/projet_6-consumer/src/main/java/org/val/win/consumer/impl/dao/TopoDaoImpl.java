@@ -94,7 +94,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
      */
     @Override
     public void updateEtat(final Topo pTopo) {
-        String vSQL = "UPDATE public.topo SET etat = :etat WHERE id = :id";
+        String vSQL = "UPDATE public.topo SET etat = :etat WHERE id_topo = :idTopo";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);

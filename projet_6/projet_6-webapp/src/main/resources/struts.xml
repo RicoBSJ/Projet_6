@@ -78,7 +78,7 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
 
-            <result name="input">/JSP/utilisateur/new.jsp</result>
+            <result name="input">/JSP/utilisateur/new_utilisateur.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">login</param>
             </result>
@@ -153,7 +153,7 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
 
-            <result name="input">/JSP/secteur/new_secteur.jsp</result>
+            <result name="input">/JSP/topo/new_secteur.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
                 <param name="id">${topo.id}</param>
@@ -171,7 +171,7 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
 
-            <result name="input">/JSP/site/new_site.jsp</result>
+            <result name="input">/JSP/topo/new_site.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
                 <param name="idTopo">${topo.idTopo}</param>
@@ -206,7 +206,8 @@
                 <param name="operationMode">STORE</param>
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
-            <result>/JSP/topo/commentaire.jsp</result>
+            <result>/JSP/topo/detail.jsp</result>
+                <param name="idTopo">${topo.idTopo}</param>
             <result name="login" type="redirectAction">login</result>
         </action>
 

@@ -21,36 +21,36 @@
         <div class="form-row">
             <div class="form-group col-lg-6">
                 <label for="utilisateur.nom">Nom</label>
-                <s:textfield name="utilisateur.nom" label="Nom" requiredLabel="true" />
+                <s:textfield name="utilisateur.nom" label="Nom" requiredLabel="true" class="form-control" theme="simple" />
                 <br />
             </div>
             <div class="form-group col-lg-6">
                 <label for="utilisateur.prenom">Prénom</label>
-                <s:textfield name="utilisateur.prenom" label="Prenom" requiredLabel="true" />
+                <s:textfield name="utilisateur.prenom" label="Prenom" requiredLabel="true" class="form-control" theme="simple" />
                 <br />
             </div>
         </div>
         <div class="form-row">
             <div class="form-group col-lg-6">
                 <label for="utilisateur.pseudonyme">Pseudonyme</label>
-                <s:textfield name="utilisateur.pseudonyme" label="Pseudonyme" requiredLabel="true" />
+                <s:textfield name="utilisateur.pseudonyme" label="Pseudonyme" requiredLabel="true" class="form-control" theme="simple" />
                 <br />
             </div>
             <div class="form-group col-lg-6">
                 <label for="utilisateur.motDePasse">Mot de passe</label>
-                <s:textfield name="utilisateur.motDePasse" label="Mot de Passe" requiredLabel="true" />
+                <s:textfield name="utilisateur.motDePasse" label="Mot de Passe" requiredLabel="true" class="form-control" theme="simple" />
                 <br />
             </div>
         </div>
         <div class="form-group col-lg-12">
             <label for="utilisateur.mail">Adresse mail</label>
-            <s:textfield name="utilisateur.mail" label="Mail" requiredLabel="true" />
+            <s:textfield name="utilisateur.mail" label="Mail" requiredLabel="true" class="form-control" theme="simple" />
             <br />
         </div>
         <div class="form-row">
             <div class="form-group col-lg-12">
                 <label for="utilisateur.tel">Numero de telephone</label>
-                <s:textfield name="utilisateur.tel" label="Telephone" requiredLabel="true" />
+                <s:textfield name="utilisateur.tel" label="Telephone" requiredLabel="true" class="form-control" theme="simple" />
                 <br />
             </div>
         </div>
