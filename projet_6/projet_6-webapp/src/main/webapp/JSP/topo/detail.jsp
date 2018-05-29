@@ -9,9 +9,6 @@
 
 <body>
 
-<s:actionerror/>
-<s:actionmessage/>
-
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-3">
@@ -57,16 +54,27 @@
             </div>
         </div>
     </div>
-    <s:if test="emprunteur.pseudonyme != null " >
-        <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
-    </s:if>
-    <s:else>
-        <h3> Voulez vous emprunter ce topo ? </h3>
-        <s:a action="reserver">
-            <button class="btn btn-primary btn-sm" type="submit"> Reserver </button>
-        </s:a>
-    </s:else>
 </header>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="col-lg-3">
+        </div>
+        <div class="col-lg-6">
+            <s:if test="emprunteur.pseudonyme != null " >
+                <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
+            </s:if>
+            <s:else>
+                <h3> Voulez vous emprunter ce topo ? </h3>
+                <s:a action="reserver">
+                    <button class="btn btn-primary btn-sm" type="submit"> Reserver </button>
+                </s:a>
+            </s:else>
+        </div>
+        <div class="col-lg-3">
+        </div>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-lg-12">
@@ -144,5 +152,9 @@
 
 
 </body>
+<script>
+    alert('<s:actionerror/>')
+    alert('<s:actionmessage/>')
+</script>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>
