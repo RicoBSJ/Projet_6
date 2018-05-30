@@ -117,7 +117,6 @@
                 class="org.val.win.webapp.action.GestionTopoAction"
                 method="doDetail">
             <param name="idTopo"/>
-
             <interceptor-ref name="store">
                 <param name="operationMode">RETRIEVE</param>
             </interceptor-ref>
@@ -213,11 +212,14 @@
 
         <!-- Action pour reserver un topo -->
 
-        <action name="reserver" class="org.val.win.webapp.action.GestionTopoAction" method="EmpruntTopo">
+        <action name="reserver"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="EmpruntTopo">
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
                 <param name="idTopo">${topo.idTopo}</param>
             </result>
+            <result name="login" type="redirectAction">login</result>
         </action>
 
     </package>

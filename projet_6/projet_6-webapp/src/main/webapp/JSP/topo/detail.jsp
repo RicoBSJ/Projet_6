@@ -86,10 +86,10 @@
         </div>
         <div class="class-lg-2">
             aside
-            <!--
+
             <div class="button_site">
+                <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
                 <ul id="listSite">
-                    <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
                     <li><em> Afficher les sites </em> </li>
                 </ul>
                 <button class="btn btn-primary btn-sm" type="submit" onclick="getListSecteur()"> Voir les secteurs</button>
@@ -97,7 +97,7 @@
                     <li><em>Voir les Secteurs </em> </li>
                 </lu>
             </div>
-            -->
+
         </div>
         <div class="class-lg-2">
             aside

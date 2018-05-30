@@ -14,8 +14,14 @@ import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
+import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
 import java.util.Map;
 
 
@@ -46,6 +52,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public void setSession(Map<String, Object> pSession) {
         this.session = pSession;
     }
+
 
     // ==================== Attributs ====================
 
@@ -220,6 +227,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     public String EmpruntTopo(){
+        LocalDate dateEmp = LocalDate.now(); // Recupère date local
+        LocalDate dateRet = dateEmp.plus(1, ChronoUnit.WEEKS); // Ajoute une semaine a la date d'emprunt
+        System.out.println("Date courante : " + dateEmp);
+        topo = (Topo) session.get("topo");
+        System.out.println(topo);
         utilisateur = (Utilisateur) session.get("user");
         if(session.get("user") == null){
             return ActionSupport.LOGIN; }

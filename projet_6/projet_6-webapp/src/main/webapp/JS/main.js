@@ -13,15 +13,17 @@ function getListSiteAjax() {
         url,
         function (data) {
             var $listSite = jQuery("#listSite");
-            var newButton = $('<button>Afficher plus d\'information</button>');
-            var $strbutton = "<button> class='btn btn-primary btn-sm' type='submit' onclick='getListSecteurAjax(val.idSite)'> Voir les secteur</button>"
             $listSite.empty();
             jQuery.each(data, function (key, val) {
+                // PLACER LES VAR BOUTONS ICI ! ! ! ! ! ! ! ( EN DESSOUS )
+                var $strbutton = "<button class='btn btn-primary btn-sm' type='submit' onclick='getListSecteur(val.id)'> Voir les secteur </button>"
+                //var $strbutton = "<button> class='btn btn-primary btn-sm' type='submit' onclick='getListSecteurAjax(" + val.idSite + ")'> Voir les secteur</button>"
                 $listSite.append(
                     jQuery("<li>")
-                        .append(" - Nom du site : ")
-                        .append(val.nomSite)
-                        .append(val.id)
+                        .append(" - Nom du site : " )
+                        .append(val.nomSite).append('<br />')
+                        .append(val.id).append('<br />')
+                        .append($strbutton).append('<br />')
                 );
                 /*newButton.button().click(function () {
                     $listSite.append(
