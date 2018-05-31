@@ -12,5 +12,7 @@ public interface TopoDao {
 
     void updateEtat(Topo pTopo);
 
+    void Emprunt(final Topo pTopo);
+
     void updateInfoTopo(Topo pTopo);
 }

@@ -70,6 +70,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     private Topo topo;
     private Site site;
     private Secteur secteur;
+    private LocalDate dateEmp = LocalDate.now(); // Recupère date local
+    private LocalDate dateRet = dateEmp.plus(1, ChronoUnit.WEEKS); // Ajoute une semaine a la date d'emprunt
 
 
     // ==================== Getters/Setters ====================
@@ -117,6 +119,18 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
     public void setEmprunteur(Utilisateur pEmprunteur){
         this.emprunteur = pEmprunteur;
+    }
+    public LocalDate getDateEmp(){
+        return dateEmp;
+    }
+    public void setDateEmp(LocalDate pDateEmp){
+        this.dateEmp = pDateEmp;
+    }
+    public LocalDate getDateRet(){
+        return dateRet;
+    }
+    public void setDateRet(LocalDate pDateRet){
+        this.dateRet = pDateRet;
     }
 
     // ==================== Méthodes ====================
@@ -227,11 +241,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     public String EmpruntTopo(){
-        LocalDate dateEmp = LocalDate.now(); // Recupère date local
-        LocalDate dateRet = dateEmp.plus(1, ChronoUnit.WEEKS); // Ajoute une semaine a la date d'emprunt
-        System.out.println("Date courante : " + dateEmp);
         topo = (Topo) session.get("topo");
-        System.out.println(topo);
         utilisateur = (Utilisateur) session.get("user");
         if(session.get("user") == null){
             return ActionSupport.LOGIN; }

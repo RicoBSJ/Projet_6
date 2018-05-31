@@ -1,5 +1,7 @@
 package org.val.win.model.bean.grimpe;
 
+import java.time.LocalDate;
+
 public class Topo {
 
     // ==================== Attributs ====================
@@ -15,6 +17,8 @@ public class Topo {
     private String ancrage;
     private String relai;
     private Boolean etat;
+    private LocalDate dateEmp;
+    private LocalDate dateRet;
 
 
     // ==================== Constructeurs ====================
@@ -110,6 +114,18 @@ public class Topo {
     public void setEtat(Boolean pEtat){
         etat = pEtat;
     }
+    public LocalDate getDateEmp(){
+        return dateEmp;
+    }
+    public void setDateEmp(LocalDate pDateEmp){
+        this.dateEmp = pDateEmp;
+    }
+    public LocalDate getDateRet(){
+        return dateRet;
+    }
+    public void setDateRet(LocalDate pDateRet){
+        this.dateRet = pDateRet;
+    }
 
     // ==================== Méthodes ====================
     @Override
@@ -128,6 +144,8 @@ public class Topo {
                 .append(vSEP).append("ancrage =\"").append(ancrage).append('"')
                 .append(vSEP).append("relai = \"").append(relai).append('"')
                 .append(vSEP).append("etat = \"").append(etat).append('"')
+                .append(vSEP).append("Date d'emprunt = \"").append(dateEmp).append('"')
+                .append(vSEP).append("Date de retour = \"").append(dateRet).append('"')
                 .append("}");
         return vStB.toString();
     }

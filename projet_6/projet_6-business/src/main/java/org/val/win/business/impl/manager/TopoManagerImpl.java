@@ -72,4 +72,9 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
         //}
     }
 
+    @Override
+    public void Emprunt(Topo pTopo) throws FunctionalException {
+        topoDao.Emprunt(pTopo);
+    }
+
 }

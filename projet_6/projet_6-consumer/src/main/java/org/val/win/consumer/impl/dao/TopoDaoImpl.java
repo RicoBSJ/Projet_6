@@ -12,6 +12,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import javax.inject.Named;
+import javax.naming.Name;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -101,6 +102,19 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
     }
 
     /**
+     * Reserver un Topo
+     * @param pTopo
+     */
+    @Override
+    public void Emprunt(final Topo pTopo){
+        String vSQL = "UPDATE public.topo SET date_debut_emprunt =: dateEmp, " +
+                "date_fin_emprunt=: dateRet WHERE id_topo = :idTopo";
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    /**
      * Mettre a jour information topo
      * @param pTopo
      */
@@ -115,7 +129,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "profil = :profil,\n" +
                 "ancrage = :ancrage,\n " +
                 "relai = :relai " +
-                "WHERE id = :id";
+                "WHERE id_topo = :idTopo";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
