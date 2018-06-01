@@ -4,7 +4,6 @@ import org.apache.commons.lang3.mutable.MutableObject;
 import org.val.win.business.contract.manager.TopoManager;
 import org.val.win.consumer.contract.dao.TopoDao;
 import org.val.win.model.bean.grimpe.Topo;
-import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -12,10 +11,7 @@ import org.springframework.transaction.TransactionStatus;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
 import java.util.List;
-import java.util.Set;
 
 @Named
 public class TopoManagerImpl extends AbstractManager implements TopoManager {
@@ -62,19 +58,9 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     }
 
     @Override
-    public void ChangeEtat(Topo pTopo, Utilisateur pUtilisateur) throws FunctionalException {
-        MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        //try {
-            topoDao.updateEtat(pTopo);
-         //   transactionHelper.commit(vStatus);
-        //} finally {
-          //  transactionHelper.rollback(vStatus);
-        //}
+    public void Emprunt(Topo pTopo) throws FunctionalException {
+        topoDao.emprunt(pTopo);
     }
 
-    @Override
-    public void Emprunt(Topo pTopo) throws FunctionalException {
-        topoDao.Emprunt(pTopo);
-    }
 
 }

@@ -64,7 +64,7 @@
         <div class="col-lg-3">
         </div>
         <div class="col-lg-6">
-            <s:if test="emprunteur.pseudonyme != null " >
+            <s:if test="topo.idEmprunteur != null " >
                 <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
             </s:if>
             <s:else>

@@ -90,28 +90,19 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
     }
 
     /**
-     * Changer l'etat (DISPO) d'un topo
-     * @param pTopo
-     */
-    @Override
-    public void updateEtat(final Topo pTopo) {
-        String vSQL = "UPDATE public.topo SET etat = :etat WHERE id_topo = :idTopo";
-        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
-        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
-    }
-
-    /**
      * Reserver un Topo
      * @param pTopo
      */
     @Override
-    public void Emprunt(final Topo pTopo){
-        String vSQL = "UPDATE public.topo SET date_debut_emprunt =: dateEmp, " +
-                "date_fin_emprunt=: dateRet WHERE id_topo = :idTopo";
+    public void emprunt(final Topo pTopo){
+        String vSQL = "UPDATE public.topo " +
+                "SET date_debut_emprunt =:dateEmp, " +
+                "date_fin_emprunt =:dateRet, " +
+                "id_emprunteur =:idEmprunteur " +
+                "WHERE id_topo =:idTopo";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams);
     }
 
     /**

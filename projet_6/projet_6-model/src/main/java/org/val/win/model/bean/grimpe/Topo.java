@@ -136,6 +136,7 @@ public class Topo {
                 .append("id du topo =\"").append(idTopo).append('"')
                 .append("Id createur Topo =\"").append(idUtilisateurCreateur).append('"')
                 .append("Id emprunteur topo =\"").append(idEmprunteur).append('"')
+                .append(vSEP).append("Nom du topo").append(nomTopo).append('"')
                 .append(vSEP).append("region =\"").append(region).append('"')
                 .append(vSEP).append("lieu =\"").append(lieu).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')

@@ -120,18 +120,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public void setEmprunteur(Utilisateur pEmprunteur){
         this.emprunteur = pEmprunteur;
     }
-    public LocalDate getDateEmp(){
-        return dateEmp;
-    }
-    public void setDateEmp(LocalDate pDateEmp){
-        this.dateEmp = pDateEmp;
-    }
-    public LocalDate getDateRet(){
-        return dateRet;
-    }
-    public void setDateRet(LocalDate pDateRet){
-        this.dateRet = pDateRet;
-    }
 
     // ==================== Méthodes ====================
 
@@ -195,6 +183,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                 if (this.topo.getIdEmprunteur() != null) {
                     emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
                 }
+                if (this.topo.getDateRet() != null && this.topo.getDateRet().isAfter(this.topo.getDateEmp())){
+                    this.topo.setDateEmp(null);
+                    this.topo.setDateRet(null);
+                    this.topo.setIdEmprunteur(null);
+                }
                 this.session.put("topo", topo);
             } catch (NotFoundException pE) {
                 this.addActionError(getText("error.topo.notfound", Collections.singletonList(idTopo)));
@@ -253,14 +246,10 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             if (!this.hasErrors()) {
                 try {
                     topo.setIdEmprunteur(utilisateur.getId());
-                    if(this.topo.getEtat() == true) {
-                        topo.setEtat(false);
-                    }
-                    else if(this.topo.getEtat() == false){
-                        topo.setEtat(true);
-                    }
+                    topo.setDateEmp(dateEmp);
+                    topo.setDateRet(dateRet);
                     System.out.println(topo);
-                    managerFactory.getTopoManager().ChangeEtat(this.topo, this.utilisateur);
+                    managerFactory.getTopoManager().Emprunt(topo);
                     vResult = ActionSupport.SUCCESS;
                     this.addActionMessage("Topo reservé avec Succès");
                 } catch (FunctionalException pEx) {
