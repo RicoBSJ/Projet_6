@@ -37,7 +37,7 @@ function getListSecteur() {
     var url = "getListSecteur()";
     // Paramètres de la requête AJAX
     var params = {
-        site: id
+        site: $("#listSite").val()
     };
     // Action AJAX en POST
     jQuery.post(

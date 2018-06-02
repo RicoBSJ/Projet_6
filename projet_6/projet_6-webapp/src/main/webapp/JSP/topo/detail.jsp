@@ -81,44 +81,33 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="col-lg-3">
-            aside
-        </div>
-        <div class="class-lg-2">
-            aside
 
+        <div class="col-lg-2">
+        </div>
+
+        <div class="col-lg-3">
             <div class="button_site">
                 <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
                 <ul id="listSite">
                     <li><em> Afficher les sites </em> </li>
                 </ul>
             </div>
+        </div>
 
-        </div>
-        <div class="class-lg-2">
-            aside
-            <!--
-            <div class="button_secteur">
-                <button class="btn btn-primary btn-sm" type = "submit" onclick="getListSecteur()"> Voir les secteurs du site</button>
-                <ul id="listSecteur">
-                    <li><em> Voir les secteurs du site </em> </li>
-                </ul>
-            </div>
-            -->
-        </div>
-        <div class="class-lg-2">
-            aside
-        </div>
         <div class="col-lg-3">
-            aside
+            Liste De secteur
         </div>
+
+        <div class="col-lg-3">
+            Liste de Voie
+        </div>
+
+        <div class="col-lg-2">
+        </div>
+
     </div>
 </div>
 
-
-<s:a action="site_new">
-    <h3>Ajouter un site</h3>
-</s:a>
 
 <br />
 

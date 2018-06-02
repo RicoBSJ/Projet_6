@@ -220,8 +220,6 @@
                 <param name="operationMode">STORE</param>
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
-            <result>/JSP/topo/detail.jsp</result>
-                <param name="idTopo">${topo.idTopo}</param>
             <result name="login" type="redirectAction">login</result>
         </action>
 
