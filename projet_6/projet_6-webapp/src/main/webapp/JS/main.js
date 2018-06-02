@@ -15,9 +15,9 @@ function getListSiteAjax() {
             var $listSite = jQuery("#listSite");
             $listSite.empty();
             jQuery.each(data, function (key, val) {
-                // PLACER LES VAR BOUTONS ICI ! ! ! ! ! ! ! ( EN DESSOUS )
-                var $strbutton = "<button class='btn btn-primary btn-sm' type='submit' onclick='getListSecteur(val.id)'> Voir les secteur </button>"
-                //var $strbutton = "<button> class='btn btn-primary btn-sm' type='submit' onclick='getListSecteurAjax(" + val.idSite + ")'> Voir les secteur</button>"
+                var $strbutton = "<button id='selectSite' name='site' " +
+                                 "label='Site' class='btn btn-primary btn-sm' " +
+                                 "type='submit' onclick='getListSecteur()'> Voir les secteur </button>"
                 $listSite.append(
                     jQuery("<li>")
                         .append(" - Nom du site : " )
@@ -25,15 +25,41 @@ function getListSiteAjax() {
                         .append(val.id).append('<br />')
                         .append($strbutton).append('<br />')
                 );
-                /*newButton.button().click(function () {
-                    $listSite.append(
-                        jQuery("<li>")
-                            .append(site.description)
-                    )
-                })*/
             });
         })
         .fail(function () {
+            alert("Une erreur s'est produite.");
+        });
+}
+
+function getListSecteur() {
+    // URL de l'action AJAX
+    var url = "getListSecteur()";
+    // Paramètres de la requête AJAX
+    var params = {
+        site: id
+    };
+    // Action AJAX en POST
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $selectSecteur = jQuery("#selectSecteur");
+            $selectSecteur.empty();
+            jQuery.each(data, function (key, val) {
+                $selectSecteur.append(
+                    jQuery("<option>")
+                        .append(val.nomSecteur)
+                        .append(val.difficulte)
+                );
+            });
+        })
+        .fail(function (data) {
+            if (typeof data.responseJSON === 'object') {
+                console.log(data.responseJSON);
+            } else {
+                console.log(data);
+            }
             alert("Une erreur s'est produite.");
         });
 }
@@ -61,35 +87,3 @@ function getListComAjax() {
         });
 }
 
-function getListSecteur() {
-    // URL de l'action AJAX
-    var url = "getListSecteur()";
-    // Paramètres de la requête AJAX
-    var params = {
-        site: jQuery("#listSite").val()
-    };
-    // Action AJAX en POST
-    jQuery.post(
-        url,
-        params,
-        function (data) {
-            var $listSecteur = jQuery("#listSecteur");
-            $listSecteur.empty();
-            jQuery.each(data, function (key, val) {
-                console.log($listSecteur);
-                $listSecteur.append(
-                    jQuery("<li>")
-                        .append(val.nomSecteur)
-                        .append(val.difficulte)
-                );
-            });
-        })
-        .fail(function (data) {
-            if (typeof data.responseJSON === 'object') {
-                console.log(data.responseJSON);
-            } else {
-                console.log(data);
-            }
-            alert("Une erreur s'est produite.");
-        });
-}

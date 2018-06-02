@@ -60,7 +60,6 @@ public class GestionUtilisateurAction extends ActionSupport {
                 this.addActionError(getText("error.utilisateur.notfound", Collections.singletonList(id)));
             }
         }
-
         return ActionSupport.SUCCESS;
     }
 
@@ -71,10 +70,8 @@ public class GestionUtilisateurAction extends ActionSupport {
     public String doCreate() {
         // Si (this.projet == null) c'est que l'on entre dans l'ajout de projet
         // Sinon, c'est que l'on vient de valider le formulaire d'ajout
-
         // Par défaut, le result est "input"
         String vResult = ActionSupport.INPUT;
-
         // ===== Validation de l'ajout de projet (projet != null)
         if (this.utilisateur != null) {
             this.utilisateur.setAdmin(false);
@@ -99,7 +96,6 @@ public class GestionUtilisateurAction extends ActionSupport {
         if (vResult.equals(ActionSupport.INPUT)) {
             this.listUtilisateur = managerFactory.getUtilisateurManager().getListUtilisateur();
         }
-
         return vResult;
     }
 }

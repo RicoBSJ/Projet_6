@@ -15,13 +15,9 @@ import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
 import java.time.temporal.ChronoUnit;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.List;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
-import java.time.Month;
 import java.util.Map;
 
 
@@ -88,7 +84,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public void setTopo(Topo pTopo) {
         topo = pTopo;
     }
-    public Site getsite(){ return site;}
+    public Site getSite(){ return site;}
     public void setSite(Site pSite){
         site = pSite;
     }
@@ -183,10 +179,15 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                 if (this.topo.getIdEmprunteur() != null) {
                     emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
                 }
-                if (this.topo.getDateRet() != null && this.topo.getDateRet().isAfter(this.topo.getDateEmp())){
+                if (this.topo.getDateRet() != null && this.topo.getDateRet().isAfter(LocalDate.now())){
                     this.topo.setDateEmp(null);
                     this.topo.setDateRet(null);
                     this.topo.setIdEmprunteur(null);
+                    try {
+                        managerFactory.getTopoManager().Emprunt(this.topo);
+                    } catch (FunctionalException pEx) {
+                        this.addActionMessage(pEx.getMessage());
+                    }
                 }
                 this.session.put("topo", topo);
             } catch (NotFoundException pE) {

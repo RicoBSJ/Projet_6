@@ -5,27 +5,51 @@
 <html>
 
 <head>
-    <h2> Page de Connexion <br />
-        <s:actionerror/>
-        <s:actionmessage/>
-    </h2>
+    <%@ include file="_include/header.jsp"%>
 </head>
 
 <body>
+<s:actionerror/>
+<s:actionmessage/>
 
-
-<s:form action="login">
-    <s:textfield name="login" label="Identifiant" requiredLabel="true" />
-    <s:password name="password" label="Mot de passe" requiredLabel="true" />
-
-    <s:submit value="Connexion" class="button"/>
-</s:form>
-
-<s:a action="utilisateur_new">
-    <span class="button"> Creer un compte </span>
-</s:a>
 
 </body>
 
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="col-lg-4">
+        </div>
+
+        <s:form action="login" class="col-lg-4" theme="simple">
+            <div class="form-group col-lg-12">
+                <label for="login">Pseudonyme : </label>
+                <s:textfield name="login" label="Identifiant" requiredLabel="true" class="form-control" theme="simple" />
+                </br>
+            </div>
+            <div class="form-group col-lg-12">
+                <label for="password">Mot de passe : </label>
+                <s:textfield name="password" label="Password" requiredLabel="true" class="form-control" theme="simple"/>
+                </br>
+            </div>
+            <s:submit value="Connexion" class="btn btn-primary btn-sm"/>
+            <br/>
+            <br/>
+        </s:form>
+        <div class="col-lg-4">
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-5">
+    </div>
+    <div class="col-lg-2">
+        <div class="btn-group btn-group-justified">
+            <a class="btn btn-danger" href="utilisateur_new.action">Creer un compte</a>
+        </div>
+    </div>
+    <div class="col-lg-5">
+    </div>
+</div>

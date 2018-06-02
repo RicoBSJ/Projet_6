@@ -77,18 +77,6 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
     }
     // ==================== Méthodes ====================
 
-    public String doDetail() {
-        if (idSite == null) {
-            this.addActionError(getText("error.topo.missing.id"));
-        } else {
-            try {
-                site = managerFactory.getSiteManager().getSite(idSite, idTopoSite);
-            } catch (NotFoundException pE) {
-                this.addActionError(getText("error.topo.notfound", Collections.singletonList(idSite)));
-            }
-        }
-        return (this.hasErrors()) ? ActionSupport.ERROR : ActionSupport.SUCCESS;
-    }
 
     public String doCreate() {
         utilisateur = (Utilisateur) session.get("user");

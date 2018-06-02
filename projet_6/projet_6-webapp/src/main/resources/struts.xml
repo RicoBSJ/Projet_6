@@ -6,16 +6,31 @@
 
     <package name="ajax" extends="json-default">
 
+        <global-results>
+            <result name="error" type="json">
+                <param name="statusCode">400</param>
+                <param name="includeProperties">actionErrors.*,fieldErrors.*</param>
+                <!-- Pour accéder au attributs des classes parentes à la classe d'action -->
+                <param name="ignoreHierarchy">false</param>
+
+            </result>
+
+        </global-results>
+
         <!-- Action Ajax -->
         <!-- Action list Commentaire -->
-        <action name="listComAjax" class="org.val.win.webapp.action.GestionTopoAction" method="doListcom">
+        <action name="listComAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListcom">
             <result name="success" type="json">
                 <param name="root">ListCom</param>
             </result>
         </action>
 
         <!-- Action listant Site -->
-        <action name="listSiteAjax" class="org.val.win.webapp.action.GestionTopoAction" method="doListSite">
+        <action name="listSiteAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListSite">
             <result name="success" type="json">
                 <param name="root">listSite</param>
             </result>

@@ -92,10 +92,6 @@
                 <ul id="listSite">
                     <li><em> Afficher les sites </em> </li>
                 </ul>
-                <button class="btn btn-primary btn-sm" type="submit" onclick="getListSecteur()"> Voir les secteurs</button>
-                <lu id="listSecteur" label="Secteur" list="{}">
-                    <li><em>Voir les Secteurs </em> </li>
-                </lu>
             </div>
 
         </div>
