@@ -121,6 +121,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     @Override
     public String execute() {
+        topo = (Topo) session.get("topo");
+        listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
         return ActionSupport.SUCCESS;
     }
 
@@ -176,6 +178,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             try {
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
+                listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
                 if (this.topo.getIdEmprunteur() != null) {
                     emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
                 }

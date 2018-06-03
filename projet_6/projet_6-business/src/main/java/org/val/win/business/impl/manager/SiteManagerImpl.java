@@ -29,6 +29,16 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
     private PlatformTransactionManager platformTransactionManager;
 
     @Override
+    public Site getSite(Integer idSite, Integer idTopo) throws NotFoundException {
+        Site vSite
+                = this.getListSite(idTopo).stream()
+                .filter(p -> p.getId().equals(idSite))
+                .findFirst()
+                .orElseThrow(() -> new NotFoundException("Projet non trouvé : ID=" + idSite));
+        return vSite;
+    }
+
+    @Override
     public List<Site> getListSite(Integer id) {
         return siteDao.getListSite(id);
     }

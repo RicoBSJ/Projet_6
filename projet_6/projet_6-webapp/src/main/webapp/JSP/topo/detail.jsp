@@ -86,20 +86,34 @@
         </div>
 
         <div class="col-lg-3">
-            <div class="button_site">
+            <div class="form-group">
+                <!--
                 <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
                 <ul id="listSite">
-                    <li><em> Afficher les sites </em> </li>
+                    <li><em> Afficher les sites </em></li>
                 </ul>
+                -->
+                <s:form>
+                    <s:select class="form-control"
+                              id="selectSite" name="site" label="Site"
+                              list="listSite" listKey="id" listValue="nomSite"
+                              onchange="getListSecteur()"/>
+                </s:form>
             </div>
         </div>
 
         <div class="col-lg-3">
-            Liste De secteur
+            <s:form>
+                <s:select class="form-control"
+                          id="selectSecteur" label="Secteur" list="{}"/>
+            </s:form>
         </div>
 
         <div class="col-lg-3">
-            Liste de Voie
+            <s:form>
+                <s:select class="form-control"
+                          id="selectVoie" label="Voie" list="{}"/>
+            </s:form>
         </div>
 
         <div class="col-lg-2">

@@ -5,7 +5,7 @@ $(document).ready(function() {
         });
 })
 
-function getListSiteAjax() {
+/*function getListSiteAjax() {
     // URL de l'action AJAX
     var url = "listSiteAjax";
     // Action AJAX en POST
@@ -30,14 +30,14 @@ function getListSiteAjax() {
         .fail(function () {
             alert("Une erreur s'est produite.");
         });
-}
+}*/
 
 function getListSecteur() {
     // URL de l'action AJAX
     var url = "getListSecteur()";
     // Paramètres de la requête AJAX
     var params = {
-        site: $("#listSite").val()
+        site: $("#selectSite").val()
     };
     // Action AJAX en POST
     jQuery.post(
@@ -50,7 +50,6 @@ function getListSecteur() {
                 $selectSecteur.append(
                     jQuery("<option>")
                         .append(val.nomSecteur)
-                        .append(val.difficulte)
                 );
             });
         })

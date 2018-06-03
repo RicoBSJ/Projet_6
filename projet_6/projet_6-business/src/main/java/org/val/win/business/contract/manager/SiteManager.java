@@ -13,4 +13,6 @@ public interface SiteManager {
 
     List<Site> getListSite(Integer id);
 
+    Site getSite(Integer idSite, Integer idTopo) throws NotFoundException;
+
 }
