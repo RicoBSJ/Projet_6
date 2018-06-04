@@ -4,6 +4,7 @@ import org.val.win.business.contract.manager.SecteurManager;
 import org.val.win.consumer.contract.dao.SecteurDao;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.val.win.model.bean.grimpe.Secteur;
+import org.val.win.model.bean.grimpe.Site;
 import org.val.win.model.exception.FunctionalException;
 
 import javax.inject.Inject;
@@ -24,8 +25,8 @@ public class SecteurManagerImpl extends AbstractManager implements SecteurManage
     private PlatformTransactionManager platformTransactionManager;
 
     @Override
-    public List<Secteur> getListSecteur(Integer id) {
-        return secteurDao.getListSecteur(id);
+    public List<Secteur> getListSecteur(Site pSite) {
+        return secteurDao.getListSecteur(pSite.getId());
     }
 
     @Override

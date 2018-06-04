@@ -140,7 +140,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         if (site == null) {
             addActionError("Le site doit être précisé !");
         } else {
-            listSecteur = managerFactory.getSecteurManager().getListSecteur(site.getId());
+            listSecteur = managerFactory.getSecteurManager().getListSecteur(site);
         }
         return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
 

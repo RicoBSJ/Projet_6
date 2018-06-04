@@ -34,7 +34,6 @@ public class SiteLocator extends StrutsTypeConverter implements SessionAware {
 
     @Inject
     private ManagerFactory managerFactory;
-
     private Topo topo;
 
 
@@ -42,7 +41,6 @@ public class SiteLocator extends StrutsTypeConverter implements SessionAware {
     public Object convertFromString(Map pContext, String[] pValues, Class pToClass) {
         Object vRetour = null;
         topo = (Topo) session.get("topo");
-
         if (pValues != null) {
             if (pValues.length == 1) {
                 String vValue = pValues[0];
@@ -60,7 +58,6 @@ public class SiteLocator extends StrutsTypeConverter implements SessionAware {
                 vRetour = performFallbackConversion(pContext, pValues, pToClass);
             }
         }
-
         return vRetour;
     }
 

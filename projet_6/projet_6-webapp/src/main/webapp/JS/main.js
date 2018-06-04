@@ -49,7 +49,8 @@ function getListSecteur() {
             jQuery.each(data, function (key, val) {
                 $selectSecteur.append(
                     jQuery("<option>")
-                        .append(val.nomSecteur)
+                        .text(val.nomSecteur)
+                        .val(val.nomSecteur)
                 );
             });
         })

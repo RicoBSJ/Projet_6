@@ -96,7 +96,7 @@
                 <s:form>
                     <s:select class="form-control"
                               id="selectSite" name="site" label="Site"
-                              list="listSite" listKey="idSite" listValue="nomSite"
+                              list="listSite" listKey="id" listValue="nomSite"
                               onchange="getListSecteur()"/>
 
                     <s:select class="form-control"
