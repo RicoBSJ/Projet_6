@@ -96,17 +96,16 @@
                 <s:form>
                     <s:select class="form-control"
                               id="selectSite" name="site" label="Site"
-                              list="listSite" listKey="id" listValue="nomSite"
+                              list="listSite" listKey="idSite" listValue="nomSite"
                               onchange="getListSecteur()"/>
+
+                    <s:select class="form-control"
+                              id="selectSecteur" label="Secteur" list="{}"/>
                 </s:form>
             </div>
         </div>
 
         <div class="col-lg-3">
-            <s:form>
-                <s:select class="form-control"
-                          id="selectSecteur" label="Secteur" list="{}"/>
-            </s:form>
         </div>
 
         <div class="col-lg-3">
