@@ -30,8 +30,9 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
 
     @Override
     public Site getSite(Integer idSite, Integer idTopo) throws NotFoundException {
+        List<Site> listSite = this.getListSite(idTopo);
         Site vSite
-                = this.getListSite(idTopo).stream()
+                = listSite.stream()
                 .filter(p -> p.getId().equals(idSite))
                 .findFirst()
                 .orElseThrow(() -> new NotFoundException("Projet non trouvé : ID=" + idSite));

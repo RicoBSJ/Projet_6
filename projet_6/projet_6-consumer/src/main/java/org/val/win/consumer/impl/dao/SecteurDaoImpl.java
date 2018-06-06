@@ -31,8 +31,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         RowMapper<Secteur> vRowMapper = new RowMapper<Secteur>() {
             public Secteur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Secteur vSecteur = new Secteur(pRS.getInt("id_secteur"));
-                vSecteur.setNomSecteur(pRS.getString("nom"));
-                vSecteur.setNbrVoie(pRS.getInt("nbrVoie"));
+                vSecteur.setNomSecteur(pRS.getString("nom_secteur"));
                 vSecteur.setDescription(pRS.getString("description"));
                 vSecteur.setDifficulte(pRS.getString("difficulte"));
                 vSecteur.setOrientation(pRS.getString("orientation"));

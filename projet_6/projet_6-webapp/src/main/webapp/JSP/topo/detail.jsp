@@ -59,7 +59,6 @@
     </div>
 </header>
 
-<span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
 
 <div class="row">
     <div class="col-lg-12">
@@ -89,6 +88,7 @@
 
         <div class="col-lg-3">
             <div class="form-group">
+                <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
                 <!--
                 <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
                 <ul id="listSite">
