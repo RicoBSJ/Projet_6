@@ -1,9 +1,9 @@
-$(document).ready(function() {
-
+/*$(document).ready(function() {
     $(".title").hide();
         $(".title").fadeIn(3000,function(){
         });
 })
+*/
 
 /*function getListSiteAjax() {
     // URL de l'action AJAX
@@ -34,10 +34,10 @@ $(document).ready(function() {
 
 function getListSecteur() {
     // URL de l'action AJAX
-    var url = "getListSecteur()";
+    var url = "listSecteurAjax";
     // Paramètres de la requête AJAX
     var params = {
-        site: $("#selectSite").val()
+        site: $("#selectSite").val() + '#' + $("#spanIdTopo").text()
     };
     // Action AJAX en POST
     jQuery.post(

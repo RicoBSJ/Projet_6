@@ -28,7 +28,6 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         String vSQL = "SELECT * FROM public.secteur " +
                       "WHERE id_site = ?";
 
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         RowMapper<Secteur> vRowMapper = new RowMapper<Secteur>() {
             public Secteur mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Secteur vSecteur = new Secteur(pRS.getInt("id_secteur"));
@@ -41,6 +40,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
             }
         };
 
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
         List<Secteur> vListSecteur = vJdbcTemplate.query(vSQL, vRowMapper, id);
 
         return vListSecteur;
@@ -56,7 +56,6 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
                 "  (id_topo,\n" +
                 "  id_site,\n" +
                 "  nom_secteur,\n" +
-                "  nrbvoie,\n" +
                 "  difficulte,\n" +
                 "  orientation,\n" +
                 "  description)\n" +
@@ -67,7 +66,6 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         vParams.addValue("idTopo", pSecteur.getId_topo());
         vParams.addValue("idSite", pSecteur.getId_site());
         vParams.addValue("nomSecteur", pSecteur.getNomSecteur());
-        vParams.addValue("nbrVoie", pSecteur.getNbrVoie());
         vParams.addValue("difficulte", pSecteur.getDifficulte());
         vParams.addValue("orientation", pSecteur.getOrientation());
         vParams.addValue("description", pSecteur.getDescription());
@@ -91,7 +89,6 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
                 "id_topo = :id_topo,\n" +
                 "id_site = :id_site,\n" +
                 "nom_secteur = :nom_secteur,\n" +
-                "nrbvoie = :nrbvoie,\n" +
                 "difficulte = :diffculte " +
                 "WHERE id = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pSecteur);

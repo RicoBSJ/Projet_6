@@ -4,51 +4,37 @@ import java.util.Map;
 import javax.inject.Inject;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.struts2.interceptor.SessionAware;
 import org.apache.struts2.util.StrutsTypeConverter;
 import com.opensymphony.xwork2.conversion.TypeConversionException;
 import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.grimpe.Site;
-import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.exception.NotFoundException;
 
 
 /**
  * Locator d'{@link Site} via son idt.
  */
-public class SiteLocator extends StrutsTypeConverter implements SessionAware {
+public class SiteLocator extends StrutsTypeConverter {
 
-    /**
-     * Récuperer session
-     */
-    private Map<String, Object> session;
-
-    /**
-     * Setteur pour la session
-     * @param pSession
-     */
-    @Override
-    public void setSession(Map<String, Object> pSession) {
-        this.session = pSession;
-    }
 
     @Inject
     private ManagerFactory managerFactory;
-    private Topo topo;
 
 
     @Override
     public Object convertFromString(Map pContext, String[] pValues, Class pToClass) {
         Object vRetour = null;
-        topo = (Topo) session.get("topo");
         if (pValues != null) {
             if (pValues.length == 1) {
                 String vValue = pValues[0];
+                String [] tokens = vValue.split("#");
+                String siteID = tokens[0].trim();
+                String topoID = tokens[1].trim();
                 try {
                     vRetour
                             = StringUtils.isEmpty(vValue)
                             ? null
-                            : managerFactory.getSiteManager().getSite(new Integer(vValue), topo.getIdTopo());
+                            : managerFactory.getSiteManager().getSite(new Integer(siteID), new Integer(topoID));
                 } catch (NumberFormatException pEx) {
                     throw new TypeConversionException("Format d'identifiant de Site invalide", pEx);
                 } catch (NotFoundException pEx) {
@@ -60,7 +46,6 @@ public class SiteLocator extends StrutsTypeConverter implements SessionAware {
         }
         return vRetour;
     }
-
 
     @Override
     public String convertToString(Map pContext, Object pObject) {

@@ -59,6 +59,8 @@
     </div>
 </header>
 
+<span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
+
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-3">
@@ -98,14 +100,15 @@
                               id="selectSite" name="site" label="Site"
                               list="listSite" listKey="id" listValue="nomSite"
                               onchange="getListSecteur()"/>
-
-                    <s:select class="form-control"
-                              id="selectSecteur" label="Secteur" list="{}"/>
                 </s:form>
             </div>
         </div>
 
         <div class="col-lg-3">
+            <s:form>
+                <s:select class="form-control"
+                          id="selectSecteur" label="Secteur" list="{}"/>
+            </s:form>
         </div>
 
         <div class="col-lg-3">

@@ -4,7 +4,7 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 <struts>
 
-    <package name="ajax" extends="json-default">
+    <package name="ajax" extends="default, json-default">
 
         <global-results>
             <result name="error" type="json">
@@ -18,6 +18,7 @@
         </global-results>
 
         <!-- Action Ajax -->
+
         <!-- Action list Commentaire -->
         <action name="listComAjax"
                 class="org.val.win.webapp.action.GestionTopoAction"
