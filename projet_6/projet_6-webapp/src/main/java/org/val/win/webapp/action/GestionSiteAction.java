@@ -78,6 +78,10 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
     // ==================== Méthodes ====================
 
 
+    /**
+     * Action servant a creer un site
+     * @return
+     */
     public String doCreate() {
         utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {

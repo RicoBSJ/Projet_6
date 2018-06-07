@@ -64,6 +64,35 @@ function getListSecteur() {
         });
 }
 
+function getListVoie(){
+    var url = "listVoieAjax";
+    var params = {
+        secteur: $("#selectSecteur").val()
+    };
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $selectVoie = jQuery("#selectVoie");
+            $selectVoie.empty();
+            jQuery.each(data, function (key, val) {
+                $selectVoie.append(
+                    jQuery("<option>")
+                        .text(val.nomVoie)
+                        .val(val.nomVoie)
+                );
+            });
+        })
+        .fail(function (data) {
+            if(typeof data.responseJSON === 'object') {
+                console.log(data.responseJSON);
+            } else {
+                console.log(data);
+            }
+            alert("Une erreur s'est produite.")
+        });
+}
+
 
 function getListComAjax() {
     // URL de l'action AJAX

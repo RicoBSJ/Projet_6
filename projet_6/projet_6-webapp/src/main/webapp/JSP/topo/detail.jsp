@@ -107,7 +107,8 @@
         <div class="col-lg-3">
             <s:form>
                 <s:select class="form-control"
-                          id="selectSecteur" label="Secteur" list="{}"/>
+                          id="selectSecteur" label="Secteur" list="{}"
+                          onchange="getListVoie()"/>
             </s:form>
         </div>
 

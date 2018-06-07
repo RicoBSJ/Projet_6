@@ -130,12 +130,15 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * Action listant les {@link Topo}
      * @return success
      */
-
     public String doList() {
         listTopo = managerFactory.getTopoManager().getListTopo();
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Action listant les secteurs.
+     * @return
+     */
     public String doListSecteur() {
         if (site == null) {
             addActionError("Le site doit être précisé !");
@@ -147,12 +150,20 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     }
 
+    /**
+     * Action listant les sites
+     * @return
+     */
     public String doListSite() {
         topo = (Topo) session.get("topo");
         listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Actions listant les voies
+     * @return
+     */
     public String doListVoie() {
         if (secteur == null) {
             addActionError("Le secteur doit être précisé !");
@@ -162,6 +173,10 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    /**
+     * Action listant les commentaires
+     * @return
+     */
     public String doListcom() {
         topo = (Topo) session.get("topo");
         listCom = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
@@ -238,6 +253,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         }
     }
 
+    /**
+     * Action permettant l'emprunt
+     * Gestion des dates
+     * @return
+     */
     public String EmpruntTopo(){
         topo = (Topo) session.get("topo");
         utilisateur = (Utilisateur) session.get("user");
