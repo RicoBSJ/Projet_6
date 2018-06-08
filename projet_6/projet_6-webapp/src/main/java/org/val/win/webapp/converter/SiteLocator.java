@@ -36,7 +36,7 @@ public class SiteLocator extends StrutsTypeConverter {
                             ? null
                             : managerFactory.getSiteManager().getSite(new Integer(siteID), new Integer(topoID));
                 } catch (NumberFormatException pEx) {
-                    throw new TypeConversionException("Format d'identifiant de Site invalide", pEx);
+                    throw new TypeConversionException("Format d'identifiant du Site invalide", pEx);
                 } catch (NotFoundException pEx) {
                     throw new TypeConversionException("Site introuvable", pEx);
                 }

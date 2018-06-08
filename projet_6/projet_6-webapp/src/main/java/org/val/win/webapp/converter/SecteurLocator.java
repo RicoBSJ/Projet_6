@@ -19,7 +19,6 @@ public class SecteurLocator extends StrutsTypeConverter {
     @Override
     public Object convertFromString(Map pContext, String[] pValues, Class pToClass) {
         Object vRetour = null;
-
         if (pValues != null) {
             if (pValues.length == 1) {
                 String vValue = pValues[0];
@@ -32,9 +31,9 @@ public class SecteurLocator extends StrutsTypeConverter {
                             ? null
                             : managerFactory.getSecteurManager().getSecteur(new Integer(secteurID), new Integer(siteID));
                 } catch (NumberFormatException pEx) {
-                    throw new TypeConversionException("Format d'identifiant de projet invalide", pEx);
+                    throw new TypeConversionException("Format d'identifiant du secteur invalide", pEx);
                 } catch (NotFoundException pEx) {
-                    throw new TypeConversionException("Projet introuvable", pEx);
+                    throw new TypeConversionException("Secteur Introuvable", pEx);
                 }
             } else {
                 vRetour = performFallbackConversion(pContext, pValues, pToClass);

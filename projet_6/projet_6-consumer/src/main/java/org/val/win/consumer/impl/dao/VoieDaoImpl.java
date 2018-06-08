@@ -26,9 +26,10 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
      * @return
      */
     @Override
-    public List<Voie> getListVoie() {
-        String vSQL = "SELECT * FROM public.voie";
-        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+    public List<Voie> getListVoie(Integer id) {
+        String vSQL = "SELECT * FROM public.voie " +
+                      "WHERE id_secteur = ?";
+
         RowMapper<Voie> vRowMapper = new RowMapper<Voie>() {
             public Voie mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Voie vVoie = new Voie(pRS.getInt("id_voie"));
@@ -39,7 +40,9 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
                 return vVoie;
             }
         };
-        List<Voie> vListVoie = vJdbcTemplate.query(vSQL, vRowMapper);
+
+        JdbcTemplate vJdbcTemplate = new JdbcTemplate(getDataSource());
+        List<Voie> vListVoie = vJdbcTemplate.query(vSQL, vRowMapper, id);
 
         return vListVoie;
     }

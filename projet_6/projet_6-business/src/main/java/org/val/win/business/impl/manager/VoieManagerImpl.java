@@ -26,7 +26,7 @@ public class VoieManagerImpl extends AbstractManager implements VoieManager {
 
     @Override
     public List<Voie> getListVoie(Integer id) {
-        return voieDao.getListVoie();
+        return voieDao.getListVoie(id);
     }
 
     @Override
