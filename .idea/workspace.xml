@@ -7,10 +7,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js" />
       <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" />
     </list>
@@ -151,62 +159,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GestionUtilisateurAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java">
+      <file leaf-file-name="SecteurLocator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionVoieAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-607">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestionCommentaireAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="92" column="16" lean-forward="false" selection-start-line="92" selection-start-column="16" selection-end-line="92" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utilisateur.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-352">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommentaireManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding />
+            <state relative-caret-position="510">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -214,20 +174,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="938">
-              <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="47" />
+            <state relative-caret-position="216">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -236,8 +184,18 @@
       <file leaf-file-name="detail.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="110" column="52" lean-forward="false" selection-start-line="110" selection-start-column="52" selection-end-line="110" selection-end-column="52" />
+            <state relative-caret-position="394">
+              <caret line="117" column="52" lean-forward="true" selection-start-line="117" selection-start-column="52" selection-end-line="117" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GestionTopoAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="163" column="14" lean-forward="false" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -245,14 +203,64 @@
       </file>
       <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
+          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="665">
-              <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="34" />
+            <state relative-caret-position="304">
+              <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
               <folding />
             </state>
           </provider>
-          <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-            <state />
+        </entry>
+      </file>
+      <file leaf-file-name="GestionSecteurAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Secteur.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Site.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GestionSiteAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Voie.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+              <folding />
+            </state>
           </provider>
         </entry>
       </file>
@@ -286,8 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/commentaire.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/CommentaireDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/main.js" />
@@ -301,7 +307,6 @@
         <option value="$PROJECT_DIR$/projet_6/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SecteurDao.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-technical/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" />
@@ -325,17 +330,20 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_topo.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SiteManager.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/xwork-conversion.properties" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" />
       </list>
     </option>
@@ -821,6 +829,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1419,10 +1428,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1860,14 +1868,9 @@
       <workItem from="1528144898002" duration="260000" />
       <workItem from="1528310962355" duration="972000" />
       <workItem from="1528313372985" duration="972000" />
-      <workItem from="1528399540010" duration="588000" />
-    </task>
-    <task id="LOCAL-00056" summary="Mise en place de l'insert topo&#10;Mise en place de l'inset Com">
-      <created>1525010354418</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1525010354418</updated>
+      <workItem from="1528399540010" duration="702000" />
+      <workItem from="1528461281138" duration="1344000" />
+      <workItem from="1528467556430" duration="763000" />
     </task>
     <task id="LOCAL-00057" summary="Mise en place de l'insert topo&#10;Mise en place de l'inset Com">
       <created>1525176753411</created>
@@ -2205,7 +2208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1528314285304</updated>
     </task>
-    <option name="localTasksCounter" value="105" />
+    <task id="LOCAL-00105" summary="finition Ajax, locator en cours &#10;correctif visuel, correction checkstyle">
+      <created>1528400157518</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1528400157519</updated>
+    </task>
+    <option name="localTasksCounter" value="106" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2217,7 +2227,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259232000" />
+    <option name="totallyTimeSpent" value="261453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -2235,18 +2245,20 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.364" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.163" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.332" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.332" sideWeight="0.49761903" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2547619" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2254,11 +2266,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.163" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297619" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.224" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -2268,7 +2278,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="ecrire test requete sql, completer test struts" />
     <MESSAGE value="DB connectée, fonctionne, couche consumer fonctionnelle, struts en cours" />
     <MESSAGE value="Debut insertion topo + affichage topo" />
     <MESSAGE value="Affichage info utilisateur OK&#10;Affichage Topo en cours, revoir implementation DB" />
@@ -2293,7 +2302,8 @@
     <MESSAGE value="Ecriture emprunt/ Gestion Date&#10;Ajax basique ok + en cours&#10;Evolution visuel" />
     <MESSAGE value="Emprunt avec date OK&#10;Ajax basique ok + en cours&#10;Evolution visuel" />
     <MESSAGE value="Correction Ajax, locator ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correction Ajax, locator ok" />
+    <MESSAGE value="finition Ajax, locator en cours &#10;correctif visuel, correction checkstyle" />
+    <option name="LAST_COMMIT_MESSAGE" value="finition Ajax, locator en cours &#10;correctif visuel, correction checkstyle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2328,12 +2338,6 @@
           <properties />
           <option name="timeStamp" value="135" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="220" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -2343,29 +2347,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/site/site.jsp" />
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/commentaire.jsp" />
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/d28c9f52/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/p6.public.topo">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -2462,13 +2443,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="32" column="21" lean-forward="false" selection-start-line="32" selection-start-column="21" selection-end-line="32" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://table:/d28c9f52/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/p6.public.secteur">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -2480,20 +2454,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="105" column="25" lean-forward="false" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -2555,44 +2515,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#887#888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="34" column="26" lean-forward="false" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-          <folding>
-            <element signature="e#1312#1313#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="28" column="48" lean-forward="false" selection-start-line="28" selection-start-column="48" selection-end-line="28" selection-end-column="48" />
-          <folding>
-            <marker date="1525799500625" expanded="true" signature="1016:1086" ph="SELECT * FRO... site" />
-            <marker date="1525799500625" expanded="true" signature="1935:2205" ph="INSERT INTO public.site... " />
-            <marker date="1525799500625" expanded="true" signature="3005:3257" ph="UPDATE public.site... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2600,54 +2526,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="803">
           <caret line="94" column="27" lean-forward="false" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
-          <folding>
-            <marker date="1528314223338" expanded="true" signature="999:1072" ph="SELECT * FRO... secteur" />
-            <marker date="1528314223338" expanded="true" signature="1980:2109" ph="INSERT INTO public.secteur... " />
-            <marker date="1528314223338" expanded="true" signature="1980:2347" ph="INSERT INTO public.secteur... " />
-            <marker date="1528314223338" expanded="true" signature="3306:3646" ph="UPDATE public.secteur... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3051">
-          <caret line="257" column="24" lean-forward="false" selection-start-line="257" selection-start-column="24" selection-end-line="257" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2655,7 +2533,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2671,7 +2548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-112">
           <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2685,8 +2561,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-352">
+        <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -2699,39 +2599,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="49" column="34" lean-forward="false" selection-start-line="49" selection-start-column="22" selection-end-line="49" selection-end-column="34" />
+        <state relative-caret-position="525">
+          <caret line="37" column="5" lean-forward="false" selection-start-line="37" selection-start-column="5" selection-end-line="37" selection-end-column="5" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TransactionHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="94" column="0" lean-forward="true" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="46" selection-end-line="35" selection-end-column="52" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="false" />
+            <element signature="e#1276#1277#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="47" lean-forward="false" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="47" />
+        <state relative-caret-position="435">
+          <caret line="40" column="5" lean-forward="false" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="33" column="65" lean-forward="false" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+          <folding>
+            <element signature="e#1296#1297#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="36" column="110" lean-forward="false" selection-start-line="36" selection-start-column="70" selection-end-line="36" selection-end-column="110" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
+      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="40" column="38" lean-forward="false" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="163" column="14" lean-forward="false" selection-start-line="163" selection-start-column="14" selection-end-line="163" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="27" lean-forward="false" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="81" column="37" lean-forward="false" selection-start-line="81" selection-start-column="37" selection-end-line="81" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="35" column="24" lean-forward="false" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="35" column="28" lean-forward="false" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="110" column="52" lean-forward="false" selection-start-line="110" selection-start-column="52" selection-end-line="110" selection-end-column="52" />
+        <state relative-caret-position="394">
+          <caret line="117" column="52" lean-forward="true" selection-start-line="117" selection-start-column="52" selection-end-line="117" selection-end-column="52" />
           <folding />
         </state>
       </provider>

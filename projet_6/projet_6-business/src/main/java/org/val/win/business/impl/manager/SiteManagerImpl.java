@@ -4,8 +4,6 @@ import org.val.win.business.contract.manager.SiteManager;
 import org.val.win.consumer.contract.dao.SiteDao;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.val.win.model.bean.grimpe.Site;
-import org.val.win.model.bean.grimpe.Topo;
-import org.val.win.model.bean.grimpe.Voie;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 
@@ -33,7 +31,7 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
         List<Site> listSite = this.getListSite(idTopo);
         Site vSite
                 = listSite.stream()
-                .filter(p -> p.getId().equals(idSite))
+                .filter(p -> p.getIdSite().equals(idSite))
                 .findFirst()
                 .orElseThrow(() -> new NotFoundException("Projet non trouvé : ID=" + idSite));
         return vSite;

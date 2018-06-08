@@ -143,8 +143,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         if (site == null) {
             addActionError("Le site doit être précisé !");
         } else {
-            listSecteur = managerFactory.getSecteurManager().getListSecteur(site);
-            System.out.println(listSecteur);
+            listSecteur = managerFactory.getSecteurManager().getListSecteur(site.getIdSite());
         }
         return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
 
@@ -168,7 +167,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         if (secteur == null) {
             addActionError("Le secteur doit être précisé !");
         } else {
-            listVoie = managerFactory.getVoieManager().getListVoie(site.getId());
+            listVoie = managerFactory.getVoieManager().getListVoie(secteur.getIdSecteur());
+            System.out.println(listVoie);
         }
         return ActionSupport.SUCCESS;
     }

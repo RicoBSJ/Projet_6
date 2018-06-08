@@ -98,18 +98,25 @@
                 <s:form>
                     <s:select class="form-control"
                               id="selectSite" name="site" label="Site"
-                              list="listSite" listKey="id" listValue="nomSite"
+                              list="listSite" listKey="idSite" listValue="nomSite"
                               onchange="getListSecteur()"/>
                 </s:form>
+                <s:a action="site_new">
+                    <button class="btn btn-primary btn-sm" type="submit"> Creer un site </button>
+                </s:a>
             </div>
         </div>
 
         <div class="col-lg-3">
             <s:form>
                 <s:select class="form-control"
-                          id="selectSecteur" label="Secteur" list="{}"
+                          id="selectSecteur" name="secteur" label="Secteur"
+                          list="{}" listKey="idSecteur" listValue="nomSecteur"
                           onchange="getListVoie()"/>
             </s:form>
+            <s:a action="secteur_new">
+                <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
+            </s:a>
         </div>
 
         <div class="col-lg-3">
@@ -117,6 +124,9 @@
                 <s:select class="form-control"
                           id="selectVoie" label="Voie" list="{}"/>
             </s:form>
+            <s:a action="voie_new">
+                <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
+            </s:a>
         </div>
 
         <div class="col-lg-2">

@@ -4,8 +4,8 @@ import org.val.win.business.contract.manager.SecteurManager;
 import org.val.win.consumer.contract.dao.SecteurDao;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.val.win.model.bean.grimpe.Secteur;
-import org.val.win.model.bean.grimpe.Site;
 import org.val.win.model.exception.FunctionalException;
+import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -25,8 +25,19 @@ public class SecteurManagerImpl extends AbstractManager implements SecteurManage
     private PlatformTransactionManager platformTransactionManager;
 
     @Override
-    public List<Secteur> getListSecteur(Site pSite) {
-        return secteurDao.getListSecteur(pSite.getId());
+    public Secteur getSecteur(Integer idSecteur, Integer idSite) throws NotFoundException {
+        List<Secteur> listSecteur = this.getListSecteur(idSite);
+        Secteur vSecteur
+                = listSecteur.stream()
+                .filter(p -> p.getIdSecteur().equals(idSecteur))
+                .findFirst()
+                .orElseThrow(() -> new NotFoundException("Secteur non trouvé : ID=" + idSecteur));
+        return vSecteur;
+    }
+
+    @Override
+    public List<Secteur> getListSecteur(Integer pId) {
+        return secteurDao.getListSecteur(pId);
     }
 
     @Override

@@ -3,7 +3,7 @@ package org.val.win.model.bean.grimpe;
 public class Secteur {
 
     // ==================== Attributs ====================
-    private Integer id;
+    private Integer idSecteur;
     private Integer idSite;
     private Integer idTopo;
     private Integer nbrVoie;
@@ -27,18 +27,18 @@ public class Secteur {
      * @param pId -
      */
     public Secteur(Integer pId) {
-        id = pId;
+        idSecteur = pId;
     }
 
 
     // ==================== Getters/Setters ====================
 
-    public Integer getId(){
-        return id;
+    public Integer getIdSecteur(){
+        return idSecteur;
     }
 
-    public void setId(Integer pId){
-        id = pId;
+    public void setIdSecteur(Integer pId){
+        idSecteur = pId;
     }
 
     public Integer getId_topo() {
@@ -104,9 +104,9 @@ public class Secteur {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Secteur id =\"").append(id).append('"')
-                .append("Site id = \"").append(idSite).append('"')
-                .append("topo id = \"").append(idTopo).append('"')
+                .append("Secteur idSecteur =\"").append(idSecteur).append('"')
+                .append("Site idSecteur = \"").append(idSite).append('"')
+                .append("topo idSecteur = \"").append(idTopo).append('"')
                 .append(vSEP).append("nom =\"").append(nomSecteur).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')
                 .append(vSEP).append("nombre de voie(s) =\"").append(nbrVoie).append('"')

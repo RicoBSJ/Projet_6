@@ -10,7 +10,6 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
-import org.val.win.model.bean.grimpe.Topo;
 
 import javax.inject.Named;
 import java.sql.ResultSet;
@@ -69,7 +68,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
         KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_site"});
-        pSite.setId(holder.getKey().intValue());
+        pSite.setIdSite(holder.getKey().intValue());
         return pSite;
 
     }

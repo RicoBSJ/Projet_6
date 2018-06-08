@@ -75,7 +75,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
             }
         };
 
-        List<Utilisateur> vListUtilisateur = vJdbcTemplate.queryForObject(vSQL, vRowMapper, pUtilisateur.getId());
+        List<Utilisateur> vListUtilisateur = vJdbcTemplate.queryForObject(vSQL, vRowMapper, pUtilisateur.getIdSecteur());
 
         return vListUtilisateur;
     }

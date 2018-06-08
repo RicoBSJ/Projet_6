@@ -30,10 +30,10 @@ public class Site {
 
     // ==================== Getters/Setters ====================
 
-    public void setId(Integer pIdSite){
+    public void setIdSite(Integer pIdSite){
         idSite = pIdSite;
     }
-    public Integer getId(){
+    public Integer getIdSite(){
         return idSite;
     }
     public Integer getIdTopo() {

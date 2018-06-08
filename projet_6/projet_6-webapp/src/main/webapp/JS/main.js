@@ -67,7 +67,7 @@ function getListSecteur() {
 function getListVoie(){
     var url = "listVoieAjax";
     var params = {
-        secteur: $("#selectSecteur").val()
+        secteur: $("#selectSecteur").val() + '#' + $("#selectSite").val()
     };
     jQuery.post(
         url,
@@ -78,8 +78,8 @@ function getListVoie(){
             jQuery.each(data, function (key, val) {
                 $selectVoie.append(
                     jQuery("<option>")
-                        .text(val.nomVoie)
-                        .val(val.nomVoie)
+                        .text(val.nom)
+                        .val(val.nom)
                 );
             });
         })

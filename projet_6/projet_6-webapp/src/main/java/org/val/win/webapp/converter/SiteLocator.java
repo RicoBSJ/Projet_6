@@ -53,8 +53,8 @@ public class SiteLocator extends StrutsTypeConverter {
         if (pObject instanceof Site) {
             Site vSite = (Site) pObject;
             vString
-                    = vSite.getId() != null
-                    ? vSite.getId().toString()
+                    = vSite.getIdSite() != null
+                    ? vSite.getIdSite().toString()
                     : "";
         } else {
             vString = "";

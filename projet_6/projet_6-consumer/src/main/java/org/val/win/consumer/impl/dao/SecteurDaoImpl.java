@@ -72,7 +72,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
         KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_secteur"});
-        pSecteur.setId(holder.getKey().intValue());
+        pSecteur.setIdSecteur(holder.getKey().intValue());
         return pSecteur;
     }
 
