@@ -36,7 +36,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setNomTopo(pRS.getString("nom_topo"));
                 vTopo.setAncrage(pRS.getString("ancrage"));
                 vTopo.setDescription(pRS.getString("description"));
-                vTopo.setEtat(pRS.getBoolean("etat"));
                 vTopo.setLieu(pRS.getString("lieu"));
                 vTopo.setProfil(pRS.getString("profil"));
                 vTopo.setRegion(pRS.getString("region"));
@@ -65,10 +64,9 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  profil,\n" +
                 "  ancrage,\n" +
                 "  relai,\n" +
-                "  etat,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :relai, :etat, :description)";
+                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :relai, :description)";
 
         SqlParameterSource vParams = new MapSqlParameterSource()
             .addValue("idUtilisateurCreateur", pTopo.getIdUtilisateurCreateur())
@@ -79,7 +77,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
             .addValue("profil", pTopo.getProfil())
             .addValue("ancrage", pTopo.getAncrage())
             .addValue("relai", pTopo.getRelai())
-            .addValue("etat", pTopo.getEtat())
             .addValue("description", pTopo.getDescription());
 
         KeyHolder holder = new GeneratedKeyHolder();

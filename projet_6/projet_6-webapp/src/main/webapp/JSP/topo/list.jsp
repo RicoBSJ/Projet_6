@@ -19,7 +19,7 @@
 <s:actionmessage />
 <br />
 <br />
-<div class="row">
+<div id="content" class="row">
     <div class="col-lg-3">
     </div>
     <div class="col-lg-6">
@@ -35,17 +35,12 @@
                 <br />
             </s:iterator>
         </ul>
+        <div id="page_navigation"> </div>
     </div>
     <div class="col-lg-3">
     </div>
 </div>
 
-<div class="row">
-    <ul class="pager">
-        <li><a href="#">Précédent</a></li>
-        <li><a href="#">Suivant</a></li>
-    </ul>
-</div>
 
 </body>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
