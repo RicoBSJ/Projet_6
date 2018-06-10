@@ -33,7 +33,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         RowMapper<Voie> vRowMapper = new RowMapper<Voie>() {
             public Voie mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Voie vVoie = new Voie(pRS.getInt("id_voie"));
-                vVoie.setNom(pRS.getString("nom_voie"));
+                vVoie.setNomVoie(pRS.getString("nom_voie"));
                 vVoie.setCotation(pRS.getString("cotation"));
                 vVoie.setDescription(pRS.getString("description"));
                 vVoie.setHauteur(pRS.getFloat("hauteur"));
@@ -92,7 +92,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         vParams.addValue("idSite", pVoie.getId_site());
         vParams.addValue("hauteur", pVoie.getHauteur());
         vParams.addValue("cotation", pVoie.getCotation());
-        vParams.addValue("nom", pVoie.getNom());
+        vParams.addValue("nom", pVoie.getNomVoie());
         vParams.addValue("description", pVoie.getDescription());
 
         KeyHolder holder = new GeneratedKeyHolder();

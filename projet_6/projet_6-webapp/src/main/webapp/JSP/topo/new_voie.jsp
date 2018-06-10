@@ -19,8 +19,8 @@
 
         <s:form action="voie_new" class="col-lg-6" theme="simple">
             <div class="form-group col-lg-12">
-                <label for="voie.nom">Nom de la voie : </label>
-                <s:textfield name="voie.nom" label="Nom du site" requiredLabel="true" class="form-control" theme="simple" />
+                <label for="voie.nomVoie">Nom de la voie : </label>
+                <s:textfield name="voie.nomVoie" label="Nom du site" requiredLabel="true" class="form-control" theme="simple" />
                 </br>
             </div>
             <div class="form-group col-lg-12">

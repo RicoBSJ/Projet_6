@@ -9,7 +9,7 @@ public class Voie {
     private Integer idSite;
     private Float hauteur;
     private String cotation;
-    private String nom;
+    private String nomVoie;
     private String description;
 
 
@@ -65,12 +65,12 @@ public class Voie {
         return idSecteur;
     }
 
-    public String getNom() {
-        return nom;
+    public String getNomVoie() {
+        return nomVoie;
     }
 
-    public void setNom(String pNom) {
-        nom = pNom;
+    public void setNomVoie(String pNom) {
+        nomVoie = pNom;
     }
 
     public Float getHauteur() {
@@ -107,7 +107,7 @@ public class Voie {
                 .append("Secteur id = \"").append(idSecteur).append('"')
                 .append("site id = \"").append(idSite).append('"')
                 .append("topo id = \"").append(idTopo).append('"')
-                .append(vSEP).append("nom=\"").append(nom).append('"')
+                .append(vSEP).append("nomVoie=\"").append(nomVoie).append('"')
                 .append(vSEP).append("cotation=\"").append(cotation).append('"')
                 .append(vSEP).append("hauteur=\"").append(hauteur).append('"')
                 .append(vSEP).append("description=\"").append(description).append('"')

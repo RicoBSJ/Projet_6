@@ -57,8 +57,8 @@ function getListVoie(){
             jQuery.each(data, function (key, val) {
                 $selectVoie.append(
                     jQuery("<option>")
-                        .text(val.nom)
-                        .val(val.nom)
+                        .text(val.nomVoie)
+                        .val(val.nomVoie)
                 );
             });
         })
@@ -98,7 +98,7 @@ function getListComAjax() {
 
 
 // Pagination topo
-
+/*
 var show_per_page = 3;
 var current_page = 0;
 
@@ -143,4 +143,5 @@ $(document).ready(function() {
     set_display(0, show_per_page);
 
 });
+*/
 

@@ -12,7 +12,7 @@
 <h2>Création d'un topo</h2>
 
 <s:form action="voie_new">
-    <s:textfield name="voie.nom" label="Nom de la voie" requiredLabel="true" />
+    <s:textfield name="voie.nomVoie" label="Nom de la voie" requiredLabel="true" />
     <s:textfield name="voie.cotation" label="Cotation du la voie" requiredLabel="true" />
     <s:textfield name="voie.hauteur" label="Hauteur de la voie" requiredLabel="true" />
     <s:textfield name="voie.description" label="Description" requiredLabel="true" />
