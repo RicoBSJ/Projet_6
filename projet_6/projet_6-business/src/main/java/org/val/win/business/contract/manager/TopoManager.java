@@ -12,6 +12,8 @@ public interface TopoManager {
 
     List<Topo> getListTopo();
 
+    List<Topo> getListTopoDispo();
+
     Topo getTopo(Integer pId) throws NotFoundException;
 
     void insertTopo(Topo pTopo) throws FunctionalException;
