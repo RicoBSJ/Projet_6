@@ -67,7 +67,7 @@
                 </br>
             </div>
             <div class="form-group col-lg-6">
-                <label for="topo.etat">Voulez vous rendre votre topo disponible ? </label>
+                <label for="topo.etat">Voulez vous rendre votre topo disponible aux prets ? </label>
                 <s:checkbox name="topo.etat" class="form-control" theme="simple"/>
             </div>
         </div>

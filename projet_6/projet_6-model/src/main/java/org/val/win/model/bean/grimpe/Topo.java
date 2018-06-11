@@ -16,6 +16,7 @@ public class Topo {
     private String profil;
     private String ancrage;
     private String relai;
+    private Boolean etat;
     private LocalDate dateEmp;
     private LocalDate dateRet;
 
@@ -26,8 +27,7 @@ public class Topo {
      */
     public Topo() {
     }
-
-
+    
     /**
      * Constructeur.
      *
@@ -119,6 +119,12 @@ public class Topo {
     public void setDateRet(LocalDate pDateRet){
         this.dateRet = pDateRet;
     }
+    public Boolean getEtat(){
+        return etat;
+    }
+    public void setEtat(Boolean pEtat) {
+        etat = pEtat;
+    }
 
     // ==================== Méthodes ====================
     @Override
@@ -137,6 +143,7 @@ public class Topo {
                 .append(vSEP).append("profil =\"").append(profil).append('"')
                 .append(vSEP).append("ancrage =\"").append(ancrage).append('"')
                 .append(vSEP).append("relai = \"").append(relai).append('"')
+                .append(vSEP).append("etat =\"").append(etat).append('"')
                 .append(vSEP).append("Date d'emprunt = \"").append(dateEmp).append('"')
                 .append(vSEP).append("Date de retour = \"").append(dateRet).append('"')
                 .append("}");

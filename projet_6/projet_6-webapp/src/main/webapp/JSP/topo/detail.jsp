@@ -59,7 +59,6 @@
     </div>
 </header>
 
-
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-3">
@@ -135,10 +134,7 @@
     </div>
 </div>
 
-
 <br />
-
-
 
 <div class="row">
     <div class="col-lg-12">
@@ -155,7 +151,6 @@
 
 <br />
 
-
 <div class="commentaire" >
     <div class="col-lg-12">
         <button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>
@@ -164,7 +159,6 @@
         </ul>
     </div>
 </div>
-
 
 </body>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>

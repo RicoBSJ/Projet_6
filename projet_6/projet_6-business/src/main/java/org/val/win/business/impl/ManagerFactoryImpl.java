@@ -75,6 +75,4 @@ public class ManagerFactoryImpl implements ManagerFactory {
     public void setCommentaireManager(CommentaireManager pCommentaireManager) {
         commentaireManager = pCommentaireManager;
     }
-
-
 }

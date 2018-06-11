@@ -45,7 +45,6 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
         return topoDao.getListTopo();
     }
 
-
     @Override
     public void insertTopo(Topo pTopo) throws FunctionalException {
         MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
@@ -61,6 +60,4 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     public void Emprunt(Topo pTopo) throws FunctionalException {
         topoDao.emprunt(pTopo);
     }
-
-
 }

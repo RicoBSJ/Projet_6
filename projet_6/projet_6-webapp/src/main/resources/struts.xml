@@ -204,7 +204,7 @@
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
 
-            <result name="input">/JSP/voie/new_voie.jsp</result>
+            <result name="input">/JSP/topo/new_voie.jsp</result>
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
                 <param name="idTopo">${topo.idTopo}</param>
