@@ -34,7 +34,7 @@
         </div>
     </div>
 </div>
-
+<!--
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-2">
@@ -50,19 +50,17 @@
                         <th>Lieu</th>
                     </tr>
                     </thead>
-                    <tbody>
-
-                    <tr>
-                        <s:a action="topo_detail">
-                        <td><s:property value ="nomTopo" />
+                    <s:a action="topo_detail">
+                        <tbody>
+                        <tr>
+                            <td><s:property value ="nomTopo" /></td>
+                            <td><s:property value ="roche" /></td>
+                            <td><s:property value ="region" /></td>
+                            <td><s:property value ="lieu" /></td>
                             <s:param name="idTopo" value="idTopo" />
-                            </s:a>
-                        </td>
-                        <td><s:property value ="roche" /></td>
-                        <td><s:property value ="region" /></td>
-                        <td><s:property value ="lieu" /></td>
-                    </tr>
-                    </tbody>
+                        </tr>
+                        </tbody>
+                    </s:a>
                 </table>
             </s:iterator>
         </div>
@@ -70,7 +68,30 @@
         </div>
     </div>
 </div>
+-->
 
+<div id="page_navigation"> </div>
+
+<div id="content" class="row">
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-6">
+        <ul class="list-group">
+            <s:iterator value="listTopo">
+
+                <li class="list-group-item">
+                <s:a action="topo_detail">
+                    Nom topo : <s:property value="nomTopo"/>
+                    <s:param name="idTopo" value="idTopo" />
+                    </li>
+                </s:a>
+                <br />
+            </s:iterator>
+        </ul>
+    </div>
+    <div class="col-lg-3">
+    </div>
+</div>
 <div id="page_navigation"> </div>
 
 <!-- Pagination -->

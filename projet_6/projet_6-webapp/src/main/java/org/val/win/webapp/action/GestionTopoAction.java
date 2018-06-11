@@ -135,6 +135,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         return ActionSupport.SUCCESS;
     }
 
+    public String doListDispo(){
+        listTopo = managerFactory.getTopoManager().getListTopoDispo();
+        return ActionSupport.SUCCESS;
+    }
+
     /**
      * Action listant les secteurs.
      * @return

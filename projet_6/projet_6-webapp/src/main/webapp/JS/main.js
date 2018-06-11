@@ -27,7 +27,7 @@ function getListSecteur() {
                 $selectSecteur.append(
                     jQuery("<option>")
                         .text(val.nomSecteur)
-                        .val(val.nomSecteur)
+                        .val(val.idSecteur)
                 );
             });
         })
