@@ -34,7 +34,7 @@
         </div>
     </div>
 </div>
-<!--
+
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-2">
@@ -53,10 +53,10 @@
                     <s:a action="topo_detail">
                         <tbody>
                         <tr>
-                            <td><s:property value ="nomTopo" /></td>
-                            <td><s:property value ="roche" /></td>
-                            <td><s:property value ="region" /></td>
-                            <td><s:property value ="lieu" /></td>
+                            <td class="NomTopo"><s:property value ="nomTopo" /></td>
+                            <td class="rocheTopo"><s:property value ="roche" /></td>
+                            <td class="region Topo"><s:property value ="region" /></td>
+                            <td class="lieu"><s:property value ="lieu" /></td>
                             <s:param name="idTopo" value="idTopo" />
                         </tr>
                         </tbody>
@@ -68,7 +68,7 @@
         </div>
     </div>
 </div>
--->
+
 
 <div id="page_navigation"> </div>
 

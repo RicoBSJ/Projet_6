@@ -5,7 +5,19 @@ $(document).ready(function() {
     $(".title").hide();
         $(".title").fadeIn(3000,function(){
         });
-})
+});
+
+$(document).ready(function () {
+    (function ($) {
+        $('#filter').keyup(function () {
+            var rex = new RegExp($(this).val(), 'i');
+            $('.NomTopo tr').hide();
+            $('.NomTopo tr').filter(function () {
+                return rex.test($(this).text());
+            }).show();
+        })
+    }(jQuery));
+});
 
 // Récuperer liste de secteur en ajax
 

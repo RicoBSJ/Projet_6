@@ -41,13 +41,6 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     }
 
     @Override
-    public List<Topo> getListTopoDispo() {
-        List<Topo> listTopo = this.getListTopo();
-        listTopo.removeIf(topo -> topo.getEtat() == false);
-        return listTopo;
-    }
-
-    @Override
     public List<Topo> getListTopo() {
         return topoDao.getListTopo();
     }
