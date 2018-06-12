@@ -18,7 +18,6 @@
                 </div>
                 <ul class="nav navbar-nav">
                     <li> <a href="index.action">Accueil</a> </li>
-                    <li> <a href="topo_list_disp.action">Topo disponible </a> </li>
                     <li> <a href="topo_list.action">Liste de topo</a> </li>
                 </ul>
                 <s:if test="#session.check == 'true'">

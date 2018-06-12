@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<div class="row">
+<div id="content" class="row">
     <div class="col-lg-12">
         <div class="col-lg-2">
         </div>
@@ -69,7 +69,6 @@
     </div>
 </div>
 
-
 <div id="page_navigation"> </div>
 
 <div id="content" class="row">
@@ -92,7 +91,6 @@
     <div class="col-lg-3">
     </div>
 </div>
-<div id="page_navigation"> </div>
 
 <!-- Pagination -->
 <script>
