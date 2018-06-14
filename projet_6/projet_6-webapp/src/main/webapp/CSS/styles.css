@@ -4,24 +4,32 @@
     transition: 0.1s; }
 
 body {
-    background-color: gray;
+    background-color: darkgray;
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
     margin-left: 20px;
     margin-right: 20px;
-    color: #303030; }
+    color: black; }
+
+.commentaire {
+    text-align: left;
+}
 
 .form {
-    background-color: gray;
+    background-color: darkgray;
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     text-align: center;
     font-size: 18px;
-    color: #303030;
+    color: #ffffff;
+}
+
+.navbar-inverse {
+    background-color: black;
 }
 
 .title {
-    color: deepskyblue;
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em; }

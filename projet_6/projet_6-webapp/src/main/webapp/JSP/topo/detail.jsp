@@ -7,9 +7,6 @@
     <%@ include file="../_include/header.jsp"%>
 </head>
 
-<s:actionerror/>
-<s:actionmessage/>
-
 <body>
 
 <div class="row">
@@ -153,10 +150,19 @@
 
 <div class="commentaire" >
     <div class="col-lg-12">
-        <button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>
-        <ul  id="listCom">
-            <li><em> Cliquez pour charger les commentaires.</em></li>
-        </ul>
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+            <button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>
+            <br />
+            <br/>
+            <ul  id="listCom">
+                <li><em> Cliquez pour charger les commentaires.</em></li>
+                <br/>
+            </ul>
+        </div>
+        <div class="col-lg-2">
+        </div>
     </div>
 </div>
 

@@ -7,17 +7,9 @@ $(document).ready(function() {
         });
 });
 
-$(document).ready(function () {
-    (function ($) {
-        $('#filter').keyup(function () {
-            var rex = new RegExp($(this).val(), 'i');
-            $('.NomTopo tr').hide();
-            $('.NomTopo tr').filter(function () {
-                return rex.test($(this).text());
-            }).show();
-        })
-    }(jQuery));
-});
+$(document).ready(function() {
+    $('#listTopo').DataTable();
+} );
 
 // Récuperer liste de secteur en ajax
 

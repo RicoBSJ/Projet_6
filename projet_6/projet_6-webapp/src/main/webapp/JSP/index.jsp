@@ -13,16 +13,24 @@
     <br />
     <br />
 
+    <!--
     <div class="title">
         <h1>
             Bienvenue sur Bubule <br />
             Site communautaire de reference de topo
         </h1>
     </div>
+    -->
+
+    <div class="inner cover">
+        <h1 class="cover-heading">Site de Topo</h1>
+        <p class="lead">Bienvenue sur notre site de référencement de topo, vous pouvez voir, reserver et faire des remarques sur les topo que vous avez essayés</p>
+    </div>
 
     <br/>
     <br/>
 
+    <!--
     <div class="row">
         <div class="col-lg-3">
         </div>
@@ -36,6 +44,7 @@
         <div class="col-lg-3">
         </div>
     </div>
+    -->
 
 </body>
 
