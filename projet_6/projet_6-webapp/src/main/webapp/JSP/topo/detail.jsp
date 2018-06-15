@@ -76,13 +76,16 @@
     </div>
 </div>
 
+<br/>
+<br/>
+
 <div class="row">
     <div class="col-lg-12">
 
-        <div class="col-lg-2">
+        <div class="col-lg-3">
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-2">
             <div class="form-group">
                 <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
                 <!--
@@ -97,37 +100,62 @@
                               list="listSite" listKey="idSite" listValue="nomSite"
                               onchange="getListSecteur()"/>
                 </s:form>
+                <br/>
                 <s:a action="site_new">
                     <button class="btn btn-primary btn-sm" type="submit"> Creer un site </button>
                 </s:a>
             </div>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-2">
             <s:form>
                 <s:select class="form-control"
                           id="selectSecteur" name="secteur" label="Secteur"
                           list="{}" listKey="idSecteur" listValue="nomSecteur"
                           onchange="getListVoie()"/>
             </s:form>
+            <br/>
             <s:a action="secteur_new">
                 <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
             </s:a>
         </div>
 
-        <div class="col-lg-3">
+        <div class="col-lg-2">
             <s:form>
                 <s:select class="form-control"
                           id="selectVoie" label="Voie" list="{}"/>
             </s:form>
+            <br/>
             <s:a action="voie_new">
                 <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
             </s:a>
         </div>
 
-        <div class="col-lg-2">
+        <div class="col-lg-3">
         </div>
 
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="col-lg-3">
+        </div>
+
+        <div class="col-lg-2" id="infoSite">
+            information du site :
+        </div>
+
+        <div class="col-lg-2" id="infoSecteur">
+            information du secteur :
+        </div>
+
+        <div class="col-lg-2" id="infoVoie">
+            information de la voie :
+        </div>
+
+        <div class="col-lg-3">
+        </div>
     </div>
 </div>
 
@@ -137,10 +165,14 @@
     <div class="col-lg-12">
         <div class="col-lg-3">
         </div>
-        <s:form action="com_new" class="col-lg-6">
-            <s:textarea name="commentaire.text" label="commentaire" class="form-control"/>
-            <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple"/>
-        </s:form>
+        <div class="col-lg-6">
+            <s:form action="com_new" class="col-lg-6">
+                <s:textarea name="commentaire.text" label="commentaire" class="form-control"/>
+                <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple"/>
+            </s:form>
+        </div>
+        <div class="col-lg-3">
+        </div>
     </div>
 </div>
 

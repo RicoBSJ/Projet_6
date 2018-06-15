@@ -212,6 +212,7 @@
                 <param name="operationMode">STORE</param>
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
+            <result name="success"> listComAjax.action </result>
             <result name="login" type="redirectAction">login</result>
         </action>
 

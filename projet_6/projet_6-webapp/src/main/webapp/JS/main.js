@@ -11,6 +11,10 @@ $(document).ready(function() {
     $('#listTopo').DataTable();
 } );
 
+$(document).ready(function() {
+    $('#listCom').getListComAjax();
+})
+
 // Récuperer liste de secteur en ajax
 
 function getListSecteur() {
@@ -34,6 +38,19 @@ function getListSecteur() {
                         .val(val.idSecteur)
                 );
             });
+            // Ajout d'un second appel pour afficher toute les informations d'un secteur - ne fonctionne pas -
+            var $infoSecteur = jQuery("#infoSecteur");
+            $infoSecteur.empty();
+            jQuery.each(data, function (key, val) {
+                if ($(this).text().search(value) === val.idSecteur) {
+                    $infoSecteur.append(
+                        jQuery("<li>")
+                            .append(val.nomSecteur)
+                            .val(val.idSecteur)
+                            .append(val.description)
+                    )
+                }
+            });
         })
         .fail(function (data) {
             if (typeof data.responseJSON === 'object') {
@@ -44,6 +61,7 @@ function getListSecteur() {
             alert("Une erreur s'est produite.");
         });
 }
+
 
 // Récuperer liste de voie en ajax
 

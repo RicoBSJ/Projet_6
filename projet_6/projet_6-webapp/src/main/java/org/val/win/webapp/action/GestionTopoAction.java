@@ -62,7 +62,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     private List<Site> listSite;
     private List<Secteur> listSecteur;
     private List<Voie> listVoie;
-    private List<Commentaire> listCom;
+    private List<Commentaire> listCommentaire;
     private Topo topo;
     private Site site;
     private Secteur secteur;
@@ -107,8 +107,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
-    public List<Commentaire> getListCom(){
-        return listCom;
+    public List<Commentaire> getListCommentaire(){
+        return listCommentaire;
     }
     public Utilisateur getEmprunteur(){
         return emprunteur;
@@ -168,7 +168,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             addActionError("Le secteur doit être précisé !");
         } else {
             listVoie = managerFactory.getVoieManager().getListVoie(secteur.getIdSecteur());
-            System.out.println(listVoie);
         }
         return ActionSupport.SUCCESS;
     }
@@ -179,7 +178,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      */
     public String doListcom() {
         topo = (Topo) session.get("topo");
-        listCom = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
+        listCommentaire = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
         return ActionSupport.SUCCESS;
     }
 

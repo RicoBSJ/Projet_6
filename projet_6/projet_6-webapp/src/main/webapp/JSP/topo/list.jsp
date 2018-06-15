@@ -15,33 +15,30 @@
     <div class="col-lg-12">
         <div class="col-lg-2">
         </div>
-            <div class="col-lg-8">
-                    <table id="listTopo" class="table table-striped table-bordered" style="width:100%"
-                           data-toggle="table"
-                           data-filter-control="true"
-                           data-filter-show-clear="true">
-                        <thead>
-                        <tr>
-                            <th data-filter-control="input">Nom du topo</th>
-                            <th data-filter-control="input">Type de roche</th>
-                            <th data-filter-control="input">Region</th>
-                            <th data-filter-control="input">Lieu</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <s:iterator value="listTopo">
-                        <tr>
-                            <s:a action="topo_detail">
-                            <td><s:property value ="nomTopo" /></td>
-                            </s:a>
-                            <td><s:property value ="roche" /></td>
-                            <td><s:property value ="region" /></td>
-                            <td><s:property value ="lieu" /></td>
-                            <s:param name="idTopo" value="idTopo" />
-                        </tr>
-                            </s:iterator>
-                        </tbody>
-                    </table>
+        <div class="col-lg-8">
+            <table id="listTopo" class="table table-striped table-bordered" style="width:100%">
+                <thead>
+                <tr>
+                    <th>Nom du topo</th>
+                    <th>Type de roche</th>
+                    <th>Region</th>
+                    <th>Lieu</th>
+                </tr>
+                </thead>
+                <tbody>
+                <s:iterator value="listTopo">
+                    <tr>
+                        <s:a action="topo_detail">
+                        <td><s:property value ="nomTopo" /></td>
+                        </s:a>
+                        <td><s:property value ="roche" /></td>
+                        <td><s:property value ="region" /></td>
+                        <td><s:property value ="lieu" /></td>
+                        <s:param name="idTopo" value="idTopo" />
+                    </tr>
+                </s:iterator>
+                </tbody>
+            </table>
         </div>
         <div class="col-lg-2">
         </div>
