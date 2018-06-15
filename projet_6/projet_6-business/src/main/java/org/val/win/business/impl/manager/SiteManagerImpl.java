@@ -22,9 +22,6 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
     private SiteDao siteDao;
 
     @Inject
-    private TransactionHelper transactionHelper;
-
-    @Inject
     @Named("txManagerP6")
 
     private PlatformTransactionManager platformTransactionManager;

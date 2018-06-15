@@ -21,9 +21,6 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
     private TopoDao topoDao;
 
     @Inject
-    private TransactionHelper transactionHelper;
-
-    @Inject
     @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 

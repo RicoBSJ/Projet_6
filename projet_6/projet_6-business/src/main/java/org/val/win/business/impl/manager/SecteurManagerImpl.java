@@ -21,9 +21,6 @@ public class SecteurManagerImpl extends AbstractManager implements SecteurManage
     private SecteurDao secteurDao;
 
     @Inject
-    private TransactionHelper transactionHelper;
-
-    @Inject
     @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 
