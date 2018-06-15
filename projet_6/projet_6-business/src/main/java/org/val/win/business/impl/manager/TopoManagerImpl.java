@@ -1,6 +1,7 @@
 package org.val.win.business.impl.manager;
 
-import org.apache.commons.lang3.mutable.MutableObject;
+import org.springframework.transaction.support.TransactionCallbackWithoutResult;
+import org.springframework.transaction.support.TransactionTemplate;
 import org.val.win.business.contract.manager.TopoManager;
 import org.val.win.consumer.contract.dao.TopoDao;
 import org.val.win.model.bean.grimpe.Topo;
@@ -47,13 +48,15 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
     @Override
     public void insertTopo(Topo pTopo) throws FunctionalException {
-        MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        try {
-            topoDao.insertTopo(pTopo);
-            transactionHelper.commit(vStatus);
-        } finally {
-           transactionHelper.rollback(vStatus);
-        }
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                topoDao.insertTopo(pTopo);
+            }
+        });
     }
 
     @Override

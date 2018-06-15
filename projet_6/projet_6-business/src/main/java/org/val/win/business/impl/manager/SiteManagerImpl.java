@@ -1,5 +1,8 @@
 package org.val.win.business.impl.manager;
 
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.TransactionCallbackWithoutResult;
+import org.springframework.transaction.support.TransactionTemplate;
 import org.val.win.business.contract.manager.SiteManager;
 import org.val.win.consumer.contract.dao.SiteDao;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -44,12 +47,14 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
 
     @Override
     public void insertSite(Site pSite) throws FunctionalException {
-        //MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        //try {
-        siteDao.insertSite(pSite);
-        //  transactionHelper.commit(vStatus);
-        //} finally {
-        //     transactionHelper.rollback(vStatus);
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                siteDao.insertSite(pSite);
+            }
+        });
     }
-    //}
 }

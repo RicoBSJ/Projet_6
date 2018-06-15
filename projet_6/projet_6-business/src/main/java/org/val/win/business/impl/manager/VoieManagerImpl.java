@@ -1,5 +1,8 @@
 package org.val.win.business.impl.manager;
 
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.TransactionCallbackWithoutResult;
+import org.springframework.transaction.support.TransactionTemplate;
 import org.val.win.business.contract.manager.VoieManager;
 import org.val.win.consumer.contract.dao.VoieDao;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -31,12 +34,14 @@ public class VoieManagerImpl extends AbstractManager implements VoieManager {
 
     @Override
     public void insertVoie(Voie pVoie) throws FunctionalException {
-        //MutableObject<TransactionStatus> vStatus = transactionHelper.beginTransaction();
-        //try {
-        voieDao.insertVoie(pVoie);
-        //  transactionHelper.commit(vStatus);
-        //} finally {
-        //     transactionHelper.rollback(vStatus);
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                voieDao.insertVoie(pVoie);
+            }
+        });
     }
-    //}
 }

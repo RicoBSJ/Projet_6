@@ -1,5 +1,8 @@
 package org.val.win.business.impl.manager;
 
+import org.springframework.transaction.TransactionStatus;
+import org.springframework.transaction.support.TransactionCallbackWithoutResult;
+import org.springframework.transaction.support.TransactionTemplate;
 import org.val.win.business.contract.manager.UtilisateurManager;
 import org.val.win.consumer.contract.dao.UtilisateurDao;
 import org.val.win.model.bean.utilisateur.Utilisateur;
@@ -64,6 +67,14 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
         if (pUtilisateur == null) {
             throw new FunctionalException("L'objet Utilisateur ne doit pas être null !");
         }
-        utilisateurDao.insertUtilisateur(pUtilisateur);
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                utilisateurDao.insertUtilisateur(pUtilisateur);
+            }
+        });
     }
 }
