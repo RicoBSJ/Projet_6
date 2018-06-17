@@ -37,6 +37,15 @@
                 <s:textfield name="secteur.description" label="Description" requiredLabel="true" class="form-control" theme="simple"/>
                 </br>
             </div>
+            <div class="form-group col-lg-12">
+                <label for="selectSite"> Choisissez le site de votre secteur </label>
+                <s:form>
+                    <s:select class="form-control"
+                              id="selectSite" name="site" label="Site"
+                              list="{}" listKey="idSite" listValue="nomSite"
+                              onchange="getListSite()"/>
+                </s:form>
+            </div>
 
             <s:submit value="OK"/>
         </s:form>

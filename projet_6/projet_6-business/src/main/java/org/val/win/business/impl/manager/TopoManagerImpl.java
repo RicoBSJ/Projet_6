@@ -58,6 +58,14 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
     @Override
     public void Emprunt(Topo pTopo) throws FunctionalException {
-        topoDao.emprunt(pTopo);
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                topoDao.emprunt(pTopo);
+            }
+        });
     }
 }

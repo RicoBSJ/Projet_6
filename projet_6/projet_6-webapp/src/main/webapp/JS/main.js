@@ -1,21 +1,8 @@
-
-// Faire apparaitre le titre en 3s
-
-$(document).ready(function() {
-    $(".title").hide();
-        $(".title").fadeIn(3000,function(){
-        });
-});
-
 $(document).ready(function() {
     $('#listTopo').DataTable();
-} );
+});
 
-$(document).ready(function() {
-    $('#listCom').getListComAjax();
-})
-
-// Récuperer liste de secteur en ajax
+$('#listCom').addEventListener("load", getListComAjax);
 
 function getListSecteur() {
     // URL de l'action AJAX
@@ -38,20 +25,22 @@ function getListSecteur() {
                         .val(val.idSecteur)
                 );
             });
-            // Ajout d'un second appel pour afficher toute les informations d'un secteur - ne fonctionne pas -
-            var $infoSecteur = jQuery("#infoSecteur");
-            $infoSecteur.empty();
-            jQuery.each(data, function (key, val) {
-                if ($(this).text().search(value) === val.idSecteur) {
-                    $infoSecteur.append(
-                        jQuery("<li>")
-                            .append(val.nomSecteur)
-                            .val(val.idSecteur)
-                            .append(val.description)
-                    )
-                }
-            });
-        })
+        }).done(function(data) {
+        // Ajout d'un second appel pour afficher toute les informations d'un secteur - ne fonctionne pas -
+        var $infoSecteur = jQuery("#infoSecteur");
+        $infoSecteur.empty();
+        jQuery.each(data, function (key, val) {
+            if ($("#selectSecteur").val() === $("#infoSecteur").val()){
+                $infoSecteur.append(
+                    jQuery("<li>")
+                        .text(val.nomSecteur)
+                        .val(val.nomSecteur)
+                        .val(val.idSecteur)
+                        .append(val.description)
+                )
+            }
+        });
+    })
         .fail(function (data) {
             if (typeof data.responseJSON === 'object') {
                 console.log(data.responseJSON);
@@ -117,53 +106,4 @@ function getListComAjax() {
             alert("Une erreur s'est produite.");
         });
 }
-
-
-// Pagination topo
-/*
-var show_per_page = 3;
-var current_page = 0;
-
-function set_display(first, last) {
-    $('#content').children().css('display', 'none');
-    $('#content').children().slice(first, last).css('display', 'block');
-}
-
-function previous(){
-    if($('.active').prev('.page_link').length) go_to_page(current_page - 1);
-}
-
-function next(){
-    if($('.active').next('.page_link').length) go_to_page(current_page + 1);
-}
-
-function go_to_page(page_num){
-    current_page = page_num;
-    start_from = current_page * show_per_page;
-    end_on = start_from + show_per_page;
-    set_display(start_from, end_on);
-    $('.active').removeClass('active');
-    $('#id' + page_num).addClass('active');
-}
-
-$(document).ready(function() {
-
-    var number_of_pages = Math.ceil($('#content').children().length / show_per_page);
-
-    var nav = '<ul class="pagination"><li><a href="javascript:previous();">&laquo;</a>';
-
-    var i = -1;
-    while(number_of_pages > ++i){
-        nav += '<li class="page_link'
-        if(!i) nav += ' active';
-        nav += '" id="id' + i +'">';
-        nav += '<a href="javascript:go_to_page(' + i +')">'+ (i + 1) +'</a>';
-    }
-    nav += '<li><a href="javascript:next();">&raquo;</a></ul>';
-
-    $('#page_navigation').html(nav);
-    set_display(0, show_per_page);
-
-});
-*/
 

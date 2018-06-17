@@ -61,15 +61,18 @@
         <div class="col-lg-3">
         </div>
         <div class="col-lg-6">
-            <s:if test="topo.idEmprunteur != null " >
-                <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
+            <s:if test="topo.etat == false ">
+                Le topo est indisponible
             </s:if>
-            <s:else>
+            <s:elseif test="topo.idEmprunteur != null" >
+                <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
+            </s:elseif>
+            <s:elseif test="topo.idEmprunteur == null && topo.etat == true">
                 <h3> Voulez vous emprunter ce topo ? </h3>
                 <s:a action="reserver">
                     <button class="btn btn-primary btn-sm" type="submit"> Reserver </button>
                 </s:a>
-            </s:else>
+            </s:elseif>
         </div>
         <div class="col-lg-3">
         </div>
@@ -142,16 +145,25 @@
         <div class="col-lg-3">
         </div>
 
-        <div class="col-lg-2" id="infoSite">
+        <div class="col-lg-2">
             information du site :
+            <ul id="infoSite">
+                <li> Info Site </li>
+            </ul>
         </div>
 
-        <div class="col-lg-2" id="infoSecteur">
+        <div class="col-lg-2">
             information du secteur :
+            <ul id="infoSecteur">
+                <li><em> Info secteur </em></li>
+            </ul>
         </div>
 
-        <div class="col-lg-2" id="infoVoie">
+        <div class="col-lg-2">
             information de la voie :
+            <ul id="infoVoie">
+                <li> Info voie</li>
+            </ul>
         </div>
 
         <div class="col-lg-3">
@@ -180,17 +192,18 @@
 
 <br />
 
-<div class="commentaire" >
+<div class="commentaire">
     <div class="col-lg-12">
         <div class="col-lg-2">
         </div>
         <div class="col-lg-8">
-            <button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>
+            <!--<button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>-->
             <br />
             <br/>
             <ul  id="listCom">
-                <li><em> Cliquez pour charger les commentaires.</em></li>
-                <br/>
+                <li>
+                    <em> Cliquez pour charger les commentaires.</em>
+                </li>
             </ul>
         </div>
         <div class="col-lg-2">

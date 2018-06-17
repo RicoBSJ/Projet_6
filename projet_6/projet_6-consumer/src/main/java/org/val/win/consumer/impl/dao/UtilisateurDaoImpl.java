@@ -1,7 +1,5 @@
 package org.val.win.consumer.impl.dao;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.UtilisateurDao;
@@ -20,10 +18,10 @@ import java.util.List;
 /**
  * Bean Utilisateur DAO.
  */
-@Named
 /**
  * Implementation des DAO pour l'utilisateur.
  */
+@Named
 public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDao {
 
     /**
@@ -136,7 +134,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
      */
     @Override
     public void updateEtat(final Utilisateur pUtilisateur) {
-        String vSQL = "UPDATE public.utilisateur SET admin = :admin WHERE id = :id";
+        String vSQL = "UPDATE public.utilisateur SET admin = :admin WHERE id_utilisateur = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pUtilisateur);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
@@ -156,7 +154,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
                 "mail = :mail,\n" +
                 "telephone = :telephone,\n" +
                 "mot_de_passe = :mot_de_passe " +
-                "WHERE id = :id";
+                "WHERE id_utilisateur = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pUtilisateur);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);

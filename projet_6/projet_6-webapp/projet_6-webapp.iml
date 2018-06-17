@@ -48,6 +48,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery-3.3.1" level="application" />
     <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="dataTables.bootstrap" level="application" />
     <orderEntry type="module" module-name="projet_6-model" />
     <orderEntry type="module" module-name="projet_6-business" />
     <orderEntry type="module" module-name="projet_6-consumer" />
@@ -75,7 +77,5 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-web:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.3.11.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.struts:struts2-json-plugin:2.5.14.1" level="project" />
-    <orderEntry type="library" name="jquery" level="application" />
-    <orderEntry type="library" name="dataTables.bootstrap" level="application" />
   </component>
 </module>

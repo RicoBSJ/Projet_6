@@ -12,7 +12,6 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.namedparam.SqlParameterSource;
 
 import javax.inject.Named;
-import javax.naming.Name;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
@@ -39,6 +38,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setLieu(pRS.getString("lieu"));
                 vTopo.setProfil(pRS.getString("profil"));
                 vTopo.setRegion(pRS.getString("region"));
+                vTopo.setEtat(pRS.getBoolean("etat"));
                 vTopo.setRelai(pRS.getString("relai"));
                 vTopo.setRoche((pRS.getString("roche")));
                 return vTopo;
@@ -63,21 +63,24 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  roche,\n" +
                 "  profil,\n" +
                 "  ancrage,\n" +
+                " etat,\n" +
                 "  relai,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :relai, :description)";
+                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :etat, :relai, :description)";
 
         SqlParameterSource vParams = new MapSqlParameterSource()
-            .addValue("idUtilisateurCreateur", pTopo.getIdUtilisateurCreateur())
-            .addValue("nomTopo", pTopo.getNomTopo())
-            .addValue("region", pTopo.getRegion())
-            .addValue("lieu", pTopo.getLieu())
-            .addValue("roche", pTopo.getRoche())
-            .addValue("profil", pTopo.getProfil())
-            .addValue("ancrage", pTopo.getAncrage())
-            .addValue("relai", pTopo.getRelai())
-            .addValue("description", pTopo.getDescription());
+
+                .addValue("idUtilisateurCreateur", pTopo.getIdUtilisateurCreateur())
+                .addValue("nomTopo", pTopo.getNomTopo())
+                .addValue("region", pTopo.getRegion())
+                .addValue("lieu", pTopo.getLieu())
+                .addValue("roche", pTopo.getRoche())
+                .addValue("profil", pTopo.getProfil())
+                .addValue("ancrage", pTopo.getAncrage())
+                .addValue("etat", pTopo.getEtat())
+                .addValue("relai", pTopo.getRelai())
+                .addValue("description", pTopo.getDescription());
 
         KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
@@ -120,6 +123,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "WHERE id_topo = :idTopo";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams);
     }
 }

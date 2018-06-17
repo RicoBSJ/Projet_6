@@ -23,18 +23,22 @@
                     <th>Type de roche</th>
                     <th>Region</th>
                     <th>Lieu</th>
+                    <th>Etat</th>
+                    <th>Detail</th>
                 </tr>
                 </thead>
                 <tbody>
                 <s:iterator value="listTopo">
                     <tr>
-                        <s:a action="topo_detail">
                         <td><s:property value ="nomTopo" /></td>
-                        </s:a>
                         <td><s:property value ="roche" /></td>
                         <td><s:property value ="region" /></td>
                         <td><s:property value ="lieu" /></td>
-                        <s:param name="idTopo" value="idTopo" />
+                        <td><s:if test="topo.etat=='true'">Disponible</s:if>
+                            <s:elseif test="topo.etat=='false'">Indisponible</s:elseif></td>
+                        <td><a href="<s:url namespace="/" action="topo_detail"><s:param name="idTopo" value="%{idTopo}" /></s:url>">
+                            Voir
+                        </a> </td>
                     </tr>
                 </s:iterator>
                 </tbody>
@@ -42,29 +46,6 @@
         </div>
         <div class="col-lg-2">
         </div>
-    </div>
-</div>
-
-<div id="page_navigation"> </div>
-
-<div id="content" class="row">
-    <div class="col-lg-3">
-    </div>
-    <div class="col-lg-6">
-        <ul class="list-group">
-            <s:iterator value="listTopo">
-
-                <li class="list-group-item">
-                <s:a action="topo_detail">
-                    Nom topo : <s:property value="nomTopo"/>
-                    <s:param name="idTopo" value="idTopo" />
-                    </li>
-                </s:a>
-                <br />
-            </s:iterator>
-        </ul>
-    </div>
-    <div class="col-lg-3">
     </div>
 </div>
 
