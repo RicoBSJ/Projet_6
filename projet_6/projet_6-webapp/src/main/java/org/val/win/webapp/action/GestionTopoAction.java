@@ -42,7 +42,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     /**
      * Setteur pour la session
-     * @param pSession
+     * @param pSession session de l'utilisateur
      */
     @Override
     public void setSession(Map<String, Object> pSession) {
@@ -137,7 +137,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     /**
      * Action listant les secteurs.
-     * @return
+     * @return liste de secteur
      */
     public String doListSecteur() {
         if (site == null) {
@@ -151,7 +151,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     /**
      * Action listant les sites
-     * @return
+     * @return liste de sites
      */
     public String doListSite() {
         topo = (Topo) session.get("topo");
@@ -161,7 +161,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     /**
      * Actions listant les voies
-     * @return
+     * @return liste de voies
      */
     public String doListVoie() {
         if (secteur == null) {
@@ -174,7 +174,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
 
     /**
      * Action listant les commentaires
-     * @return
+     * @return liste de commentaire d'un topo
      */
     public String doListcom() {
         topo = (Topo) session.get("topo");
@@ -186,7 +186,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * Action affichant les détails d'un {@link Topo}
      * @return success / error
      */
-    public String doDetail() throws NotFoundException {
+    public String doDetail() {
         if (idTopo == null) {
             this.addActionError(getText("error.topo.missing.id"));
         } else {
@@ -202,7 +202,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                     this.topo.setDateRet(null);
                     this.topo.setIdEmprunteur(null);
                     try {
-                        managerFactory.getTopoManager().Emprunt(this.topo);
+                        managerFactory.getTopoManager().emprunt(this.topo);
                     } catch (FunctionalException pEx) {
                         this.addActionMessage(pEx.getMessage());
                     }
@@ -232,7 +232,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             // ===== Validation de l'ajout de topo (topo != null)
             if (this.topo != null) {
                 if (topo.getIdUtilisateurCreateur() == null) {
-                    this.topo.setIdUtilisateurCreateur(utilisateur.getId());
+                    this.topo.setIdUtilisateurCreateur(utilisateur.getIdUtilisateur());
                 }
                 System.out.println(topo);
                 // Si pas d'erreur, ajout du topo...
@@ -256,7 +256,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     /**
      * Action permettant l'emprunt
      * Gestion des dates
-     * @return
+     * @return resultat de l'action
      */
     public String EmpruntTopo(){
         topo = (Topo) session.get("topo");
@@ -270,11 +270,11 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             }
             if (!this.hasErrors()) {
                 try {
-                    topo.setIdEmprunteur(utilisateur.getId());
+                    topo.setIdEmprunteur(utilisateur.getIdUtilisateur());
                     topo.setDateEmp(dateEmp);
                     topo.setDateRet(dateRet);
                     System.out.println(topo);
-                    managerFactory.getTopoManager().Emprunt(topo);
+                    managerFactory.getTopoManager().emprunt(topo);
                     vResult = ActionSupport.SUCCESS;
                     this.addActionMessage("Topo reservé avec Succès");
                 } catch (FunctionalException pEx) {

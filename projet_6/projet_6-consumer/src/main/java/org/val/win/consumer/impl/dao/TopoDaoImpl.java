@@ -20,8 +20,8 @@ import java.util.List;
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
     /**
-     * Récupérer tous les topos
-     * @return
+     * Recuperer tous les topos
+     * @return une liste de topo
      */
     @Override
     public List<Topo> getListTopo() {
@@ -51,7 +51,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
     /**
      * Creer un nouveau topo
-     * @param pTopo
+     * @param pTopo prend le topo a creer en parametre
+     * @return le topo creer
      */
     @Override
     public Topo insertTopo(final Topo pTopo) {
@@ -91,7 +92,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
     /**
      * Reserver un Topo
-     * @param pTopo
+     * @param pTopo prend un topo en parametre
      */
     @Override
     public void emprunt(final Topo pTopo){
@@ -107,7 +108,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
     /**
      * Mettre a jour information topo
-     * @param pTopo
+     * @param pTopo prend un topo en parametre
      */
     @Override
     public void updateInfoTopo(final Topo pTopo) {

@@ -23,7 +23,9 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
     /**
      * Récuperer toutes les voies
-     * @return
+     * @param id d'un secteur
+     * @return une liste de voie
+     *
      */
     @Override
     public List<Voie> getListVoie(Integer id) {
@@ -50,8 +52,8 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
     /**
      * Récupérer le nombre de voie d'un secteur
-     * @param pSecteur
-     * @return
+     * @param pSecteur secteur en parametre
+     * @return nombre de voie
      */
     @Override
     public int getCountVoieSec(Secteur pSecteur) {
@@ -62,7 +64,7 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("id_secteur", pSecteur.getNbrVoie());
+        vParams.addValue("id_secteur", pSecteur.getIdSecteur());
 
         int vNbrVoie = vJdbcTemplate.queryForObject(vSQL, vParams, Integer.class);
 
@@ -71,7 +73,8 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
 
     /**
      * Creer une voie
-     * @param pVoie
+     * @param pVoie voie a creer
+     * @return la voie creer
      */
     @Override
     public Voie insertVoie(Voie pVoie) {
@@ -98,13 +101,13 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
         KeyHolder holder = new GeneratedKeyHolder();
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_voie"});
-        pVoie.setId(holder.getKey().intValue());
+        pVoie.setIdVoie(holder.getKey().intValue());
         return pVoie;
     }
 
     /**
      * Mettre a jour une voie
-     * @param pVoie
+     * @param pVoie la voie a modifier
      */
     @Override
     public void updateInfoVoie(Voie pVoie) {
@@ -113,10 +116,10 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
                 "nom_voie = :nom_voie,\n" +
                 "cotation = :cotation,\n" +
                 "hauteur = :hauteur,\n" +
-                "id_secteur = :id_secteur,\n" +
-                "id_topo = :id_topo,\n" +
-                "id_site = :id_site " +
-                "WHERE id = :id";
+                "id_secteur = :idSecteur,\n" +
+                "id_topo = :idTopo,\n" +
+                "id_site = :idSite " +
+                "WHERE id_voie = :idVoie";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pVoie);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);

@@ -7,11 +7,8 @@ import org.val.win.model.bean.grimpe.Site;
 import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
-import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -30,7 +27,7 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
 
     /**
      * Setteur pour la session
-     * @param pSession
+     * @param pSession session de l'utilisateur
      */
     @Override
     public void setSession(Map<String, Object> pSession) {
@@ -42,7 +39,6 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
     private Integer idUtilisateur;
     private Integer idTopoSite;
     private Integer idSite;
-    private Utilisateur utilisateur;
     private Topo topo;
 
     // ----- Paramètres en sortie
@@ -80,10 +76,10 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
 
     /**
      * Action servant a creer un site
-     * @return
+     * @return resultat de l'action
      */
     public String doCreate() {
-        utilisateur = (Utilisateur) session.get("user");
+        Utilisateur utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {

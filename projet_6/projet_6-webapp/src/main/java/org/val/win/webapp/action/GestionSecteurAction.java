@@ -25,7 +25,7 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     /**
      * Setteur pour la session
-     * @param pSession
+     * @param pSession session de l'utilisateur
      */
     @Override
     public void setSession(Map<String, Object> pSession) {
@@ -36,7 +36,6 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     private Integer idTopo;
     private Integer idSite;
-    private Utilisateur utilisateur;
 
     // ----- Paramètres en sortie
 
@@ -70,10 +69,10 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     /**
      * Creation de Secteur
-     * @return
+     * @return le resultat de l'action
      */
     public String doCreate() {
-        utilisateur = (Utilisateur) session.get("user");
+        Utilisateur utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {

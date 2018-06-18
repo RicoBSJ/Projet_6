@@ -21,7 +21,8 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 
     /**
      * Récupérer tous les sites
-     * @return
+     * @param id l'id d'un topo
+     * @return liste de site
      */
     @Override
     public List<Site> getListSite(Integer id) {
@@ -47,7 +48,8 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 
     /**
      * Creer un nouveau site
-     * @param pSite
+     * @param pSite id d'un topo
+     * @return le site creer
      */
     @Override
     public Site insertSite(Site pSite) {
@@ -62,7 +64,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("idTopo", pSite.getIdTopo());
         vParams.addValue("nomSite", pSite.getNomSite());
-        vParams.addValue("altitudePiedVoie", pSite.getaltitudePiedVoie());
+        vParams.addValue("altitudePiedVoie", pSite.getAltitudePiedVoie());
         vParams.addValue("description", pSite.getDescription());
 
         KeyHolder holder = new GeneratedKeyHolder();
@@ -75,7 +77,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
 
     /**
      * Mettre a jour les informations du site
-     * @param pSite
+     * @param pSite site a modifier en paramètre
      */
     @Override
     public void updateInfoVoie(Site pSite) {
@@ -84,7 +86,7 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
                 "nom_site = :nom_site,\n" +
                 "id_topo = :id_topo,\n" +
                 "altitudepiedvoie = :altitudepiedvoie " +
-                "WHERE id = :id";
+                "WHERE id_site = :idSite";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pSite);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);

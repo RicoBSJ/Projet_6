@@ -3,7 +3,6 @@ package org.val.win.consumer.impl.dao;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.jdbc.support.KeyHolder;
 import org.val.win.consumer.contract.dao.CommentaireDao;
-import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Commentaire;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -20,7 +19,7 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 
     /**
      * Récupérér les commentaires d'un topo.
-     * @return
+     * @return liste de commentaire
      */
     @Override
     public List<Commentaire> getCommentaireTopo(Integer id) {
@@ -44,7 +43,7 @@ public class CommentaireDaoImpl extends AbstractDaoImpl implements CommentaireDa
 
     /**
      * Creer un nouveau commentaire
-     * @param pCommentaire
+     * @param pCommentaire commentaire a creer
      */
     @Override
     public Commentaire insertCommentaire(Commentaire pCommentaire) {

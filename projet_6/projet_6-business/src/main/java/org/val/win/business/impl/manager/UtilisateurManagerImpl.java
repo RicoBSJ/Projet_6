@@ -12,34 +12,52 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 
 import java.util.List;
-import java.util.Set;
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.validation.ConstraintViolation;
-import javax.validation.ConstraintViolationException;
 
+/**
+ * Classe de gestion des transactions pour les utilisateurs
+ */
 @Named
 public class UtilisateurManagerImpl extends AbstractManager implements UtilisateurManager {
 
+    /**
+     * creation du dao des utilisateurs
+     */
     @Inject
     private UtilisateurDao utilisateurDao;
 
+    /**
+     * creation d'un platformTransactionManager pour gerer les transactions
+     */
     @Inject
     @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 
-
+    /**
+     * Recuperer un utilisateur
+     * @param pId id de l'utilisateur
+     * @return un utilisateur
+     * @throws NotFoundException en cas d'utilisateur non trouvé
+     */
     @Override
     public Utilisateur getUtilisateur(Integer pId) throws NotFoundException {
         List<Utilisateur> listUtilisateur = this.getListUtilisateur();
         Utilisateur vUtilisateur
                 = listUtilisateur.stream()
-                .filter(p -> p.getId().equals(pId))
+                .filter(p -> p.getIdUtilisateur().equals(pId))
                 .findFirst()
                 .orElseThrow(() -> new NotFoundException("Utilisateur non trouvé : ID=" + pId));
         return vUtilisateur;
     }
 
+    /**
+     * recuperer un utilisateur en fonction de ces identifiants
+     * @param pLogin username de l'utilisateur
+     * @param pPassword mot de passe de l'utilisateur
+     * @return un utilisateur
+     * @throws NotFoundException en cas d'utilisateur non trouvé
+     */
     @Override
     public Utilisateur getUtilisateur(String pLogin, String pPassword) throws NotFoundException {
 
@@ -53,12 +71,20 @@ public class UtilisateurManagerImpl extends AbstractManager implements Utilisate
         return vUtilisateur;
     }
 
-
+    /**
+     * Liste d'utilisateur
+     * @return une liste d'utilisateur
+     */
     @Override
     public List<Utilisateur> getListUtilisateur() {
         return utilisateurDao.getListUtilisateur();
     }
 
+    /**
+     * creer un utilisateur
+     * @param pUtilisateur utilisateur a creer
+     * @throws FunctionalException en cas d'erreur
+     */
     @Override
     public void insertUtilisateur(Utilisateur pUtilisateur) throws FunctionalException {
         if (pUtilisateur == null) {

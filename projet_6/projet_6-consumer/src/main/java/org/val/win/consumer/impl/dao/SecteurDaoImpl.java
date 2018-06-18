@@ -21,7 +21,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
 
     /**
      * Récuperer une liste des secteurs
-     * @return
+     * @return une liste de secteur vListSeceur
      */
     @Override
     public List<Secteur> getListSecteur(Integer id) {
@@ -47,7 +47,8 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
 
     /**
      * Creer secteur
-     * @param pSecteur
+     * @param pSecteur prend un secteur en paramètre
+     * @return renvoie le secteur
      */
     @Override
     public Secteur insertSecteur(Secteur pSecteur) {
@@ -59,7 +60,7 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
                 "  orientation,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "(:idTopo,:idSite,:nomSecteur,:nbrVoie,:difficulte,:orientation,:description)";
+                "(:idTopo,:idSite,:nomSecteur,:difficulte,:orientation,:description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
         vParams.addValue("idTopo", pSecteur.getId_topo());
@@ -78,16 +79,16 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
 
     /**
      * Mettre a jour les informations d'un secteur
-     * @param pSecteur
+     * @param pSecteur prend un secteur en paramètre
      */
     @Override
     public void updateInfoSecteur(Secteur pSecteur) {
         String vSQL = "UPDATE public.secteur " +
                 "SET description = :description,\n" +
                 "orientation = :orientation,\n" +
-                "id_topo = :id_topo,\n" +
-                "id_site = :id_site,\n" +
-                "nom_secteur = :nom_secteur,\n" +
+                "id_topo = :idTopo,\n" +
+                "id_site = :idSite,\n" +
+                "nom_secteur = :nomSecteur,\n" +
                 "difficulte = :diffculte " +
                 "WHERE id = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pSecteur);

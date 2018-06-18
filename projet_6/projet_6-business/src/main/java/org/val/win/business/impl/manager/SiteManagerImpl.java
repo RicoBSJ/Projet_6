@@ -14,18 +14,32 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
+/**
+ * Classe de gestion des transactions pour les Sites
+ */
 @Named
 public class SiteManagerImpl extends AbstractManager implements SiteManager {
 
-
+    /**
+     * creation du dao des sites
+     */
     @Inject
     private SiteDao siteDao;
 
+    /**
+     * creation d'un platformTransactionManager pour gerer les transactions
+     */
     @Inject
     @Named("txManagerP6")
-
     private PlatformTransactionManager platformTransactionManager;
 
+    /**
+     * Recuperer un site
+     * @param idSite id du site
+     * @param idTopo id du topo auquel appartien le site
+     * @return un site
+     * @throws NotFoundException en cas de site non trouvé
+     */
     @Override
     public Site getSite(Integer idSite, Integer idTopo) throws NotFoundException {
         List<Site> listSite = this.getListSite(idTopo);
@@ -37,13 +51,23 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
         return vSite;
     }
 
+    /**
+     * Recuperer une liste de site
+     * @param id id d'un topo
+     * @return liste de site
+     */
     @Override
     public List<Site> getListSite(Integer id) {
         return siteDao.getListSite(id);
     }
 
+    /**
+     * Creation d'un site
+     * @param pSite site a creer
+     * @throws FunctionalException en cas d'erreur
+     */
     @Override
-    public void insertSite(Site pSite) throws FunctionalException {
+    public void insertSite(Site pSite) {
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {

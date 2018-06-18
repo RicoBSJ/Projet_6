@@ -14,16 +14,32 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
+/**
+ * Classe de gestion des transactions pour les secteurs
+ */
 @Named
 public class SecteurManagerImpl extends AbstractManager implements SecteurManager {
 
+    /**
+     * creation du dao des secteurs
+     */
     @Inject
     private SecteurDao secteurDao;
 
+    /**
+     * creation d'un platformTransactionManager pour gerer les transactions
+     */
     @Inject
     @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 
+    /**
+     * recuperer un secteur
+     * @param idSecteur id du secteur a recuperer
+     * @param idSite id du site auquel appartien le secteur
+     * @return le secteur concerné
+     * @throws NotFoundException en cas de secteur non trouvé
+     */
     @Override
     public Secteur getSecteur(Integer idSecteur, Integer idSite) throws NotFoundException {
         List<Secteur> listSecteur = this.getListSecteur(idSite);
@@ -35,13 +51,23 @@ public class SecteurManagerImpl extends AbstractManager implements SecteurManage
         return vSecteur;
     }
 
+    /**
+     * liste de secteur
+     * @param pId id d'un site
+     * @return liste de secteur d'un site
+     */
     @Override
     public List<Secteur> getListSecteur(Integer pId) {
         return secteurDao.getListSecteur(pId);
     }
 
+    /**
+     * Creer un secteur
+     * @param pSecteur Secteur a creer
+     * @throws FunctionalException en cas d'erreur
+     */
     @Override
-    public void insertSecteur(Secteur pSecteur) throws FunctionalException {
+    public void insertSecteur(Secteur pSecteur) {
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {

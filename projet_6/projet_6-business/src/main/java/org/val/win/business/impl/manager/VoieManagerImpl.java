@@ -13,24 +13,42 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
+/**
+ * Classe de gestion des transactions pour les voies
+ */
 @Named
 public class VoieManagerImpl extends AbstractManager implements VoieManager {
 
+    /**
+     * creation du dao des voies
+     */
     @Inject
     private VoieDao voieDao;
 
+    /**
+     * creation d'un platformTransactionManager pour gerer les transactions
+     */
     @Inject
     @Named("txManagerP6")
-
     private PlatformTransactionManager platformTransactionManager;
 
+    /**
+     * recuperer une liste de voie en fonction de l'id du secteur
+     * @param id id du secteur
+     * @return une liste de voie
+     */
     @Override
     public List<Voie> getListVoie(Integer id) {
         return voieDao.getListVoie(id);
     }
 
+    /**
+     * creer une voie
+     * @param pVoie voie a creer
+     * @throws FunctionalException en cas d'erreur
+     */
     @Override
-    public void insertVoie(Voie pVoie) throws FunctionalException {
+    public void insertVoie(Voie pVoie) {
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {

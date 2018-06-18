@@ -16,9 +16,6 @@ import java.sql.*;
 import java.util.List;
 
 /**
- * Bean Utilisateur DAO.
- */
-/**
  * Implementation des DAO pour l'utilisateur.
  */
 @Named
@@ -26,7 +23,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
 
     /**
      * Récupérer tous les utilisateurs
-     * @return
+     * @return liste d'utilisateur
      */
     @Override
     public List<Utilisateur> getListUtilisateur() {
@@ -81,8 +78,8 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
 
     /**
      * Récupérer un utilisateur précis
-     * @param id
-     * @return
+     * @param id id de utilisateur
+     * @return un utilisateur
      */
     @Override
     public Utilisateur getUtilisateur(final Integer id) {
@@ -95,7 +92,8 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
 
     /**
      * Creer un utilisateur
-     * @param pUtilisateur
+     * @param pUtilisateur utilisateur en parametre
+     * @return utilisateur creer
      */
 
     @Override
@@ -123,26 +121,26 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
 
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams, holder, new String[]{"id_utilisateur"});
-        pUtilisateur.setId(holder.getKey().intValue());
+        pUtilisateur.setIdUtilisateur(holder.getKey().intValue());
         return pUtilisateur;
     }
 
 
     /**
      * Mettre a jour l'etat (ADMIN) de l'utilisateur
-     * @param pUtilisateur
+     * @param pUtilisateur utilisateur en parametre
      */
     @Override
     public void updateEtat(final Utilisateur pUtilisateur) {
         String vSQL = "UPDATE public.utilisateur SET admin = :admin WHERE id_utilisateur = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pUtilisateur);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams);
     }
 
     /**
      * Mettre a jour les informations de l'utilisateur
-     * @param pUtilisateur
+     * @param pUtilisateur utilisateur a modifier
      */
     @Override
     public void updateInfoUtil(final Utilisateur pUtilisateur) {
@@ -157,7 +155,7 @@ public class UtilisateurDaoImpl extends AbstractDaoImpl implements UtilisateurDa
                 "WHERE id_utilisateur = :id";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pUtilisateur);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams);
     }
 
 }

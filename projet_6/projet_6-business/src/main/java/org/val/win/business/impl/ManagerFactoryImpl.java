@@ -6,7 +6,9 @@ import org.val.win.business.contract.ManagerFactory;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-
+/**
+ * Classe des managers
+ */
 @Named("managerFactory")
 public class ManagerFactoryImpl implements ManagerFactory {
 

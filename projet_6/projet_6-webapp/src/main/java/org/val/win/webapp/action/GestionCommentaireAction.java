@@ -21,7 +21,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
 
     /**
      * Setteur pour la session
-     * @param pSession
+     * @param pSession session de l'utilisateur
      */
     @Override
     public void setSession(Map<String, Object> pSession) {
@@ -35,7 +35,6 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
 
     // ----- Paramètres en entrée
     private Integer idTopo;
-    private Utilisateur utilisateur;
     private Topo topo;
 
     // ----- Eléments en sortie
@@ -71,10 +70,10 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
 
     /**
      * Creation de commentaire.
-     * @return
+     * @return resultat de l'action
      */
     public String doCreate() {
-        utilisateur = (Utilisateur) session.get("user");
+        Utilisateur utilisateur = (Utilisateur) session.get("user");
         topo = (Topo) session.get("topo");
         System.out.println(topo);
         System.out.println(utilisateur);
@@ -88,7 +87,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
             // ===== Validation de l'ajout de projet (commentaire != null)
             if (this.commentaire != null) {
                 if (commentaire.getIdUtil() == null) {
-                    this.commentaire.setIdUtil(utilisateur.getId());
+                    this.commentaire.setIdUtil(utilisateur.getIdUtilisateur());
                 }
                 if (commentaire.getIdTopo() == null) {
                     this.commentaire.setIdTopo(topo.getIdTopo());

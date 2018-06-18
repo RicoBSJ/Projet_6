@@ -14,16 +14,31 @@ import javax.inject.Inject;
 import javax.inject.Named;
 import java.util.List;
 
+/**
+ * Classe de gestion des transactions pour les topos
+ */
 @Named
 public class TopoManagerImpl extends AbstractManager implements TopoManager {
 
+    /**
+     * creation du dao des topos
+     */
     @Inject
     private TopoDao topoDao;
 
+    /**
+     * creation d'un platformTransactionManager pour gerer les transactions
+     */
     @Inject
     @Named("txManagerP6")
     private PlatformTransactionManager platformTransactionManager;
 
+    /**
+     * Methode retournant un topo
+     * @param pId id d'un topo
+     * @return un topo
+     * @throws NotFoundException en cas de topo de non trouvé
+     */
     @Override
     public Topo getTopo(Integer pId) throws NotFoundException {
         List<Topo> listTopo = this.getListTopo();
@@ -38,13 +53,22 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
         return vTopo;
     }
 
+    /**
+     * Methode recupérant la liste de topo
+     * @return liste de topo
+     */
     @Override
     public List<Topo> getListTopo() {
         return topoDao.getListTopo();
     }
 
+    /**
+     * Methode pour creer un topo
+     * @param pTopo topo a creer
+     * @throws FunctionalException en cas d'erreur
+     */
     @Override
-    public void insertTopo(Topo pTopo) throws FunctionalException {
+    public void insertTopo(Topo pTopo) {
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
@@ -56,8 +80,13 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
         });
     }
 
+    /**
+     * Methode pour l'emprunt
+     * @param pTopo topo a emprunter
+     * @throws FunctionalException en cas d'erreur
+     */
     @Override
-    public void Emprunt(Topo pTopo) throws FunctionalException {
+    public void emprunt(Topo pTopo) {
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {

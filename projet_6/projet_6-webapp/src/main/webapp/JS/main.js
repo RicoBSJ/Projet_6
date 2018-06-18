@@ -95,7 +95,6 @@ function getListComAjax() {
             var $listCom = jQuery("#listCom");
             $listCom.empty();
             jQuery.each(data, function (key, val) {
-                console.log(val)
                 $listCom.append(
                     jQuery("<li>")
                         .append(val.text)

@@ -9,7 +9,6 @@ import javax.sql.DataSource;
  */
 public abstract class AbstractDaoImpl {
 
-
     /**
      * Bean datasource.
      */
@@ -21,7 +20,7 @@ public abstract class AbstractDaoImpl {
      * Récupérer la datasource.
      * @return dataSource
      */
-    protected DataSource getDataSource() {
+    DataSource getDataSource() {
         return dataSource;
     }
 

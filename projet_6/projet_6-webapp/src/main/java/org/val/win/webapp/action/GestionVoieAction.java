@@ -25,7 +25,7 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
 
     /**
      * Setteur pour la session
-     * @param pSession
+     * @param pSession la session de l'utilisateur
      */
     @Override
     public void setSession(Map<String, Object> pSession) {
@@ -38,7 +38,6 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
     private Integer idTopo;
     private Integer idSite;
     private Integer idSecteur;
-    private Utilisateur utilisateur;
 
     // ----- Eléments en sortie
 
@@ -91,10 +90,10 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
 
     /**
      * Creation d'une voie
-     * @return
+     * @return le resultat de l'action
      */
     public String doCreate() {
-        utilisateur = (Utilisateur) session.get("user");
+        Utilisateur utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {
