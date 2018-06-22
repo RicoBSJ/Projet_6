@@ -16,7 +16,6 @@
     <div class="col-lg-12">
         <div class="col-lg-3">
         </div>
-
         <s:form action="site_new" class="col-lg-6" theme="simple">
             <div class="form-group col-lg-12">
                 <label for="site.nomSite">Nom du Site : </label>
@@ -33,8 +32,9 @@
                 <s:textfield name="site.description" label="Description" requiredLabel="true" class="form-control" theme="simple"/>
                 </br>
             </div>
-
             <s:submit value="OK"/>
+
+            <!-- Ajouter un outil pour selectionner le topo -->
         </s:form>
 
         <div class="col-lg-3">

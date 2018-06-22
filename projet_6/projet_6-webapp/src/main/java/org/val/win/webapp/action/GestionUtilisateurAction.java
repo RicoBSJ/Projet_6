@@ -14,6 +14,9 @@ import javax.inject.Inject;
 
 public class GestionUtilisateurAction extends ActionSupport {
 
+    /**
+     * Récupérer manager factory
+     */
     @Inject
     private ManagerFactory managerFactory;
 

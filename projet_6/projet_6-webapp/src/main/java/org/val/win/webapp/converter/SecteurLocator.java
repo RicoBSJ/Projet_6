@@ -12,6 +12,9 @@ import java.util.Map;
 
 public class SecteurLocator extends StrutsTypeConverter {
 
+    /**
+     * Recuperer manager Factory
+     */
     @Inject
     private ManagerFactory managerFactory;
 

@@ -24,7 +24,7 @@
                 class="org.val.win.webapp.action.GestionTopoAction"
                 method="doListcom">
             <result name="success" type="json">
-                <param name="root">ListCom</param>
+                <param name="root">ListCommentaire</param>
             </result>
         </action>
 
@@ -43,6 +43,15 @@
                 method="doListSecteur">
             <result name="success" type="json">
                 <param name="root">listSecteur</param>
+            </result>
+        </action>
+
+        <!-- Action retournant un secteur -->
+        <action name="detailSecteurAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doDetailSecteur">
+            <result name="success" type="json">
+                <param name="root">secteur</param>
             </result>
         </action>
 

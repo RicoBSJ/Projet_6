@@ -13,11 +13,21 @@ import java.util.Map;
 
 public class LoginAction extends ActionSupport implements SessionAware {
 
+    /**
+     * creer une session
+     */
     private Map<String, Object> session;
 
+    /**
+     * Récupérer manager factory
+     */
     @Inject
     private ManagerFactory managerFactory;
 
+    /**
+     * Recuperer la session de l'utilisateur
+     * @param pSession
+     */
     @Override
     public void setSession(Map<String, Object> pSession) {
         this.session = pSession;
@@ -26,28 +36,66 @@ public class LoginAction extends ActionSupport implements SessionAware {
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
+    /**
+     * login de l'utilisateur
+     */
     private String login;
+    /**
+     * mot de passe de l'utilisateur
+     */
     private String password;
-    private List<Utilisateur> listUtilisateur;
+    /**
+     * Objet Utilisateur
+     */
     private Utilisateur utilisateur;
 
 
     // ==================== Getters/Setters ====================
+
+    /**
+     * Recuperer le login
+     * @return le login
+     */
     public String getLogin() {
         return login;
     }
+
+    /**
+     * modifier le login
+     * @param pLogin le nouveau login
+     */
     public void setLogin(String pLogin) {
         login = pLogin;
     }
+
+    /**
+     * recuperer le mot de passe
+     * @return le mot de passe
+     */
     public String getPassword() {
         return password;
     }
+
+    /**
+     * modifier le mot de passe
+     * @param pPassword le nouveau mot de passe
+     */
     public void setPassword(String pPassword) {
         password = pPassword;
     }
+
+    /**
+     * Recuperer un utilisateur
+     * @return un utilisateur
+     */
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
+
+    /**
+     * Recuperer la session de l'tuilisateur
+     * @return
+     */
     public Map<String, Object> getSession(){
         return session;
     }
@@ -82,7 +130,6 @@ public class LoginAction extends ActionSupport implements SessionAware {
      * Action de déconnexion d'un utilisateur
      * @return success
      **/
-
     public String doLogout() {
         // Suppression de l'utilisateur en session
         this.session.remove("user");

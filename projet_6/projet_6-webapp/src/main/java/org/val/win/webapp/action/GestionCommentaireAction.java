@@ -28,39 +28,88 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
         this.session = pSession;
     }
 
+    /**
+     * Récupérer manager factory
+     */
     @Inject
     private ManagerFactory managerFactory;
 
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
+    /**
+     * id du topo
+     */
     private Integer idTopo;
+    /**
+     * Objet topo
+     */
     private Topo topo;
 
     // ----- Eléments en sortie
+    /**
+     * Liste de commantaire
+     */
     private List<Commentaire> listCom;
+    /**
+     * Un commentaire
+     */
     private Commentaire commentaire;
 
     // ==================== Getters/Setters ====================
 
+    /**
+     * recuperer un topo
+     * @return un topo
+     */
     public Topo getTopo() {
         return topo;
     }
+
+    /**
+     * modifier un topo
+     * @param pTopo le topo a modifier
+     */
     public void setTopo(Topo pTopo) {
         topo = pTopo;
     }
+
+    /**
+     * recuperer l'id d'un topo
+     * @return l'id d'un topo
+     */
     public Integer getIdTopo() {
         return idTopo;
     }
+
+    /**
+     * modifier l'id d'un topo
+     * @param pId le nouvel id
+     */
     public void setIdTopo(Integer pId) {
         idTopo = pId;
     }
+
+    /**
+     * recuperer un commentaire
+     * @return
+     */
     public Commentaire getCommentaire() {
         return commentaire;
     }
+
+    /**
+     * modifier un commentaire
+     * @param pCommentaire le nouveau commentaire
+     */
     public void setCommentaire(Commentaire pCommentaire) {
         commentaire = pCommentaire;
     }
+
+    /**
+     * recuperer une liste de commentaire
+     * @return
+     */
     public List<Commentaire> getListCom(){
         return listCom;
     }

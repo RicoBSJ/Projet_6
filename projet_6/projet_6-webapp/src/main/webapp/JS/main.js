@@ -1,8 +1,34 @@
-$(document).ready(function() {
-    $('#listTopo').DataTable();
-});
-
-$('#listCom').addEventListener("load", getListComAjax);
+function getListSite() {
+    // URL de l'action AJAX
+    var url = "listSiteAjax";
+    // Paramètres de la requête AJAX
+    var params = {
+        topo: $("#spanIdTopo").text()
+    };
+    // Action AJAX en POST
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $selectSite = jQuery("#selectSite");
+            $selectSite.empty();
+            jQuery.each(data, function (key, val) {
+                $selectSite.append(
+                    jQuery("<option>")
+                        .text(val.nomSite)
+                        .val(val.idSite)
+                );
+            });
+        })
+        .fail(function (data) {
+            if (typeof data.responseJSON === 'object') {
+                console.log(data.responseJSON);
+            } else {
+                console.log(data);
+            }
+            alert("Une erreur s'est produite.");
+        });
+}
 
 function getListSecteur() {
     // URL de l'action AJAX
@@ -25,22 +51,7 @@ function getListSecteur() {
                         .val(val.idSecteur)
                 );
             });
-        }).done(function(data) {
-        // Ajout d'un second appel pour afficher toute les informations d'un secteur - ne fonctionne pas -
-        var $infoSecteur = jQuery("#infoSecteur");
-        $infoSecteur.empty();
-        jQuery.each(data, function (key, val) {
-            if ($("#selectSecteur").val() === $("#infoSecteur").val()){
-                $infoSecteur.append(
-                    jQuery("<li>")
-                        .text(val.nomSecteur)
-                        .val(val.nomSecteur)
-                        .val(val.idSecteur)
-                        .append(val.description)
-                )
-            }
-        });
-    })
+        })
         .fail(function (data) {
             if (typeof data.responseJSON === 'object') {
                 console.log(data.responseJSON);
@@ -83,6 +94,44 @@ function getListVoie(){
         });
 }
 
+function getSecteurDetail() {
+    // URL de l'action AJAX
+    var url = "detailSecteurAjax";
+    // Paramètres de la requête AJAX
+    var params = {
+        site: $("#selectSecteur").val() + '#' + $("#selectSite").val()
+    };
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $infoSecteur = jQuery("#infoSecteur");
+            $infoSecteur.empty();
+            jQuery.each(data, function (key, val) {
+                $infoSecteur.append(
+                    jQuery("<li>")
+                        .text(val.nomSecteur)
+                );
+            });
+        }).fail(function (data) {
+            if (typeof data.responseJSON === 'object'){
+                console.log(data.responseJSON);
+            } else {
+                console.log(data);
+            }
+            alert("Une erreur s'est produite.")
+    });
+}
+
+
+function getSiteDetail() {
+
+}
+
+function getVoieDetail() {
+
+}
+
 // Récupérer liste de commentaire en ajax
 
 function getListComAjax() {
@@ -93,6 +142,7 @@ function getListComAjax() {
         url,
         function (data) {
             var $listCom = jQuery("#listCom");
+            console.log($listCom);
             $listCom.empty();
             jQuery.each(data, function (key, val) {
                 $listCom.append(

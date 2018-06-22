@@ -39,6 +39,7 @@
                 </br>
             </div>
 
+            <!-- Ajouter un outil pour selectionner le topo et le site et le secteur  -->
             <s:submit value="OK"/>
         </s:form>
 

@@ -146,7 +146,25 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             listSecteur = managerFactory.getSecteurManager().getListSecteur(site.getIdSite());
         }
         return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
+    }
 
+    /**
+     * Action retournant un secteur
+     * @return un secteur
+     * @throws NotFoundException en cas de secteur non trouvé
+     */
+    public String doDetailSecteur() throws NotFoundException {
+        if (site == null) {
+            addActionError("Le site doit être précisé !");
+        } else {
+            secteur = managerFactory.getSecteurManager().getSecteur(site.getIdSite(), secteur.getIdSecteur());
+
+            /*listSecteur.stream()
+                    .filter(p -> p.getIdSecteur().equals(secteur.getIdSecteur()))
+                    .findFirst()
+                    .orElseThrow(() -> new NotFoundException("Secteur non trouvé : ID=" + secteur.getIdSecteur())); */
+        }
+        return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
 
     /**
@@ -256,7 +274,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     /**
      * Action permettant l'emprunt
      * Gestion des dates
-     * @return resultat de l'action
+     * @return input / success
      */
     public String EmpruntTopo(){
         topo = (Topo) session.get("topo");

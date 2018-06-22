@@ -16,10 +16,8 @@ import org.val.win.model.exception.NotFoundException;
  */
 public class SiteLocator extends StrutsTypeConverter {
 
-
     @Inject
     private ManagerFactory managerFactory;
-
 
     @Override
     public Object convertFromString(Map pContext, String[] pValues, Class pToClass) {

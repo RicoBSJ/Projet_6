@@ -53,9 +53,13 @@ public class Topo {
      */
     private String relai;
     /**
-     * etat disponibilité du topo
+     * etatReservable disponibilité du topo
      */
-    private Boolean etat;
+    private Boolean etatReservable;
+    /**
+     * Disponibilité du topo
+     */
+    private Boolean disponible;
     /**
      * date d'emprunt du topo
      */
@@ -64,6 +68,7 @@ public class Topo {
      * date de retour du topo
      */
     private LocalDate dateRet;
+
 
 
     // ==================== Constructeurs ====================
@@ -295,18 +300,34 @@ public class Topo {
 
     /**
      * recuperer la disponibilité d'un topo
-     * @return l'etat du topo
+     * @return l'etatReservable du topo
      */
-    public Boolean getEtat(){
-        return etat;
+    public Boolean getEtatReservable(){
+        return etatReservable;
     }
 
     /**
      * modifier la disponibilité d'un topo
-     * @param pEtat nouvelle disponibilité
+     * @param pEtat possibilité de reserver un topo
      */
-    public void setEtat(Boolean pEtat) {
-        etat = pEtat;
+    public void setEtatReservable(Boolean pEtat) {
+        etatReservable = pEtat;
+    }
+
+    /**
+     * Recuperer la disponibilité d'un topo
+     * @return
+     */
+    public Boolean getDisponible() {
+        return disponible;
+    }
+
+    /**
+     * modifier la dispo d'un topo
+     * @param pDispo nouvelle disponibilité
+     */
+    public void setDisponible(Boolean pDispo) {
+        disponible = pDispo;
     }
 
     // ==================== Méthodes ====================
@@ -330,7 +351,8 @@ public class Topo {
                 .append(vSEP).append("profil =\"").append(profil).append('"')
                 .append(vSEP).append("ancrage =\"").append(ancrage).append('"')
                 .append(vSEP).append("relai = \"").append(relai).append('"')
-                .append(vSEP).append("etat =\"").append(etat).append('"')
+                .append(vSEP).append("etatReservable =\"").append(etatReservable).append('"')
+                .append(vSEP).append("Disponibilité =\"").append(disponible).append('"')
                 .append(vSEP).append("Date d'emprunt = \"").append(dateEmp).append('"')
                 .append(vSEP).append("Date de retour = \"").append(dateRet).append('"')
                 .append("}");

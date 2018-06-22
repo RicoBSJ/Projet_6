@@ -34,33 +34,69 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     // ----- Paramètres en entrée
 
+    /**
+     * id du topo
+     */
     private Integer idTopo;
+    /**
+     * id du site
+     */
     private Integer idSite;
 
     // ----- Paramètres en sortie
 
+    /**
+     * un secteur
+     */
     private Secteur secteur;
 
 
     // ==================== Getters/Setters ====================
 
+    /**
+     * recuperer l'id d'un topo
+     * @return l'id d'un topo
+     */
     public Integer getIdTopo(){
         return idTopo;
     }
+
+    /**
+     * modifier l'id d'un topo
+     * @param pId
+     */
     public void setIdTopo(Integer pId) {
         idTopo = pId;
     }
+
+    /**
+     * recuperer l'id d'un site
+     * @return l'id d'un site
+     */
     public Integer getIdSite(){
         return idSite;
     }
+
+    /**
+     * modifier l'id d'un site
+     * @param pId modifier id site
+     */
     public void setIdSite(Integer pId){
         idSite = pId;
     }
 
+    /**
+     * recuperer un secteur
+     * @return un secteur
+     */
     public Secteur getSecteur(){
         return secteur;
     }
 
+    /**
+     * modifier un secteur
+     * @param pSecteur le nouveau secteur
+     */
     public void setSecteur(Secteur pSecteur){
         secteur = pSecteur;
     }

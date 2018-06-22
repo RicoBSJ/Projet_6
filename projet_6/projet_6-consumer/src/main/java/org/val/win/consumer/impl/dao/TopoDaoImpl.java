@@ -38,7 +38,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setLieu(pRS.getString("lieu"));
                 vTopo.setProfil(pRS.getString("profil"));
                 vTopo.setRegion(pRS.getString("region"));
-                vTopo.setEtat(pRS.getBoolean("etat"));
+                vTopo.setDisponible(pRS.getBoolean("disponible"));
+                vTopo.setEtatReservable(pRS.getBoolean("etatReservable"));
                 vTopo.setRelai(pRS.getString("relai"));
                 vTopo.setRoche((pRS.getString("roche")));
                 return vTopo;
@@ -64,7 +65,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  roche,\n" +
                 "  profil,\n" +
                 "  ancrage,\n" +
-                " etat,\n" +
+                "  etat,\n" +
                 "  relai,\n" +
                 "  description)\n" +
                 "VALUES\n" +
@@ -79,7 +80,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 .addValue("roche", pTopo.getRoche())
                 .addValue("profil", pTopo.getProfil())
                 .addValue("ancrage", pTopo.getAncrage())
-                .addValue("etat", pTopo.getEtat())
+                .addValue("etat", pTopo.getEtatReservable())
                 .addValue("relai", pTopo.getRelai())
                 .addValue("description", pTopo.getDescription());
 

@@ -9,6 +9,8 @@
 
 <body>
 
+<s:debug />
+
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-3">
@@ -91,19 +93,12 @@
         <div class="col-lg-2">
             <div class="form-group">
                 <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
-                <!--
-                <button class="btn btn-primary btn-sm" type="submit" onclick="getListSiteAjax()"> Voir les sites du topo</button>
-                <ul id="listSite">
-                    <li><em> Afficher les sites </em></li>
-                </ul>
-                -->
                 <s:form>
                     <s:select class="form-control"
                               id="selectSite" name="site" label="Site"
                               list="listSite" listKey="idSite" listValue="nomSite"
-                              onchange="getListSecteur()"/>
+                              onchange="getListSecteur(), getSecteurDetail()"/>
                 </s:form>
-                <br/>
                 <s:a action="site_new">
                     <button class="btn btn-primary btn-sm" type="submit"> Creer un site </button>
                 </s:a>
@@ -117,7 +112,6 @@
                           list="{}" listKey="idSecteur" listValue="nomSecteur"
                           onchange="getListVoie()"/>
             </s:form>
-            <br/>
             <s:a action="secteur_new">
                 <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
             </s:a>
@@ -128,7 +122,6 @@
                 <s:select class="form-control"
                           id="selectVoie" label="Voie" list="{}"/>
             </s:form>
-            <br/>
             <s:a action="voie_new">
                 <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
             </s:a>
@@ -211,6 +204,11 @@
     </div>
 </div>
 
+<script>
+    $( document ).ready(function() {
+        getListComAjax();
+    });
+</script>
 </body>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>

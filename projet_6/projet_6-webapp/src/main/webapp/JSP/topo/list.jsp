@@ -34,10 +34,10 @@
                         <td><s:property value ="roche" /></td>
                         <td><s:property value ="region" /></td>
                         <td><s:property value ="lieu" /></td>
-                        <td><s:if test="topo.etat=='true'">Disponible</s:if>
-                            <s:elseif test="topo.etat=='false'">Indisponible</s:elseif></td>
+                        <td><s:if test="etat == true">Disponible</s:if>
+                            <s:elseif test="etat==false">Indisponible</s:elseif></td>
                         <td><a href="<s:url namespace="/" action="topo_detail"><s:param name="idTopo" value="%{idTopo}" /></s:url>">
-                            Voir
+                            <button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-eye-open"></span></button>
                         </a> </td>
                     </tr>
                 </s:iterator>
@@ -51,6 +51,11 @@
 
 </body>
 
+<script>
+    $(document).ready(function() {
+        $('#listTopo').DataTable();
+    });
+</script>
 <script src="${pageContext.request.contextPath}/JS/main.js"></script>
 <script src=" https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>

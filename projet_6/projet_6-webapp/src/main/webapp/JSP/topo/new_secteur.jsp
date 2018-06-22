@@ -47,6 +47,7 @@
                 </s:form>
             </div>
 
+            <!-- Ajouter un outil pour selectionner le topo et le site  -->
             <s:submit value="OK"/>
         </s:form>
 

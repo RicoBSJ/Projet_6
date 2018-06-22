@@ -36,38 +36,80 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
 
     // ----- Paramètres en entrée
 
+    /**
+     * id utilisateur
+     */
     private Integer idUtilisateur;
+    /**
+     * id du topo auquel appartien le site
+     */
     private Integer idTopoSite;
+    /**
+     * id du site
+     */
     private Integer idSite;
+    /**
+     * objet topo
+     */
     private Topo topo;
 
     // ----- Paramètres en sortie
 
+    /**
+     * Objet site
+     */
     private Site site;
+    /**
+     * une liste de site
+     */
     private List<Site> listSite;
 
     // ==================== Getters/Setters ====================
 
+    /**
+     * modifier l'id du topo auquel appartient le site
+     * @param pId
+     */
     public void setIdTopoSite(Integer pId){
         idTopoSite = pId;
     }
 
+    /**
+     * recuperer l'id du topo
+     * @return id topo
+     */
     public Integer getIdTopoSite() {
         return idTopoSite;
     }
 
+    /**
+     * recuperer un site
+     * @return un site
+     */
     public Site getSite(){
         return site;
     }
 
+    /**
+     * modifier un site
+     * @param pSite le site a modifier
+     */
     public void setSite(Site pSite) {
         site = pSite;
     }
 
+    /**
+     * recuperer une liste de site
+     * @return
+     */
     public List<Site> getListSite() {
         return listSite;
     }
 
+    /**
+     * modifier une liste de site
+     * @param listSite la liste de site a modifier
+     */
     public void setListSite(List<Site> listSite) {
         this.listSite = listSite;
     }
