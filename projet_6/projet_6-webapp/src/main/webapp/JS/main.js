@@ -95,7 +95,7 @@ function getSecteurDetail() {
     var url = "detailSecteurAjax";
     // Paramètres de la requête AJAX
     var params = {
-        site: $("#selectSecteur").val() + '#' + $("#selectSite").val()
+        secteur: $("#selectSecteur").val() + '#' + $("#selectSite").val()
     };
     jQuery.post(
         url,
