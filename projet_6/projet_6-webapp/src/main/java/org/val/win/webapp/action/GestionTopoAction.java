@@ -53,20 +53,55 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
+    /**
+     * id du topo
+     */
     private Integer idTopo;
+    /**
+     * utilisateur
+     */
     private Utilisateur utilisateur;
+    /**
+     * emprunteur du topo
+     */
     private Utilisateur emprunteur;
 
     // ----- Eléments en sortie
+    /**
+     * Liste des topos
+     */
     private List<Topo> listTopo;
+    /**
+     * Liste des sites
+     */
     private List<Site> listSite;
+    /**
+     * Liste des secteurs
+     */
     private List<Secteur> listSecteur;
+    /**
+     * Liste des voies
+     */
     private List<Voie> listVoie;
-    private List<Commentaire> listCommentaire;
+    /**
+     * topo
+     */
     private Topo topo;
+    /**
+     * site
+     */
     private Site site;
+    /**
+     * secteur
+     */
     private Secteur secteur;
+    /**
+     * date d'emprunt
+     */
     private LocalDate dateEmp = LocalDate.now(); // Recupère date local
+    /**
+     * date de retour
+     */
     private LocalDate dateRet = dateEmp.plus(1, ChronoUnit.WEEKS); // Ajoute une semaine a la date d'emprunt
 
 
@@ -106,9 +141,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
     public Utilisateur getUtilisateur() {
         return utilisateur;
-    }
-    public List<Commentaire> getListCommentaire(){
-        return listCommentaire;
     }
     public Utilisateur getEmprunteur(){
         return emprunteur;
@@ -191,16 +223,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     /**
-     * Action listant les commentaires
-     * @return liste de commentaire d'un topo
-     */
-    public String doListcom() {
-        topo = (Topo) session.get("topo");
-        listCommentaire = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
-        return ActionSupport.SUCCESS;
-    }
-
-    /**
      * Action affichant les détails d'un {@link Topo}
      * @return success / error
      */
@@ -211,19 +233,8 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             try {
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
-                listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
                 if (this.topo.getIdEmprunteur() != null) {
                     emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());
-                }
-                if (this.topo.getDateRet() != null && this.topo.getDateRet().isAfter(LocalDate.now())){
-                    this.topo.setDateEmp(null);
-                    this.topo.setDateRet(null);
-                    this.topo.setIdEmprunteur(null);
-                    try {
-                        managerFactory.getTopoManager().emprunt(this.topo);
-                    } catch (FunctionalException pEx) {
-                        this.addActionMessage(pEx.getMessage());
-                    }
                 }
                 this.session.put("topo", topo);
             } catch (NotFoundException pE) {
@@ -288,11 +299,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             }
             if (!this.hasErrors()) {
                 try {
-                    topo.setIdEmprunteur(utilisateur.getIdUtilisateur());
-                    topo.setDateEmp(dateEmp);
-                    topo.setDateRet(dateRet);
-                    System.out.println(topo);
-                    managerFactory.getTopoManager().emprunt(topo);
+                    managerFactory.getTopoManager().emprunt(topo, utilisateur);
                     vResult = ActionSupport.SUCCESS;
                     this.addActionMessage("Topo reservé avec Succès");
                 } catch (FunctionalException pEx) {

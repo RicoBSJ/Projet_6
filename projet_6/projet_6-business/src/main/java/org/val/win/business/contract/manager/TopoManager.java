@@ -1,6 +1,7 @@
 package org.val.win.business.contract.manager;
 
 import org.val.win.model.bean.grimpe.Topo;
+import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 
@@ -33,9 +34,10 @@ public interface TopoManager {
     void insertTopo(Topo pTopo) throws FunctionalException;
 
     /**
-     * Methode pour l'emprunt
+     * Methode pour l'emprunt d'un topo
      * @param pTopo topo a emprunter
+     * @param pUtilisateur utilisateur qui emprunte le topo
      * @throws FunctionalException en cas d'erreur
      */
-    void emprunt(Topo pTopo) throws FunctionalException;
+    void emprunt(Topo pTopo, Utilisateur pUtilisateur) throws FunctionalException;
 }

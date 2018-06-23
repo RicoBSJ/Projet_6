@@ -1,14 +1,9 @@
 function getListSite() {
     // URL de l'action AJAX
     var url = "listSiteAjax";
-    // Paramètres de la requête AJAX
-    var params = {
-        topo: $("#spanIdTopo").text()
-    };
     // Action AJAX en POST
     jQuery.post(
         url,
-        params,
         function (data) {
             var $selectSite = jQuery("#selectSite");
             $selectSite.empty();
@@ -94,6 +89,7 @@ function getListVoie(){
         });
 }
 
+
 function getSecteurDetail() {
     // URL de l'action AJAX
     var url = "detailSecteurAjax";
@@ -124,6 +120,7 @@ function getSecteurDetail() {
 }
 
 
+
 function getSiteDetail() {
 
 }
@@ -142,7 +139,6 @@ function getListComAjax() {
         url,
         function (data) {
             var $listCom = jQuery("#listCom");
-            console.log($listCom);
             $listCom.empty();
             jQuery.each(data, function (key, val) {
                 $listCom.append(

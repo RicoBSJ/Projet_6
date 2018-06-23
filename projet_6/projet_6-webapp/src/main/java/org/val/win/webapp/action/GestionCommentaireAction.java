@@ -50,7 +50,7 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     /**
      * Liste de commantaire
      */
-    private List<Commentaire> listCom;
+    private List<Commentaire> listCommentaire;
     /**
      * Un commentaire
      */
@@ -110,12 +110,23 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
      * recuperer une liste de commentaire
      * @return
      */
-    public List<Commentaire> getListCom(){
-        return listCom;
+    public List<Commentaire> getListCommentaire(){
+        return listCommentaire;
     }
 
 
     // ==================== Methodes ====================
+
+    /**
+     * Action listant les commentaires
+     * @return liste de commentaire d'un topo
+     */
+    public String doListcom() {
+        topo = (Topo) session.get("topo");
+        listCommentaire = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
+        System.out.println(listCommentaire);
+        return ActionSupport.SUCCESS;
+    }
 
     /**
      * Creation de commentaire.

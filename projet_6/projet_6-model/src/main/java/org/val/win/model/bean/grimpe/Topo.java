@@ -53,9 +53,9 @@ public class Topo {
      */
     private String relai;
     /**
-     * etatReservable disponibilité du topo
+     * reservable disponibilité du topo
      */
-    private Boolean etatReservable;
+    private Boolean reservable;
     /**
      * Disponibilité du topo
      */
@@ -300,18 +300,18 @@ public class Topo {
 
     /**
      * recuperer la disponibilité d'un topo
-     * @return l'etatReservable du topo
+     * @return l'reservable du topo
      */
-    public Boolean getEtatReservable(){
-        return etatReservable;
+    public Boolean getReservable(){
+        return reservable;
     }
 
     /**
      * modifier la disponibilité d'un topo
      * @param pEtat possibilité de reserver un topo
      */
-    public void setEtatReservable(Boolean pEtat) {
-        etatReservable = pEtat;
+    public void setReservable(Boolean pEtat) {
+        reservable = pEtat;
     }
 
     /**
@@ -351,7 +351,7 @@ public class Topo {
                 .append(vSEP).append("profil =\"").append(profil).append('"')
                 .append(vSEP).append("ancrage =\"").append(ancrage).append('"')
                 .append(vSEP).append("relai = \"").append(relai).append('"')
-                .append(vSEP).append("etatReservable =\"").append(etatReservable).append('"')
+                .append(vSEP).append("reservable =\"").append(reservable).append('"')
                 .append(vSEP).append("Disponibilité =\"").append(disponible).append('"')
                 .append(vSEP).append("Date d'emprunt = \"").append(dateEmp).append('"')
                 .append(vSEP).append("Date de retour = \"").append(dateRet).append('"')

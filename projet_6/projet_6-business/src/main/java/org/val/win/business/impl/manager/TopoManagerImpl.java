@@ -5,6 +5,7 @@ import org.springframework.transaction.support.TransactionTemplate;
 import org.val.win.business.contract.manager.TopoManager;
 import org.val.win.consumer.contract.dao.TopoDao;
 import org.val.win.model.bean.grimpe.Topo;
+import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -12,6 +13,8 @@ import org.springframework.transaction.TransactionStatus;
 
 import javax.inject.Inject;
 import javax.inject.Named;
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
 
 /**
@@ -86,15 +89,34 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
      * @throws FunctionalException en cas d'erreur
      */
     @Override
-    public void emprunt(Topo pTopo) {
+    public void emprunt(Topo pTopo, Utilisateur pUtilisateur) {
+        LocalDate dateEmp = LocalDate.now(); // Recupère date local
+        LocalDate dateRet = dateEmp.plus(1, ChronoUnit.WEEKS); // Ajoute une semaine a la date d'emprunt
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
             @Override
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
+                pTopo.setIdEmprunteur(pUtilisateur.getIdUtilisateur());
+                pTopo.setDateEmp(dateEmp);
+                pTopo.setDateRet(dateRet);
                 topoDao.emprunt(pTopo);
             }
         });
     }
 }
+
+/*
+if (this.topo.getDateRet() != null && this.topo.getDateRet().isAfter(LocalDate.now())){
+        this.topo.setDateEmp(null);
+        this.topo.setDateRet(null);
+        this.topo.setIdEmprunteur(null);
+        try {
+        managerFactory.getTopoManager().emprunt(this.topo, utilisateur);
+        } catch (FunctionalException pEx) {
+        this.addActionMessage(pEx.getMessage());
+        }
+        }
+
+*/

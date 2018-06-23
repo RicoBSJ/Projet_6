@@ -39,7 +39,7 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setProfil(pRS.getString("profil"));
                 vTopo.setRegion(pRS.getString("region"));
                 vTopo.setDisponible(pRS.getBoolean("disponible"));
-                vTopo.setEtatReservable(pRS.getBoolean("etatReservable"));
+                vTopo.setReservable(pRS.getBoolean("reservable"));
                 vTopo.setRelai(pRS.getString("relai"));
                 vTopo.setRoche((pRS.getString("roche")));
                 return vTopo;
@@ -65,11 +65,12 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  roche,\n" +
                 "  profil,\n" +
                 "  ancrage,\n" +
-                "  etat,\n" +
+                "  reservable,\n" +
+                "  disponible,\n" +
                 "  relai,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :etat, :relai, :description)";
+                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :reservable, :disponible, :relai, :description)";
 
         SqlParameterSource vParams = new MapSqlParameterSource()
 
@@ -80,7 +81,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 .addValue("roche", pTopo.getRoche())
                 .addValue("profil", pTopo.getProfil())
                 .addValue("ancrage", pTopo.getAncrage())
-                .addValue("etat", pTopo.getEtatReservable())
+                .addValue("etatReservable", pTopo.getReservable())
+                .addValue("disponible", pTopo.getDisponible())
                 .addValue("relai", pTopo.getRelai())
                 .addValue("description", pTopo.getDescription());
 

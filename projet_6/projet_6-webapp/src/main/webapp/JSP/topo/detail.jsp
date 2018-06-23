@@ -99,6 +99,10 @@
                               list="listSite" listKey="idSite" listValue="nomSite"
                               onchange="getListSecteur(), getSecteurDetail()"/>
                 </s:form>
+                information du site :
+                <ul id="infoSite">
+                    <li> Info Site </li>
+                </ul>
                 <s:a action="site_new">
                     <button class="btn btn-primary btn-sm" type="submit"> Creer un site </button>
                 </s:a>
@@ -112,6 +116,10 @@
                           list="{}" listKey="idSecteur" listValue="nomSecteur"
                           onchange="getListVoie()"/>
             </s:form>
+            information du secteur :
+            <ul id="infoSecteur">
+                <li><em> Info secteur </em></li>
+            </ul>
             <s:a action="secteur_new">
                 <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
             </s:a>
@@ -122,6 +130,10 @@
                 <s:select class="form-control"
                           id="selectVoie" label="Voie" list="{}"/>
             </s:form>
+            information de la voie :
+            <ul id="infoVoie">
+                <li> Info voie</li>
+            </ul>
             <s:a action="voie_new">
                 <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
             </s:a>
@@ -133,6 +145,7 @@
     </div>
 </div>
 
+<!--
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-3">
@@ -163,6 +176,7 @@
         </div>
     </div>
 </div>
+-->
 
 <br />
 
