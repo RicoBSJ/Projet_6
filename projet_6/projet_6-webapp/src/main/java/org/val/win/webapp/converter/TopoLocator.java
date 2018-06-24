@@ -1,26 +1,23 @@
 package org.val.win.webapp.converter;
 
-import com.opensymphony.xwork2.conversion.TypeConversionException;
+import java.util.Map;
+import javax.inject.Inject;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.util.StrutsTypeConverter;
+import com.opensymphony.xwork2.conversion.TypeConversionException;
 import org.val.win.business.contract.ManagerFactory;
-import org.val.win.model.bean.grimpe.Secteur;
+import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.exception.NotFoundException;
 
-import javax.inject.Inject;
-import java.util.Map;
 
 /**
- * Locator d'{@link Secteur} via son idt.
+ * Locator d'{@link Topo} via son idt.
  */
-public class SecteurLocator extends StrutsTypeConverter {
+public class TopoLocator extends StrutsTypeConverter {
 
-    /**
-     * Recuperer manager Factory
-     */
     @Inject
     private ManagerFactory managerFactory;
-
 
     @Override
     public Object convertFromString(Map pContext, String[] pValues, Class pToClass) {
@@ -28,36 +25,31 @@ public class SecteurLocator extends StrutsTypeConverter {
         if (pValues != null) {
             if (pValues.length == 1) {
                 String vValue = pValues[0];
-                String [] tokens = vValue.split("#");
-                String secteurID = tokens[0].trim();
-                String siteID = tokens[1].trim();
                 try {
                     vRetour
                             = StringUtils.isEmpty(vValue)
                             ? null
-                            : managerFactory.getSecteurManager().getSecteur(new Integer(secteurID), new Integer(siteID));
+                            : managerFactory.getTopoManager().getTopo(new Integer(vValue));
                 } catch (NumberFormatException pEx) {
-                    throw new TypeConversionException("Format d'identifiant du secteur invalide", pEx);
+                    throw new TypeConversionException("Format d'identifiant du Site invalide", pEx);
                 } catch (NotFoundException pEx) {
-                    throw new TypeConversionException("Secteur Introuvable", pEx);
+                    throw new TypeConversionException("Site introuvable", pEx);
                 }
             } else {
                 vRetour = performFallbackConversion(pContext, pValues, pToClass);
             }
         }
-
         return vRetour;
     }
-
 
     @Override
     public String convertToString(Map pContext, Object pObject) {
         String vString;
-        if (pObject instanceof Secteur) {
-            Secteur vSecteur = (Secteur) pObject;
+        if (pObject instanceof Topo) {
+            Topo vTopo = (Topo) pObject;
             vString
-                    = vSecteur.getIdSecteur() != null
-                    ? vSecteur.getIdSecteur().toString()
+                    = vTopo.getIdTopo() != null
+                    ? vTopo.getIdTopo().toString()
                     : "";
         } else {
             vString = "";

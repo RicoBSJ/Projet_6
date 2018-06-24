@@ -124,7 +124,6 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     public String doListcom() {
         topo = (Topo) session.get("topo");
         listCommentaire = managerFactory.getCommentaireManager().getCommentaireTopo(topo.getIdTopo());
-        System.out.println(listCommentaire);
         return ActionSupport.SUCCESS;
     }
 
@@ -135,8 +134,6 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     public String doCreate() {
         Utilisateur utilisateur = (Utilisateur) session.get("user");
         topo = (Topo) session.get("topo");
-        System.out.println(topo);
-        System.out.println(utilisateur);
         if (session.get("user") == null){
             return ActionSupport.LOGIN; }
         else {

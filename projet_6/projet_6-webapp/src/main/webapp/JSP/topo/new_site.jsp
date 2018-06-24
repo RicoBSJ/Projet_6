@@ -32,9 +32,14 @@
                 <s:textfield name="site.description" label="Description" requiredLabel="true" class="form-control" theme="simple"/>
                 </br>
             </div>
-            <s:submit value="OK"/>
+            <div class="form-group col-lg-12">
+                <s:select class="form-control"
+                          id="selectTopo" name="idTopoSite" label="Choississez le topo auquel appartiendra le site"
+                          list="{}" listKey="idTopo" listValue="nomTopo"
+                          requiredLabel="true" theme="simple"/>
+            </div>
 
-            <!-- Ajouter un outil pour selectionner le topo -->
+            <s:submit value="Creer le site" class="btn btn-primary btn-sm"/>
         </s:form>
 
         <div class="col-lg-3">
@@ -42,6 +47,12 @@
     </div>
 </div>
 </body>
+
+<script>
+    $(document).ready(function() {
+        getListTopo();
+    });
+</script>
 
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>
 </html>

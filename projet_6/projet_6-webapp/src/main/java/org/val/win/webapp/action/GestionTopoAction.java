@@ -8,16 +8,13 @@ import org.val.win.model.bean.grimpe.Secteur;
 import org.val.win.model.bean.grimpe.Site;
 import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.grimpe.Voie;
-import org.val.win.model.bean.utilisateur.Commentaire;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
-import java.time.temporal.ChronoUnit;
 import java.util.Collections;
 import java.util.List;
-import java.time.LocalDate;
 import java.util.Map;
 
 
@@ -53,6 +50,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     // ==================== Attributs ====================
 
     // ----- Paramètres en entrée
+
     /**
      * id du topo
      */
@@ -67,6 +65,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     private Utilisateur emprunteur;
 
     // ----- Eléments en sortie
+
     /**
      * Liste des topos
      */
@@ -95,68 +94,127 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * secteur
      */
     private Secteur secteur;
-    /**
-     * date d'emprunt
-     */
-    private LocalDate dateEmp = LocalDate.now(); // Recupère date local
-    /**
-     * date de retour
-     */
-    private LocalDate dateRet = dateEmp.plus(1, ChronoUnit.WEEKS); // Ajoute une semaine a la date d'emprunt
 
 
     // ==================== Getters/Setters ====================
 
+    /**
+     * Recuperer l'id d'un topo
+     * @return l'id d'un topo
+     */
     public Integer getIdTopo() {
         return idTopo;
     }
+
+    /**
+     * modifier l'id d'un topo
+     * @param pId le nouvel id
+     */
     public void setIdTopo(Integer pId) {
         idTopo = pId;
     }
+
+    /**
+     * recuperer un topo
+     * @return
+     */
     public Topo getTopo() {
         return topo;
     }
+
+    /**
+     * modifier un topo
+     * @param pTopo le nouveau topo
+     */
     public void setTopo(Topo pTopo) {
         topo = pTopo;
     }
+
+    /**
+     * recuperer un site
+     * @return un site
+     */
     public Site getSite(){ return site;}
+
+    /**
+     * modifier un site
+     * @param pSite le nouveau site
+     */
     public void setSite(Site pSite){
         site = pSite;
     }
+
+    /**
+     * recuperer un secteur
+     * @return un secteur
+     */
     public Secteur getSecteur(){ return secteur;}
+
+    /**
+     * modifier un secteur
+     * @param pSecteur nouveau secteur
+     */
     public void setSecteur(Secteur pSecteur){
         secteur = pSecteur;
     }
+
+    /**
+     * recuprer une liste de topo
+     * @return une liste de topo
+     */
     public List<Topo> getListTopo() {
         return listTopo;
     }
+
+    /**
+     * recuperer une liste de site
+     * @return une liste de site
+     */
     public List<Site> getListSite() {
         return listSite;
     }
+
+    /**
+     * recuperer une liste de secteur
+     * @return une liste de secteur
+     */
     public List<Secteur> getListSecteur() {
         return listSecteur;
     }
+
+    /**
+     * recuperer une liste de voie
+     * @return une liste de voie
+     */
     public List<Voie> getListVoie() {
         return listVoie;
     }
+
+    /**
+     * recuperer un utilisateur
+     * @return
+     */
     public Utilisateur getUtilisateur() {
         return utilisateur;
     }
+
+    /**
+     * recuperer l'emprunteur d'un topo
+     * @return
+     */
     public Utilisateur getEmprunteur(){
         return emprunteur;
     }
+
+    /**
+     * modifier l'emprunteur d'un topo
+     * @param pEmprunteur le nouvel emprunteur
+     */
     public void setEmprunteur(Utilisateur pEmprunteur){
         this.emprunteur = pEmprunteur;
     }
 
     // ==================== Méthodes ====================
-
-    @Override
-    public String execute() {
-        topo = (Topo) session.get("topo");
-        listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
-        return ActionSupport.SUCCESS;
-    }
 
     /**
      * Action listant les {@link Topo}
@@ -189,12 +247,12 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         if (site == null) {
             addActionError("Le site doit être précisé !");
         } else {
-            secteur = managerFactory.getSecteurManager().getSecteur(site.getIdSite(), secteur.getIdSecteur());
+            //secteur = managerFactory.getSecteurManager().getSecteur(site.getIdSite(), secteur.getIdSecteur());
 
-            /*listSecteur.stream()
+            secteur = listSecteur.stream()
                     .filter(p -> p.getIdSecteur().equals(secteur.getIdSecteur()))
                     .findFirst()
-                    .orElseThrow(() -> new NotFoundException("Secteur non trouvé : ID=" + secteur.getIdSecteur())); */
+                    .orElseThrow(() -> new NotFoundException("Secteur non trouvé : ID=" + secteur.getIdSecteur()));
         }
         return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }
@@ -232,6 +290,7 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         } else {
             try {
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
+                listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
                 if (this.topo.getIdEmprunteur() != null) {
                     emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());

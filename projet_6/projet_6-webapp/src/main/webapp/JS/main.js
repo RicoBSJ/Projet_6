@@ -1,3 +1,31 @@
+function getListTopo() {
+    // URL de l'action AJAX
+    var url = "listTopoAjax";
+    // Action AJAX en POST
+    jQuery.post(
+        url,
+        function (data) {
+            var $selectTopo = jQuery("#selectTopo");
+            $selectTopo.empty();
+            jQuery.each(data, function (key, val) {
+                $selectTopo.append(
+                    jQuery("<option>")
+                        .text(val.nomTopo)
+                        .val(val.idTopo)
+                );
+            });
+        })
+        .fail(function (data) {
+            if (typeof data.responseJSON === 'object') {
+                console.log(data.responseJSON);
+            } else {
+                console.log(data);
+            }
+            alert("Une erreur s'est produite.");
+        });
+}
+
+
 function getListSite() {
     // URL de l'action AJAX
     var url = "listSiteAjax";

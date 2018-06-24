@@ -97,14 +97,14 @@
                     <s:select class="form-control"
                               id="selectSite" name="site" label="Site"
                               list="listSite" listKey="idSite" listValue="nomSite"
-                              onchange="getListSecteur(), getSecteurDetail()"/>
+                              onchange="getListSecteur()"/>
                 </s:form>
                 information du site :
                 <ul id="infoSite">
                     <li> Info Site </li>
                 </ul>
                 <s:a action="site_new">
-                    <button class="btn btn-primary btn-sm" type="submit"> Creer un site </button>
+                    <button class="btn btn-primary btn-sm" type="submit">Creer un site </button>
                 </s:a>
             </div>
         </div>
@@ -114,7 +114,7 @@
                 <s:select class="form-control"
                           id="selectSecteur" name="secteur" label="Secteur"
                           list="{}" listKey="idSecteur" listValue="nomSecteur"
-                          onchange="getListVoie()"/>
+                          onchange="getListVoie(), getSecteurDetail()"/>
             </s:form>
             information du secteur :
             <ul id="infoSecteur">
@@ -144,6 +144,8 @@
 
     </div>
 </div>
+
+<h6> test </h6>
 
 <!--
 <div class="row">
@@ -222,6 +224,9 @@
     $( document ).ready(function() {
         getListComAjax();
     });
+    $( document ).ready(function() {
+        getListSite();
+    })
 </script>
 </body>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/CSS/styles.css"/>

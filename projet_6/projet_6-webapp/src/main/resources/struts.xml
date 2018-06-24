@@ -19,16 +19,25 @@
 
         <!-- Action Ajax -->
 
-        <!-- Action list Commentaire -->
+        <!-- Action listant Commentaire -->
         <action name="listComAjax"
                 class="org.val.win.webapp.action.GestionCommentaireAction"
                 method="doListcom">
             <result name="success" type="json">
-                <param name="root">ListCommentaire</param>
+                <param name="root">listCommentaire</param>
             </result>
         </action>
 
-        <!-- Action listant Site -->
+        <!-- Action listant les topos -->
+        <action name="listTopoAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doList">
+            <result name="success" type="json">
+                <param name="root">listTopo</param>
+            </result>
+        </action>
+
+        <!-- Action listant Sites -->
         <action name="listSiteAjax"
                 class="org.val.win.webapp.action.GestionTopoAction"
                 method="doListSite">
