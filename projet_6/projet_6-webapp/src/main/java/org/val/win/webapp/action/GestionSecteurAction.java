@@ -4,6 +4,8 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.apache.struts2.interceptor.SessionAware;
 import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.grimpe.Secteur;
+import org.val.win.model.bean.grimpe.Site;
+import org.val.win.model.bean.grimpe.Topo;
 import org.val.win.model.bean.utilisateur.Utilisateur;
 import org.val.win.model.exception.FunctionalException;
 
@@ -42,6 +44,14 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
      * id du site
      */
     private Integer idSite;
+    /**
+     * Topo du secteur
+     */
+    private Topo topo;
+    /**
+     * Site du secteur
+     */
+    private Site site;
 
     // ----- Paramètres en sortie
 
@@ -101,6 +111,38 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
         secteur = pSecteur;
     }
 
+    /**
+     * recuperer un topo
+     * @return un topo
+     */
+    public Topo getTopo(){
+        return topo;
+    }
+
+    /**
+     * modifier un topo
+     * @param pTopo le nouveau topo
+     */
+    public void setTopo(Topo pTopo) {
+        topo = pTopo;
+    }
+
+    /**
+     * Recuperer un site
+     * @return un site
+     */
+    public Site getSite(){
+        return site;
+    }
+
+    /**
+     * modifier un site
+     * @param pSite le nouveau site
+     */
+    public void setSite(Site pSite){
+        site = pSite;
+    }
+
     // ==================== Méthodes ====================
 
     /**
@@ -108,17 +150,18 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
      * @return le resultat de l'action
      */
     public String doCreate() {
-        Utilisateur utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {
             String vResult = ActionSupport.INPUT;
             if (this.secteur != null) {
                 if (!this.hasErrors()) {
-                    if (this.secteur.getId_topo() == null){
-                        this.secteur.setIdTopo(idTopo);
+                    if (this.secteur.getIdTopo() == null){
+                        this.secteur.setIdTopo(topo.getIdTopo());
+                    } else if (this.secteur.getIdSite() == null){
+                        this.secteur.setIdSite(site.getIdSite());
                     }
-                    else if (this.secteur.getId_site() == null){
+                    else if (this.secteur.getIdSite() == null){
                         this.secteur.setIdSite(idSite);
                     }
                     try {

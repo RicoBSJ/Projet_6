@@ -54,6 +54,39 @@ function getListSite() {
         });
 }
 
+function getListSiteCreation() {
+    // URL de l'action AJAX
+    var url = "listSiteAjax";
+    //paramètre de la requete AJAX
+    var params = {
+        topo : $("#selectTopo").val()
+    };
+    // Action AJAX en POST
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $selectSite = jQuery("#selectSite");
+            $selectSite.empty();
+            console.log(data);
+            jQuery.each(data, function (key, val) {
+                $selectSite.append(
+                    jQuery("<option>")
+                        .text(val.nomSite)
+                        .val(val.idSite)
+                );
+            });
+        })
+        .fail(function (data) {
+            if (typeof data.responseJSON === 'object') {
+                console.log(data.responseJSON);
+            } else {
+                console.log(data);
+            }
+            alert("Une erreur s'est produite.");
+        });
+}
+
 function getListSecteur() {
     // URL de l'action AJAX
     var url = "listSecteurAjax";

@@ -77,7 +77,7 @@ public class Secteur {
      * recuperer l'id du topo
      * @return l'id du topo
      */
-    public Integer getId_topo() {
+    public Integer getIdTopo() {
         return idTopo;
     }
 
@@ -93,7 +93,7 @@ public class Secteur {
      * recuperer l'id du site
      * @return l'id du site
      */
-    public Integer getId_site() {
+    public Integer getIdSite() {
         return idSite;
     }
 

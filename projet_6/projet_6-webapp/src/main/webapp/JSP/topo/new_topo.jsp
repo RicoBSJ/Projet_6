@@ -67,7 +67,7 @@
                 </br>
             </div>
             <div class="form-group col-lg-6">
-                <label for="topo.etat">Voulez vous rendre votre topo disponible aux prets ? </label>
+                <label for="topo.Reservable">Voulez vous rendre votre topo disponible aux prets ? </label>
                 <s:checkbox name="topo.reservable" class="form-control" theme="simple"/>
             </div>
         </div>
@@ -78,7 +78,7 @@
             </br>
         </div>
 
-        <s:submit value="OK" theme="simple"/>
+        <s:submit value="OK" theme="simple" class="btn btn-primary btn-sm"/>
     </s:form>
         <div class="col-lg-3">
         </div>

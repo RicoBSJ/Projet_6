@@ -90,9 +90,9 @@ public class VoieDaoImpl extends AbstractDaoImpl implements VoieDao {
                 "(:idTopo,:idSecteur,:idSite,:hauteur,:cotation,:nom,:description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("idTopo", pVoie.getId_topo());
-        vParams.addValue("idSecteur", pVoie.getId_secteur());
-        vParams.addValue("idSite", pVoie.getId_site());
+        vParams.addValue("idTopo", pVoie.getIdTopo());
+        vParams.addValue("idSecteur", pVoie.getIdSecteur());
+        vParams.addValue("idSite", pVoie.getIdSite());
         vParams.addValue("hauteur", pVoie.getHauteur());
         vParams.addValue("cotation", pVoie.getCotation());
         vParams.addValue("nom", pVoie.getNomVoie());

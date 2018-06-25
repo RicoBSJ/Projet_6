@@ -90,6 +90,14 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
         return site;
     }
 
+    public Topo getTopo() {
+        return topo;
+    }
+
+    public void setTopo(Topo pTopo) {
+        topo = pTopo;
+    }
+
     /**
      * modifier un site
      * @param pSite le site a modifier
@@ -121,14 +129,13 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
      * @return resultat de l'action
      */
     public String doCreate() {
-        Utilisateur utilisateur = (Utilisateur) session.get("user");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {
             String vResult = ActionSupport.INPUT;
             if (this.site != null) {
                 if (site.getIdTopo() == null) {
-                    this.site.setIdTopo(idTopoSite);
+                    this.site.setIdTopo(topo.getIdTopo());
                 }
                 if (!this.hasErrors()) {
                     try {

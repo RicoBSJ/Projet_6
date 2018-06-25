@@ -63,8 +63,8 @@ public class SecteurDaoImpl extends AbstractDaoImpl implements SecteurDao {
                 "(:idTopo,:idSite,:nomSecteur,:difficulte,:orientation,:description)";
 
         MapSqlParameterSource vParams = new MapSqlParameterSource();
-        vParams.addValue("idTopo", pSecteur.getId_topo());
-        vParams.addValue("idSite", pSecteur.getId_site());
+        vParams.addValue("idTopo", pSecteur.getIdTopo());
+        vParams.addValue("idSite", pSecteur.getIdSite());
         vParams.addValue("nomSecteur", pSecteur.getNomSecteur());
         vParams.addValue("difficulte", pSecteur.getDifficulte());
         vParams.addValue("orientation", pSecteur.getOrientation());

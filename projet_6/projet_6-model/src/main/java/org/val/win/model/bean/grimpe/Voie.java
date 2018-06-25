@@ -89,7 +89,7 @@ public class Voie {
      * recuperer l'id du site
      * @return l'id du site
      */
-    public Integer getId_site() {
+    public Integer getIdSite() {
         return idSite;
     }
 
@@ -105,7 +105,7 @@ public class Voie {
      * recuperer l'id du topo
      * @return l'id du topo
      */
-    public Integer getId_topo() {
+    public Integer getIdTopo() {
         return idTopo;
     }
 
@@ -121,7 +121,7 @@ public class Voie {
      * recuperer l'id du secteur
      * @return l'id du secteur
      */
-    public Integer getId_secteur() {
+    public Integer getIdSecteur() {
         return idSecteur;
     }
 
