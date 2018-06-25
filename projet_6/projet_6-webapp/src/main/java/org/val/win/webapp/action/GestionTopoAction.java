@@ -245,14 +245,9 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      */
     public String doDetailSecteur() throws NotFoundException {
         if (site == null) {
-            addActionError("Le site doit être précisé !");
+            addActionError("Le secteur a besoin d'un site !");
         } else {
-            //secteur = managerFactory.getSecteurManager().getSecteur(site.getIdSite(), secteur.getIdSecteur());
-
-            secteur = listSecteur.stream()
-                    .filter(p -> p.getIdSecteur().equals(secteur.getIdSecteur()))
-                    .findFirst()
-                    .orElseThrow(() -> new NotFoundException("Secteur non trouvé : ID=" + secteur.getIdSecteur()));
+            secteur = managerFactory.getSecteurManager().getSecteur(secteur.getIdSecteur(), site.getIdSite());
         }
         return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
     }

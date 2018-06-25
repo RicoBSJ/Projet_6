@@ -9,8 +9,6 @@
 
 <body>
 
-<s:debug />
-
 <div class="row">
     <div class="col-lg-12">
         <div class="col-lg-3">
@@ -91,52 +89,58 @@
         </div>
 
         <div class="col-lg-2">
-            <div class="form-group">
-                <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
+            <div class="cadre">
+                <div class="form-group">
+                    <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
+                    <s:form>
+                        <s:select class="form-control"
+                                  id="selectSite" name="site" label="Site"
+                                  list="listSite" listKey="idSite" listValue="nomSite"
+                                  onchange="getListSecteur()"/>
+                    </s:form>
+                    information du site :
+                    <ul id="infoSite">
+                        <li> Info Site </li>
+                    </ul>
+                    <s:a action="site_new">
+                        <button class="btn btn-primary btn-sm" type="submit">Creer un site </button>
+                    </s:a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-2">
+            <div class="cadre">
                 <s:form>
                     <s:select class="form-control"
-                              id="selectSite" name="site" label="Site"
-                              list="listSite" listKey="idSite" listValue="nomSite"
-                              onchange="getListSecteur()"/>
+                              id="selectSecteur" name="secteur" label="Secteur"
+                              list="{}" listKey="idSecteur" listValue="nomSecteur"
+                              onchange="getListVoie(), getSecteurDetail()"/>
                 </s:form>
-                information du site :
-                <ul id="infoSite">
-                    <li> Info Site </li>
+                information du secteur :
+                <ul id="infoSecteur">
+                    <li><em> Info secteur </em></li>
                 </ul>
-                <s:a action="site_new">
-                    <button class="btn btn-primary btn-sm" type="submit">Creer un site </button>
+                <s:a action="secteur_new">
+                    <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
                 </s:a>
             </div>
         </div>
 
         <div class="col-lg-2">
-            <s:form>
-                <s:select class="form-control"
-                          id="selectSecteur" name="secteur" label="Secteur"
-                          list="{}" listKey="idSecteur" listValue="nomSecteur"
-                          onchange="getListVoie(), getSecteurDetail()"/>
-            </s:form>
-            information du secteur :
-            <ul id="infoSecteur">
-                <li><em> Info secteur </em></li>
-            </ul>
-            <s:a action="secteur_new">
-                <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
-            </s:a>
-        </div>
-
-        <div class="col-lg-2">
-            <s:form>
-                <s:select class="form-control"
-                          id="selectVoie" label="Voie" list="{}"/>
-            </s:form>
-            information de la voie :
-            <ul id="infoVoie">
-                <li> Info voie</li>
-            </ul>
-            <s:a action="voie_new">
-                <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
-            </s:a>
+            <div class="cadre">
+                <s:form>
+                    <s:select class="form-control"
+                              id="selectVoie" label="Voie" list="{}"/>
+                </s:form>
+                information de la voie :
+                <ul id="infoVoie">
+                    <li> Info voie</li>
+                </ul>
+                <s:a action="voie_new">
+                    <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
+                </s:a>
+            </div>
         </div>
 
         <div class="col-lg-3">
@@ -144,41 +148,6 @@
 
     </div>
 </div>
-
-<h6> test </h6>
-
-<!--
-<div class="row">
-    <div class="col-lg-12">
-        <div class="col-lg-3">
-        </div>
-
-        <div class="col-lg-2">
-            information du site :
-            <ul id="infoSite">
-                <li> Info Site </li>
-            </ul>
-        </div>
-
-        <div class="col-lg-2">
-            information du secteur :
-            <ul id="infoSecteur">
-                <li><em> Info secteur </em></li>
-            </ul>
-        </div>
-
-        <div class="col-lg-2">
-            information de la voie :
-            <ul id="infoVoie">
-                <li> Info voie</li>
-            </ul>
-        </div>
-
-        <div class="col-lg-3">
-        </div>
-    </div>
-</div>
--->
 
 <br />
 
@@ -187,17 +156,18 @@
         <div class="col-lg-3">
         </div>
         <div class="col-lg-6">
-            <s:form action="com_new" class="col-lg-6">
-                <s:textarea name="commentaire.text" label="commentaire" class="form-control"/>
-                <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple"/>
-            </s:form>
+            <div class="form-group">
+                <s:form action="com_new" class="col-lg-6">
+                    <label> Dites nous ce que vous pensez du topo : </label>
+                    <s:textarea name="commentaire.text" class="form-control" rows="5" />
+                    <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple"/>
+                </s:form>
+            </div>
         </div>
         <div class="col-lg-3">
         </div>
     </div>
 </div>
-
-<h6>Dite nous ce que vous pensez du topo</h6>
 
 <br />
 
@@ -205,16 +175,20 @@
     <div class="col-lg-12">
         <div class="col-lg-2">
         </div>
-        <div class="col-lg-8">
-            <!--<button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>-->
-            <br />
-            <br/>
-            <ul  id="listCom">
-                <li>
-                    <em> Cliquez pour charger les commentaires.</em>
-                </li>
-            </ul>
-        </div>
+            <div class="col-lg-8">
+                <label> Commentaire du topo </label>
+                <div class="cadre">
+                    <!--<button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>-->
+                    <br />
+                    <br/>
+                    <ul  id="listCom">
+                        <li>
+                            <em> Cliquez pour charger les commentaires.</em>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
         <div class="col-lg-2">
         </div>
     </div>

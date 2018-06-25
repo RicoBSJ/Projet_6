@@ -34,7 +34,7 @@
             </div>
             <div class="form-group col-lg-12">
                 <s:select class="form-control"
-                          id="selectTopo" name="idTopoSite" label="Choississez le topo auquel appartiendra le site"
+                          id="selectTopo" name="topo" label="Choississez le topo auquel appartiendra le site"
                           list="{}" listKey="idTopo" listValue="nomTopo"
                           requiredLabel="true" theme="simple"/>
             </div>

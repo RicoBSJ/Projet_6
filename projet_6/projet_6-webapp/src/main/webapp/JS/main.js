@@ -35,6 +35,7 @@ function getListSite() {
         function (data) {
             var $selectSite = jQuery("#selectSite");
             $selectSite.empty();
+            console.log(data);
             jQuery.each(data, function (key, val) {
                 $selectSite.append(
                     jQuery("<option>")
@@ -130,13 +131,9 @@ function getSecteurDetail() {
         params,
         function (data) {
             var $infoSecteur = jQuery("#infoSecteur");
+            console.log(data);
             $infoSecteur.empty();
-            jQuery.each(data, function (key, val) {
-                $infoSecteur.append(
-                    jQuery("<li>")
-                        .text(val.nomSecteur)
-                );
-            });
+            $infoSecteur.append(data.nomSecteur);
         }).fail(function (data) {
             if (typeof data.responseJSON === 'object'){
                 console.log(data.responseJSON);
