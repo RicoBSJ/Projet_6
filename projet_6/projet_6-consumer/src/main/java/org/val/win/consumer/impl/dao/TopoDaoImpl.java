@@ -16,6 +16,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+
 @Named
 public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
 
@@ -41,7 +42,9 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setDisponible(pRS.getBoolean("disponible"));
                 vTopo.setReservable(pRS.getBoolean("reservable"));
                 vTopo.setRelai(pRS.getString("relai"));
-                vTopo.setRoche((pRS.getString("roche")));
+                vTopo.setRoche(pRS.getString("roche"));
+                vTopo.setDateEmp(pRS.getDate("date_debut_emprunt").toLocalDate());
+                vTopo.setDateRet(pRS.getDate("date_fin_emprunt").toLocalDate());
                 return vTopo;
             }
         };

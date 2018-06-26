@@ -28,7 +28,6 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
     public List<Site> getListSite(Integer id) {
         String vSQL = "SELECT * FROM public.site" +
                       " WHERE id_topo = ?";
-
         RowMapper<Site> vRowMapper = new RowMapper<Site>() {
             public Site mapRow(ResultSet pRS, int pRowNum) throws SQLException {
                 Site vSite = new Site(pRS.getInt("id_site"));
