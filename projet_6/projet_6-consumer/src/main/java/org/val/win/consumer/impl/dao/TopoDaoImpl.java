@@ -43,8 +43,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setReservable(pRS.getBoolean("reservable"));
                 vTopo.setRelai(pRS.getString("relai"));
                 vTopo.setRoche(pRS.getString("roche"));
-                vTopo.setDateEmp(pRS.getDate("date_debut_emprunt").toLocalDate());
-                vTopo.setDateRet(pRS.getDate("date_fin_emprunt").toLocalDate());
+                //vTopo.setDateEmp(pRS.getDate("date_debut_emprunt").toLocalDate());
+                //vTopo.setDateRet(pRS.getDate("date_fin_emprunt").toLocalDate());
                 return vTopo;
             }
         };
