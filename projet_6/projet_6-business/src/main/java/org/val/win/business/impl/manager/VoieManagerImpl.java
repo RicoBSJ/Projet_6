@@ -8,6 +8,7 @@ import org.val.win.consumer.contract.dao.VoieDao;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.val.win.model.bean.grimpe.Voie;
 import org.val.win.model.exception.FunctionalException;
+import org.val.win.model.exception.NotFoundException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -40,6 +41,24 @@ public class VoieManagerImpl extends AbstractManager implements VoieManager {
     @Override
     public List<Voie> getListVoie(Integer id) {
         return voieDao.getListVoie(id);
+    }
+
+    /**
+     * Recuperer une voie
+     * @param idVoie l'id de la voie
+     * @param idSecteur l'id du secteur de la voie
+     * @return une voie
+     * @throws NotFoundException en cas de voie non trouvé
+     */
+    @Override
+    public Voie getVoie(Integer idVoie, Integer idSecteur) throws NotFoundException {
+        List<Voie> listVoie = this.getListVoie(idSecteur);
+        Voie vVoie
+                = listVoie.stream()
+                .filter(p -> p.getIdVoie().equals(idVoie))
+                .findFirst()
+                .orElseThrow(() -> new NotFoundException("Secteur non trouvé : ID=" + idVoie));
+        return vVoie;
     }
 
     /**

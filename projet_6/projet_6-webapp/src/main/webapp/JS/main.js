@@ -1,70 +1,9 @@
-function getListTopo() {
-    // URL de l'action AJAX
-    var url = "listTopoAjax";
-    // Action AJAX en POST
-    jQuery.post(
-        url,
-        function (data) {
-            var $selectTopo = jQuery("#selectTopo");
-            $selectTopo.empty();
-            jQuery.each(data, function (key, val) {
-                $selectTopo.append(
-                    jQuery("<option>")
-                        .text(val.nomTopo)
-                        .val(val.idTopo)
-                );
-            });
-        })
-        .fail(function (data) {
-            if (typeof data.responseJSON === 'object') {
-                console.log(data.responseJSON);
-            } else {
-                console.log(data);
-            }
-            alert("Une erreur s'est produite.");
-        });
-}
-
-
 function getListSite() {
     // URL de l'action AJAX
     var url = "listSiteAjax";
     // Action AJAX en POST
     jQuery.post(
         url,
-        function (data) {
-            var $selectSite = jQuery("#selectSite");
-            $selectSite.empty();
-            console.log(data);
-            jQuery.each(data, function (key, val) {
-                $selectSite.append(
-                    jQuery("<option>")
-                        .text(val.nomSite)
-                        .val(val.idSite)
-                );
-            });
-        })
-        .fail(function (data) {
-            if (typeof data.responseJSON === 'object') {
-                console.log(data.responseJSON);
-            } else {
-                console.log(data);
-            }
-            alert("Une erreur s'est produite.");
-        });
-}
-
-function getListSiteCreation() {
-    // URL de l'action AJAX
-    var url = "listSiteAjax";
-    //paramètre de la requete AJAX
-    var params = {
-        topo : $("#selectTopo").val()
-    };
-    // Action AJAX en POST
-    jQuery.post(
-        url,
-        params,
         function (data) {
             var $selectSite = jQuery("#selectSite");
             $selectSite.empty();
@@ -151,6 +90,34 @@ function getListVoie(){
         });
 }
 
+function getSiteDetail() {
+    //URL de l'action AJAX
+    var url = "detailSiteAjax";
+    //Paramètres de la requête AJAX
+    var params = {
+        site: $("#selectSite").val() + '#' + $("#spanIdTopo").text()
+    };
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $infoSite = jQuery("#infoSite");
+            $infoSite.empty();
+            $infoSite.append(
+                jQuery("<li>")
+                    .append(data.nomSite)
+                    .append(data.altitudePiedVoie)
+                    .append(data.description)
+            );
+        }).fail(function (data) {
+        if (typeof data.responseJSON === 'object'){
+            console.log(data.responseJSON);
+        } else {
+            console.log(data);
+        }
+        alert("Une erreur s'est produite.")
+    });
+}
 
 function getSecteurDetail() {
     // URL de l'action AJAX
@@ -164,7 +131,6 @@ function getSecteurDetail() {
         params,
         function (data) {
             var $infoSecteur = jQuery("#infoSecteur");
-            console.log(data);
             $infoSecteur.empty();
             $infoSecteur.append(data.nomSecteur);
         }).fail(function (data) {
@@ -177,14 +143,29 @@ function getSecteurDetail() {
     });
 }
 
-
-
-function getSiteDetail() {
-
-}
-
 function getVoieDetail() {
-
+    //URL de l'action AJAX
+    var url = "detailVoieAjax";
+    //Paramètres de la requête AJAX
+    var params = {
+        voie: $("#selectVoie").val() + '#' + $("#selectSecteur").val()
+    };
+    jQuery.post(
+        url,
+        params,
+        function (data) {
+            var $infoVoie = jQuery("#infoVoie");
+            console.log(data)
+            $infoVoie.empty();
+            $infoVoie.append(data.nomVoie);
+        }).fail(function (data) {
+        if (typeof data.responseJSON === 'object'){
+            console.log(data.responseJSON);
+        } else {
+            console.log(data);
+        }
+        alert("Une erreur s'est produite.")
+    });
 }
 
 // Récupérer liste de commentaire en ajax

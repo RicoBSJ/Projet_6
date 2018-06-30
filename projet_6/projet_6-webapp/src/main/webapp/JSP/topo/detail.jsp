@@ -95,8 +95,8 @@
                     <s:form>
                         <s:select class="form-control"
                                   id="selectSite" name="site" label="Site"
-                                  list="listSite" listKey="idSite" listValue="nomSite"
-                                  onchange="getListSecteur()"/>
+                                  list="{}" listKey="idSite" listValue="nomSite"
+                                  onchange="getListSecteur(), getSiteDetail()"/>
                     </s:form>
                     information du site :
                     <ul id="infoSite">
@@ -131,7 +131,8 @@
             <div class="cadre">
                 <s:form>
                     <s:select class="form-control"
-                              id="selectVoie" label="Voie" list="{}"/>
+                              id="selectVoie" label="Voie" list="{}"
+                              onchange="getVoieDetail()"/>
                 </s:form>
                 information de la voie :
                 <ul id="infoVoie">
@@ -179,12 +180,11 @@
                 <div class="col-lg-8">
                     <div class="cadre">
                     <label> Commentaire du topo </label>
-                    <!--<button class="btn btn-primary btn-sm" type="submit" onclick="getListComAjax()"> Voir les commentaires</button>-->
                     <br />
                     <br/>
                     <ul  id="listCom">
                         <li>
-                            <em> Cliquez pour charger les commentaires.</em>
+                            <em>commentaires.</em>
                         </li>
                     </ul>
                 </div>

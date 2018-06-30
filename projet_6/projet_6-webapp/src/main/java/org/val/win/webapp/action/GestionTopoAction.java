@@ -239,20 +239,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     /**
-     * Action retournant un secteur
-     * @return un secteur
-     * @throws NotFoundException en cas de secteur non trouvé
-     */
-    public String doDetailSecteur() throws NotFoundException {
-        if (site == null) {
-            addActionError("Le secteur a besoin d'un site !");
-        } else {
-            secteur = managerFactory.getSecteurManager().getSecteur(secteur.getIdSecteur(), site.getIdSite());
-        }
-        return hasErrors() ? ActionSupport.ERROR : ActionSupport.SUCCESS;
-    }
-
-    /**
      * Action listant les sites
      * @return liste de sites
      */
@@ -276,6 +262,30 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
     }
 
     /**
+     * Action retournant un site
+     * @return un secteur
+     */
+    public String doDetailSite() {
+        return ActionSupport.SUCCESS;
+    }
+
+    /**
+     * Action retournant une voie
+     * @return un secteur
+     */
+    public String doDetailVoie() {
+        return ActionSupport.SUCCESS;
+    }
+
+    /**
+     * Action retournant un secteur
+     * @return un secteur
+     */
+    public String doDetailSecteur() {
+        return ActionSupport.SUCCESS;
+    }
+
+    /**
      * Action affichant les détails d'un {@link Topo}
      * @return success / error
      */
@@ -285,7 +295,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
         } else {
             try {
                 topo = managerFactory.getTopoManager().getTopo(idTopo);
-                listSite = managerFactory.getSiteManager().getListSite(topo.getIdTopo());
                 utilisateur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdUtilisateurCreateur());
                 if (this.topo.getIdEmprunteur() != null) {
                     emprunteur = managerFactory.getUtilisateurManager().getUtilisateur(topo.getIdEmprunteur());

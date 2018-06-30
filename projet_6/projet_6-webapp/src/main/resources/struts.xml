@@ -55,6 +55,15 @@
             </result>
         </action>
 
+        <!-- Action listant les voies -->
+        <action name="listVoieAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListVoie">
+            <result name="success" type="json">
+                <param name="root">listVoie</param>
+            </result>
+        </action>
+
         <!-- Action retournant un secteur -->
         <action name="detailSecteurAjax"
                 class="org.val.win.webapp.action.GestionTopoAction"
@@ -64,12 +73,21 @@
             </result>
         </action>
 
-        <!-- Action listant les voies -->
-        <action name="listVoieAjax"
+        <!-- Action retournant un site -->
+        <action name="detailSiteAjax"
                 class="org.val.win.webapp.action.GestionTopoAction"
-                method="doListVoie">
+                method="doDetailSite">
             <result name="success" type="json">
-                <param name="root">listVoie</param>
+                <param name="root">site</param>
+            </result>
+        </action>
+
+        <!-- Action retournant une voie -->
+        <action name="detailVoieAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doDetailVoie">
+            <result name="success" type="json">
+                <param name="root">voie</param>
             </result>
         </action>
 

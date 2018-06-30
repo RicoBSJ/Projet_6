@@ -2,6 +2,7 @@ package org.val.win.business.contract.manager;
 
 import org.val.win.model.bean.grimpe.Voie;
 import org.val.win.model.exception.FunctionalException;
+import org.val.win.model.exception.NotFoundException;
 
 import java.util.List;
 
@@ -23,4 +24,13 @@ public interface VoieManager {
      * @return une liste de voie
      */
     List<Voie> getListVoie(Integer id);
+
+    /**
+     * recuperer une voie
+     * @param idVoie l'id de la voie
+     * @param idSecteur l'id du secteur
+     * @return une voie
+     * @throws NotFoundException en cas de voie non trouvée
+     */
+    Voie getVoie(Integer idVoie, Integer idSecteur) throws NotFoundException;
 }
