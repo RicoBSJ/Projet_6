@@ -155,9 +155,10 @@ function getVoieDetail() {
         params,
         function (data) {
             var $infoVoie = jQuery("#infoVoie");
-            console.log(data)
             $infoVoie.empty();
             $infoVoie.append(data.nomVoie);
+            $infoVoie.append(data.hauteur);
+            $infoVoie.append(data.description)
         }).fail(function (data) {
         if (typeof data.responseJSON === 'object'){
             console.log(data.responseJSON);

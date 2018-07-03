@@ -94,6 +94,10 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * secteur
      */
     private Secteur secteur;
+    /**
+     * voie
+     */
+    private Voie voie;
 
 
     // ==================== Getters/Setters ====================
@@ -156,6 +160,22 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      */
     public void setSecteur(Secteur pSecteur){
         secteur = pSecteur;
+    }
+
+    /**
+     * Recuperer une voie
+     * @return une voie
+     */
+    public Voie getVoie() {
+        return voie;
+    }
+
+    /**
+     * modifier une voie
+     * @param pVoie nouvelle voie
+     */
+    public void setVoie(Voie pVoie) {
+        voie = pVoie;
     }
 
     /**

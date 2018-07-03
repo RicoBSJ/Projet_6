@@ -131,12 +131,13 @@
             <div class="cadre">
                 <s:form>
                     <s:select class="form-control"
-                              id="selectVoie" label="Voie" list="{}"
+                              id="selectVoie" name="voie" label="Voie"
+                              list="{}" listKey="idVoie" listValue="nomVoie"
                               onchange="getVoieDetail()"/>
                 </s:form>
                 information de la voie :
                 <ul id="infoVoie">
-                    <li> Info voie</li>
+                    <li> Info voie </li>
                 </ul>
                 <s:a action="voie_new">
                     <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
