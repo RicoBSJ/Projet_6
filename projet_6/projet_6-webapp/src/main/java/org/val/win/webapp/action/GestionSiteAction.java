@@ -90,10 +90,18 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
         return site;
     }
 
+    /**
+     * recuperer un topo
+     * @return un topo
+     */
     public Topo getTopo() {
         return topo;
     }
 
+    /**
+     * modifier un topo
+     * @param pTopo le nouveau topo
+     */
     public void setTopo(Topo pTopo) {
         topo = pTopo;
     }
@@ -129,6 +137,7 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
      * @return resultat de l'action
      */
     public String doCreate() {
+        topo = (Topo) session.get("topo");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {

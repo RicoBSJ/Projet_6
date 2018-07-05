@@ -40,4 +40,10 @@ public interface TopoManager {
      * @throws FunctionalException en cas d'erreur
      */
     void emprunt(Topo pTopo, Utilisateur pUtilisateur) throws FunctionalException;
+
+    /**
+     *
+     * @param pTopo topo a rendre
+     */
+    void retour(Topo pTopo) throws FunctionalException;
 }

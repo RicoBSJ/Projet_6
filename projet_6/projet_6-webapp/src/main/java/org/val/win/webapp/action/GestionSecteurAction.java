@@ -150,6 +150,7 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
      * @return le resultat de l'action
      */
     public String doCreate() {
+        topo = (Topo) session.get("topo");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {

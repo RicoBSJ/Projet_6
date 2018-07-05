@@ -55,19 +55,7 @@ public class Topo {
     /**
      * reservable disponibilité du topo
      */
-    private Boolean reservable;
-    /**
-     * Disponibilité du topo
-     */
     private Boolean disponible;
-    /**
-     * date d'emprunt du topo
-     */
-    private LocalDate dateEmp;
-    /**
-     * date de retour du topo
-     */
-    private LocalDate dateRet;
 
 
 
@@ -267,54 +255,6 @@ public class Topo {
     }
 
     /**
-     * recuperer la date d'emprunt du topo
-     * @return la date d'emprunt
-     */
-    public LocalDate getDateEmp(){
-        return dateEmp;
-    }
-
-    /**
-     * modifier la date d'emprunt
-     * @param pDateEmp nouvelle date d'emprunt
-     */
-    public void setDateEmp(LocalDate pDateEmp){
-        this.dateEmp = pDateEmp;
-    }
-
-    /**
-     * recuperer la date de retour du topo
-     * @return la date de retour
-     */
-    public LocalDate getDateRet(){
-        return dateRet;
-    }
-
-    /**
-     * modifier la date de retour d'un topo
-     * @param pDateRet nouvelle date de retour
-     */
-    public void setDateRet(LocalDate pDateRet){
-        this.dateRet = pDateRet;
-    }
-
-    /**
-     * recuperer la disponibilité d'un topo
-     * @return l'reservable du topo
-     */
-    public Boolean getReservable(){
-        return reservable;
-    }
-
-    /**
-     * modifier la disponibilité d'un topo
-     * @param pEtat possibilité de reserver un topo
-     */
-    public void setReservable(Boolean pEtat) {
-        reservable = pEtat;
-    }
-
-    /**
      * Recuperer la disponibilité d'un topo
      * @return
      */
@@ -351,10 +291,7 @@ public class Topo {
                 .append(vSEP).append("profil =\"").append(profil).append('"')
                 .append(vSEP).append("ancrage =\"").append(ancrage).append('"')
                 .append(vSEP).append("relai = \"").append(relai).append('"')
-                .append(vSEP).append("reservable =\"").append(reservable).append('"')
                 .append(vSEP).append("Disponibilité =\"").append(disponible).append('"')
-                .append(vSEP).append("Date d'emprunt = \"").append(dateEmp).append('"')
-                .append(vSEP).append("Date de retour = \"").append(dateRet).append('"')
                 .append("}");
         return vStB.toString();
     }

@@ -29,6 +29,12 @@ public interface TopoDao {
     void emprunt(final Topo pTopo);
 
     /**
+     * Rendre un topo
+     * @param pTopo le topo a rendre
+     */
+    void retour(final Topo pTopo);
+
+    /**
      * mise a jour des informations d'un topo
      * @param pTopo le topo a modifier
      */

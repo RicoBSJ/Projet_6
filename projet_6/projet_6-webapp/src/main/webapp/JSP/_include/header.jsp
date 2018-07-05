@@ -22,7 +22,6 @@
                 <s:if test="#session.check == 'true'">
                     <s:a action="utilisateur_detail" theme="simple">
                         <span>Vous etes connecté <s:property value="#session.user.prenom"/> </span>
-                        <s:param name="id" value="#session.user.id" />
                         <br />
                     </s:a>
                     <s:a action="logout" theme="simple">

@@ -90,8 +90,6 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
      */
     @Override
     public void emprunt(Topo pTopo, Utilisateur pUtilisateur) {
-        LocalDate dateEmp = LocalDate.now(); // Recupère date local
-        LocalDate dateRet = dateEmp.plus(1, ChronoUnit.WEEKS); // Ajoute une semaine a la date d'emprunt
         TransactionTemplate vTransactionTemplate
                 = new TransactionTemplate(platformTransactionManager);
         vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
@@ -99,24 +97,31 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
                 pTopo.setIdEmprunteur(pUtilisateur.getIdUtilisateur());
-                pTopo.setDateEmp(dateEmp);
-                pTopo.setDateRet(dateRet);
+                pTopo.setDisponible(true);
                 topoDao.emprunt(pTopo);
             }
         });
     }
+
+    /**
+     * Methode pour l'emprunt
+     * @param pTopo topo a emprunter
+     * @throws FunctionalException en cas d'erreur
+     */
+    @Override
+    public void retour(Topo pTopo) {
+        TransactionTemplate vTransactionTemplate
+                = new TransactionTemplate(platformTransactionManager);
+        vTransactionTemplate.execute(new TransactionCallbackWithoutResult() {
+            @Override
+            protected void doInTransactionWithoutResult(TransactionStatus
+                                                                pTransactionStatus) {
+                pTopo.setIdEmprunteur(null);
+                pTopo.setDisponible(false);
+                topoDao.emprunt(pTopo);
+            }
+        });
+    }
+
+
 }
-
-/*
-if (this.topo.getDateRet() != null && this.topo.getDateRet().isAfter(LocalDate.now())){
-        this.topo.setDateEmp(null);
-        this.topo.setDateRet(null);
-        this.topo.setIdEmprunteur(null);
-        try {
-        managerFactory.getTopoManager().emprunt(this.topo, utilisateur);
-        } catch (FunctionalException pEx) {
-        this.addActionMessage(pEx.getMessage());
-        }
-        }
-
-*/

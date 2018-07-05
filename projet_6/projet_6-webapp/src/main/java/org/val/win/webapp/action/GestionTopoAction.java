@@ -392,4 +392,28 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
             return vResult;
         }
     }
+
+    /**
+     * Rendre un topo
+     * @return le topo a retourner
+     */
+    public String RendreTopo(){
+        topo = (Topo) session.get("topo");
+        utilisateur = (Utilisateur) session.get("user");
+        if(session.get("user") == null){
+            return ActionSupport.LOGIN; }
+        else {
+            String vResult = Action.INPUT;
+            if (!this.hasErrors()) {
+                try {
+                    managerFactory.getTopoManager().retour(topo);
+                    vResult = ActionSupport.SUCCESS;
+                    this.addActionMessage("Topo rendu avec Succès");
+                } catch (FunctionalException pEx) {
+                    this.addActionMessage(pEx.getMessage());
+                }
+            }
+            return vResult;
+        }
+    }
 }

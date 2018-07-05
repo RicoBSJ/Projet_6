@@ -38,22 +38,13 @@
                 </br>
             </div>
             <div class="form-group col-lg-12">
-                <label for="selectTopo"> Choississez le topo de votre secteur </label>
-                <s:select class="form-control"
-                          id="selectTopo" name="topo"
-                          list="{}" listKey="idTopo" listValue="nomTopo"
-                          requiredLabel="true" theme="simple"
-                          onchange="getListSiteCreation()"/>
-            </div>
-            <div class="form-group col-lg-12">
                 <label for="selectSite"> Choisissez le site de votre secteur </label>
                 <s:select class="form-control"
-                          id="selectSite" name="site"
+                          id="selectSite" name="site" label="Site"
                           list="{}" listKey="idSite" listValue="nomSite"
                           requiredLabel="true" theme="simple"/>
             </div>
 
-            <!-- Ajouter un outil pour selectionner le topo et le site  -->
             <s:submit value="OK" class="btn btn-primary btn-sm"/>
         </s:form>
 
@@ -65,7 +56,7 @@
 
 <script>
     $(document).ready(function() {
-        getListTopo();
+        getListSite();
     });
 </script>
 

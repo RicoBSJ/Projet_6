@@ -39,23 +39,17 @@
                 </br>
             </div>
             <div class="form-group col-lg-12">
+                <label for="selectSite"> Choisissez le site de votre voie </label>
                 <s:select class="form-control"
-                          id="selectTopo" name="topo" label="Choississez le topo auquel appartiendra la voie"
-                          list="{}" listKey="idTopo" listValue="nomTopo"
-                          requiredLabel="true" theme="simple"
-                          onchange="getListSite()"/>
-            </div>
-            <div class="form-group col-lg-12">
-                <label for="selectSite"> Choisissez le site de votre secteur </label>
-                <s:select class="form-control"
-                          id="selectSite" name="site" label="Cjhoississez le site auquel appartient la voie"
+                          id="selectSite" name="site" label="Site"
                           list="{}" listKey="idSite" listValue="nomSite"
                           requiredLabel="true" theme="simple"
                           onchange="getListSecteur()"/>
             </div>
             <div class="form-group col-lg-12">
+                <label for="selectSecteur"> Choisissez le secteur de votre voie </label>
                 <s:select class="form-control"
-                          id="selectSecteur" name="secteur" label="Choississez le secteur auquel appartient la voie"
+                          id="selectSecteur" name="secteur" label="Secteur"
                           list="{}" listKey="idSecteur" listValue="nomSecteur"
                           requiredLabel="true" theme="simple" />
             </div>
@@ -71,7 +65,7 @@
 
 <script>
     $(document).ready(function() {
-        getListTopo();
+        getListSite();
     });
 </script>
 

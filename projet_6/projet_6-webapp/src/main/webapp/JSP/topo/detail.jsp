@@ -61,16 +61,19 @@
         <div class="col-lg-3">
         </div>
         <div class="col-lg-6">
-            <s:if test="topo.etat == false ">
-                Le topo est indisponible
+            <s:if test="topo.disponible == false ">
+                Le topo est indisponible, il a été emprunté par : <s:property value="emprunteur.pseudonyme"/>
             </s:if>
-            <s:elseif test="topo.idEmprunteur != null" >
-                <h3> Le topo a été emprunté par : <s:property value="emprunteur.pseudonyme"/> </h3>
-            </s:elseif>
-            <s:elseif test="topo.idEmprunteur == null && topo.etat == true">
+            <s:elseif test="topo.idEmprunteur == null && topo.disponible == true">
                 <h3> Voulez vous emprunter ce topo ? </h3>
                 <s:a action="reserver">
                     <button class="btn btn-primary btn-sm" type="submit"> Reserver </button>
+                </s:a>
+            </s:elseif>
+            <s:elseif test="#session.user.idUtilisateur == topo.idEmprunteur">
+                <h3> Voulez vous rendre ce topo ?</h3>
+                <s:a action="rendre">
+                    <button class="btn btn-primary btn-sm" type="submit"> Rendre le topo </button>
                 </s:a>
             </s:elseif>
         </div>

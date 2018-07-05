@@ -264,6 +264,16 @@
             <result name="login" type="redirectAction">login</result>
         </action>
 
+        <action name="rendre"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="RendreTopo">
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
     </package>
 
 </struts>

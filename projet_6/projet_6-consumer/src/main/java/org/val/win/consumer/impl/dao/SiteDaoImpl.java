@@ -88,6 +88,6 @@ public class SiteDaoImpl extends AbstractDaoImpl implements SiteDao {
                 "WHERE id_site = :idSite";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pSite);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
-        int vNbrLigneMaJ = vJdbcTemplate.update(vSQL, vParams);
+        vJdbcTemplate.update(vSQL, vParams);
     }
 }

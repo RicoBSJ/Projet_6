@@ -34,8 +34,8 @@
                         <td><s:property value ="roche" /></td>
                         <td><s:property value ="region" /></td>
                         <td><s:property value ="lieu" /></td>
-                        <td><s:if test="etatReservable == true && disponible == true">Disponible</s:if>
-                            <s:elseif test="etatReservable==false || disponible == false">Indisponible</s:elseif></td>
+                        <td><s:if test="disponible == true">Disponible</s:if>
+                            <s:else> Indisponibile </s:else></td>
                         <td><a href="<s:url namespace="/" action="topo_detail"><s:param name="idTopo" value="%{idTopo}" /></s:url>">
                             <button type="button" class="btn btn-info"> <span class="glyphicon glyphicon-eye-open"></span></button>
                         </a> </td>

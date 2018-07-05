@@ -214,7 +214,7 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
      * @return le resultat de l'action
      */
     public String doCreate() {
-        Utilisateur utilisateur = (Utilisateur) session.get("user");
+        topo = (Topo) session.get("topo");
         if (session.get("user") == null) {
             return ActionSupport.LOGIN; }
         else {

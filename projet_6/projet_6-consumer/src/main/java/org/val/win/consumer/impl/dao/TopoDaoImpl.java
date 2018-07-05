@@ -40,12 +40,8 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 vTopo.setProfil(pRS.getString("profil"));
                 vTopo.setRegion(pRS.getString("region"));
                 vTopo.setDisponible(pRS.getBoolean("disponible"));
-                vTopo.setReservable(pRS.getBoolean("reservable"));
                 vTopo.setRelai(pRS.getString("relai"));
                 vTopo.setRoche(pRS.getString("roche"));
-                // mettre les pRS dans un if
-                //vTopo.setDateEmp(pRS.getDate("date_debut_emprunt").toLocalDate());
-                //vTopo.setDateRet(pRS.getDate("date_fin_emprunt").toLocalDate());
                 return vTopo;
             }
         };
@@ -69,12 +65,11 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 "  roche,\n" +
                 "  profil,\n" +
                 "  ancrage,\n" +
-                "  reservable,\n" +
                 "  disponible,\n" +
                 "  relai,\n" +
                 "  description)\n" +
                 "VALUES\n" +
-                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :reservable, :disponible, :relai, :description)";
+                "(:idUtilisateurCreateur, :nomTopo, :region, :lieu, :roche, :profil, :ancrage, :disponible, :relai, :description)";
 
         SqlParameterSource vParams = new MapSqlParameterSource()
 
@@ -85,7 +80,6 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
                 .addValue("roche", pTopo.getRoche())
                 .addValue("profil", pTopo.getProfil())
                 .addValue("ancrage", pTopo.getAncrage())
-                .addValue("etatReservable", pTopo.getReservable())
                 .addValue("disponible", pTopo.getDisponible())
                 .addValue("relai", pTopo.getRelai())
                 .addValue("description", pTopo.getDescription());
@@ -104,13 +98,25 @@ public class TopoDaoImpl extends AbstractDaoImpl implements TopoDao {
     @Override
     public void emprunt(final Topo pTopo){
         String vSQL = "UPDATE public.topo " +
-                "SET date_debut_emprunt =:dateEmp, " +
-                "date_fin_emprunt =:dateRet, " +
+                "SET disponible =:disponible, " +
                 "id_emprunteur =:idEmprunteur " +
                 "WHERE id_topo =:idTopo";
         SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
         NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
         vJdbcTemplate.update(vSQL, vParams);
+    }
+
+    @Override
+    public void retour(final Topo pTopo) {
+        String vSQL = "UPDATE public.topo " +
+                "SET disponible =:disponible, " +
+                "id_emprunteur =:idEmprunteur " +
+                "WHERE id_topo =:idTopo";
+
+        SqlParameterSource vParams = new BeanPropertySqlParameterSource(pTopo);
+        NamedParameterJdbcTemplate vJdbcTemplate = new NamedParameterJdbcTemplate(getDataSource());
+        vJdbcTemplate.update(vSQL, vParams);
+
     }
 
     /**
