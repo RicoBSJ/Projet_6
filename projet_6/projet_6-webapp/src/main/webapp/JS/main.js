@@ -155,9 +155,7 @@ function getSecteurDetail() {
 }
 
 function getVoieDetail() {
-    //URL de l'action AJAX
     var url = "detailVoieAjax";
-    //Paramètres de la requête AJAX
     var params = {
         voie: $("#selectVoie").val() + '#' + $("#selectSecteur").val()
     };

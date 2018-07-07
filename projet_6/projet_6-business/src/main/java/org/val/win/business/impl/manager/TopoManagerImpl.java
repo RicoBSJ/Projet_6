@@ -97,7 +97,7 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
                 pTopo.setIdEmprunteur(pUtilisateur.getIdUtilisateur());
-                pTopo.setDisponible(true);
+                pTopo.setDisponible(false);
                 topoDao.emprunt(pTopo);
             }
         });
@@ -117,7 +117,7 @@ public class TopoManagerImpl extends AbstractManager implements TopoManager {
             protected void doInTransactionWithoutResult(TransactionStatus
                                                                 pTransactionStatus) {
                 pTopo.setIdEmprunteur(null);
-                pTopo.setDisponible(false);
+                pTopo.setDisponible(true);
                 topoDao.emprunt(pTopo);
             }
         });

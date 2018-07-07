@@ -70,12 +70,12 @@
                     <button class="btn btn-primary btn-sm" type="submit"> Reserver </button>
                 </s:a>
             </s:elseif>
-            <s:elseif test="#session.user.idUtilisateur == topo.idEmprunteur">
+            <s:if test="#session.idUtilisateur == topo.idEmprunteur">
                 <h3> Voulez vous rendre ce topo ?</h3>
                 <s:a action="rendre">
                     <button class="btn btn-primary btn-sm" type="submit"> Rendre le topo </button>
                 </s:a>
-            </s:elseif>
+            </s:if>
         </div>
         <div class="col-lg-3">
         </div>
