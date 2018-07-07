@@ -156,20 +156,19 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
         else {
             String vResult = ActionSupport.INPUT;
             if (this.secteur != null) {
+                if (secteur.getIdTopo() == null) {
+                    this.secteur.setIdTopo(topo.getIdTopo());
+                }
+                if (site.getIdSite() == null) {
+                    this.secteur.setIdSite(site.getIdSite());
+                }
+                System.out.println(secteur);
                 if (!this.hasErrors()) {
-                    if (this.secteur.getIdTopo() == null){
-                        this.secteur.setIdTopo(topo.getIdTopo());
-                    } else if (this.secteur.getIdSite() == null){
-                        this.secteur.setIdSite(site.getIdSite());
-                    }
-                    else if (this.secteur.getIdSite() == null){
-                        this.secteur.setIdSite(idSite);
-                    }
                     try {
-                        managerFactory.getSecteurManager().insertSecteur(this.secteur);
+                        managerFactory.getSecteurManager().insertSecteur(secteur);
                         // Si ajout avec succès -> Result "success"
                         vResult = ActionSupport.SUCCESS;
-                        this.addActionMessage("Voie ajouté avec succès");
+                        this.addActionMessage("Topo ajouté avec succès");
                     } catch (FunctionalException pEx) {
                         // Sur erreur fonctionnelle on reste sur la page de saisie
                         // et on affiche un message d'erreur

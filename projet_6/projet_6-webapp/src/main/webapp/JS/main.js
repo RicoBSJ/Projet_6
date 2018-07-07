@@ -106,7 +106,9 @@ function getSiteDetail() {
             $infoSite.append(
                 jQuery("<li>")
                     .append(data.nomSite)
+                    .append("<br />")
                     .append(data.altitudePiedVoie)
+                    .append("<br />")
                     .append(data.description)
             );
         }).fail(function (data) {
@@ -132,7 +134,16 @@ function getSecteurDetail() {
         function (data) {
             var $infoSecteur = jQuery("#infoSecteur");
             $infoSecteur.empty();
-            $infoSecteur.append(data.nomSecteur);
+            $infoSecteur.append(
+                jQuery("<li>")
+                    .append(data.nomSecteur)
+                    .append("<br />")
+                    .append(data.orientation)
+                    .append("<br />")
+                    .append(data.difficulte)
+                    .append("<br />")
+                    .append(data.description)
+            );
         }).fail(function (data) {
             if (typeof data.responseJSON === 'object'){
                 console.log(data.responseJSON);
@@ -156,9 +167,16 @@ function getVoieDetail() {
         function (data) {
             var $infoVoie = jQuery("#infoVoie");
             $infoVoie.empty();
-            $infoVoie.append(data.nomVoie);
-            $infoVoie.append(data.hauteur);
-            $infoVoie.append(data.description)
+            $infoVoie.append(
+                jQuery("<li>")
+                    .append(data.nomVoie)
+                    .append("<br />")
+                    .append(data.hauteur)
+                    .append("<br />")
+                    .append(data.cotation)
+                    .append("<br />")
+                    .append(data.description)
+            );
         }).fail(function (data) {
         if (typeof data.responseJSON === 'object'){
             console.log(data.responseJSON);

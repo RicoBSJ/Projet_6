@@ -346,7 +346,6 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
                 if (topo.getIdUtilisateurCreateur() == null) {
                     this.topo.setIdUtilisateurCreateur(utilisateur.getIdUtilisateur());
                 }
-                System.out.println(topo);
                 // Si pas d'erreur, ajout du topo...
                 if (!this.hasErrors()) {
                     try {

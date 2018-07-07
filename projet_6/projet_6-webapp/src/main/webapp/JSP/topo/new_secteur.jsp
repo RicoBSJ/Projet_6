@@ -38,6 +38,7 @@
                 </br>
             </div>
             <div class="form-group col-lg-12">
+                <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
                 <label for="selectSite"> Choisissez le site de votre secteur </label>
                 <s:select class="form-control"
                           id="selectSite" name="site" label="Site"

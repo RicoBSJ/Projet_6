@@ -223,13 +223,13 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
                 System.out.println(this.voie);
                 if (!this.hasErrors()) {
                     if (this.voie.getIdTopo() == null){
-                        this.voie.setIdTopo(idTopo);
+                        this.voie.setIdTopo(topo.getIdTopo());
                     }
                     else if (this.voie.getIdSite() == null){
-                        this.voie.setIdSite(idSite);
+                        this.voie.setIdSite(site.getIdSite());
                     }
                     else if (this.voie.getIdSecteur() == null){
-                        this.voie.setIdSecteur(idSecteur);
+                        this.voie.setIdSecteur(secteur.getIdSecteur());
                     }
                     try {
                         managerFactory.getVoieManager().insertVoie(this.voie);
