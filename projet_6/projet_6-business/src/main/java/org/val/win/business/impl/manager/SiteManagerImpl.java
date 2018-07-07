@@ -47,7 +47,7 @@ public class SiteManagerImpl extends AbstractManager implements SiteManager {
                 = listSite.stream()
                 .filter(p -> p.getIdSite().equals(idSite))
                 .findFirst()
-                .orElseThrow(() -> new NotFoundException("Projet non trouvé : ID=" + idSite));
+                .orElseThrow(() -> new NotFoundException("Site non trouvé : ID=" + idSite));
         return vSite;
     }
 

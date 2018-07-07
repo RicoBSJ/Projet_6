@@ -165,6 +165,7 @@ function getVoieDetail() {
         url,
         params,
         function (data) {
+            console.log(data);
             var $infoVoie = jQuery("#infoVoie");
             $infoVoie.empty();
             $infoVoie.append(

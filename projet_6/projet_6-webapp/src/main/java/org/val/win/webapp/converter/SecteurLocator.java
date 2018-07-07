@@ -1,26 +1,23 @@
 package org.val.win.webapp.converter;
 
-import com.opensymphony.xwork2.conversion.TypeConversionException;
+import java.util.Map;
+import javax.inject.Inject;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.struts2.util.StrutsTypeConverter;
+import com.opensymphony.xwork2.conversion.TypeConversionException;
 import org.val.win.business.contract.ManagerFactory;
 import org.val.win.model.bean.grimpe.Secteur;
 import org.val.win.model.exception.NotFoundException;
 
-import javax.inject.Inject;
-import java.util.Map;
 
 /**
  * Locator d'{@link Secteur} via son idt.
  */
 public class SecteurLocator extends StrutsTypeConverter {
 
-    /**
-     * Recuperer manager Factory
-     */
     @Inject
     private ManagerFactory managerFactory;
-
 
     @Override
     public Object convertFromString(Map pContext, String[] pValues, Class pToClass) {
@@ -29,26 +26,24 @@ public class SecteurLocator extends StrutsTypeConverter {
             if (pValues.length == 1) {
                 String vValue = pValues[0];
                 String [] tokens = vValue.split("#");
-                String secteurID = tokens[0].trim();
-                String siteID = tokens[1].trim();
+                String siteID = tokens[0].trim();
+                String topoID = tokens[1].trim();
                 try {
                     vRetour
                             = StringUtils.isEmpty(vValue)
                             ? null
-                            : managerFactory.getSecteurManager().getSecteur(new Integer(secteurID), new Integer(siteID));
+                            : managerFactory.getSecteurManager().getSecteur(new Integer(siteID), new Integer(topoID));
                 } catch (NumberFormatException pEx) {
-                    throw new TypeConversionException("Format d'identifiant du secteur invalide", pEx);
+                    throw new TypeConversionException("Format d'identifiant du Secteur invalide", pEx);
                 } catch (NotFoundException pEx) {
-                    throw new TypeConversionException("Secteur Introuvable", pEx);
+                    throw new TypeConversionException("Secteur introuvable", pEx);
                 }
             } else {
                 vRetour = performFallbackConversion(pContext, pValues, pToClass);
             }
         }
-
         return vRetour;
     }
-
 
     @Override
     public String convertToString(Map pContext, Object pObject) {

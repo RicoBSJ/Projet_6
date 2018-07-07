@@ -57,7 +57,7 @@ public class VoieManagerImpl extends AbstractManager implements VoieManager {
                 = listVoie.stream()
                 .filter(p -> p.getIdVoie().equals(idVoie))
                 .findFirst()
-                .orElseThrow(() -> new NotFoundException("Secteur non trouvé : ID=" + idVoie));
+                .orElseThrow(() -> new NotFoundException("Voie non trouvé : ID=" + idVoie));
         return vVoie;
     }
 
