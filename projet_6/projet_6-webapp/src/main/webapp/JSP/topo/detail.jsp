@@ -114,37 +114,41 @@
 
         <div class="col-lg-2">
             <div class="cadre">
-                <s:form>
-                    <s:select class="form-control"
-                              id="selectSecteur" name="secteur" label="Secteur"
-                              list="{}" listKey="idSecteur" listValue="nomSecteur"
-                              onchange="getListVoie(), getSecteurDetail()"/>
-                </s:form>
-                information du secteur :
-                <ul id="infoSecteur">
-                    <li><em> Info secteur </em></li>
-                </ul>
-                <s:a action="secteur_new">
-                    <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
-                </s:a>
+                <div class="form-group">
+                    <s:form>
+                        <s:select class="form-control"
+                                  id="selectSecteur" name="secteur" label="Secteur"
+                                  list="{}" listKey="idSecteur" listValue="nomSecteur"
+                                  onchange="getListVoie(), getSecteurDetail()"/>
+                    </s:form>
+                    information du secteur :
+                    <ul id="infoSecteur">
+                        <li><em> Info secteur </em></li>
+                    </ul>
+                    <s:a action="secteur_new">
+                        <button class="btn btn-primary btn-sm" type="submit"> Creer un secteur </button>
+                    </s:a>
+                </div>
             </div>
         </div>
 
         <div class="col-lg-2">
             <div class="cadre">
-                <s:form>
-                    <s:select class="form-control"
-                              id="selectVoie" name="voie" label="Voie"
-                              list="{}" listKey="idVoie" listValue="nomVoie"
-                              onchange="getVoieDetail()"/>
-                </s:form>
-                information de la voie :
-                <ul id="infoVoie">
-                    <li> Info voie </li>
-                </ul>
-                <s:a action="voie_new">
-                    <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
-                </s:a>
+                <div class="form-group">
+                    <s:form>
+                        <s:select class="form-control"
+                                  id="selectVoie" name="voie" label="Voie"
+                                  list="{}" listKey="idVoie" listValue="nomVoie"
+                                  onchange="getVoieDetail()"/>
+                    </s:form>
+                    information de la voie :
+                    <ul id="infoVoie">
+                        <li> Info voie </li>
+                    </ul>
+                    <s:a action="voie_new">
+                        <button class="btn btn-primary btn-sm" type="submit"> Creer une voie </button>
+                    </s:a>
+                </div>
             </div>
         </div>
 

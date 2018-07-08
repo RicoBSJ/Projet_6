@@ -185,24 +185,6 @@
             <result name="login" type="redirectAction">login</result>
         </action>
 
-        <!-- Actions permettant de créer un secteur -->
-
-        <action name="secteur_new"
-                class="org.val.win.webapp.action.GestionSecteurAction"
-                method="doCreate">
-            <interceptor-ref name="store">
-                <param name="operationMode">STORE</param>
-            </interceptor-ref>
-            <interceptor-ref name="defaultStack" />
-
-            <result name="input">/JSP/topo/new_secteur.jsp</result>
-            <result name="success" type="redirectAction">
-                <param name="actionName">topo_detail</param>
-                <param name="idTopo">${topo.id}</param>
-            </result>
-            <result name="login" type="redirectAction">login</result>
-        </action>
-
         <!-- Actions permettant de creer un site -->
 
         <action name="site_new"
@@ -217,6 +199,24 @@
             <result name="success" type="redirectAction">
                 <param name="actionName">topo_detail</param>
                 <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+        <!-- Actions permettant de créer un secteur -->
+
+        <action name="secteur_new"
+                class="org.val.win.webapp.action.GestionSecteurAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/topo/new_secteur.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.id}</param>
             </result>
             <result name="login" type="redirectAction">login</result>
         </action>

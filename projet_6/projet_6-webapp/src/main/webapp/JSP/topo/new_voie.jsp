@@ -18,6 +18,7 @@
         </div>
 
         <s:form action="voie_new" class="col-lg-6" theme="simple">
+            <span id="spanIdTopo" style="display: none;"><s:property value ="#session.topo.idTopo" /></span>
             <div class="form-group col-lg-12">
                 <label for="voie.nomVoie">Nom de la voie : </label>
                 <s:textfield name="voie.nomVoie" label="Nom du site" requiredLabel="true" class="form-control" theme="simple" />
@@ -39,7 +40,6 @@
                 </br>
             </div>
             <div class="form-group col-lg-12">
-                <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
                 <label for="selectSite"> Choisissez le site de votre voie </label>
                 <s:select class="form-control"
                           id="selectSite" name="site" label="Site"
@@ -53,9 +53,10 @@
                           id="selectSecteur" name="secteur" label="Secteur"
                           list="{}" listKey="idSecteur" listValue="nomSecteur"
                           requiredLabel="true" theme="simple" />
+                <br />
             </div>
 
-            <s:submit value="OK" class="btn btn-primary btn-sm"/>
+            <s:submit value="Creer la voie" class="btn btn-primary btn-sm"/>
         </s:form>
 
         <div class="col-lg-3">

@@ -15,8 +15,8 @@
     <div class="col-lg-12">
         <div class="col-lg-3">
         </div>
-
         <s:form action="secteur_new" class="col-lg-6" theme="simple">
+            <span id="spanIdTopo" style="display: none;"><s:property value ="#session.topo.idTopo" /></span>
             <div class="form-group col-lg-12">
                 <label for="secteur.nomSecteur">Nom du secteur : </label>
                 <s:textfield name="secteur.nomSecteur" label="Nom du secteur" requiredLabel="true" class="form-control" theme="simple"/>
@@ -38,21 +38,21 @@
                 </br>
             </div>
             <div class="form-group col-lg-12">
-                <span id="spanIdTopo" style="display: none;"><s:property value ="topo.IdTopo" /></span>
                 <label for="selectSite"> Choisissez le site de votre secteur </label>
                 <s:select class="form-control"
                           id="selectSite" name="site" label="Site"
                           list="{}" listKey="idSite" listValue="nomSite"
                           requiredLabel="true" theme="simple"/>
             </div>
+            <s:submit value="Creer le secteur" class="btn btn-primary btn-sm"/>
 
-            <s:submit value="OK" class="btn btn-primary btn-sm"/>
         </s:form>
 
         <div class="col-lg-3">
         </div>
     </div>
 </div>
+
 </body>
 
 <script>

@@ -31,6 +31,7 @@ public class GestionUtilisateurAction extends ActionSupport {
 
 
     // ==================== Getters/Setters ====================
+
     public Integer getId() {
         return id;
     }

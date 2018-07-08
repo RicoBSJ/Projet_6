@@ -36,14 +36,7 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     // ----- Paramètres en entrée
 
-    /**
-     * id du topo
-     */
-    private Integer idTopo;
-    /**
-     * id du site
-     */
-    private Integer idSite;
+
     /**
      * Topo du secteur
      */
@@ -52,6 +45,11 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
      * Site du secteur
      */
     private Site site;
+
+    /**
+     * id du site
+     */
+    private Integer idSite;
 
     // ----- Paramètres en sortie
 
@@ -63,36 +61,12 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     // ==================== Getters/Setters ====================
 
-    /**
-     * recuperer l'id d'un topo
-     * @return l'id d'un topo
-     */
-    public Integer getIdTopo(){
-        return idTopo;
+    public Integer getIdSite() {
+        return getIdSite();
     }
 
-    /**
-     * modifier l'id d'un topo
-     * @param pId
-     */
-    public void setIdTopo(Integer pId) {
-        idTopo = pId;
-    }
-
-    /**
-     * recuperer l'id d'un site
-     * @return l'id d'un site
-     */
-    public Integer getIdSite(){
-        return idSite;
-    }
-
-    /**
-     * modifier l'id d'un site
-     * @param pId modifier id site
-     */
-    public void setIdSite(Integer pId){
-        idSite = pId;
+    public void setIdSite(Integer pIdSite){
+        idSite = pIdSite;
     }
 
     /**
@@ -155,12 +129,13 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
             return ActionSupport.LOGIN; }
         else {
             String vResult = ActionSupport.INPUT;
-            if (this.secteur != null) {
+            if (this.secteur != null) { // L'action se stop ici
                 if (secteur.getIdTopo() == null) {
                     this.secteur.setIdTopo(topo.getIdTopo());
                 }
                 if (site.getIdSite() == null) {
-                    this.secteur.setIdSite(site.getIdSite());
+                    System.out.print(idSite);
+                    this.secteur.setIdSite(idSite);
                 }
                 System.out.println(secteur);
                 if (!this.hasErrors()) {
