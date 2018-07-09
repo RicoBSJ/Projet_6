@@ -8,6 +8,7 @@ INSERT INTO public.topo (
   profil,
   ancrage,
   relai,
+  disponible,
   description
 )
 VALUES
@@ -25,17 +26,17 @@ VALUES
   'Topo très ensoleillé, decors somptueux'
 ),
 (
-    4,
-    'El topo',
-    1,
-    'Auvergne',
-    'Marcher 5km en partant du moulin',
-    'Roche volcanique de l espace',
-    'Vertical et tout sauf horizontale',
-    'Type Collinox',
-    'relai bien solide',
-    'false',
-    'Magnifique topo denant lieu de te très belle histoire'
+  4,
+  'El topo',
+  1,
+  'Auvergne',
+  'Marcher 5km en partant du moulin',
+  'Roche volcanique de l espace',
+  'Vertical et tout sauf horizontale',
+  'Type Collinox',
+  'relai bien solide',
+  'false',
+  'Magnifique topo denant lieu de te très belle histoire'
 ),
 (
   4,
@@ -47,9 +48,8 @@ VALUES
   'profil3',
   'ancrage3',
   'relai3',
-  'description3',
-  NULL,
-  NULL
+  'true',
+  'description3'
 ),
 (
   4,
@@ -61,9 +61,8 @@ VALUES
   'profil2',
   'ancrage2',
   'relai2',
-  'description',
-  NULL,
-  NULL
+  'true',
+  'description2'
 ),
 (
   4,
@@ -75,9 +74,8 @@ VALUES
   'profil3',
   'ancrage3',
   'relai3',
-  'description3',
-  NULL,
-  NULL
+  'true',
+  'description3'
 ),
 (
   19,
@@ -89,9 +87,8 @@ VALUES
   'profil4',
   'ancrage4',
   'relai4',
-  'description4',
-  NULL,
-  NULL
+  'true',
+  'description4'
 ),
 (
   1,
@@ -103,9 +100,8 @@ VALUES
   'profil5',
   'ancrage5',
   'relai5',
-  'description5',
-  NULL,
-  NULL
+  'true',
+  'description5'
 ),
 (
   20,
@@ -117,9 +113,8 @@ VALUES
   'profil6',
   'ancrage6',
   'relai6',
-  'description6',
-  NULL,
-  NULL
+  'true',
+  'description6'
 ),
 (
   2,
@@ -131,9 +126,8 @@ VALUES
   'profil7',
   'ancrage7',
   'relai7',
-  'description7',
-  NULL,
-  NULL
+  'true',
+  'description7'
 ),
 (
   4,
@@ -145,9 +139,8 @@ VALUES
   'profil8',
   'ancrage8',
   'relai8',
-  'description8',
-  NULL,
-  NULL
+  'true',
+  'description8'
 ),
 (
   18,
@@ -159,9 +152,8 @@ VALUES
   'profil9',
   'ancrage9',
   'relai9',
-  'description9',
-  NULL,
-  NULL
+  'true',
+  'description9'
 );
 
 INSERT INTO public.voie (

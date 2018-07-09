@@ -1,0 +1,1 @@
+CREATE DATABASE p6 OWNER postgres

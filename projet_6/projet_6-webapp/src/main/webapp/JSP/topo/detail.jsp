@@ -64,13 +64,16 @@
             <s:if test="topo.disponible == false ">
                 Le topo est indisponible, il a été emprunté par : <s:property value="emprunteur.pseudonyme"/>
             </s:if>
-            <s:elseif test="topo.idEmprunteur == null && topo.disponible == true">
+            <s:if test="#session.check != 'true'">
+                <h4> Connectez vous pour voir les informations du topo </h4>
+            </s:if>
+            <s:elseif test="topo.idEmprunteur == null && topo.disponible == true && #session.check == 'true'">
                 <h3> Voulez vous emprunter ce topo ? </h3>
                 <s:a action="reserver">
                     <button class="btn btn-primary btn-sm" type="submit"> Reserver </button>
                 </s:a>
             </s:elseif>
-            <s:if test="#session.idUtilisateur == topo.idEmprunteur">
+            <s:if test="#session.idUtilisateur == topo.idEmprunteur && #session.check == 'true'">
                 <h3> Voulez vous rendre ce topo ?</h3>
                 <s:a action="rendre">
                     <button class="btn btn-primary btn-sm" type="submit"> Rendre le topo </button>
@@ -162,18 +165,18 @@
 
 <div class="row">
     <div class="col-lg-12">
-        <div class="col-lg-3">
+        <div class="col-lg-2">
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-8">
             <div class="form-group">
-                <s:form action="com_new" class="col-lg-6">
-                    <label> Dites nous ce que vous pensez du topo : </label>
-                    <s:textarea name="commentaire.text" class="form-control" rows="5" />
-                    <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple" onclick="getListComAjax"/>
+                <s:form action="com_new">
+                    <label> Dites nous ce que vous pensez du topo : <s:submit value="Envoyer" class="btn btn-primary btn-sm"
+                                                                              theme="simple" onclick="getListComAjax"/></label>
+                    <s:textarea name="commentaire.text" class="form-control" cols="200" rows="7"/>
                 </s:form>
             </div>
         </div>
-        <div class="col-lg-3">
+        <div class="col-lg-2">
         </div>
     </div>
 </div>
@@ -181,12 +184,12 @@
 <br />
 
 <div class="row">
-    <div class="commentaire">
-        <div class="col-lg-12">
-            <div class="col-lg-2">
-            </div>
-                <div class="col-lg-8">
-                    <div class="cadre">
+    <div class="col-lg-12">
+        <div class="col-lg-2">
+        </div>
+        <div class="col-lg-8">
+            <div class="cadre">
+                <div class="commentaire">
                     <label> Commentaire du topo </label>
                     <br />
                     <br/>
@@ -197,10 +200,9 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="col-lg-2">
-            </div>
         </div>
+         <div class="col-lg-2">
+         </div>
     </div>
 </div>
 

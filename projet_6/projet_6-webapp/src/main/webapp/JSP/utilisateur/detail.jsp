@@ -12,12 +12,12 @@
 
 <ul>
 
-    <li>Nom : <s:property value="utilisateur.nom" /></li>
-    <li>Prénom : <s:property value="utilisateur.prenom" /></li>
-    <li>Mail : <s:property value="utilisateur.mail" /></li>
-    <li>Mot de passe : <s:property value = "utilisateur.MotDePasse" /></li>
-    <li>Pseudonyme : <s:property value = "utilisateur.pseudonyme" /></li>
-    <li>Telephone : <s:property value = "utilisateur.tel" /></li>
+    <li>Nom : <s:property value="session.user.nom" /></li>
+    <li>Prénom : <s:property value="session.user.prenom" /></li>
+    <li>Mail : <s:property value="session.user.mail" /></li>
+    <li>Mot de passe : <s:property value = "session.user.MotDePasse" /></li>
+    <li>Pseudonyme : <s:property value = "session.user.pseudonyme" /></li>
+    <li>Telephone : <s:property value = "session.user.tel" /></li>
 
 </ul>
 </body>

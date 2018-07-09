@@ -28,7 +28,7 @@ CREATE TABLE public.topo (
                 profil VARCHAR(100) NOT NULL,
                 ancrage VARCHAR(100) NOT NULL,
                 relai VARCHAR(100) NOT NULL,
-                etat BOOLEAN NOT NULL,
+                disponible BOOLEAN NOT NULL,
                 description VARCHAR(500) NOT NULL,
                 CONSTRAINT topo_pk PRIMARY KEY (id_topo)
 );

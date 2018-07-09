@@ -14,7 +14,7 @@ function getListSite() {
                         .text(val.nomSite)
                         .val(val.idSite)
                 );
-            });
+            }); $("#selectSite").trigger("change");
         })
         .fail(function (data) {
             if (typeof data.responseJSON === 'object') {
@@ -46,7 +46,7 @@ function getListSecteur() {
                         .text(val.nomSecteur)
                         .val(val.idSecteur)
                 );
-            });
+            }); $("#selectSecteur").trigger("change");
         })
         .fail(function (data) {
             if (typeof data.responseJSON === 'object') {
@@ -76,9 +76,9 @@ function getListVoie(){
                 $selectVoie.append(
                     jQuery("<option>")
                         .text(val.nomVoie)
-                        .val(val.nomVoie)
+                        .val(val.idVoie)
                 );
-            });
+            }); $("#selectVoie").trigger("change");
         })
         .fail(function (data) {
             if(typeof data.responseJSON === 'object') {

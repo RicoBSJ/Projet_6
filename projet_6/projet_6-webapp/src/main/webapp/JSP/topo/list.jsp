@@ -21,9 +21,9 @@
                 <tr>
                     <th>Nom du topo</th>
                     <th>Type de roche</th>
-                    <th>Region</th>
+                    <th>Région</th>
                     <th>Lieu</th>
-                    <th>Etat</th>
+                    <th>État</th>
                     <th>Detail</th>
                 </tr>
                 </thead>
@@ -53,7 +53,11 @@
 
 <script>
     $(document).ready(function() {
-        $('#listTopo').DataTable();
+        $('#listTopo').DataTable( {
+            "language": {
+                "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/French.json" }
+            }
+        );
     });
 </script>
 <script src="${pageContext.request.contextPath}/JS/main.js"></script>
