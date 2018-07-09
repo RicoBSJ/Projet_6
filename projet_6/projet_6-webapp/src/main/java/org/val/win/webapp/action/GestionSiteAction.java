@@ -102,7 +102,6 @@ public class GestionSiteAction extends ActionSupport implements SessionAware {
                 if (!this.hasErrors()) {
                     try {
                         managerFactory.getSiteManager().insertSite(this.site);
-                        System.out.println(site);
                         // Si ajout avec succès -> Result "success"
                         vResult = ActionSupport.SUCCESS;
                         this.addActionMessage("Voie ajouté avec succès");

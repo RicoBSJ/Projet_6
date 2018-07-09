@@ -38,21 +38,9 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
     // ----- Paramètres en entrée
 
     /**
-     * id de la voie
-     */
-    private Integer idVoie;
-    /**
      * id du topo
      */
     private Integer idTopo;
-    /**
-     * id du site
-     */
-    private Integer idSite;
-    /**
-     * id du secteur
-     */
-    private Integer idSecteur;
 
     /**
      * Topo de la voie
@@ -77,6 +65,15 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
     private Voie voie;
 
     // ==================== Getters/Setters ====================
+
+
+    public Integer getIdTopo() {
+        return idTopo;
+    }
+
+    public void setIdTopo(Integer pId){
+        idTopo = pId;
+    }
 
     /**
      * modifier une voie
@@ -156,7 +153,6 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
         else {
             String vResult = ActionSupport.INPUT;
             if (this.voie != null) {
-                System.out.println(this.voie);
                 if (!this.hasErrors()) {
                     if (this.voie.getIdTopo() == null){
                         this.voie.setIdTopo(topo.getIdTopo());
@@ -182,7 +178,4 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
             return vResult;
         }
     }
-
-
-
 }
