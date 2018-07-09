@@ -7,6 +7,8 @@
     <%@ include file="../_include/header.jsp" %>
 </head>
 
+<s:debug />
+
 <body>
 
 <h2>Création d'un Site</h2>
@@ -40,6 +42,8 @@
         </div>
     </div>
 </div>
+
+
 </body>
 
 

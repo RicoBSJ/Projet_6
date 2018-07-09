@@ -7,6 +7,8 @@
     <%@ include file="../_include/header.jsp" %>
 </head>
 
+<s:debug />
+
 <body>
 
 <h2>Création d'un secteur</h2>
@@ -40,10 +42,11 @@
             <div class="form-group col-lg-12">
                 <label for="selectSite"> Choisissez le site de votre secteur </label>
                 <s:select class="form-control"
-                          id="selectSite" name="site" label="Site"
+                          id="selectSite" name="secteur.idSite" label="Site"
                           list="{}" listKey="idSite" listValue="nomSite"
                           requiredLabel="true" theme="simple"/>
             </div>
+
             <s:submit value="Creer le secteur" class="btn btn-primary btn-sm"/>
 
         </s:form>

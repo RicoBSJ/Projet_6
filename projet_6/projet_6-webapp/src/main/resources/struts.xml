@@ -248,7 +248,10 @@
                 <param name="operationMode">STORE</param>
             </interceptor-ref>
             <interceptor-ref name="defaultStack" />
-            <result name="success"> listComAjax.action </result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
             <result name="login" type="redirectAction">login</result>
         </action>
 

@@ -46,11 +46,6 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
      */
     private Site site;
 
-    /**
-     * id du site
-     */
-    private Integer idSite;
-
     // ----- Paramètres en sortie
 
     /**
@@ -60,14 +55,6 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
 
     // ==================== Getters/Setters ====================
-
-    public Integer getIdSite() {
-        return getIdSite();
-    }
-
-    public void setIdSite(Integer pIdSite){
-        idSite = pIdSite;
-    }
 
     /**
      * recuperer un secteur
@@ -129,13 +116,9 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
             return ActionSupport.LOGIN; }
         else {
             String vResult = ActionSupport.INPUT;
-            if (this.secteur != null) { // L'action se stop ici
+            if (this.secteur != null) {
                 if (secteur.getIdTopo() == null) {
                     this.secteur.setIdTopo(topo.getIdTopo());
-                }
-                if (site.getIdSite() == null) {
-                    System.out.print(idSite);
-                    this.secteur.setIdSite(idSite);
                 }
                 System.out.println(secteur);
                 if (!this.hasErrors()) {

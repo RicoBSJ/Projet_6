@@ -181,9 +181,9 @@ public class Secteur {
         final StringBuilder vStB = new StringBuilder(this.getClass().getSimpleName());
         final String vSEP = ", ";
         vStB.append(" {")
-                .append("Secteur idSecteur =\"").append(idSecteur).append('"')
-                .append("Site idSecteur = \"").append(idSite).append('"')
-                .append("topo idSecteur = \"").append(idTopo).append('"')
+                .append("id secteur =\"").append(idSecteur).append('"')
+                .append("id site = \"").append(idSite).append('"')
+                .append("id topo = \"").append(idTopo).append('"')
                 .append(vSEP).append("nom =\"").append(nomSecteur).append('"')
                 .append(vSEP).append("description =\"").append(description).append('"')
                 .append(vSEP).append("orientation =\"").append(orientation).append('"')
