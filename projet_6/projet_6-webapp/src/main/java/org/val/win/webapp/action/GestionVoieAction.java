@@ -67,10 +67,18 @@ public class GestionVoieAction extends ActionSupport implements SessionAware {
     // ==================== Getters/Setters ====================
 
 
+    /**
+     * recuperer l'id du topo
+     * @return l'id du topo
+     */
     public Integer getIdTopo() {
         return idTopo;
     }
 
+    /**
+     * modifier l'id du topo
+     * @param pId le nouvel id
+     */
     public void setIdTopo(Integer pId){
         idTopo = pId;
     }

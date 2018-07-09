@@ -63,6 +63,7 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
 
     /**
      * recuperer l'id d'un topo
+     * @return l'id du topo
      */
     public Integer getIdTopo(){
         return idTopo;

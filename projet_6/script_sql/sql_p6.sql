@@ -21,10 +21,10 @@ CREATE TABLE public.topo (
                 id_topo INTEGER NOT NULL DEFAULT nextval('public.topo_id_topo_seq'),
                 id_utilisateur_createur INTEGER NOT NULL,
                 nom_topo VARCHAR(100) NOT NULL,
-                id_empreunteur INTEGER,
+                id_emprunteur INTEGER,
                 region VARCHAR(50) NOT NULL,
                 lieu VARCHAR(100) NOT NULL,
-                rocher VARCHAR(50) NOT NULL,
+                roche VARCHAR(50) NOT NULL,
                 profil VARCHAR(100) NOT NULL,
                 ancrage VARCHAR(100) NOT NULL,
                 relai VARCHAR(100) NOT NULL,
@@ -104,7 +104,7 @@ ON UPDATE NO ACTION
 NOT DEFERRABLE;
 
 ALTER TABLE public.topo ADD CONSTRAINT utilisateur_topo_fk
-FOREIGN KEY (id_utilisateur_possesseur)
+FOREIGN KEY (id_utilisateur_createur)
 REFERENCES public.utilisateur (id_utilisateur)
 ON DELETE NO ACTION
 ON UPDATE NO ACTION

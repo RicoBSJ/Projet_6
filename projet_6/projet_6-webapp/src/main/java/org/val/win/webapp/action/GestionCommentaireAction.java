@@ -59,6 +59,22 @@ public class GestionCommentaireAction extends ActionSupport implements SessionAw
     // ==================== Getters/Setters ====================
 
     /**
+     * recuperer l'id topo
+     * @return l'id du topo
+     */
+    public Integer getIdTopo(){
+        return idTopo;
+    }
+
+    /**
+     * modifier l'id du topo
+     * @param pId nouvel id
+     */
+    public void setIdTopo(Integer pId){
+        idTopo = pId;
+    }
+
+    /**
      * recuperer un topo
      * @return un topo
      */
