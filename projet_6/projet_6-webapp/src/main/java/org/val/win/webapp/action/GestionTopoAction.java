@@ -310,6 +310,9 @@ public class GestionTopoAction extends ActionSupport implements SessionAware {
      * @return success / error
      */
     public String doDetail() {
+        /*if (this.session.containsKey(topo)) {
+            this.session.remove("topo");
+        }*/
         if (idTopo == null) {
             this.addActionError(getText("error.topo.missing.id"));
         } else {
