@@ -169,7 +169,7 @@
                 <s:form action="com_new" class="col-lg-6">
                     <label> Dites nous ce que vous pensez du topo : </label>
                     <s:textarea name="commentaire.text" class="form-control" rows="5" />
-                    <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple"/>
+                    <s:submit value="Envoyer" class="btn btn-primary btn-sm" theme="simple" onclick="getListComAjax"/>
                 </s:form>
             </div>
         </div>
