@@ -1029,7 +1029,7 @@ VALUES
   'cotation95',
   98,
   'descriptionV95'
-)
+);
 
 
 
@@ -1041,7 +1041,7 @@ INSERT INTO public.site (
 )
 VALUES
 (
-  '1'
+  1,
   'Le super Site',
   'Site ensoleillé parfait pour les week ends de grimpe',
   '456 pieds'
@@ -1588,7 +1588,7 @@ VALUES
   'S+50',
   'O50',
   'description50'
-),
+);
 
 
 INSERT INTO public.utilisateur (
@@ -1597,7 +1597,8 @@ INSERT INTO public.utilisateur (
   mail,
   telephone,
   admin,
-  mot_de_passe
+  mot_de_passe,
+  pseudonyme
 )
 VALUES
 (
@@ -1606,7 +1607,8 @@ VALUES
   'jean.latulipe@gmail.com',
   '0659465765',
   'false',
-  'jLatulipe'
+  'jLatulipe',
+  'tutue'
 ),
 (
   'Monsieur',
@@ -1614,7 +1616,8 @@ VALUES
   'chef.chef@laposte.net',
   '0139455346',
   'true',
-  'IMTHEBOSS'
+  'IMTHEBOSS',
+  'chefchef'
 ),
 (
   'tutu',
@@ -1622,7 +1625,8 @@ VALUES
   'francis.tutu@orange.fr',
   '0758475849',
   'false',
-  'capitainetutu'
+  'capitainetutu',
+  'fratu'
 ),
 (
   'luigi',
@@ -1630,8 +1634,9 @@ VALUES
   'lr@sfr.fr',
   '0456545678',
   'false',
-  'pasta'
-)
+  'pasta',
+  'choupi'
+),
 (
   'nom6',
   'prénom6',

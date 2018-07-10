@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+    <package name="ajax" extends="default, json-default">
+
+        <global-results>
+            <result name="error" type="json">
+                <param name="statusCode">400</param>
+                <param name="includeProperties">actionErrors.*,fieldErrors.*</param>
+                <!-- Pour accéder au attributs des classes parentes à la classe d'action -->
+                <param name="ignoreHierarchy">false</param>
+
+            </result>
+
+        </global-results>
+
+        <!-- Action Ajax -->
+
+        <!-- Action listant Commentaire -->
+        <action name="listComAjax"
+                class="org.val.win.webapp.action.GestionCommentaireAction"
+                method="doListcom">
+            <result name="success" type="json">
+                <param name="root">listCommentaire</param>
+            </result>
+        </action>
+
+        <!-- Action listant les topos -->
+        <action name="listTopoAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doList">
+            <result name="success" type="json">
+                <param name="root">listTopo</param>
+            </result>
+        </action>
+
+        <!-- Action listant Sites -->
+        <action name="listSiteAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListSite">
+            <result name="success" type="json">
+                <param name="root">listSite</param>
+            </result>
+        </action>
+
+        <!-- Action listant les secteurs -->
+        <action name="listSecteurAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListSecteur">
+            <result name="success" type="json">
+                <param name="root">listSecteur</param>
+            </result>
+        </action>
+
+        <!-- Action listant les voies -->
+        <action name="listVoieAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doListVoie">
+            <result name="success" type="json">
+                <param name="root">listVoie</param>
+            </result>
+        </action>
+
+        <!-- Action retournant un secteur -->
+        <action name="detailSecteurAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doDetailSecteur">
+            <result name="success" type="json">
+                <param name="root">secteur</param>
+            </result>
+        </action>
+
+        <!-- Action retournant un site -->
+        <action name="detailSiteAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doDetailSite">
+            <result name="success" type="json">
+                <param name="root">site</param>
+            </result>
+        </action>
+
+        <!-- Action retournant une voie -->
+        <action name="detailVoieAjax"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doDetailVoie">
+            <result name="success" type="json">
+                <param name="root">voie</param>
+            </result>
+        </action>
+
+
+    </package>
+
+    <package name="default" extends="struts-default" >
+
+        <!-- Action par défaut -->
+
+        <default-action-ref name="index" />
+
+        <!-- Page Erreur -->
+
+        <global-results>
+            <result name="error">/JSP/error.jsp</result>
+        </global-results>
+
+        <!-- Action "index" -->
+
+        <action name="index">
+            <result>/JSP/index.jsp</result>
+        </action>
+
+        <!-- Action affichant le détail d'un utilisateur -->
+
+        <action name="utilisateur_detail"
+                class="org.val.win.webapp.action.GestionUtilisateurAction"
+                method="doDetail">
+            <result>/JSP/utilisateur/detail.jsp</result>
+        </action>
+
+        <!-- Actions permettant de créer un utilisateur -->
+
+        <action name="utilisateur_new"
+                class="org.val.win.webapp.action.GestionUtilisateurAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/utilisateur/new_utilisateur.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">login</param>
+            </result>
+        </action>
+
+        <!-- Actions Login/Logout -->
+
+        <action name="login" class="org.val.win.webapp.action.LoginAction" method="doLogin">
+            <result name="input">/JSP/login.jsp</result>
+            <result name="success" type="redirectAction">index</result>
+        </action>
+        <action name="logout" class="org.val.win.webapp.action.LoginAction" method="doLogout">
+            <result type="redirectAction">index</result>
+        </action>
+
+        <!-- Action listant les topo -->
+
+        <action name="topo_list"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doList">
+            <result>/JSP/topo/list.jsp</result>
+        </action>
+
+        <!-- Action affichant le détail d'un topo    -->
+
+        <action name="topo_detail"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doDetail">
+            <param name="idTopo"/>
+            <interceptor-ref name="store">
+                <param name="operationMode">RETRIEVE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+            <result>/JSP/topo/detail.jsp</result>
+        </action>
+
+        <!-- Actions permettant de créer un topo -->
+
+        <action name="topo_new"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="doCreate">
+        <interceptor-ref name="store">
+            <param name="operationMode">STORE</param>
+        </interceptor-ref>
+        <interceptor-ref name="defaultStack" />
+
+        <result name="input">/JSP/topo/new_topo.jsp</result>
+        <result name="success" type="redirectAction">
+            <param name="actionName">topo_detail</param>
+            <param name="idTopo">${topo.id}</param>
+        </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+        <!-- Actions permettant de creer un site -->
+
+        <action name="site_new"
+                class="org.val.win.webapp.action.GestionSiteAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/topo/new_site.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+        <!-- Actions permettant de créer un secteur -->
+
+        <action name="secteur_new"
+                class="org.val.win.webapp.action.GestionSecteurAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/topo/new_secteur.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+        <!-- Actions permettant de creer une voie -->
+
+        <action name="voie_new"
+                class="org.val.win.webapp.action.GestionVoieAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+
+            <result name="input">/JSP/topo/new_voie.jsp</result>
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+        <!-- Actions permettant de creer un commentaire -->
+
+        <action name="com_new"
+                class="org.val.win.webapp.action.GestionCommentaireAction"
+                method="doCreate">
+            <interceptor-ref name="store">
+                <param name="operationMode">STORE</param>
+            </interceptor-ref>
+            <interceptor-ref name="defaultStack" />
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+        <!-- Action pour reserver un topo -->
+
+        <action name="reserver"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="EmpruntTopo">
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+        <action name="rendre"
+                class="org.val.win.webapp.action.GestionTopoAction"
+                method="RendreTopo">
+            <result name="success" type="redirectAction">
+                <param name="actionName">topo_detail</param>
+                <param name="idTopo">${topo.idTopo}</param>
+            </result>
+            <result name="login" type="redirectAction">login</result>
+        </action>
+
+    </package>
+
+</struts>
