@@ -12,3 +12,4 @@ Le site permet de :
 
 Le site est contruit a l'aide de struts 2, spring jdbc, spring TX et une base de donnée Postgresql
 
+Les scripts de création de la base de donnée sont disponibles dans le dossier script_sql qui se trouve dans le dossier parent du projet
