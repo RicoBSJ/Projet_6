@@ -3,6 +3,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
 
+    <!-- =============================================================== -->
+    <!-- Propriétés -->
+    <!-- =============================================================== -->
+    <properties>
+        <!-- Le nom "public" de l'application -->
+        <application.name>Topo</application.name>
+        <!-- Le format à utiliser pour afficher la date du build -->
+        <maven.build.timestamp.format>dd/MM/yyyy</maven.build.timestamp.format>
+        <!-- Propriété servant à contourner le bug du non remplacement
+             de la propriété maven.build.timestamp lors du filtrage des ressources -->
+        <buildTimestamp>${maven.build.timestamp}</buildTimestamp>
+    </properties>
+
   <parent>
     <groupId>org.vw.daj</groupId>
     <artifactId>projet_6</artifactId>
@@ -80,6 +93,19 @@
               <configuration>
                   <source>1.8</source>
                   <target>1.8</target>
+              </configuration>
+          </plugin>
+
+          <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-war-plugin</artifactId>
+              <version>3.1.0</version>
+              <configuration>
+                  <webResources>
+                      <resource>
+                          <directory> src/main/webapp/JSP</directory>
+                      </resource>
+                  </webResources>
               </configuration>
           </plugin>
       </plugins>

@@ -141,7 +141,6 @@ public class GestionSecteurAction extends ActionSupport implements SessionAware{
                 if (secteur.getIdTopo() == null) {
                     this.secteur.setIdTopo(topo.getIdTopo());
                 }
-                System.out.println(secteur);
                 if (!this.hasErrors()) {
                     try {
                         managerFactory.getSecteurManager().insertSecteur(secteur);

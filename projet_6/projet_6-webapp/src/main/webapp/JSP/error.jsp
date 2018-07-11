@@ -4,6 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <head>
+        <%@ include file="_include/header.jsp"%>
+    </head>
     <meta charset="UTF-8">
     <title>Projet 6</title>
 </head>

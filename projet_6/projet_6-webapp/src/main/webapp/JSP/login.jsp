@@ -9,9 +9,6 @@
 </head>
 
 <body>
-<s:actionerror/>
-<s:actionmessage/>
-
 
 </body>
 

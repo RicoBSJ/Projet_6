@@ -1,4 +1,3 @@
-
 CREATE SEQUENCE public.utilisateur_id_utilisateur_seq;
 
 CREATE TABLE public.utilisateur (
