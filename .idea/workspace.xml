@@ -2,24 +2,294 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="projet_6-webapp:war exploded" />
+      <artifact name="projet_6-webapp:war" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/script_sql/sql_p6.sql" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6/script_sql/sql_p6.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet_6-business/projet_6-business.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet_6-consumer/projet_6-consumer.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet_6-model/projet_6-model.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet_6-technical/projet_6-technical.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet_6-webapp/projet_6-webapp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/projet_6.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Projet_6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/artifacts/projet_6_webapp_war.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/artifacts/projet_6_webapp_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__ognl_ognl_3_1_15.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_struts_struts2_core_2_5_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_struts_struts2_spring_plugin_2_5_14_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_freemarker_freemarker_2_3_26_incubating.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_postgresql_postgresql_unknown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_aop_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_beans_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_context_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_core_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_expression_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_tx_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_web_4_3_11_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/projet_6-business.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SiteManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/TopoManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/VoieManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/CommentaireManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/VoieManagerImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/test/java/org/val/win/business/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/businessContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/ManagerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/CommentaireManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/SecteurManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/SiteManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/TopoManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/UtilisateurManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/VoieManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/ManagerFactoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/AbstractManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/CommentaireManagerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/CommentaireManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SecteurManagerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SecteurManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SiteManagerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SiteManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/UtilisateurManagerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/UtilisateurManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/VoieManagerImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/VoieManagerImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/test-classes/org/val/win/business/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/projet_6-consumer.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/CommentaireDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SecteurDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SiteDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/TopoDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/VoieDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/CommentaireDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/TopoDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/VoieDaoImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/test/java/org/val/win/consumer/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/consumerContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/CommentaireDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/SecteurDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/SiteDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/TopoDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/UtilisateurDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/VoieDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/AbstractDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/CommentaireDaoImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/CommentaireDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SecteurDaoImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SecteurDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SiteDaoImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SiteDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/TopoDaoImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/TopoDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/VoieDaoImpl$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/VoieDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/test-classes/org/val/win/consumer/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/projet_6-model.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Topo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/FunctionalException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/TechnicalException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/test/java/org/val/win/model/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Secteur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Site.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Topo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Voie.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/utilisateur/Commentaire.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/utilisateur/Utilisateur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/exception/FunctionalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/exception/NotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/exception/TechnicalException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/test-classes/org/val/win/model/AppTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/projet_6-technical.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/src/main/resources/log4j2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/src/test/java/org/val/win/technical/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/TopoLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/VoieLocator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/xwork-conversion.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/CSS/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_secteur.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_site.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_topo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_voie.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/new_utilisateur.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/bootstrap/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/bootstrap/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/bootstrapContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionCommentaireAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionSecteurAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionSiteAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionTopoAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionUtilisateurAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionVoieAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/LoginAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/SecteurLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/SiteLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/TopoLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/VoieLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/struts.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/webapp/webappContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/xwork-conversion.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/CSS/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JS/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/_include/header.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/error.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_secteur.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_site.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_topo.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_voie.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/utilisateur/detail.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/utilisateur/new_utilisateur.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/bootstrap/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/bootstrap/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/bootstrapContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionCommentaireAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionSecteurAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionSiteAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionTopoAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionUtilisateurAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionVoieAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/LoginAction.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/SecteurLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/SiteLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/TopoLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/VoieLocator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/struts.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/struts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/webapp/webappContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/xwork-conversion.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-fileupload-1.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-lang3-3.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/freemarker-2.3.26-incubating.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/javax.annotation-api-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/log4j-api-2.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/ognl-3.1.15.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/postgresql-9.4.1212.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-business-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-consumer-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-model-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-aop-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-beans-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-context-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-core-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-expression-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-jdbc-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-tx-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-web-4.3.11.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/struts2-core-2.5.14.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/struts2-json-plugin-2.5.14.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/struts2-spring-plugin-2.5.14.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/projet_6.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/script_sql/createDB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/script_sql/demo_sql_p6.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6/script_sql/sql_p6.sql" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -27,6 +297,12 @@
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-technical/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-model/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/projet_6-technical/target/" />
+    <ignored path="$PROJECT_DIR$/projet_6-webapp/target/" />
+    <ignored path="$PROJECT_DIR$/projet_6-model/target/" />
+    <ignored path="$PROJECT_DIR$/projet_6-consumer/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/projet_6-business/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -110,88 +386,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="createDB.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/script_sql/createDB.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="33" selection-start-column="33" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sql_p6.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/script_sql/sql_p6.sql">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml">
+      <file leaf-file-name="struts.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6-webapp/src/main/resources/struts.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="UtilisateurManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="501">
-              <caret line="89" column="10" lean-forward="true" selection-start-line="89" selection-start-column="10" selection-end-line="96" selection-end-column="19" />
+            <state relative-caret-position="105">
+              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-technical/src/main/resources/log4j2.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="804">
-              <caret line="62" column="10" lean-forward="true" selection-start-line="51" selection-start-column="2" selection-end-line="62" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="894">
-              <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="921">
-              <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet_6/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="622">
-              <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
-            </state>
-          </provider>
+      <file leaf-file-name="struts.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/projet_6-webapp/src/main/resources/struts.properties">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -219,7 +435,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/projet_6/projet_6-technical/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java" />
         <option value="28e0f231-ca2a-4f0f-94c0-b610c0ff5907/database/p6/schema/public/table/topo.sql" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/TopoLocator.java" />
@@ -267,9 +482,10 @@
         <option value="$PROJECT_DIR$/projet_6/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml" />
-        <option value="$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" />
+        <option value="$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" />
+        <option value="$PROJECT_DIR$/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" />
       </list>
     </option>
   </component>
@@ -748,13 +964,13 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -765,25 +981,17 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -791,7 +999,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -800,7 +1007,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -810,7 +1016,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -821,7 +1026,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -833,7 +1037,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -846,7 +1049,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -860,7 +1062,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -875,7 +1076,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -889,7 +1089,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -904,7 +1103,6 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-business" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -913,385 +1111,50 @@
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
               <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-technical" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="contract" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
+              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-consumer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="grimpe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="bean" type="462c0819:PsiDirectoryNode" />
-              <item name="utilisateur" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="val" type="462c0819:PsiDirectoryNode" />
-              <item name="win" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-model" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-technical" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-technical" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-technical" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-technical" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-technical" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6-webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="JSP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projet_6_clone" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projet_6_clone" type="462c0819:PsiDirectoryNode" />
-              <item name="projet_6" type="462c0819:PsiDirectoryNode" />
-              <item name="script_sql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1304,7 +1167,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -1348,7 +1211,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.maven build">
+  <component name="RunManager" selected="Tomcat Server.TomcatP6">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -1388,7 +1251,7 @@
               <map />
             </option>
             <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$/projet_6" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
@@ -1417,10 +1280,9 @@
     </configuration>
     <configuration name="TomcatP6" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.6" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
-      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="projet_6-webapp:war exploded">
+        <artifact name="projet_6-webapp:war">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -1484,7 +1346,7 @@
       </ConfigurationWrapper>
       <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="projet_6-webapp:war exploded" />
+          <artifact name="projet_6-webapp:war" />
         </option>
       </method>
     </configuration>
@@ -1796,14 +1658,11 @@
       <workItem from="1531217655099" duration="697000" />
       <workItem from="1531221539243" duration="349000" />
       <workItem from="1531250826163" duration="376000" />
-      <workItem from="1531312310669" duration="1012000" />
-    </task>
-    <task id="LOCAL-00093" summary="Ecriture emprunt &#10;Ajax basique ok + en cours&#10;Evolution visuel">
-      <created>1527602147848</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1527602147848</updated>
+      <workItem from="1531312310669" duration="1207000" />
+      <workItem from="1531314335091" duration="439000" />
+      <workItem from="1531314833876" duration="64000" />
+      <workItem from="1531314909281" duration="655000" />
+      <workItem from="1531315796185" duration="2000" />
     </task>
     <task id="LOCAL-00094" summary="Ecriture emprunt &#10;Ajax basique ok + en cours&#10;Evolution visuel">
       <created>1527612139303</created>
@@ -2141,7 +2000,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531218393166</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="Ajax ok (manque les voies) &#10;commentaire OK&#10;Creation Ok&#10;Emprunt Ok&#10;Script dispo pour la db">
+      <created>1531314180437</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1531314180438</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2153,46 +2019,45 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356703000" />
+    <option name="totallyTimeSpent" value="358058000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.42738095" side_tool="true" weight="0.21843687" />
       <window_info anchor="bottom" id="Application Servers" order="16" />
-      <window_info anchor="right" id="Maven Projects" order="8" visible="true" weight="0.3297619" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297619" />
       <window_info anchor="bottom" id="Database Changes" order="17" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.572619" weight="0.3977956" />
+      <window_info anchor="bottom" id="CheckStyle" order="14" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22738095" />
+      <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" weight="0.2345238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36372745" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="bottom" id="Java Enterprise" order="8" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.572619" weight="0.6422846" />
-      <window_info anchor="bottom" id="Spring" order="12" />
-      <window_info anchor="bottom" id="CheckStyle" order="14" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28333333" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36372745" />
       <window_info anchor="bottom" id="Inspection Results" order="13" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297619" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.22344689" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49761903" weight="0.16232465" />
+      <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2275,304 +2140,82 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/VoieDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/TopoLocator.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/VoieLocator.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/xwork-conversion.properties" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/CSS/styles.css" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_secteur.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_site.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_topo.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/new_utilisateur.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/script_sql/demo_sql_p6.sql" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp" />
+    <entry file="file://$PROJECT_DIR$/projet_6/script_sql/createDB.sql" />
+    <entry file="file://$PROJECT_DIR$/projet_6/script_sql/sql_p6.sql" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-technical/src/main/resources/log4j2.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/projet_6-webapp.iml" />
+    <entry file="file://$PROJECT_DIR$/projet_6.iml" />
+    <entry file="file://$PROJECT_DIR$/projet_6-business/projet_6-business.iml" />
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/projet_6-business/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/TopoDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-939">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-219">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/target/classes/bootstrapContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/src/main/resources/bootstrapContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/CommentaireDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/src/main/resources/struts.properties">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/src/main/resources/xwork-conversion.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6-webapp/src/main/resources/struts.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/NotFoundException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/FunctionalException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/TechnicalException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-789">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1749">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Topo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2754">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1524">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1224">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/TopoLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/VoieLocator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="com.intellij.struts2.graph.fileEditor.Struts2GraphFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/xwork-conversion.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/CSS/styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2469" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="861">
-          <caret line="226" column="7" selection-start-line="226" selection-start-column="7" selection-end-line="226" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_secteur.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_site.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_topo.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/new_utilisateur.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" selection-start-line="5" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/script_sql/demo_sql_p6.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/script_sql/createDB.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/script_sql/sql_p6.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-technical/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="89" column="10" lean-forward="true" selection-start-line="89" selection-start-column="10" selection-end-line="96" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="804">
-          <caret line="62" column="10" lean-forward="true" selection-start-line="51" selection-start-column="2" selection-end-line="62" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="56" column="12" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="894">
-          <caret line="85" column="10" selection-start-line="85" selection-start-column="10" selection-end-line="85" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-business/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="921">
-          <caret line="89" column="12" selection-start-line="89" selection-start-column="12" selection-end-line="89" selection-end-column="12" />
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -2582,7 +2225,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>projet_6-webapp:war</last-edited>
+          <last-edited>projet_6-webapp:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2595,7 +2238,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring (projet_6-consumer)|Spring</last-edited>
+          <last-edited>Web (projet_6-webapp)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2631,12 +2274,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>projet_6-consumer</last-edited>
+          <last-edited>projet_6-webapp</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

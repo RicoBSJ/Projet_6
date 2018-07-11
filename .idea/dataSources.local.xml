@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal">
-    <data-source name="p6@localhost" uuid="28e0f231-ca2a-4f0f-94c0-b610c0ff5907">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
-      <introspection-schemas>p6:public</introspection-schemas>
-    </data-source>
-  </component>
-</project>

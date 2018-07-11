@@ -13,7 +13,7 @@
         <module name="projet_6-webapp" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel>
       <module name="projet_6" target="1.8" />
       <module name="projet_6-business" target="1.8" />
       <module name="projet_6-consumer" target="1.6" />

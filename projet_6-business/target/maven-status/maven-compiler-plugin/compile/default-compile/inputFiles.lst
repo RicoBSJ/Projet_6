@@ -1,0 +1,15 @@
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/contract/manager/SiteManager.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/manager/CommentaireManagerImpl.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/contract/manager/TopoManager.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/contract/manager/VoieManager.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/manager/VoieManagerImpl.java
+/Users/v.w/Documents/GitHub/Projet_6_clone/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java
