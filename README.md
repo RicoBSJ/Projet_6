@@ -4,6 +4,7 @@ Site internet de réferencement de topo
 
 Le site permet de : 
 - visualiser une liste de topo créée par la communauté
+- visualiser les details d'un topo, incluant ses sites, secteurs et voies
 - rechercher des topos en fonction de leurs paramètres et disponibilité
 - creer un topo 
 - creer des sites, secteurs et voies pour chaque topo
