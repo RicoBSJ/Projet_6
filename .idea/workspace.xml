@@ -7,289 +7,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e704206e-7f26-4aeb-a727-4972caad8999" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/projet_6-business/projet_6-business.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet_6-consumer/projet_6-consumer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet_6-model/projet_6-model.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet_6-technical/projet_6-technical.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet_6-webapp/projet_6-webapp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet_6.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Projet_6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/projet_6_webapp_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/28e0f231-ca2a-4f0f-94c0-b610c0ff5907/storage_v2/_src_/database/p6.xg0AAA/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/artifacts/projet_6_webapp_war.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/artifacts/projet_6_webapp_war_exploded.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__commons_io_commons_io_2_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__ognl_ognl_3_1_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_9_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_struts_struts2_core_2_5_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_apache_struts_struts2_spring_plugin_2_5_14_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_freemarker_freemarker_2_3_26_incubating.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_javassist_javassist_3_20_0_GA.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_postgresql_postgresql_unknown.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_aop_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_beans_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_context_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_core_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_expression_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_tx_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/libraries/Maven__org_springframework_spring_web_4_3_11_RELEASE.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/projet_6-business.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/ManagerFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/CommentaireManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SecteurManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/SiteManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/TopoManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/contract/manager/VoieManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/ManagerFactoryImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/AbstractManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/CommentaireManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SecteurManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/SiteManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/TopoManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/UtilisateurManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/java/org/val/win/business/impl/manager/VoieManagerImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/main/resources/businessContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/src/test/java/org/val/win/business/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/businessContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/ManagerFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/CommentaireManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/SecteurManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/SiteManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/TopoManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/UtilisateurManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/contract/manager/VoieManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/ManagerFactoryImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/AbstractManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/CommentaireManagerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/CommentaireManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SecteurManagerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SecteurManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SiteManagerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/SiteManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/TopoManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/UtilisateurManagerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/UtilisateurManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/VoieManagerImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/classes/org/val/win/business/impl/manager/VoieManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-business/target/test-classes/org/val/win/business/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/projet_6-consumer.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/CommentaireDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SecteurDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/SiteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/TopoDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/UtilisateurDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/contract/dao/VoieDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/AbstractDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/CommentaireDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SecteurDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/SiteDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/TopoDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/java/org/val/win/consumer/impl/dao/VoieDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/main/resources/consumerContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/src/test/java/org/val/win/consumer/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/consumerContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/CommentaireDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/SecteurDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/SiteDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/TopoDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/UtilisateurDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/contract/dao/VoieDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/AbstractDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/CommentaireDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/CommentaireDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SecteurDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SecteurDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SiteDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/SiteDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/TopoDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/TopoDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/UtilisateurDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/VoieDaoImpl$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/classes/org/val/win/consumer/impl/dao/VoieDaoImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-consumer/target/test-classes/org/val/win/consumer/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/projet_6-model.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Topo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Voie.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Commentaire.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/utilisateur/Utilisateur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/FunctionalException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/NotFoundException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/exception/TechnicalException.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/src/test/java/org/val/win/model/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Secteur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Site.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Topo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/grimpe/Voie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/utilisateur/Commentaire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/bean/utilisateur/Utilisateur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/exception/FunctionalException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/exception/NotFoundException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/classes/org/val/win/model/exception/TechnicalException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-model/target/test-classes/org/val/win/model/AppTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/projet_6-technical.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/src/main/resources/log4j2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-technical/src/test/java/org/val/win/technical/AppTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/projet_6-webapp.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionCommentaireAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionTopoAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionUtilisateurAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionVoieAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/LoginAction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SecteurLocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/SiteLocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/TopoLocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/converter/VoieLocator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrap/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/bootstrapContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/webapp/webappContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/xwork-conversion.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/CSS/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JS/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/_include/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_secteur.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_site.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_topo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_voie.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/new_utilisateur.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/bootstrap/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/bootstrap/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/bootstrapContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionCommentaireAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionSecteurAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionSiteAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionTopoAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionUtilisateurAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/GestionVoieAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/action/LoginAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/SecteurLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/SiteLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/TopoLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/org/val/win/webapp/converter/VoieLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/struts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/struts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/webapp/webappContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/classes/xwork-conversion.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/CSS/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JS/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/_include/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/error.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/index.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/login.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/list.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_secteur.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_site.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_topo.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/topo/new_voie.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/utilisateur/detail.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/JSP/utilisateur/new_utilisateur.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/META-INF/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/bootstrap/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/bootstrap/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/bootstrapContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/context.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionCommentaireAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionSecteurAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionSiteAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionTopoAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionUtilisateurAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/GestionVoieAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/action/LoginAction.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/SecteurLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/SiteLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/TopoLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/org/val/win/webapp/converter/VoieLocator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/struts.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/struts.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/webapp/webappContext.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/classes/xwork-conversion.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-fileupload-1.3.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-io-2.5.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-lang3-3.6.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/freemarker-2.3.26-incubating.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/javassist-3.20.0-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/javax.annotation-api-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/log4j-api-2.9.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/ognl-3.1.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/postgresql-9.4.1212.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-business-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-consumer-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-model-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-aop-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-beans-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-context-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-core-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-expression-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-jdbc-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-tx-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/spring-web-4.3.11.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/struts2-core-2.5.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/struts2-json-plugin-2.5.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/struts2-spring-plugin-2.5.14.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/validation-api-1.1.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6-webapp/target/projet_6-webapp/WEB-INF/web.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/projet_6.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/script_sql/createDB.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/script_sql/demo_sql_p6.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/projet_6/script_sql/sql_p6.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp.war" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-business-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-business-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-consumer-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-consumer-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-model-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/projet_6-webapp/target/projet_6-webapp/WEB-INF/lib/projet_6-model-1.0-SNAPSHOT.jar" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/projet_6/projet_6-webapp/target/" />
     <ignored path="$PROJECT_DIR$/projet_6/target/" />
@@ -396,11 +119,23 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file leaf-file-name="UtilisateurManager.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UtilisateurManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet_6-business/src/main/java/org/val/win/business/contract/manager/UtilisateurManager.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -467,7 +202,6 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/new_site.jsp" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/resources/struts.properties" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/utilisateur/detail.jsp" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/projet_6/script_sql/demo_sql_p6.sql" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/CSS/styles.css" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/webapp/JSP/topo/list.jsp" />
@@ -486,6 +220,7 @@
         <option value="$PROJECT_DIR$/projet_6/projet_6-business/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6/projet_6-model/pom.xml" />
         <option value="$PROJECT_DIR$/projet_6-webapp/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1153,8 +888,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1663,20 +1398,7 @@
       <workItem from="1531314833876" duration="64000" />
       <workItem from="1531314909281" duration="655000" />
       <workItem from="1531315796185" duration="2000" />
-    </task>
-    <task id="LOCAL-00094" summary="Ecriture emprunt &#10;Ajax basique ok + en cours&#10;Evolution visuel">
-      <created>1527612139303</created>
-      <option name="number" value="00094" />
-      <option name="presentableId" value="LOCAL-00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1527612139304</updated>
-    </task>
-    <task id="LOCAL-00095" summary="Ecriture emprunt/ Gestion Date&#10;Ajax basique ok + en cours&#10;Evolution visuel">
-      <created>1527718015038</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1527718015039</updated>
+      <workItem from="1531316667922" duration="405000" />
     </task>
     <task id="LOCAL-00096" summary="Ecriture emprunt/ Gestion Date&#10;Ajax basique ok + en cours&#10;Evolution visuel">
       <created>1527768888565</created>
@@ -2007,7 +1729,21 @@
       <option name="project" value="LOCAL" />
       <updated>1531314180438</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="Ajax ok (manque les voies) &#10;commentaire OK&#10;Creation Ok&#10;Emprunt Ok&#10;Script dispo pour la db">
+      <created>1531316977986</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1531316977987</updated>
+    </task>
+    <task id="LOCAL-00144" summary="Finition">
+      <created>1531317024797</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1531317024797</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -2019,45 +1755,46 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358058000" />
+    <option name="totallyTimeSpent" value="358463000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info id="Image Layers" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.42738095" side_tool="true" weight="0.21843687" />
       <window_info anchor="bottom" id="Application Servers" order="16" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.3297619" />
       <window_info anchor="bottom" id="Database Changes" order="17" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.572619" weight="0.3977956" />
-      <window_info anchor="bottom" id="CheckStyle" order="14" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22738095" />
-      <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="right" id="Database" order="4" weight="0.2345238" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.36372745" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49761903" weight="0.16232465" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info id="Image Layers" order="4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.572619" visible="true" weight="0.3977956" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="CheckStyle" order="14" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22738095" />
+      <window_info anchor="right" id="Bean Validation" order="9" />
+      <window_info id="Web" order="5" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.36372745" />
       <window_info anchor="bottom" id="Inspection Results" order="13" />
       <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297619" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info anchor="bottom" id="Database Console" order="15" weight="0.22344689" />
-      <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.49761903" weight="0.16232465" />
-      <window_info anchor="bottom" id="Spring" order="12" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296593" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -2096,7 +1833,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Avancé CSS, correction bug&#10;Tentative AJAX" />
     <MESSAGE value="Tentation developpement Ajax&#10;Implémentation emprunt a venir" />
     <MESSAGE value="Avancé CSS, correction bug&#10;Ajax ok" />
     <MESSAGE value="amélioration bootstrap + css&#10;Ajax basique ok + en cours" />
@@ -2121,7 +1857,8 @@
     <MESSAGE value="Ajax ok (manque les voies) &#10;Creation Ok, probleme action redirection struts&#10;Emprunt Ok&#10;Script dispo pour la db" />
     <MESSAGE value="Ajax ok (manque les voies) &#10;correction redirection com &#10;Creation Ok&#10;Emprunt Ok&#10;Script dispo pour la db" />
     <MESSAGE value="Ajax ok (manque les voies) &#10;commentaire OK&#10;Creation Ok&#10;Emprunt Ok&#10;Script dispo pour la db" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ajax ok (manque les voies) &#10;commentaire OK&#10;Creation Ok&#10;Emprunt Ok&#10;Script dispo pour la db" />
+    <MESSAGE value="Finition" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2140,7 +1877,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Site.java" />
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-model/src/main/java/org/val/win/model/bean/grimpe/Secteur.java" />
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSiteAction.java" />
     <entry file="file://$PROJECT_DIR$/projet_6/projet_6-webapp/src/main/java/org/val/win/webapp/action/GestionSecteurAction.java" />
@@ -2216,6 +1952,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="56" selection-start-line="12" selection-start-column="56" selection-end-line="12" selection-end-column="56" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

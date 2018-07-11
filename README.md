@@ -10,5 +10,5 @@ Le site permet de :
 - creer des sites, secteurs et voies pour chaque topo
 - creer un compte utilisateur et s'authentifier 
 
-Le site est contruit a l'aide de struts 2, spring jdbc et spring TX
+Le site est contruit a l'aide de struts 2, spring jdbc, spring TX et une base de donnée Postgresql
 
