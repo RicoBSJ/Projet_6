@@ -16,6 +16,9 @@
         <div class="col-lg-3">
         </div>
         <s:form action="secteur_new" class="col-lg-6" theme="simple">
+
+            <legend> Votre secteur : </legend>
+
             <span id="spanIdTopo" style="display: none;"><s:property value ="#session.topo.idTopo" /></span>
             <div class="form-group col-lg-12">
                 <label for="secteur.nomSecteur">Nom du secteur : </label>

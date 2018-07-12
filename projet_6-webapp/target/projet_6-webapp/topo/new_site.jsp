@@ -17,6 +17,9 @@
         <div class="col-lg-3">
         </div>
         <s:form action="site_new" class="col-lg-6" theme="simple">
+
+            <legend> Votre site : </legend>
+
             <div class="form-group col-lg-12">
                 <label for="site.nomSite">Nom du Site : </label>
                 <s:textfield name="site.nomSite" label="Nom du site" requiredLabel="true" class="form-control" theme="simple" />

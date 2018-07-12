@@ -18,6 +18,9 @@
         </div>
 
         <s:form action="voie_new" class="col-lg-6" theme="simple">
+
+            <legend> Votre voie : </legend>
+
             <span id="spanIdTopo" style="display: none;"><s:property value ="#session.topo.idTopo" /></span>
             <div class="form-group col-lg-12">
                 <label for="voie.nomVoie">Nom de la voie : </label>

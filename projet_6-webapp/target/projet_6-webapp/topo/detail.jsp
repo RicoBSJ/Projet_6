@@ -14,7 +14,7 @@
         <div class="col-lg-3">
         </div>
         <div class="col-lg-6">
-            <h1> Information Topo </h1>
+            <legend> Informations du topo : </legend>
         </div>
         <div class="col-lg-3">
         </div>
@@ -32,7 +32,7 @@
                     <tr>
                         <th>Nom</th>
                         <th>Roche</th>
-                        <th>Region</th>
+                        <th>Région</th>
                         <th>Lieu</th>
                         <th>Description</th>
                         <th>Créateur</th>
@@ -198,12 +198,12 @@
         <div class="col-lg-8">
             <div class="cadre">
                 <div class="commentaire">
-                    <label> Commentaire du topo </label>
+                    <label> Commentaire(s) du topo </label>
                     <br />
                     <br/>
                     <ul  id="listCom">
                         <li>
-                            <em>commentaires.</em>
+                            <em>commentaires</em>
                         </li>
                     </ul>
                 </div>

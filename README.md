@@ -9,6 +9,7 @@ Le site permet de :
 - creer un topo 
 - creer des sites, secteurs et voies pour chaque topo
 - creer un compte utilisateur et s'authentifier 
+- poster des commentaires sur chaque topos
 
 Le site est contruit a l'aide de struts 2, spring jdbc, spring TX et une base de donnée Postgresql
 

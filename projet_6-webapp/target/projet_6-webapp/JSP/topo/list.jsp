@@ -24,7 +24,7 @@
                     <th>Région</th>
                     <th>Lieu</th>
                     <th>État</th>
-                    <th>Detail</th>
+                    <th>Détail</th>
                 </tr>
                 </thead>
                 <tbody>
