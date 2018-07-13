@@ -11,7 +11,7 @@ Le site permet de :
 - creer un compte utilisateur et s'authentifier 
 - poster des commentaires sur chaque topos
 
-Le site est contruit a l'aide de struts 2, spring jdbc, spring TX et une base de donnée Postgresql
+Le site est contruit a l'aide de struts 2, spring jdbc, spring TX, une base de donnée Postgresql, maven et un serveur tomcat
 
 Les scripts de création de la base de donnée sont disponibles dans le dossier script_sql qui se trouve dans le dossier parent du projet
 
