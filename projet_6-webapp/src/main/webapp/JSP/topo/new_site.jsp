@@ -26,7 +26,7 @@
                 </br>
             </div>
             <div class="form-group col-lg-12">
-                <label for="site.altitudePiedVoie">Altiude du site (en pied) : </label>
+                <label for="site.altitudePiedVoie">Altitude du site (en pied) : </label>
                 <s:textfield name="site.altitudePiedVoie" label="Altitude de la voie (Pied)" requiredLabel="true" class="form-control" theme="simple"/>
                 </br>
             </div>

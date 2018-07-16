@@ -15,7 +15,7 @@
 
     <div class="inner cover">
         <h1 class="cover-heading">Site de Topo</h1>
-        <p class="lead">Bienvenue sur notre site de référencement de topo, vous pouvez voir, reserver et faire
+        <p class="lead">Bienvenue sur notre site de référencement de topo, vous pouvez voir, réserver et faire
             des remarques sur les topos que vous avez essayés </p>
     </div>
 
